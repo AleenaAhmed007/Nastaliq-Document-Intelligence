@@ -1,0 +1,180 @@
+{
+ "page_id": "AJK_0264_p01",
+ "file": "azad Kashmir\\0271_330474PR-SSC-23.pdf",
+ "image": "data/interim/images/AJK_0264_p01.png",
+ "width": 2480,
+ "height": 3509,
+ "source": "AJK",
+ "type": "photo",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_reference_no"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    496.0,
+    105.3,
+    1488.0,
+    175.5
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": {
+   "region_id": "reg_3",
+   "text": "23-99-29",
+   "bbox": [
+    307.5,
+    836.2,
+    1811.4,
+    274.1
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    1736.0,
+    315.8,
+    545.6,
+    140.4
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    496.0,
+    105.3,
+    1488.0,
+    175.5
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "body",
+   "bbox": [
+    335.3,
+    116.5,
+    540.1,
+    137.2
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    117.6,
+    255.5,
+    777.5,
+    188.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    1736.0,
+    315.8,
+    545.6,
+    140.4
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_3",
+   "label": "date",
+   "bbox": [
+    307.5,
+    836.2,
+    1811.4,
+    274.1
+   ],
+   "text": "23-99-29",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    307.5,
+    836.2,
+    1811.4,
+    274.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "body",
+   "bbox": [
+    974.9,
+    1158.3,
+    462.5,
+    89.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_8",
+   "label": "table",
+   "bbox": [
+    288.2,
+    1235.2,
+    1806.7,
+    312.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_9",
+   "label": "stamp_signature",
+   "bbox": [
+    439.7,
+    1778.4,
+    593.2,
+    143.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_10",
+   "label": "distribution_list",
+   "bbox": [
+    265.1,
+    1979.1,
+    2142.0,
+    1472.0
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

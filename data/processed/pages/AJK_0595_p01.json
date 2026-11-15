@@ -1,0 +1,168 @@
+{
+ "page_id": "AJK_0595_p01",
+ "file": "azad Kashmir\\0611_392669WhatsAppImage2018-08-31at11.08.12.jpeg.jpg",
+ "image": "data/interim/images/AJK_0595_p01.png",
+ "width": 1185,
+ "height": 834,
+ "source": "AJK",
+ "type": "photo",
+ "split": "train",
+ "low_res": 1,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    161.4,
+    60.3,
+    927.0,
+    65.1
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "31-08-2018",
+   "bbox": [
+    479.1,
+    557.5,
+    643.5,
+    48.0
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "31-08-2018",
+   "bbox": [
+    0.0,
+    419.9,
+    122.6,
+    152.3
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    829.5,
+    75.1,
+    260.7,
+    33.3
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    161.4,
+    60.3,
+    927.0,
+    65.1
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    829.5,
+    75.1,
+    260.7,
+    33.3
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    1068.8,
+    155.2,
+    52.1,
+    52.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    119.2,
+    216.6,
+    1004.5,
+    158.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "stamp_signature",
+   "bbox": [
+    122.6,
+    419.9,
+    349.5,
+    152.3
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    0.0,
+    419.9,
+    122.6,
+    152.3
+   ],
+   "text": "31-08-2018",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    479.1,
+    557.5,
+    643.5,
+    48.0
+   ],
+   "text": "31-08-2018",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_8",
+   "label": "distribution_list",
+   "bbox": [
+    700.0,
+    619.0,
+    417.9,
+    157.0
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

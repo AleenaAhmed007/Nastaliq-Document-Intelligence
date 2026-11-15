@@ -1,0 +1,156 @@
+{
+ "page_id": "AJK_0655_p01",
+ "file": "azad Kashmir\\0673_484568PressRelease25-11-2016.jpg",
+ "image": "data/interim/images/AJK_0655_p01.png",
+ "width": 2033,
+ "height": 2217,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    356.4,
+    76.9,
+    1526.8,
+    149.2
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "2/232-52",
+   "bbox": [
+    787.2,
+    1386.7,
+    1137.7,
+    119.1
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "25/11/16",
+   "bbox": [
+    520.0,
+    1441.9,
+    257.0,
+    139.9
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    1423.1,
+    199.5,
+    447.3,
+    88.7
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    356.4,
+    76.9,
+    1526.8,
+    149.2
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    1423.1,
+    199.5,
+    447.3,
+    88.7
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    131.9,
+    499.0,
+    1761.0,
+    409.3
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    82.3,
+    999.2,
+    589.6,
+    396.2
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    787.2,
+    1386.7,
+    1137.7,
+    119.1
+   ],
+   "text": "2/232-52",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    520.0,
+    1441.9,
+    257.0,
+    139.9
+   ],
+   "text": "25/11/16",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_7",
+   "label": "distribution_list",
+   "bbox": [
+    235.0,
+    1475.0,
+    1694.1,
+    652.0
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

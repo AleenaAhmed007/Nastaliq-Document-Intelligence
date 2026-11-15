@@ -1,0 +1,156 @@
+{
+ "page_id": "AJK_0386_p01",
+ "file": "azad Kashmir\\0397_102325Image_229_.jpg",
+ "image": "data/interim/images/AJK_0386_p01.png",
+ "width": 2428,
+ "height": 3491,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    308.1,
+    86.9,
+    1882.7,
+    133.0
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "20-5-1",
+   "bbox": [
+    806.1,
+    1972.1,
+    1384.7,
+    105.8
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "22-16-05",
+   "bbox": [
+    283.3,
+    1070.3,
+    1913.5,
+    429.4
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    1699.6,
+    314.2,
+    534.2,
+    139.6
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    308.1,
+    86.9,
+    1882.7,
+    133.0
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    1699.6,
+    314.2,
+    534.2,
+    139.6
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    283.3,
+    1070.3,
+    1913.5,
+    429.4
+   ],
+   "text": "22-16-05",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    283.3,
+    1070.3,
+    1913.5,
+    429.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "stamp_signature",
+   "bbox": [
+    294.0,
+    1737.1,
+    692.5,
+    201.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    806.1,
+    1972.1,
+    1384.7,
+    105.8
+   ],
+   "text": "20-5-1",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_7",
+   "label": "distribution_list",
+   "bbox": [
+    462.0,
+    2082.0,
+    1760.1,
+    1337.1
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}
