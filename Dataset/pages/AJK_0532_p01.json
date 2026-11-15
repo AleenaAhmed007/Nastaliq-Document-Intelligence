@@ -1,0 +1,180 @@
+{
+ "page_id": "AJK_0532_p01",
+ "file": "azad Kashmir\\0548_46142PressReleaseExaminationCentre.jpg",
+ "image": "pages/images/AJK_0532_p01.png",
+ "width": 2102,
+ "height": 2456,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    441.2,
+    52.8,
+    1178.4,
+    86.2
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "2020/695-703",
+   "bbox": [
+    1106.5,
+    1247.2,
+    648.7,
+    91.1
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "13-01-2020",
+   "bbox": [
+    0.0,
+    1230.5,
+    179.5,
+    119.9
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    1471.4,
+    221.0,
+    462.4,
+    98.2
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    441.2,
+    52.8,
+    1178.4,
+    86.2
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    1471.4,
+    221.0,
+    462.4,
+    98.2
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    83.0,
+    373.1,
+    1890.5,
+    472.3
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    159.1,
+    862.3,
+    913.5,
+    319.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "stamp_signature",
+   "bbox": [
+    179.5,
+    1230.5,
+    774.0,
+    119.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    0.0,
+    1230.5,
+    179.5,
+    119.9
+   ],
+   "text": "13-01-2020",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    1106.5,
+    1247.2,
+    648.7,
+    91.1
+   ],
+   "text": "2020/695-703",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_8",
+   "label": "stamp_signature",
+   "bbox": [
+    1710.0,
+    1410.2,
+    258.8,
+    86.2
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_9",
+   "label": "distribution_list",
+   "bbox": [
+    111.0,
+    1428.9,
+    1852.1,
+    963.0
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

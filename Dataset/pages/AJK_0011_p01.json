@@ -1,0 +1,264 @@
+{
+ "page_id": "AJK_0011_p01",
+ "file": "azad Kashmir\\0011_272033Sample10-15-202615.45_02.jpg",
+ "image": "pages/images/AJK_0011_p01.png",
+ "width": 2400,
+ "height": 3436,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    537.8,
+    60.5,
+    1338.2,
+    100.7
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "13/1/26",
+   "bbox": [
+    227.0,
+    2655.0,
+    1953.1,
+    775.2
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "13/1/26",
+   "bbox": [
+    629.0,
+    2718.9,
+    196.1,
+    83.2
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "نوٹیفکیشن!",
+   "bbox": [
+    1680.0,
+    309.2,
+    528.0,
+    137.4
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    537.8,
+    60.5,
+    1338.2,
+    100.7
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    257.8,
+    285.2,
+    1907.8,
+    288.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    1680.0,
+    309.2,
+    528.0,
+    137.4
+   ],
+   "text": "نوٹیفکیشن!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_6",
+   "label": "table",
+   "bbox": [
+    250.8,
+    659.4,
+    1917.1,
+    694.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "body",
+   "bbox": [
+    1251.6,
+    1546.9,
+    661.0,
+    80.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_8",
+   "label": "body",
+   "bbox": [
+    451.2,
+    1552.0,
+    728.9,
+    77.3
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_9",
+   "label": "table",
+   "bbox": [
+    261.4,
+    1623.9,
+    1905.6,
+    342.2
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_10",
+   "label": "body",
+   "bbox": [
+    273.1,
+    1991.5,
+    1896.0,
+    150.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_11",
+   "label": "stamp_signature",
+   "bbox": [
+    469.9,
+    2150.9,
+    504.0,
+    288.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_12",
+   "label": "body",
+   "bbox": [
+    425.3,
+    2422.7,
+    386.6,
+    140.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_13",
+   "label": "body",
+   "bbox": [
+    1502.4,
+    2546.8,
+    670.3,
+    107.5
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_14",
+   "label": "stamp_signature",
+   "bbox": [
+    1010.2,
+    2563.6,
+    421.7,
+    67.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_15",
+   "label": "stamp_signature",
+   "bbox": [
+    414.7,
+    2563.6,
+    351.6,
+    67.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    227.0,
+    2655.0,
+    1953.1,
+    775.2
+   ],
+   "text": "13/1/26",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_16",
+   "label": "distribution_list",
+   "bbox": [
+    227.0,
+    2655.0,
+    1953.1,
+    775.2
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    629.0,
+    2718.9,
+    196.1,
+    83.2
+   ],
+   "text": "13/1/26",
+   "flags": [
+    "handwritten"
+   ]
+  }
+ ]
+}

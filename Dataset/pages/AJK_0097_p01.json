@@ -1,0 +1,152 @@
+{
+ "page_id": "AJK_0097_p01",
+ "file": "azad Kashmir\\0101_514678IMG-20251010-WA0063.jpg",
+ "image": "pages/images/AJK_0097_p01.png",
+ "width": 1000,
+ "height": 1610,
+ "source": "AJK",
+ "type": "photo",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    185.5,
+    48.6,
+    593.8,
+    44.1
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "960070/960071",
+   "bbox": [
+    83.5,
+    247.6,
+    797.8,
+    511.0
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "11 اکتوبر 2025",
+   "bbox": [
+    83.0,
+    380.9,
+    799.0,
+    34.9
+   ],
+   "flags": []
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "﴿پریس ریلیز ﴾",
+   "bbox": [
+    707.5,
+    143.9,
+    170.9,
+    64.4
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    185.5,
+    48.6,
+    593.8,
+    44.1
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    707.5,
+    143.9,
+    170.9,
+    64.4
+   ],
+   "text": "﴿پریس ریلیز ﴾",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    83.5,
+    247.6,
+    797.8,
+    511.0
+   ],
+   "text": "960070/960071",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    83.5,
+    247.6,
+    797.8,
+    511.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    83.0,
+    380.9,
+    799.0,
+    34.9
+   ],
+   "text": "11 اکتوبر 2025",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "stamp_signature",
+   "bbox": [
+    175.3,
+    758.6,
+    192.4,
+    193.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "distribution_list",
+   "bbox": [
+    408.0,
+    1028.0,
+    479.0,
+    540.0
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

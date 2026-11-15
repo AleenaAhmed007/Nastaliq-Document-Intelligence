@@ -1,0 +1,41 @@
+<View>
+  <Header value="$page_id  |  split: $split  |  type: $type  |  source: $source"/>
+
+  <Image name="image" value="$image" zoom="true" zoomControl="true"
+         brightnessControl="true" contrastControl="true" rotateControl="false"/>
+
+  <!-- boxes: layout regions, the 4 target fields, and text lines (pass 2) -->
+  <RectangleLabels name="layout" toName="image" strokeWidth="2" canRotate="false">
+    <Label value="header_department" background="#1f77b4" hotkey="1"/>
+    <Label value="reference_no"      background="#d62728" hotkey="2"/>
+    <Label value="date"              background="#2ca02c" hotkey="3"/>
+    <Label value="subject"           background="#ff7f0e" hotkey="4"/>
+    <Label value="body"              background="#9467bd" hotkey="5"/>
+    <Label value="table"             background="#8c564b" hotkey="6"/>
+    <Label value="stamp_signature"   background="#7f7f7f" hotkey="7"/>
+    <Label value="distribution_list" background="#17becf" hotkey="8"/>
+    <Label value="text_line"         background="#e377c2" hotkey="t"/>
+  </RectangleLabels>
+
+  <!-- the exact text of the selected box (fields and text_line only) -->
+  <TextArea name="value" toName="image" perRegion="true" editable="true"
+            rows="2" maxSubmissions="1" placeholder="Type exactly what is written"/>
+
+  <!-- per box flags -->
+  <Choices name="flags" toName="image" perRegion="true" choice="multiple" showInline="true">
+    <Choice value="handwritten"/>
+    <Choice value="stamp_over"/>
+    <Choice value="unclear"/>
+    <Choice value="implicit_subject"/>
+  </Choices>
+
+  <!-- per page flags -->
+  <Header value="Page flags"/>
+  <Choices name="page_flags" toName="image" choice="multiple" showInline="true">
+    <Choice value="contains_personal_data"/>
+    <Choice value="skip_bad_image"/>
+    <Choice value="no_date"/>
+    <Choice value="no_reference_no"/>
+    <Choice value="no_subject"/>
+  </Choices>
+</View>

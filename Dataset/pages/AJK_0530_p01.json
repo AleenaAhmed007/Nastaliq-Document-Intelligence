@@ -1,0 +1,168 @@
+{
+ "page_id": "AJK_0530_p01",
+ "file": "azad Kashmir\\0545_241302PressreleaseAlternatecentre02.jpg",
+ "image": "pages/images/AJK_0530_p01.png",
+ "width": 2550,
+ "height": 3507,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    388.6,
+    196.7,
+    1733.2,
+    140.3
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "22-01-2020",
+   "bbox": [
+    906.5,
+    1431.6,
+    1304.8,
+    123.4
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "22-01-2020",
+   "bbox": [
+    898.9,
+    1433.0,
+    1037.1,
+    131.9
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    1785.0,
+    315.6,
+    561.0,
+    140.3
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    388.6,
+    196.7,
+    1733.2,
+    140.3
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    1785.0,
+    315.6,
+    561.0,
+    140.3
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    994.8,
+    464.0,
+    525.6,
+    181.7
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    316.2,
+    636.9,
+    1887.5,
+    404.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "body",
+   "bbox": [
+    378.4,
+    1204.0,
+    483.2,
+    250.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    906.5,
+    1431.6,
+    1304.8,
+    123.4
+   ],
+   "text": "22-01-2020",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    898.9,
+    1433.0,
+    1037.1,
+    131.9
+   ],
+   "text": "22-01-2020",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_8",
+   "label": "distribution_list",
+   "bbox": [
+    359.0,
+    1571.1,
+    1857.9,
+    1876.9
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

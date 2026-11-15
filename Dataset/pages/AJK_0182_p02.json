@@ -1,0 +1,191 @@
+{
+ "page_id": "AJK_0182_p02",
+ "file": "azad Kashmir\\0188_323577regHSSC24-26.pdf",
+ "image": "pages/images/AJK_0182_p02.png",
+ "width": 2480,
+ "height": 3509,
+ "source": "AJK",
+ "type": "photo",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_date",
+  "no_subject"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    496.0,
+    105.3,
+    1488.0,
+    175.5
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_2",
+   "text": "8251-8251",
+   "bbox": [
+    1095.9,
+    2303.0,
+    1067.9,
+    123.2
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": null,
+  "subject": null
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    496.0,
+    105.3,
+    1488.0,
+    175.5
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "body",
+   "bbox": [
+    295.1,
+    432.0,
+    1867.9,
+    436.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "body",
+   "bbox": [
+    296.6,
+    620.0,
+    1862.5,
+    281.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    366.8,
+    914.8,
+    1780.1,
+    109.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    627.2,
+    1033.0,
+    1525.7,
+    120.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "body",
+   "bbox": [
+    290.7,
+    1153.1,
+    1869.7,
+    181.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_8",
+   "label": "body",
+   "bbox": [
+    373.0,
+    1338.0,
+    1772.7,
+    168.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_9",
+   "label": "body",
+   "bbox": [
+    277.3,
+    1518.0,
+    1872.2,
+    233.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_10",
+   "label": "body",
+   "bbox": [
+    317.2,
+    1752.7,
+    1826.0,
+    174.7
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_11",
+   "label": "stamp_signature",
+   "bbox": [
+    408.2,
+    2021.9,
+    341.5,
+    356.5
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "reference_no",
+   "bbox": [
+    1095.9,
+    2303.0,
+    1067.9,
+    123.2
+   ],
+   "text": "8251-8251",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_12",
+   "label": "distribution_list",
+   "bbox": [
+    898.0,
+    2304.0,
+    1509.1,
+    1145.0
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}
