@@ -1,0 +1,164 @@
+{
+ "page_id": "AJK_0041_p01",
+ "file": "azad Kashmir\\0042_728942IMG-20260605-WA0373.jpg",
+ "image": "data/interim/images/AJK_0041_p01.png",
+ "width": 3034,
+ "height": 2392,
+ "source": "AJK",
+ "type": "photo",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_reference_no"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    606.8,
+    71.8,
+    1820.4,
+    119.6
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": {
+   "region_id": "reg_3",
+   "text": "08 جون 2026",
+   "bbox": [
+    438.1,
+    980.0,
+    2044.9,
+    150.0
+   ],
+   "flags": []
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    2123.8,
+    215.3,
+    667.5,
+    95.7
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    606.8,
+    71.8,
+    1820.4,
+    119.6
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    2123.8,
+    215.3,
+    667.5,
+    95.7
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "body",
+   "bbox": [
+    1527.3,
+    472.9,
+    1277.0,
+    95.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    2488.8,
+    796.5,
+    142.3,
+    149.5
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    447.5,
+    980.0,
+    2008.8,
+    147.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "date",
+   "bbox": [
+    438.1,
+    980.0,
+    2044.9,
+    150.0
+   ],
+   "text": "08 جون 2026",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "stamp_signature",
+   "bbox": [
+    2491.8,
+    1178.5,
+    331.9,
+    109.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_8",
+   "label": "stamp_signature",
+   "bbox": [
+    757.0,
+    1395.7,
+    743.6,
+    394.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_9",
+   "label": "stamp_signature",
+   "bbox": [
+    764.3,
+    1828.0,
+    557.0,
+    67.7
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

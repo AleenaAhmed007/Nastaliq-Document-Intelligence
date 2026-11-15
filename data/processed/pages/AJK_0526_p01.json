@@ -1,0 +1,180 @@
+{
+ "page_id": "AJK_0526_p01",
+ "file": "azad Kashmir\\0541_688110PassPercentage.jpg",
+ "image": "data/interim/images/AJK_0526_p01.png",
+ "width": 2118,
+ "height": 1522,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    571.9,
+    190.2,
+    1056.9,
+    80.4
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "2922-12896",
+   "bbox": [
+    813.1,
+    1171.9,
+    1213.0,
+    63.9
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "12-09-20",
+   "bbox": [
+    170.9,
+    736.0,
+    1857.1,
+    97.0
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    1482.6,
+    137.0,
+    466.0,
+    60.9
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    1482.6,
+    137.0,
+    466.0,
+    60.9
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    571.9,
+    190.2,
+    1056.9,
+    80.4
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    165.4,
+    626.5,
+    1853.2,
+    414.7
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    170.9,
+    736.0,
+    1857.1,
+    97.0
+   ],
+   "text": "12-09-20",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    261.6,
+    1062.7,
+    1760.3,
+    214.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    813.1,
+    1171.9,
+    1213.0,
+    63.9
+   ],
+   "text": "2922-12896",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_7",
+   "label": "stamp_signature",
+   "bbox": [
+    317.5,
+    1250.6,
+    341.2,
+    215.7
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_8",
+   "label": "stamp_signature",
+   "bbox": [
+    1798.4,
+    1426.1,
+    246.1,
+    81.7
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_9",
+   "label": "stamp_signature",
+   "bbox": [
+    734.3,
+    1426.9,
+    988.7,
+    83.3
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

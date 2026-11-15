@@ -1,0 +1,3109 @@
+[
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0075_p01.png",
+   "local_path": "data/interim/images/AJK_0075_p01.png",
+   "page_id": "AJK_0075_p01",
+   "file": "azad Kashmir\\0078_671142SSC-2026.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0107_p01.png",
+   "local_path": "data/interim/images/AJK_0107_p01.png",
+   "page_id": "AJK_0107_p01",
+   "file": "azad Kashmir\\0112_789764AdmissionScheduleHSSC-II2A2025.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0274_p02.png",
+   "local_path": "data/interim/images/AJK_0274_p02.png",
+   "page_id": "AJK_0274_p02",
+   "file": "azad Kashmir\\0281_243896Notification.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0002_p01.png",
+   "local_path": "data/interim/images/AJK_0002_p01.png",
+   "page_id": "AJK_0002_p01",
+   "file": "azad Kashmir\\0002_531127WhatsAppImage2026-11-11at4.16.44PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0262_p01.png",
+   "local_path": "data/interim/images/AJK_0262_p01.png",
+   "page_id": "AJK_0262_p01",
+   "file": "azad Kashmir\\0269_70068ReviseScheduleHSSC2ndA2023.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0010_p01.png",
+   "local_path": "data/interim/images/AJK_0010_p01.png",
+   "page_id": "AJK_0010_p01",
+   "file": "azad Kashmir\\0010_390136RevisedadmScheduleSSC-I2A2026.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0187_p01.png",
+   "local_path": "data/interim/images/AJK_0187_p01.png",
+   "page_id": "AJK_0187_p01",
+   "file": "azad Kashmir\\0193_459259SSC2ndAnnualAdmissionShadule2024-compressed.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0329_p01.png",
+   "local_path": "data/interim/images/AJK_0329_p01.png",
+   "page_id": "AJK_0329_p01",
+   "file": "azad Kashmir\\0338_126251SSC-2ND-A-2023.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0187_p02.png",
+   "local_path": "data/interim/images/AJK_0187_p02.png",
+   "page_id": "AJK_0187_p02",
+   "file": "azad Kashmir\\0193_459259SSC2ndAnnualAdmissionShadule2024-compressed.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0053_p01.png",
+   "local_path": "data/interim/images/AJK_0053_p01.png",
+   "page_id": "AJK_0053_p01",
+   "file": "azad Kashmir\\0054_949310WhatsAppImage2026-03-05at10.58.10AM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0049_p01.png",
+   "local_path": "data/interim/images/AJK_0049_p01.png",
+   "page_id": "AJK_0049_p01",
+   "file": "azad Kashmir\\0050_550811Reg-ssc-2026-28.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0003_p01.png",
+   "local_path": "data/interim/images/AJK_0003_p01.png",
+   "page_id": "AJK_0003_p01",
+   "file": "azad Kashmir\\0003_848419WhatsAppImage2026-11-05at4.50.22PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0067_p01.png",
+   "local_path": "data/interim/images/AJK_0067_p01.png",
+   "page_id": "AJK_0067_p01",
+   "file": "azad Kashmir\\0069_797180WhatsAppImage2026-01-15at12.38.36PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0028_p01.png",
+   "local_path": "data/interim/images/AJK_0028_p01.png",
+   "page_id": "AJK_0028_p01",
+   "file": "azad Kashmir\\0029_500091WhatsAppImage2026-09-22at11.23.45AM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0051_p01.png",
+   "local_path": "data/interim/images/AJK_0051_p01.png",
+   "page_id": "AJK_0051_p01",
+   "file": "azad Kashmir\\0052_9918WhatsAppImage2026-03-26at1.53.27PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0038_p01.png",
+   "local_path": "data/interim/images/AJK_0038_p01.png",
+   "page_id": "AJK_0038_p01",
+   "file": "azad Kashmir\\0039_115631PRREG2628.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0247_p02.png",
+   "local_path": "data/interim/images/AJK_0247_p02.png",
+   "page_id": "AJK_0247_p02",
+   "file": "azad Kashmir\\0254_642181SSCADMIS2024.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0049_p02.png",
+   "local_path": "data/interim/images/AJK_0049_p02.png",
+   "page_id": "AJK_0049_p02",
+   "file": "azad Kashmir\\0050_550811Reg-ssc-2026-28.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0330_p01.png",
+   "local_path": "data/interim/images/AJK_0330_p01.png",
+   "page_id": "AJK_0330_p01",
+   "file": "azad Kashmir\\0339_21606PR-SSC-REG-CARDS-2022-24.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0036_p01.png",
+   "local_path": "data/interim/images/AJK_0036_p01.png",
+   "page_id": "AJK_0036_p01",
+   "file": "azad Kashmir\\0037_692169WhatsAppImage2026-08-25at4.47.45PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0070_p01.png",
+   "local_path": "data/interim/images/AJK_0070_p01.png",
+   "page_id": "AJK_0070_p01",
+   "file": "azad Kashmir\\0072_193939PRRenewalNotificationSSC1A2026.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0401_p01.png",
+   "local_path": "data/interim/images/AJK_0401_p01.png",
+   "page_id": "AJK_0401_p01",
+   "file": "azad Kashmir\\0412_603454PracticalExam2022.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0134_p01.png",
+   "local_path": "data/interim/images/AJK_0134_p01.png",
+   "page_id": "AJK_0134_p01",
+   "file": "azad Kashmir\\0139_36956PRHSSCExam2025.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0030_p01.png",
+   "local_path": "data/interim/images/AJK_0030_p01.png",
+   "page_id": "AJK_0030_p01",
+   "file": "azad Kashmir\\0031_849365WhatsAppImage2026-09-21at4.36.45PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0065_p01.png",
+   "local_path": "data/interim/images/AJK_0065_p01.png",
+   "page_id": "AJK_0065_p01",
+   "file": "azad Kashmir\\0066_699157WhatsAppImage2026-01-23at12.02.57PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0031_p01.png",
+   "local_path": "data/interim/images/AJK_0031_p01.png",
+   "page_id": "AJK_0031_p01",
+   "file": "azad Kashmir\\0032_285156WhatsAppImage2026-09-11at4.35.02PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0322_p01.png",
+   "local_path": "data/interim/images/AJK_0322_p01.png",
+   "page_id": "AJK_0322_p01",
+   "file": "azad Kashmir\\0330_481109SSC-SCH-2023.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0072_p01.png",
+   "local_path": "data/interim/images/AJK_0072_p01.png",
+   "page_id": "AJK_0072_p01",
+   "file": "azad Kashmir\\0075_64544PRExamDutiesSSC1stA2026.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0107_p02.png",
+   "local_path": "data/interim/images/AJK_0107_p02.png",
+   "page_id": "AJK_0107_p02",
+   "file": "azad Kashmir\\0112_789764AdmissionScheduleHSSC-II2A2025.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0012_p01.png",
+   "local_path": "data/interim/images/AJK_0012_p01.png",
+   "page_id": "AJK_0012_p01",
+   "file": "azad Kashmir\\0012_316314WhatsAppImage2026-10-13at4.36.43PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0052_p01.png",
+   "local_path": "data/interim/images/AJK_0052_p01.png",
+   "page_id": "AJK_0052_p01",
+   "file": "azad Kashmir\\0053_449645WhatsAppImage2026-03-26at10.02.04AM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0029_p01.png",
+   "local_path": "data/interim/images/AJK_0029_p01.png",
+   "page_id": "AJK_0029_p01",
+   "file": "azad Kashmir\\0030_308074WhatsAppImage2026-09-22at10.34.26AM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0013_p01.png",
+   "local_path": "data/interim/images/AJK_0013_p01.png",
+   "page_id": "AJK_0013_p01",
+   "file": "azad Kashmir\\0013_522583WhatsAppImage2026-10-13at11.03.16AM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0014_p01.png",
+   "local_path": "data/interim/images/AJK_0014_p01.png",
+   "page_id": "AJK_0014_p01",
+   "file": "azad Kashmir\\0014_56579WhatsAppImage2026-10-13at9.04.59AM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0066_p01.png",
+   "local_path": "data/interim/images/AJK_0066_p01.png",
+   "page_id": "AJK_0066_p01",
+   "file": "azad Kashmir\\0068_647186WhatsAppImage2026-01-20at4.40.35PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0061_p01.png",
+   "local_path": "data/interim/images/AJK_0061_p01.png",
+   "page_id": "AJK_0061_p01",
+   "file": "azad Kashmir\\0062_700714WhatsAppImage2026-01-30at3.59.30PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0401_p02.png",
+   "local_path": "data/interim/images/AJK_0401_p02.png",
+   "page_id": "AJK_0401_p02",
+   "file": "azad Kashmir\\0412_603454PracticalExam2022.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0274_p01.png",
+   "local_path": "data/interim/images/AJK_0274_p01.png",
+   "page_id": "AJK_0274_p01",
+   "file": "azad Kashmir\\0281_243896Notification.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0323_p01.png",
+   "local_path": "data/interim/images/AJK_0323_p01.png",
+   "page_id": "AJK_0323_p01",
+   "file": "azad Kashmir\\0331_833251PR-HSSC-2nd-2022.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0075_p02.png",
+   "local_path": "data/interim/images/AJK_0075_p02.png",
+   "page_id": "AJK_0075_p02",
+   "file": "azad Kashmir\\0078_671142SSC-2026.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0313_p01.png",
+   "local_path": "data/interim/images/AJK_0313_p01.png",
+   "page_id": "AJK_0313_p01",
+   "file": "azad Kashmir\\0321_211517HSSC-II-2023.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0059_p01.png",
+   "local_path": "data/interim/images/AJK_0059_p01.png",
+   "page_id": "AJK_0059_p01",
+   "file": "azad Kashmir\\0060_197601WhatsAppImage2026-02-14at12.40.29PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0189_p01.png",
+   "local_path": "data/interim/images/AJK_0189_p01.png",
+   "page_id": "AJK_0189_p01",
+   "file": "azad Kashmir\\0195_339508prssc2024.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0247_p01.png",
+   "local_path": "data/interim/images/AJK_0247_p01.png",
+   "page_id": "AJK_0247_p01",
+   "file": "azad Kashmir\\0254_642181SSCADMIS2024.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0133_p01.png",
+   "local_path": "data/interim/images/AJK_0133_p01.png",
+   "page_id": "AJK_0133_p01",
+   "file": "azad Kashmir\\0138_857696PRSSCPract2025.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0060_p01.png",
+   "local_path": "data/interim/images/AJK_0060_p01.png",
+   "page_id": "AJK_0060_p01",
+   "file": "azad Kashmir\\0061_768402WhatsAppImage2026-02-13at2.42.05PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0062_p01.png",
+   "local_path": "data/interim/images/AJK_0062_p01.png",
+   "page_id": "AJK_0062_p01",
+   "file": "azad Kashmir\\0063_995208WhatsAppImage2026-01-29at4.34.45PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0005_p01.png",
+   "local_path": "data/interim/images/AJK_0005_p01.png",
+   "page_id": "AJK_0005_p01",
+   "file": "azad Kashmir\\0005_837493WhatsAppImage2026-10-30at5.03.44PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "test",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0301_p01.png",
+   "local_path": "data/interim/images/AJK_0301_p01.png",
+   "page_id": "AJK_0301_p01",
+   "file": "azad Kashmir\\0309_868316pr-adm-17-05-23.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "test",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0681_p01.png",
+   "local_path": "data/interim/images/FBR_0681_p01.png",
+   "page_id": "FBR_0681_p01",
+   "file": "FBR\\191(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0683_p09.png",
+   "local_path": "data/interim/images/FBR_0683_p09.png",
+   "page_id": "FBR_0683_p09",
+   "file": "FBR\\251(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0684_p01.png",
+   "local_path": "data/interim/images/FBR_0684_p01.png",
+   "page_id": "FBR_0684_p01",
+   "file": "FBR\\371(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0683_p05.png",
+   "local_path": "data/interim/images/FBR_0683_p05.png",
+   "page_id": "FBR_0683_p05",
+   "file": "FBR\\251(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0683_p01.png",
+   "local_path": "data/interim/images/FBR_0683_p01.png",
+   "page_id": "FBR_0683_p01",
+   "file": "FBR\\251(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0677_p01.png",
+   "local_path": "data/interim/images/FBR_0677_p01.png",
+   "page_id": "FBR_0677_p01",
+   "file": "FBR\\1266(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0674_p01.png",
+   "local_path": "data/interim/images/FBR_0674_p01.png",
+   "page_id": "FBR_0674_p01",
+   "file": "FBR\\108(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0676_p10.png",
+   "local_path": "data/interim/images/FBR_0676_p10.png",
+   "page_id": "FBR_0676_p10",
+   "file": "FBR\\1265(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0676_p08.png",
+   "local_path": "data/interim/images/FBR_0676_p08.png",
+   "page_id": "FBR_0676_p08",
+   "file": "FBR\\1265(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0683_p10.png",
+   "local_path": "data/interim/images/FBR_0683_p10.png",
+   "page_id": "FBR_0683_p10",
+   "file": "FBR\\251(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0683_p06.png",
+   "local_path": "data/interim/images/FBR_0683_p06.png",
+   "page_id": "FBR_0683_p06",
+   "file": "FBR\\251(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0676_p01.png",
+   "local_path": "data/interim/images/FBR_0676_p01.png",
+   "page_id": "FBR_0676_p01",
+   "file": "FBR\\1265(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0676_p07.png",
+   "local_path": "data/interim/images/FBR_0676_p07.png",
+   "page_id": "FBR_0676_p07",
+   "file": "FBR\\1265(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0683_p04.png",
+   "local_path": "data/interim/images/FBR_0683_p04.png",
+   "page_id": "FBR_0683_p04",
+   "file": "FBR\\251(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0673_p01.png",
+   "local_path": "data/interim/images/FBR_0673_p01.png",
+   "page_id": "FBR_0673_p01",
+   "file": "FBR\\107(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0679_p01.png",
+   "local_path": "data/interim/images/FBR_0679_p01.png",
+   "page_id": "FBR_0679_p01",
+   "file": "FBR\\1540(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0683_p07.png",
+   "local_path": "data/interim/images/FBR_0683_p07.png",
+   "page_id": "FBR_0683_p07",
+   "file": "FBR\\251(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0676_p09.png",
+   "local_path": "data/interim/images/FBR_0676_p09.png",
+   "page_id": "FBR_0676_p09",
+   "file": "FBR\\1265(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0683_p08.png",
+   "local_path": "data/interim/images/FBR_0683_p08.png",
+   "page_id": "FBR_0683_p08",
+   "file": "FBR\\251(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0678_p01.png",
+   "local_path": "data/interim/images/FBR_0678_p01.png",
+   "page_id": "FBR_0678_p01",
+   "file": "FBR\\1276(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0676_p04.png",
+   "local_path": "data/interim/images/FBR_0676_p04.png",
+   "page_id": "FBR_0676_p04",
+   "file": "FBR\\1265(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0683_p02.png",
+   "local_path": "data/interim/images/FBR_0683_p02.png",
+   "page_id": "FBR_0683_p02",
+   "file": "FBR\\251(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0680_p01.png",
+   "local_path": "data/interim/images/FBR_0680_p01.png",
+   "page_id": "FBR_0680_p01",
+   "file": "FBR\\18(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0682_p01.png",
+   "local_path": "data/interim/images/FBR_0682_p01.png",
+   "page_id": "FBR_0682_p01",
+   "file": "FBR\\192(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0676_p06.png",
+   "local_path": "data/interim/images/FBR_0676_p06.png",
+   "page_id": "FBR_0676_p06",
+   "file": "FBR\\1265(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0683_p03.png",
+   "local_path": "data/interim/images/FBR_0683_p03.png",
+   "page_id": "FBR_0683_p03",
+   "file": "FBR\\251(I)_2019.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0675_p01.png",
+   "local_path": "data/interim/images/FBR_0675_p01.png",
+   "page_id": "FBR_0675_p01",
+   "file": "FBR\\1200(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0676_p02.png",
+   "local_path": "data/interim/images/FBR_0676_p02.png",
+   "page_id": "FBR_0676_p02",
+   "file": "FBR\\1265(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0676_p03.png",
+   "local_path": "data/interim/images/FBR_0676_p03.png",
+   "page_id": "FBR_0676_p03",
+   "file": "FBR\\1265(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/FBR_0676_p05.png",
+   "local_path": "data/interim/images/FBR_0676_p05.png",
+   "page_id": "FBR_0676_p05",
+   "file": "FBR\\1265(I)_2018.pdf",
+   "source": "FBR",
+   "type": "digital",
+   "split": "test_unseen",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0150_p01.png",
+   "local_path": "data/interim/images/AJK_0150_p01.png",
+   "page_id": "AJK_0150_p01",
+   "file": "azad Kashmir\\0155_585662WhatsAppImage2025-03-12at07.58.57.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0383_p02.png",
+   "local_path": "data/interim/images/AJK_0383_p02.png",
+   "page_id": "AJK_0383_p02",
+   "file": "azad Kashmir\\0394_411987RegistrationScheduleSSC2022-24.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0121_p01.png",
+   "local_path": "data/interim/images/AJK_0121_p01.png",
+   "page_id": "AJK_0121_p01",
+   "file": "azad Kashmir\\0126_571929WhatsAppImage2025-08-01at16.24.47.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0429_p01.png",
+   "local_path": "data/interim/images/AJK_0429_p01.png",
+   "page_id": "AJK_0429_p01",
+   "file": "azad Kashmir\\0441_255859PrRegHSSC2021-23.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0102_p01.png",
+   "local_path": "data/interim/images/AJK_0102_p01.png",
+   "page_id": "AJK_0102_p01",
+   "file": "azad Kashmir\\0107_474670WhatsAppImage2025-09-19at15.40.11.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0448_p01.png",
+   "local_path": "data/interim/images/AJK_0448_p01.png",
+   "page_id": "AJK_0448_p01",
+   "file": "azad Kashmir\\0460_604461PressReleaseSyllabus2021-22.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0116_p01.png",
+   "local_path": "data/interim/images/AJK_0116_p01.png",
+   "page_id": "AJK_0116_p01",
+   "file": "azad Kashmir\\0121_285003ScheduleSSC2ndAnnual2025.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0023_p01.png",
+   "local_path": "data/interim/images/AJK_0023_p01.png",
+   "page_id": "AJK_0023_p01",
+   "file": "azad Kashmir\\0024_83282WhatsAppImage2026-10-01at4.00.27PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0148_p01.png",
+   "local_path": "data/interim/images/AJK_0148_p01.png",
+   "page_id": "AJK_0148_p01",
+   "file": "azad Kashmir\\0153_461853WhatsAppImage2025-03-26at10.54.39.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0416_p01.png",
+   "local_path": "data/interim/images/AJK_0416_p01.png",
+   "page_id": "AJK_0416_p01",
+   "file": "azad Kashmir\\0428_268859notification05-01-22.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0056_p01.png",
+   "local_path": "data/interim/images/AJK_0056_p01.png",
+   "page_id": "AJK_0056_p01",
+   "file": "azad Kashmir\\0057_733764WhatsAppImage2026-02-23at11.48.14AM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0137_p01.png",
+   "local_path": "data/interim/images/AJK_0137_p01.png",
+   "page_id": "AJK_0137_p01",
+   "file": "azad Kashmir\\0142_646728WhatsAppImage2025-05-07at17.42.26.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0144_p01.png",
+   "local_path": "data/interim/images/AJK_0144_p01.png",
+   "page_id": "AJK_0144_p01",
+   "file": "azad Kashmir\\0149_804748PRAdmformHSSC-II1stAnnual2025.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0063_p01.png",
+   "local_path": "data/interim/images/AJK_0063_p01.png",
+   "page_id": "AJK_0063_p01",
+   "file": "azad Kashmir\\0064_228576WhatsAppImage2026-01-27at1.00.40PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0139_p01.png",
+   "local_path": "data/interim/images/AJK_0139_p01.png",
+   "page_id": "AJK_0139_p01",
+   "file": "azad Kashmir\\0144_634185RegistrationScheduleSSC2025-27.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0351_p01.png",
+   "local_path": "data/interim/images/AJK_0351_p01.png",
+   "page_id": "AJK_0351_p01",
+   "file": "azad Kashmir\\0361_772064Adobe_Scan_Oct_26_2022-000.png",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0478_p01.png",
+   "local_path": "data/interim/images/AJK_0478_p01.png",
+   "page_id": "AJK_0478_p01",
+   "file": "azad Kashmir\\0490_862121PressReleaseHSSCExamdateA2021.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0460_p01.png",
+   "local_path": "data/interim/images/AJK_0460_p01.png",
+   "page_id": "AJK_0460_p01",
+   "file": "azad Kashmir\\0472_441528PressReleaseHSSCAnnualExam2021.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0352_p01.png",
+   "local_path": "data/interim/images/AJK_0352_p01.png",
+   "page_id": "AJK_0352_p01",
+   "file": "azad Kashmir\\0362_498321Adobe_Scan_Oct_26_2022-001.png",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0109_p01.png",
+   "local_path": "data/interim/images/AJK_0109_p01.png",
+   "page_id": "AJK_0109_p01",
+   "file": "azad Kashmir\\0114_313568WhatsAppImage2025-09-10at18.13.51.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0479_p01.png",
+   "local_path": "data/interim/images/AJK_0479_p01.png",
+   "page_id": "AJK_0479_p01",
+   "file": "azad Kashmir\\0491_7672153b85016-d476-48ae-bca3-1aee5fe353e8_1_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0383_p01.png",
+   "local_path": "data/interim/images/AJK_0383_p01.png",
+   "page_id": "AJK_0383_p01",
+   "file": "azad Kashmir\\0394_411987RegistrationScheduleSSC2022-24.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0521_p01.png",
+   "local_path": "data/interim/images/AJK_0521_p01.png",
+   "page_id": "AJK_0521_p01",
+   "file": "azad Kashmir\\0536_196929NotificationExamination2020.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0054_p01.png",
+   "local_path": "data/interim/images/AJK_0054_p01.png",
+   "page_id": "AJK_0054_p01",
+   "file": "azad Kashmir\\0055_937652WhatsAppImage2026-02-28at2.28.13PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0484_p01.png",
+   "local_path": "data/interim/images/AJK_0484_p01.png",
+   "page_id": "AJK_0484_p01",
+   "file": "azad Kashmir\\0496_669891RevisedNotification.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0475_p01.png",
+   "local_path": "data/interim/images/AJK_0475_p01.png",
+   "page_id": "AJK_0475_p01",
+   "file": "azad Kashmir\\0487_854675NotificationforAffiliationofAffiliation2021-23.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0116_p02.png",
+   "local_path": "data/interim/images/AJK_0116_p02.png",
+   "page_id": "AJK_0116_p02",
+   "file": "azad Kashmir\\0121_285003ScheduleSSC2ndAnnual2025.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0139_p02.png",
+   "local_path": "data/interim/images/AJK_0139_p02.png",
+   "page_id": "AJK_0139_p02",
+   "file": "azad Kashmir\\0144_634185RegistrationScheduleSSC2025-27.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0106_p01.png",
+   "local_path": "data/interim/images/AJK_0106_p01.png",
+   "page_id": "AJK_0106_p01",
+   "file": "azad Kashmir\\0111_284271PRExamDutiesHSSC2ndAnnual2025.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0079_p01.png",
+   "local_path": "data/interim/images/AJK_0079_p01.png",
+   "page_id": "AJK_0079_p01",
+   "file": "azad Kashmir\\0083_651336PRDutyOrderHSSC2A2025.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0475_p02.png",
+   "local_path": "data/interim/images/AJK_0475_p02.png",
+   "page_id": "AJK_0475_p02",
+   "file": "azad Kashmir\\0487_854675NotificationforAffiliationofAffiliation2021-23.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "val",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0649_p01.png",
+   "local_path": "data/interim/images/AJK_0649_p01.png",
+   "page_id": "AJK_0649_p01",
+   "file": "azad Kashmir\\0667_917205PressRelease03-01-2017.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0372_p01.png",
+   "local_path": "data/interim/images/AJK_0372_p01.png",
+   "page_id": "AJK_0372_p01",
+   "file": "azad Kashmir\\0382_597961Image_70_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0033_p02.png",
+   "local_path": "data/interim/images/AJK_0033_p02.png",
+   "page_id": "AJK_0033_p02",
+   "file": "azad Kashmir\\0034_251678IMG_0026.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0095_p01.png",
+   "local_path": "data/interim/images/AJK_0095_p01.png",
+   "page_id": "AJK_0095_p01",
+   "file": "azad Kashmir\\0099_23498CamScanner10-22-202513.13.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0621_p01.png",
+   "local_path": "data/interim/images/AJK_0621_p01.png",
+   "page_id": "AJK_0621_p01",
+   "file": "azad Kashmir\\0638_256866IMG_20171103_120319_BURST002-vert.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0211_p01.png",
+   "local_path": "data/interim/images/AJK_0211_p01.png",
+   "page_id": "AJK_0211_p01",
+   "file": "azad Kashmir\\0217_896820c6611b03-9c9e-4477-b1d6-5c7654f9d57b.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0278_p01.png",
+   "local_path": "data/interim/images/AJK_0278_p01.png",
+   "page_id": "AJK_0278_p01",
+   "file": "azad Kashmir\\0286_654693PRSSC0208231.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0613_p01.png",
+   "local_path": "data/interim/images/AJK_0613_p01.png",
+   "page_id": "AJK_0613_p01",
+   "file": "azad Kashmir\\0629_829406NotificationAffiliation.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0341_p01.png",
+   "local_path": "data/interim/images/AJK_0341_p01.png",
+   "page_id": "AJK_0341_p01",
+   "file": "azad Kashmir\\0351_361419PR-HSSC-PI-221122.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0647_p01.png",
+   "local_path": "data/interim/images/AJK_0647_p01.png",
+   "page_id": "AJK_0647_p01",
+   "file": "azad Kashmir\\0665_809844paperrechecking.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0182_p02.png",
+   "local_path": "data/interim/images/AJK_0182_p02.png",
+   "page_id": "AJK_0182_p02",
+   "file": "azad Kashmir\\0188_323577regHSSC24-26.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0426_p01.png",
+   "local_path": "data/interim/images/AJK_0426_p01.png",
+   "page_id": "AJK_0426_p01",
+   "file": "azad Kashmir\\0438_608062PR-REG-011221-2.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0289_p01.png",
+   "local_path": "data/interim/images/AJK_0289_p01.png",
+   "page_id": "AJK_0289_p01",
+   "file": "azad Kashmir\\0297_249664PR-INTER-PRAC-23.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0223_p01.png",
+   "local_path": "data/interim/images/AJK_0223_p01.png",
+   "page_id": "AJK_0223_p01",
+   "file": "azad Kashmir\\0229_787628Prac-NB.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0201_p01.png",
+   "local_path": "data/interim/images/AJK_0201_p01.png",
+   "page_id": "AJK_0201_p01",
+   "file": "azad Kashmir\\0207_159759WhatsAppImage2024-05-15at4.39.24PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0044_p01.png",
+   "local_path": "data/interim/images/AJK_0044_p01.png",
+   "page_id": "AJK_0044_p01",
+   "file": "azad Kashmir\\0045_870452PRDUTYHSSC.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0611_p01.png",
+   "local_path": "data/interim/images/AJK_0611_p01.png",
+   "page_id": "AJK_0611_p01",
+   "file": "azad Kashmir\\0627_253509NewDoc2018-02-14_1.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0430_p01.png",
+   "local_path": "data/interim/images/AJK_0430_p01.png",
+   "page_id": "AJK_0430_p01",
+   "file": "azad Kashmir\\0442_303741HSSCRegistrationNotification.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0287_p01.png",
+   "local_path": "data/interim/images/AJK_0287_p01.png",
+   "page_id": "AJK_0287_p01",
+   "file": "azad Kashmir\\0295_195617WhatsAppImage2023-07-07at4.16.23PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0250_p01.png",
+   "local_path": "data/interim/images/AJK_0250_p01.png",
+   "page_id": "AJK_0250_p01",
+   "file": "azad Kashmir\\0257_770385pr-reg-071123.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0048_p01.png",
+   "local_path": "data/interim/images/AJK_0048_p01.png",
+   "page_id": "AJK_0048_p01",
+   "file": "azad Kashmir\\0049_818481HSSC-Marking.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0553_p01.png",
+   "local_path": "data/interim/images/AJK_0553_p01.png",
+   "page_id": "AJK_0553_p01",
+   "file": "azad Kashmir\\0569_9968879d338a4d-ff15-46c0-ae04-3ab3fd754f1f.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0193_p01.png",
+   "local_path": "data/interim/images/AJK_0193_p01.png",
+   "page_id": "AJK_0193_p01",
+   "file": "azad Kashmir\\0199_213562syllabus.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0206_p01.png",
+   "local_path": "data/interim/images/AJK_0206_p01.png",
+   "page_id": "AJK_0206_p01",
+   "file": "azad Kashmir\\0212_492156IMG-20240511-WA0038.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0612_p01.png",
+   "local_path": "data/interim/images/AJK_0612_p01.png",
+   "page_id": "AJK_0612_p01",
+   "file": "azad Kashmir\\0628_267333IMG_20180125_141031.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0264_p01.png",
+   "local_path": "data/interim/images/AJK_0264_p01.png",
+   "page_id": "AJK_0264_p01",
+   "file": "azad Kashmir\\0271_330474PR-SSC-23.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0417_p01.png",
+   "local_path": "data/interim/images/AJK_0417_p01.png",
+   "page_id": "AJK_0417_p01",
+   "file": "azad Kashmir\\0429_216705Image_78_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0355_p01.png",
+   "local_path": "data/interim/images/AJK_0355_p01.png",
+   "page_id": "AJK_0355_p01",
+   "file": "azad Kashmir\\0365_55267hssciipaperrecheking.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0385_p01.png",
+   "local_path": "data/interim/images/AJK_0385_p01.png",
+   "page_id": "AJK_0385_p01",
+   "file": "azad Kashmir\\0396_709777WhatsAppImage2022-05-31at10.14.05AM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0009_p01.png",
+   "local_path": "data/interim/images/AJK_0009_p01.png",
+   "page_id": "AJK_0009_p01",
+   "file": "azad Kashmir\\0009_838409ssc-pba.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0122_p01.png",
+   "local_path": "data/interim/images/AJK_0122_p01.png",
+   "page_id": "AJK_0122_p01",
+   "file": "azad Kashmir\\0127_276733SSC-PR-25.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0041_p01.png",
+   "local_path": "data/interim/images/AJK_0041_p01.png",
+   "page_id": "AJK_0041_p01",
+   "file": "azad Kashmir\\0042_728942IMG-20260605-WA0373.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0566_p01.png",
+   "local_path": "data/interim/images/AJK_0566_p01.png",
+   "page_id": "AJK_0566_p01",
+   "file": "azad Kashmir\\0582_944274PracticalHSSC.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0593_p01.png",
+   "local_path": "data/interim/images/AJK_0593_p01.png",
+   "page_id": "AJK_0593_p01",
+   "file": "azad Kashmir\\0609_55236WhatsAppImage2018-09-05at10.51.07.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0665_p01.png",
+   "local_path": "data/interim/images/AJK_0665_p01.png",
+   "page_id": "AJK_0665_p01",
+   "file": "azad Kashmir\\0684_108173345974scan0001.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0200_p01.png",
+   "local_path": "data/interim/images/AJK_0200_p01.png",
+   "page_id": "AJK_0200_p01",
+   "file": "azad Kashmir\\0206_82305WhatsAppImage2024-05-16at8.52.19AM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0620_p01.png",
+   "local_path": "data/interim/images/AJK_0620_p01.png",
+   "page_id": "AJK_0620_p01",
+   "file": "azad Kashmir\\0637_448822New_Doc_2017-12-07_1_.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0438_p01.png",
+   "local_path": "data/interim/images/AJK_0438_p01.png",
+   "page_id": "AJK_0438_p01",
+   "file": "azad Kashmir\\0450_101989AdobeScan28Oct2021.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0581_p01.png",
+   "local_path": "data/interim/images/AJK_0581_p01.png",
+   "page_id": "AJK_0581_p01",
+   "file": "azad Kashmir\\0597_250946PressReleaseHSSC12-11-2018.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0388_p01.png",
+   "local_path": "data/interim/images/AJK_0388_p01.png",
+   "page_id": "AJK_0388_p01",
+   "file": "azad Kashmir\\0399_861511Image_184_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0084_p01.png",
+   "local_path": "data/interim/images/AJK_0084_p01.png",
+   "page_id": "AJK_0084_p01",
+   "file": "azad Kashmir\\0088_656463hssc-readm-2527.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0241_p01.png",
+   "local_path": "data/interim/images/AJK_0241_p01.png",
+   "page_id": "AJK_0241_p01",
+   "file": "azad Kashmir\\0247_131011IMG-20231208-WA0038.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0365_p01.png",
+   "local_path": "data/interim/images/AJK_0365_p01.png",
+   "page_id": "AJK_0365_p01",
+   "file": "azad Kashmir\\0375_321441AdobeScanSep12_2022.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0127_p01.png",
+   "local_path": "data/interim/images/AJK_0127_p01.png",
+   "page_id": "AJK_0127_p01",
+   "file": "azad Kashmir\\0132_643737REG9EXT.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0461_p01.png",
+   "local_path": "data/interim/images/AJK_0461_p01.png",
+   "page_id": "AJK_0461_p01",
+   "file": "azad Kashmir\\0473_539947SSC2021-23RegistrationSchedule.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0489_p01.png",
+   "local_path": "data/interim/images/AJK_0489_p01.png",
+   "page_id": "AJK_0489_p01",
+   "file": "azad Kashmir\\0501_49835AdobeScan07Jan2021.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0358_p01.png",
+   "local_path": "data/interim/images/AJK_0358_p01.png",
+   "page_id": "AJK_0358_p01",
+   "file": "azad Kashmir\\0368_131591WhatsAppImage2022-10-18at14.56.30.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0366_p01.png",
+   "local_path": "data/interim/images/AJK_0366_p01.png",
+   "page_id": "AJK_0366_p01",
+   "file": "azad Kashmir\\0376_451232Image_94_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0585_p01.png",
+   "local_path": "data/interim/images/AJK_0585_p01.png",
+   "page_id": "AJK_0585_p01",
+   "file": "azad Kashmir\\0601_36691229102012.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0339_p01.png",
+   "local_path": "data/interim/images/AJK_0339_p01.png",
+   "page_id": "AJK_0339_p01",
+   "file": "azad Kashmir\\0349_840087AdobeScanNov29_2022_1_.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0578_p01.png",
+   "local_path": "data/interim/images/AJK_0578_p01.png",
+   "page_id": "AJK_0578_p01",
+   "file": "azad Kashmir\\0594_204040478.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0100_p01.png",
+   "local_path": "data/interim/images/AJK_0100_p01.png",
+   "page_id": "AJK_0100_p01",
+   "file": "azad Kashmir\\0105_897338DISQ-NOT.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0598_p01.png",
+   "local_path": "data/interim/images/AJK_0598_p01.png",
+   "page_id": "AJK_0598_p01",
+   "file": "azad Kashmir\\0614_532867NewNotificationOnline.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0491_p01.png",
+   "local_path": "data/interim/images/AJK_0491_p01.png",
+   "page_id": "AJK_0491_p01",
+   "file": "azad Kashmir\\0503_855499WhatsAppImage2020-12-28at3.26.20PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0424_p01.png",
+   "local_path": "data/interim/images/AJK_0424_p01.png",
+   "page_id": "AJK_0424_p01",
+   "file": "azad Kashmir\\0436_413391mecicalTech.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0390_p01.png",
+   "local_path": "data/interim/images/AJK_0390_p01.png",
+   "page_id": "AJK_0390_p01",
+   "file": "azad Kashmir\\0401_485870Image_102_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0008_p01.png",
+   "local_path": "data/interim/images/AJK_0008_p01.png",
+   "page_id": "AJK_0008_p01",
+   "file": "azad Kashmir\\0008_114990IMG_0052.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0606_p01.png",
+   "local_path": "data/interim/images/AJK_0606_p01.png",
+   "page_id": "AJK_0606_p01",
+   "file": "azad Kashmir\\0622_298034RegistrationSchedule01-vert.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0275_p01.png",
+   "local_path": "data/interim/images/AJK_0275_p01.png",
+   "page_id": "AJK_0275_p01",
+   "file": "azad Kashmir\\0282_777984SSC-150823.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0343_p01.png",
+   "local_path": "data/interim/images/AJK_0343_p01.png",
+   "page_id": "AJK_0343_p01",
+   "file": "azad Kashmir\\0353_44982NotificationforExaminer_HE.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0181_p01.png",
+   "local_path": "data/interim/images/AJK_0181_p01.png",
+   "page_id": "AJK_0181_p01",
+   "file": "azad Kashmir\\0187_445739PR-HSSC-230824.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0196_p01.png",
+   "local_path": "data/interim/images/AJK_0196_p01.png",
+   "page_id": "AJK_0196_p01",
+   "file": "azad Kashmir\\0202_440063prhsscpraca24.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0371_p01.png",
+   "local_path": "data/interim/images/AJK_0371_p01.png",
+   "page_id": "AJK_0371_p01",
+   "file": "azad Kashmir\\0381_867584Image_72_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0488_p01.png",
+   "local_path": "data/interim/images/AJK_0488_p01.png",
+   "page_id": "AJK_0488_p01",
+   "file": "azad Kashmir\\0500_172760sscadmissionschedule.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0361_p02.png",
+   "local_path": "data/interim/images/AJK_0361_p02.png",
+   "page_id": "AJK_0361_p02",
+   "file": "azad Kashmir\\0371_184356Image_164_.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0273_p01.png",
+   "local_path": "data/interim/images/AJK_0273_p01.png",
+   "page_id": "AJK_0273_p01",
+   "file": "azad Kashmir\\0280_41015PR-9th-250823.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0453_p01.png",
+   "local_path": "data/interim/images/AJK_0453_p01.png",
+   "page_id": "AJK_0453_p01",
+   "file": "azad Kashmir\\0465_680725WhatsAppImage2021-08-13at14.27.17.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0536_p01.png",
+   "local_path": "data/interim/images/AJK_0536_p01.png",
+   "page_id": "AJK_0536_p01",
+   "file": "azad Kashmir\\0552_993011NotificationAdmissionScheduleforSSCAppearinSupply2019.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0076_p02.png",
+   "local_path": "data/interim/images/AJK_0076_p02.png",
+   "page_id": "AJK_0076_p02",
+   "file": "azad Kashmir\\0079_900024PressRelease.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0213_p01.png",
+   "local_path": "data/interim/images/AJK_0213_p01.png",
+   "page_id": "AJK_0213_p01",
+   "file": "azad Kashmir\\0219_540252CamScanner04-16-202417.27.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0524_p01.png",
+   "local_path": "data/interim/images/AJK_0524_p01.png",
+   "page_id": "AJK_0524_p01",
+   "file": "azad Kashmir\\0539_669860NotificationforCancellationofPapers.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0519_p01.png",
+   "local_path": "data/interim/images/AJK_0519_p01.png",
+   "page_id": "AJK_0519_p01",
+   "file": "azad Kashmir\\0533_374023WhatsAppImage2020-06-11at12.35.37.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0532_p01.png",
+   "local_path": "data/interim/images/AJK_0532_p01.png",
+   "page_id": "AJK_0532_p01",
+   "file": "azad Kashmir\\0548_46142PressReleaseExaminationCentre.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0222_p01.png",
+   "local_path": "data/interim/images/AJK_0222_p01.png",
+   "page_id": "AJK_0222_p01",
+   "file": "azad Kashmir\\0228_264953PressReleaseHSSCadmextension.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0398_p01.png",
+   "local_path": "data/interim/images/AJK_0398_p01.png",
+   "page_id": "AJK_0398_p01",
+   "file": "azad Kashmir\\0409_423248Image_114_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0279_p01.png",
+   "local_path": "data/interim/images/AJK_0279_p01.png",
+   "page_id": "AJK_0279_p01",
+   "file": "azad Kashmir\\0287_678527PR-SSC-020823.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0559_p01.png",
+   "local_path": "data/interim/images/AJK_0559_p01.png",
+   "page_id": "AJK_0559_p01",
+   "file": "azad Kashmir\\0575_127868PressRelease9thRechecking.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0558_p01.png",
+   "local_path": "data/interim/images/AJK_0558_p01.png",
+   "page_id": "AJK_0558_p01",
+   "file": "azad Kashmir\\0574_676239NotificationRegistration2019-21-vert.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0021_p01.png",
+   "local_path": "data/interim/images/AJK_0021_p01.png",
+   "page_id": "AJK_0021_p01",
+   "file": "azad Kashmir\\0022_507324IMG_0049.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0291_p01.png",
+   "local_path": "data/interim/images/AJK_0291_p01.png",
+   "page_id": "AJK_0291_p01",
+   "file": "azad Kashmir\\0299_684082PR-HSSC-23.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0001_p01.png",
+   "local_path": "data/interim/images/AJK_0001_p01.png",
+   "page_id": "AJK_0001_p01",
+   "file": "azad Kashmir\\0001_541442IMG_0066.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0269_p01.png",
+   "local_path": "data/interim/images/AJK_0269_p01.png",
+   "page_id": "AJK_0269_p01",
+   "file": "azad Kashmir\\0276_8648681.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0325_p02.png",
+   "local_path": "data/interim/images/AJK_0325_p02.png",
+   "page_id": "AJK_0325_p02",
+   "file": "azad Kashmir\\0333_212249HSSCadmissionSchedule2023.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0614_p01.png",
+   "local_path": "data/interim/images/AJK_0614_p01.png",
+   "page_id": "AJK_0614_p01",
+   "file": "azad Kashmir\\0630_680755IMG_20180110_102815.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0618_p01.png",
+   "local_path": "data/interim/images/AJK_0618_p01.png",
+   "page_id": "AJK_0618_p01",
+   "file": "azad Kashmir\\0635_759490NewDoc2017-12-13.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0086_p01.png",
+   "local_path": "data/interim/images/AJK_0086_p01.png",
+   "page_id": "AJK_0086_p01",
+   "file": "azad Kashmir\\0090_727996CamScanner11-04-202509.46.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0625_p01.png",
+   "local_path": "data/interim/images/AJK_0625_p01.png",
+   "page_id": "AJK_0625_p01",
+   "file": "azad Kashmir\\0642_831970notification.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0119_p01.png",
+   "local_path": "data/interim/images/AJK_0119_p01.png",
+   "page_id": "AJK_0119_p01",
+   "file": "azad Kashmir\\0124_108795HSSCMT2025-27.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0627_p01.png",
+   "local_path": "data/interim/images/AJK_0627_p01.png",
+   "page_id": "AJK_0627_p01",
+   "file": "azad Kashmir\\0644_344512036.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0350_p01.png",
+   "local_path": "data/interim/images/AJK_0350_p01.png",
+   "page_id": "AJK_0350_p01",
+   "file": "azad Kashmir\\0360_898803WhatsAppImage2022-10-31at16.20.07.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0140_p01.png",
+   "local_path": "data/interim/images/AJK_0140_p01.png",
+   "page_id": "AJK_0140_p01",
+   "file": "azad Kashmir\\0145_200836PRE-Sheets1stExam.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0595_p01.png",
+   "local_path": "data/interim/images/AJK_0595_p01.png",
+   "page_id": "AJK_0595_p01",
+   "file": "azad Kashmir\\0611_392669WhatsAppImage2018-08-31at11.08.12.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0248_p01.png",
+   "local_path": "data/interim/images/AJK_0248_p01.png",
+   "page_id": "AJK_0248_p01",
+   "file": "azad Kashmir\\0255_861511PRHSSC141123.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0132_p01.png",
+   "local_path": "data/interim/images/AJK_0132_p01.png",
+   "page_id": "AJK_0132_p01",
+   "file": "azad Kashmir\\0137_295013PRPracticalDuty.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0369_p01.png",
+   "local_path": "data/interim/images/AJK_0369_p01.png",
+   "page_id": "AJK_0369_p01",
+   "file": "azad Kashmir\\0379_708679Image_77_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0542_p02.png",
+   "local_path": "data/interim/images/AJK_0542_p02.png",
+   "page_id": "AJK_0542_p02",
+   "file": "azad Kashmir\\0558_901916SSCAnnual2020Schedule.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0097_p01.png",
+   "local_path": "data/interim/images/AJK_0097_p01.png",
+   "page_id": "AJK_0097_p01",
+   "file": "azad Kashmir\\0101_514678IMG-20251010-WA0063.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0308_p01.png",
+   "local_path": "data/interim/images/AJK_0308_p01.png",
+   "page_id": "AJK_0308_p01",
+   "file": "azad Kashmir\\0316_739593PR-SSC-A-23.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0434_p01.png",
+   "local_path": "data/interim/images/AJK_0434_p01.png",
+   "page_id": "AJK_0434_p01",
+   "file": "azad Kashmir\\0446_146484Merged_document_1_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0387_p01.png",
+   "local_path": "data/interim/images/AJK_0387_p01.png",
+   "page_id": "AJK_0387_p01",
+   "file": "azad Kashmir\\0398_906127Image_191_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0314_p01.png",
+   "local_path": "data/interim/images/AJK_0314_p01.png",
+   "page_id": "AJK_0314_p01",
+   "file": "azad Kashmir\\0322_886505imgonline-com-ua-twotoone-OSIKPzKcetcoCjih.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0530_p01.png",
+   "local_path": "data/interim/images/AJK_0530_p01.png",
+   "page_id": "AJK_0530_p01",
+   "file": "azad Kashmir\\0545_241302PressreleaseAlternatecentre02.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0465_p01.png",
+   "local_path": "data/interim/images/AJK_0465_p01.png",
+   "page_id": "AJK_0465_p01",
+   "file": "azad Kashmir\\0477_355560WhatsAppImage2021-05-08at10.17.55.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0428_p01.png",
+   "local_path": "data/interim/images/AJK_0428_p01.png",
+   "page_id": "AJK_0428_p01",
+   "file": "azad Kashmir\\0440_95458AdobeScan22Nov2021.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0217_p01.png",
+   "local_path": "data/interim/images/AJK_0217_p01.png",
+   "page_id": "AJK_0217_p01",
+   "file": "azad Kashmir\\0223_901550WhatsAppImage2024-03-29at12.54.25PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0509_p01.png",
+   "local_path": "data/interim/images/AJK_0509_p01.png",
+   "page_id": "AJK_0509_p01",
+   "file": "azad Kashmir\\0523_927062NotificatonforMTINSREG.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0298_p01.png",
+   "local_path": "data/interim/images/AJK_0298_p01.png",
+   "page_id": "AJK_0298_p01",
+   "file": "azad Kashmir\\0306_49652PR-HSSC-PI-23.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0396_p01.png",
+   "local_path": "data/interim/images/AJK_0396_p01.png",
+   "page_id": "AJK_0396_p01",
+   "file": "azad Kashmir\\0407_97747scheduleofexamhssc.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0386_p01.png",
+   "local_path": "data/interim/images/AJK_0386_p01.png",
+   "page_id": "AJK_0386_p01",
+   "file": "azad Kashmir\\0397_102325Image_229_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0607_p01.png",
+   "local_path": "data/interim/images/AJK_0607_p01.png",
+   "page_id": "AJK_0607_p01",
+   "file": "azad Kashmir\\0623_177459NewDoc2018-04-16_1.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0347_p01.png",
+   "local_path": "data/interim/images/AJK_0347_p01.png",
+   "page_id": "AJK_0347_p01",
+   "file": "azad Kashmir\\0357_247741Pr-SSC-Prac-22.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0229_p01.png",
+   "local_path": "data/interim/images/AJK_0229_p01.png",
+   "page_id": "AJK_0229_p01",
+   "file": "azad Kashmir\\0235_686401PRHSSCDuties.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0305_p01.png",
+   "local_path": "data/interim/images/AJK_0305_p01.png",
+   "page_id": "AJK_0305_p01",
+   "file": "azad Kashmir\\0313_805450NACTA.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0316_p01.png",
+   "local_path": "data/interim/images/AJK_0316_p01.png",
+   "page_id": "AJK_0316_p01",
+   "file": "azad Kashmir\\0324_231048WhatsAppImage2023-02-24at2.37.41PM.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0136_p01.png",
+   "local_path": "data/interim/images/AJK_0136_p01.png",
+   "page_id": "AJK_0136_p01",
+   "file": "azad Kashmir\\0141_444305CamScanner09-05-202515.39.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0655_p01.png",
+   "local_path": "data/interim/images/AJK_0655_p01.png",
+   "page_id": "AJK_0655_p01",
+   "file": "azad Kashmir\\0673_484568PressRelease25-11-2016.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0660_p01.png",
+   "local_path": "data/interim/images/AJK_0660_p01.png",
+   "page_id": "AJK_0660_p01",
+   "file": "azad Kashmir\\0678_786471PressReleaseSSC18-10-2016.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0644_p01.png",
+   "local_path": "data/interim/images/AJK_0644_p01.png",
+   "page_id": "AJK_0644_p01",
+   "file": "azad Kashmir\\0662_178100notification.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0039_p01.png",
+   "local_path": "data/interim/images/AJK_0039_p01.png",
+   "page_id": "AJK_0039_p01",
+   "file": "azad Kashmir\\0040_7568mathhssc26.jpeg.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0431_p01.png",
+   "local_path": "data/interim/images/AJK_0431_p01.png",
+   "page_id": "AJK_0431_p01",
+   "file": "azad Kashmir\\0443_928619AdobeScanNov17_2021.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 1
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0526_p01.png",
+   "local_path": "data/interim/images/AJK_0526_p01.png",
+   "page_id": "AJK_0526_p01",
+   "file": "azad Kashmir\\0541_688110PassPercentage.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0057_p01.png",
+   "local_path": "data/interim/images/AJK_0057_p01.png",
+   "page_id": "AJK_0057_p01",
+   "file": "azad Kashmir\\0058_248718CamScanner02-20-202611.58_1_.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0011_p01.png",
+   "local_path": "data/interim/images/AJK_0011_p01.png",
+   "page_id": "AJK_0011_p01",
+   "file": "azad Kashmir\\0011_272033Sample10-15-202615.45_02.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0160_p01.png",
+   "local_path": "data/interim/images/AJK_0160_p01.png",
+   "page_id": "AJK_0160_p01",
+   "file": "azad Kashmir\\0165_833374rev-pr-rc-11.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0596_p01.png",
+   "local_path": "data/interim/images/AJK_0596_p01.png",
+   "page_id": "AJK_0596_p01",
+   "file": "azad Kashmir\\0612_514434HSSCSupplyExam2018.pdf",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0380_p01.png",
+   "local_path": "data/interim/images/AJK_0380_p01.png",
+   "page_id": "AJK_0380_p01",
+   "file": "azad Kashmir\\0391_736083Image_8_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0035_p02.png",
+   "local_path": "data/interim/images/AJK_0035_p02.png",
+   "page_id": "AJK_0035_p02",
+   "file": "azad Kashmir\\0036_948822IMG_0022.pdf",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0058_p01.png",
+   "local_path": "data/interim/images/AJK_0058_p01.png",
+   "page_id": "AJK_0058_p01",
+   "file": "azad Kashmir\\0059_988708DOC-20260219-WA0024._1_.jpg",
+   "source": "AJK",
+   "type": "scan",
+   "split": "train",
+   "low_res": 0,
+   "pass2": 0
+  }
+ },
+ {
+  "data": {
+   "image": "/data/local-files/?d=data/interim/images/AJK_0591_p01.png",
+   "local_path": "data/interim/images/AJK_0591_p01.png",
+   "page_id": "AJK_0591_p01",
+   "file": "azad Kashmir\\0607_202911WhatsAppImage2018-09-25at15.20.08.jpeg.jpg",
+   "source": "AJK",
+   "type": "photo",
+   "split": "train",
+   "low_res": 1,
+   "pass2": 0
+  }
+ }
+]

@@ -429,3 +429,7 @@ FodyWeavers.xsd
 
 # Large archives (GitHub 100MB limit)
 *.zip
+
+# --- Nastaliq project ---
+build/                 # packaged uploads (e.g. annotate_upload.zip), regenerable
+data/processed/lines/  # optional OCR line crops (export_to_json.py --crops)

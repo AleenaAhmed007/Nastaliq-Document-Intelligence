@@ -1,0 +1,168 @@
+{
+ "page_id": "AJK_0009_p01",
+ "file": "azad Kashmir\\0009_838409ssc-pba.jpeg.jpg",
+ "image": "data/interim/images/AJK_0009_p01.png",
+ "width": 1263,
+ "height": 1539,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 1,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    192.4,
+    33.9,
+    949.6,
+    130.8
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "11233-41",
+   "bbox": [
+    58.6,
+    166.8,
+    1017.5,
+    441.8
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "21-10-2026",
+   "bbox": [
+    0.0,
+    812.3,
+    198.0,
+    76.6
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    884.1,
+    138.5,
+    277.9,
+    61.6
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    192.4,
+    33.9,
+    949.6,
+    130.8
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    884.1,
+    138.5,
+    277.9,
+    61.6
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    58.6,
+    166.8,
+    1017.5,
+    441.8
+   ],
+   "text": "11233-41",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    58.6,
+    166.8,
+    1017.5,
+    441.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    196.6,
+    651.5,
+    344.0,
+    160.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "stamp_signature",
+   "bbox": [
+    198.0,
+    812.3,
+    260.2,
+    76.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    0.0,
+    812.3,
+    198.0,
+    76.6
+   ],
+   "text": "21-10-2026",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_8",
+   "label": "distribution_list",
+   "bbox": [
+    6.1,
+    934.0,
+    1157.0,
+    592.1
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

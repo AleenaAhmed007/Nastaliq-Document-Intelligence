@@ -1,0 +1,790 @@
+﻿page_id,image,file,page,doc_id,group,source,type,low_res,width,height,year,split,annotate,producer
+AJK_0001_p01,data\interim\images\AJK_0001_p01.png,azad Kashmir\0001_541442IMG_0066.jpg,1,AJK_0001,AJK_0001,AJK,photo,0,2108,3197,,train,1,
+AJK_0002_p01,data\interim\images\AJK_0002_p01.png,azad Kashmir\0002_531127WhatsAppImage2026-11-11at4.16.44PM.jpeg.jpg,1,AJK_0002,AJK_0002,AJK,photo,1,1177,1599,2026,test,1,
+AJK_0003_p01,data\interim\images\AJK_0003_p01.png,azad Kashmir\0003_848419WhatsAppImage2026-11-05at4.50.22PM.jpeg.jpg,1,AJK_0003,AJK_0003,AJK,photo,0,1105,1600,2026,test,1,
+AJK_0004_p01,data\interim\images\AJK_0004_p01.png,azad Kashmir\0004_865173IMG_0065.jpg,1,AJK_0004,AJK_0004,AJK,photo,0,2096,2960,,train,0,
+AJK_0005_p01,data\interim\images\AJK_0005_p01.png,azad Kashmir\0005_837493WhatsAppImage2026-10-30at5.03.44PM.jpeg.jpg,1,AJK_0005,AJK_0005,AJK,photo,0,1138,1600,2026,test,1,
+AJK_0006_p01,data\interim\images\AJK_0006_p01.png,azad Kashmir\0006_480255IMG_0056.jpg,1,AJK_0006,AJK_0006,AJK,photo,0,2091,3349,,train,0,
+AJK_0007_p01,data\interim\images\AJK_0007_p01.png,azad Kashmir\0007_489166IMG_0055.jpg,1,AJK_0007,AJK_0007,AJK,photo,0,2030,2981,,train,0,
+AJK_0008_p01,data\interim\images\AJK_0008_p01.png,azad Kashmir\0008_114990IMG_0052.jpg,1,AJK_0008,AJK_0008,AJK,photo,0,2108,3237,,train,1,
+AJK_0009_p01,data\interim\images\AJK_0009_p01.png,azad Kashmir\0009_838409ssc-pba.jpeg.jpg,1,AJK_0009,AJK_0009,AJK,scan,1,1263,1539,,train,1,
+AJK_0010_p01,data\interim\images\AJK_0010_p01.png,azad Kashmir\0010_390136RevisedadmScheduleSSC-I2A2026.jpg,1,AJK_0010,AJK_0010,AJK,scan,0,2035,3300,2026,test,1,
+AJK_0011_p01,data\interim\images\AJK_0011_p01.png,azad Kashmir\0011_272033Sample10-15-202615.45_02.jpg,1,AJK_0011,AJK_0011,AJK,scan,0,2400,3436,,train,1,
+AJK_0012_p01,data\interim\images\AJK_0012_p01.png,azad Kashmir\0012_316314WhatsAppImage2026-10-13at4.36.43PM.jpeg.jpg,1,AJK_0012,AJK_0012,AJK,photo,1,1134,1599,2026,test,1,
+AJK_0013_p01,data\interim\images\AJK_0013_p01.png,azad Kashmir\0013_522583WhatsAppImage2026-10-13at11.03.16AM.jpeg.jpg,1,AJK_0013,AJK_0013,AJK,photo,0,1013,1600,2026,test,1,
+AJK_0014_p01,data\interim\images\AJK_0014_p01.png,azad Kashmir\0014_56579WhatsAppImage2026-10-13at9.04.59AM.jpeg.jpg,1,AJK_0014,AJK_0014,AJK,photo,1,942,1280,2026,test,1,
+AJK_0015_p01,data\interim\images\AJK_0015_p01.png,azad Kashmir\0015_66314IMG-20261012-WA0268.jpg,1,AJK_0015,AJK_0015,AJK,photo,1,919,1280,,train,0,
+AJK_0016_p01,data\interim\images\AJK_0016_p01.png,azad Kashmir\0017_678710ssc-i-rechk.jpeg.jpg,1,AJK_0016,AJK_0016,AJK,scan,1,879,1280,,train,0,
+AJK_0017_p01,data\interim\images\AJK_0017_p01.png,azad Kashmir\0018_409484SSC-DUTY.jpeg.jpg,1,AJK_0017,AJK_0017,AJK,scan,1,1045,1563,,train,0,
+AJK_0018_p01,data\interim\images\AJK_0018_p01.png,azad Kashmir\0019_127563SSC-I-REV.jpeg.jpg,1,AJK_0018,AJK_0018,AJK,scan,1,1067,1566,,train,0,
+AJK_0019_p01,data\interim\images\AJK_0019_p01.png,azad Kashmir\0020_195312IMG_0051.jpg,1,AJK_0019,AJK_0019,AJK,photo,0,2105,2969,,train,0,
+AJK_0020_p01,data\interim\images\AJK_0020_p01.png,azad Kashmir\0021_581420IMG_0050.jpg,1,AJK_0020,AJK_0020,AJK,photo,0,2105,2969,,train,0,
+AJK_0021_p01,data\interim\images\AJK_0021_p01.png,azad Kashmir\0022_507324IMG_0049.jpg,1,AJK_0021,AJK_0021,AJK,photo,0,2117,3220,,train,1,
+AJK_0022_p01,data\interim\images\AJK_0022_p01.png,azad Kashmir\0023_546020HSSC2NDA.pdf,1,AJK_0022,AJK_0022,AJK,scan,0,2480,3509,,train,0,Pdftools SDK
+AJK_0022_p02,data\interim\images\AJK_0022_p02.png,azad Kashmir\0023_546020HSSC2NDA.pdf,2,AJK_0022,AJK_0022,AJK,scan,0,2480,3509,,train,0,Pdftools SDK
+AJK_0023_p01,data\interim\images\AJK_0023_p01.png,azad Kashmir\0024_83282WhatsAppImage2026-10-01at4.00.27PM.jpeg.jpg,1,AJK_0023,AJK_0023,AJK,photo,0,1014,1600,2026,val,1,
+AJK_0024_p01,data\interim\images\AJK_0024_p01.png,azad Kashmir\0025_549316IMG_0043.jpg,1,AJK_0024,AJK_0024,AJK,photo,0,2089,3194,,train,0,
+AJK_0025_p01,data\interim\images\AJK_0025_p01.png,azad Kashmir\0026_659606Reg26-28.jpeg.jpg,1,AJK_0025,AJK_0025,AJK,scan,1,1119,1599,,train,0,
+AJK_0026_p01,data\interim\images\AJK_0026_p01.png,azad Kashmir\0027_411285PRHSSC26.jpeg.jpg,1,AJK_0026,AJK_0026,AJK,scan,0,999,1600,,train,0,
+AJK_0027_p01,data\interim\images\AJK_0027_p01.png,azad Kashmir\0028_990295IMG_0038.jpg,1,AJK_0027,AJK_0027,AJK,photo,0,2157,3009,,train,0,
+AJK_0028_p01,data\interim\images\AJK_0028_p01.png,azad Kashmir\0029_500091WhatsAppImage2026-09-22at11.23.45AM.jpeg.jpg,1,AJK_0028,AJK_0028,AJK,photo,1,886,1377,2026,test,1,
+AJK_0029_p01,data\interim\images\AJK_0029_p01.png,azad Kashmir\0030_308074WhatsAppImage2026-09-22at10.34.26AM.jpeg.jpg,1,AJK_0029,AJK_0029,AJK,photo,0,1072,1600,2026,test,1,
+AJK_0030_p01,data\interim\images\AJK_0030_p01.png,azad Kashmir\0031_849365WhatsAppImage2026-09-21at4.36.45PM.jpeg.jpg,1,AJK_0030,AJK_0030,AJK,photo,0,1136,1600,2026,test,1,
+AJK_0031_p01,data\interim\images\AJK_0031_p01.png,azad Kashmir\0032_285156WhatsAppImage2026-09-11at4.35.02PM.jpeg.jpg,1,AJK_0031,AJK_0031,AJK,photo,0,1149,1600,2026,test,1,
+AJK_0032_p01,data\interim\images\AJK_0032_p01.png,azad Kashmir\0033_312622prrechkssc.jpeg.jpg,1,AJK_0032,AJK_0032,AJK,scan,1,942,1280,,train,0,
+AJK_0033_p01,data\interim\images\AJK_0033_p01.png,azad Kashmir\0034_251678IMG_0026.pdf,1,AJK_0033,AJK_0033,AJK,photo,0,2480,3509,,train,0,Pdftools SDK
+AJK_0033_p02,data\interim\images\AJK_0033_p02.png,azad Kashmir\0034_251678IMG_0026.pdf,2,AJK_0033,AJK_0033,AJK,photo,0,2480,3509,,train,1,Pdftools SDK
+AJK_0034_p01,data\interim\images\AJK_0034_p01.png,azad Kashmir\0035_755462IMG_0024.pdf,1,AJK_0034,AJK_0034,AJK,photo,0,2480,3509,,train,0,Pdftools SDK
+AJK_0034_p02,data\interim\images\AJK_0034_p02.png,azad Kashmir\0035_755462IMG_0024.pdf,2,AJK_0034,AJK_0034,AJK,photo,0,2480,3509,,train,0,Pdftools SDK
+AJK_0035_p01,data\interim\images\AJK_0035_p01.png,azad Kashmir\0036_948822IMG_0022.pdf,1,AJK_0035,AJK_0035,AJK,photo,0,2480,3509,,train,0,Pdftools SDK
+AJK_0035_p02,data\interim\images\AJK_0035_p02.png,azad Kashmir\0036_948822IMG_0022.pdf,2,AJK_0035,AJK_0035,AJK,photo,0,2480,3509,,train,1,Pdftools SDK
+AJK_0036_p01,data\interim\images\AJK_0036_p01.png,azad Kashmir\0037_692169WhatsAppImage2026-08-25at4.47.45PM.jpeg.jpg,1,AJK_0036,AJK_0036,AJK,photo,1,925,1280,2026,test,1,
+AJK_0037_p01,data\interim\images\AJK_0037_p01.png,azad Kashmir\0038_488159PRPositionandResultSSC1A2026.pdf,1,AJK_0037,AJK_0037,AJK,photo,0,2052,3301,2026,test,1,Adobe Scan for Android 26.08.10-google-dynamic Adobe Scan fo
+AJK_0038_p01,data\interim\images\AJK_0038_p01.png,azad Kashmir\0039_115631PRREG2628.jpeg.jpg,1,AJK_0038,AJK_0031,AJK,scan,1,908,1280,,test,1,
+AJK_0039_p01,data\interim\images\AJK_0039_p01.png,azad Kashmir\0040_7568mathhssc26.jpeg.jpg,1,AJK_0039,AJK_0039,AJK,scan,1,817,1280,,train,1,
+AJK_0040_p01,data\interim\images\AJK_0040_p01.png,azad Kashmir\0041_388854IMG-20260605-WA0246.jpg,1,AJK_0040,AJK_0040,AJK,photo,0,1173,1600,,train,0,
+AJK_0041_p01,data\interim\images\AJK_0041_p01.png,azad Kashmir\0042_728942IMG-20260605-WA0373.jpg,1,AJK_0041,AJK_0041,AJK,photo,0,3034,2392,,train,1,
+AJK_0042_p01,data\interim\images\AJK_0042_p01.png,azad Kashmir\0043_379913IMG-20260605-WA0368.jpg,1,AJK_0042,AJK_0042,AJK,photo,0,1600,1262,,train,0,
+AJK_0043_p01,data\interim\images\AJK_0043_p01.png,azad Kashmir\0044_536315RNOSLIP11.jpg,1,AJK_0043,AJK_0043,AJK,scan,0,2032,3309,,train,0,
+AJK_0044_p01,data\interim\images\AJK_0044_p01.png,azad Kashmir\0045_870452PRDUTYHSSC.jpeg.jpg,1,AJK_0044,AJK_0044,AJK,scan,1,1181,1565,,train,1,
+AJK_0045_p01,data\interim\images\AJK_0045_p01.png,azad Kashmir\0046_520996PR-PRAC-SSC.jpeg.jpg,1,AJK_0045,AJK_0045,AJK,scan,1,816,1248,,train,0,
+AJK_0046_p01,data\interim\images\AJK_0046_p01.png,azad Kashmir\0047_34027PRRollNoslipsHSSC-II1stA2026.pdf,1,AJK_0046,AJK_0046,AJK,photo,0,2023,3301,2026,test,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0047_p01,data\interim\images\AJK_0047_p01.png,azad Kashmir\0048_90850SSC-Marking.pdf,1,AJK_0047,AJK_0047,AJK,scan,0,2480,3509,,train,0,Pdftools SDK
+AJK_0047_p02,data\interim\images\AJK_0047_p02.png,azad Kashmir\0048_90850SSC-Marking.pdf,2,AJK_0047,AJK_0047,AJK,scan,0,2480,3509,,train,0,Pdftools SDK
+AJK_0047_p03,data\interim\images\AJK_0047_p03.png,azad Kashmir\0048_90850SSC-Marking.pdf,3,AJK_0047,AJK_0047,AJK,scan,0,2480,3509,,train,0,Pdftools SDK
+AJK_0047_p04,data\interim\images\AJK_0047_p04.png,azad Kashmir\0048_90850SSC-Marking.pdf,4,AJK_0047,AJK_0047,AJK,scan,0,2480,3509,,train,0,Pdftools SDK
+AJK_0048_p01,data\interim\images\AJK_0048_p01.png,azad Kashmir\0049_818481HSSC-Marking.pdf,1,AJK_0048,AJK_0048,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0048_p02,data\interim\images\AJK_0048_p02.png,azad Kashmir\0049_818481HSSC-Marking.pdf,2,AJK_0048,AJK_0048,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0049_p01,data\interim\images\AJK_0049_p01.png,azad Kashmir\0050_550811Reg-ssc-2026-28.pdf,1,AJK_0049,AJK_0049,AJK,photo,0,2480,3509,2026,test,1,intsig.com pdf producer
+AJK_0049_p02,data\interim\images\AJK_0049_p02.png,azad Kashmir\0050_550811Reg-ssc-2026-28.pdf,2,AJK_0049,AJK_0049,AJK,photo,0,2480,3509,2026,test,1,intsig.com pdf producer
+AJK_0050_p01,data\interim\images\AJK_0050_p01.png,azad Kashmir\0051_725402rnoslips9th.jpeg.jpg,1,AJK_0050,AJK_0050,AJK,scan,1,1125,1599,,train,0,
+AJK_0051_p01,data\interim\images\AJK_0051_p01.png,azad Kashmir\0052_9918WhatsAppImage2026-03-26at1.53.27PM.jpeg.jpg,1,AJK_0051,AJK_0051,AJK,photo,1,1267,1585,2026,test,1,
+AJK_0052_p01,data\interim\images\AJK_0052_p01.png,azad Kashmir\0053_449645WhatsAppImage2026-03-26at10.02.04AM.jpeg.jpg,1,AJK_0052,AJK_0052,AJK,photo,0,1117,1600,2026,test,1,
+AJK_0053_p01,data\interim\images\AJK_0053_p01.png,azad Kashmir\0054_949310WhatsAppImage2026-03-05at10.58.10AM.jpeg.jpg,1,AJK_0053,AJK_0053,AJK,photo,1,1000,1499,2026,test,1,
+AJK_0054_p01,data\interim\images\AJK_0054_p01.png,azad Kashmir\0055_937652WhatsAppImage2026-02-28at2.28.13PM.jpeg.jpg,1,AJK_0054,AJK_0054,AJK,photo,1,1131,1599,2026,val,1,
+AJK_0055_p01,data\interim\images\AJK_0055_p01.png,azad Kashmir\0056_280364dfb2cb2db38f4ce287f048df9bc87f76.jpg,1,AJK_0055,AJK_0055,AJK,scan,1,907,1526,,train,0,
+AJK_0056_p01,data\interim\images\AJK_0056_p01.png,azad Kashmir\0057_733764WhatsAppImage2026-02-23at11.48.14AM.jpeg.jpg,1,AJK_0056,AJK_0056,AJK,photo,0,1048,1600,2026,val,1,
+AJK_0057_p01,data\interim\images\AJK_0057_p01.png,azad Kashmir\0058_248718CamScanner02-20-202611.58_1_.pdf,1,AJK_0057,AJK_0057,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0058_p01,data\interim\images\AJK_0058_p01.png,azad Kashmir\0059_988708DOC-20260219-WA0024._1_.jpg,1,AJK_0058,AJK_0058,AJK,scan,0,2480,3509,,train,1,
+AJK_0059_p01,data\interim\images\AJK_0059_p01.png,azad Kashmir\0060_197601WhatsAppImage2026-02-14at12.40.29PM.jpeg.jpg,1,AJK_0059,AJK_0059,AJK,photo,1,785,1280,2026,test,1,
+AJK_0060_p01,data\interim\images\AJK_0060_p01.png,azad Kashmir\0061_768402WhatsAppImage2026-02-13at2.42.05PM.jpeg.jpg,1,AJK_0060,AJK_0060,AJK,photo,0,1061,1600,2026,test,1,
+AJK_0061_p01,data\interim\images\AJK_0061_p01.png,azad Kashmir\0062_700714WhatsAppImage2026-01-30at3.59.30PM.jpeg.jpg,1,AJK_0061,AJK_0061,AJK,photo,0,1189,1600,2026,test,1,
+AJK_0062_p01,data\interim\images\AJK_0062_p01.png,azad Kashmir\0063_995208WhatsAppImage2026-01-29at4.34.45PM.jpeg.jpg,1,AJK_0062,AJK_0062,AJK,photo,0,1123,1600,2026,test,1,
+AJK_0063_p01,data\interim\images\AJK_0063_p01.png,azad Kashmir\0064_228576WhatsAppImage2026-01-27at1.00.40PM.jpeg.jpg,1,AJK_0063,AJK_0063,AJK,photo,0,1097,1600,2026,val,1,
+AJK_0064_p01,data\interim\images\AJK_0064_p01.png,azad Kashmir\0065_414184CamScanner01-26-202613.42.pdf,1,AJK_0064,AJK_0064,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0064_p02,data\interim\images\AJK_0064_p02.png,azad Kashmir\0065_414184CamScanner01-26-202613.42.pdf,2,AJK_0064,AJK_0064,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0064_p03,data\interim\images\AJK_0064_p03.png,azad Kashmir\0065_414184CamScanner01-26-202613.42.pdf,3,AJK_0064,AJK_0064,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0065_p01,data\interim\images\AJK_0065_p01.png,azad Kashmir\0066_699157WhatsAppImage2026-01-23at12.02.57PM.jpeg.jpg,1,AJK_0065,AJK_0065,AJK,photo,0,1063,1600,2026,test,1,
+AJK_0066_p01,data\interim\images\AJK_0066_p01.png,azad Kashmir\0068_647186WhatsAppImage2026-01-20at4.40.35PM.jpeg.jpg,1,AJK_0066,AJK_0066,AJK,photo,1,1138,1569,2026,test,1,
+AJK_0067_p01,data\interim\images\AJK_0067_p01.png,azad Kashmir\0069_797180WhatsAppImage2026-01-15at12.38.36PM.jpeg.jpg,1,AJK_0067,AJK_0067,AJK,photo,1,766,1280,2026,test,1,
+AJK_0068_p01,data\interim\images\AJK_0068_p01.png,azad Kashmir\0070_971557CamScanner01-13-202612.57.pdf,1,AJK_0068,AJK_0068,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0068_p02,data\interim\images\AJK_0068_p02.png,azad Kashmir\0070_971557CamScanner01-13-202612.57.pdf,2,AJK_0068,AJK_0068,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0069_p01,data\interim\images\AJK_0069_p01.png,azad Kashmir\0071_97290PRResultSSC2A2025.pdf,1,AJK_0069,AJK_0069,AJK,photo,0,2050,3301,2025,val,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0070_p01,data\interim\images\AJK_0070_p01.png,azad Kashmir\0072_193939PRRenewalNotificationSSC1A2026.pdf,1,AJK_0070,AJK_0070,AJK,photo,0,1958,3301,2026,test,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0071_p01,data\interim\images\AJK_0071_p01.png,azad Kashmir\0074_367919CamScanner01-01-202611.09.pdf,1,AJK_0071,AJK_0071,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0072_p01,data\interim\images\AJK_0072_p01.png,azad Kashmir\0075_64544PRExamDutiesSSC1stA2026.pdf,1,AJK_0072,AJK_0072,AJK,photo,0,2079,3301,2026,test,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0073_p01,data\interim\images\AJK_0073_p01.png,azad Kashmir\0076_375427PR-HSSC1.jpeg.jpg,1,AJK_0073,AJK_0073,AJK,scan,1,902,1280,,train,0,
+AJK_0074_p01,data\interim\images\AJK_0074_p01.png,azad Kashmir\0077_381744WhatsAppImage2025-12-17at17.23.17.jpeg.jpg,1,AJK_0074,AJK_0074,AJK,photo,1,790,1280,2025,train,0,
+AJK_0075_p01,data\interim\images\AJK_0075_p01.png,azad Kashmir\0078_671142SSC-2026.pdf,1,AJK_0075,AJK_0075,AJK,scan,0,2480,3509,2026,test,1,Pdftools SDK
+AJK_0075_p02,data\interim\images\AJK_0075_p02.png,azad Kashmir\0078_671142SSC-2026.pdf,2,AJK_0075,AJK_0075,AJK,scan,0,2480,3509,2026,test,1,Pdftools SDK
+AJK_0076_p01,data\interim\images\AJK_0076_p01.png,azad Kashmir\0079_900024PressRelease.pdf,1,AJK_0076,AJK_0076,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0076_p02,data\interim\images\AJK_0076_p02.png,azad Kashmir\0079_900024PressRelease.pdf,2,AJK_0076,AJK_0076,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0076_p03,data\interim\images\AJK_0076_p03.png,azad Kashmir\0079_900024PressRelease.pdf,3,AJK_0076,AJK_0076,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0077_p01,data\interim\images\AJK_0077_p01.png,azad Kashmir\0080_952819PR-HSSC-I.jpeg.jpg,1,AJK_0077,AJK_0077,AJK,scan,1,827,1280,,train,0,
+AJK_0078_p01,data\interim\images\AJK_0078_p01.png,azad Kashmir\0082_599853WhatsAppImage2025-12-02at16.08.42.jpeg.jpg,1,AJK_0078,AJK_0078,AJK,photo,1,1160,1595,2025,train,0,
+AJK_0079_p01,data\interim\images\AJK_0079_p01.png,azad Kashmir\0083_651336PRDutyOrderHSSC2A2025.pdf,1,AJK_0079,AJK_0079,AJK,photo,0,2287,3301,2025,val,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0080_p01,data\interim\images\AJK_0080_p01.png,azad Kashmir\0084_448883WhatsAppImage2025-11-19at11.28.25AM.jpeg.jpg,1,AJK_0080,AJK_0080,AJK,photo,1,760,1280,2025,train,0,
+AJK_0081_p01,data\interim\images\AJK_0081_p01.png,azad Kashmir\0085_714111PR-PRC-SSC.jpeg.jpg,1,AJK_0081,AJK_0081,AJK,scan,1,815,1280,,train,0,
+AJK_0082_p01,data\interim\images\AJK_0082_p01.png,azad Kashmir\0086_79467IMG-20251109-WA0000.jpg,1,AJK_0082,AJK_0082,AJK,photo,1,730,1280,,train,0,
+AJK_0083_p01,data\interim\images\AJK_0083_p01.png,azad Kashmir\0087_348358IMG-20251109-WA0001.jpg,1,AJK_0083,AJK_0083,AJK,photo,1,775,1280,,train,0,
+AJK_0084_p01,data\interim\images\AJK_0084_p01.png,azad Kashmir\0088_656463hssc-readm-2527.jpeg.jpg,1,AJK_0084,AJK_0084,AJK,scan,1,868,1280,,train,1,
+AJK_0085_p01,data\interim\images\AJK_0085_p01.png,azad Kashmir\0089_645385CamScanner04-11-202503.05_1_.pdf,1,AJK_0085,AJK_0085,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0086_p01,data\interim\images\AJK_0086_p01.png,azad Kashmir\0090_727996CamScanner11-04-202509.46.pdf,1,AJK_0086,AJK_0086,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0087_p01,data\interim\images\AJK_0087_p01.png,azad Kashmir\0091_349487CamScanner11-03-202516.19.pdf,1,AJK_0087,AJK_0087,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0088_p01,data\interim\images\AJK_0088_p01.png,azad Kashmir\0092_335723Rev-Adm-HSSC122025.pdf,1,AJK_0088,AJK_0088,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0089_p01,data\interim\images\AJK_0089_p01.png,azad Kashmir\0093_554443PR-REG-2527.pdf,1,AJK_0089,AJK_0089,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0090_p01,data\interim\images\AJK_0090_p01.png,azad Kashmir\0094_188110PRcomparisonBWOnline_ManualMarking.pdf,1,AJK_0090,AJK_0090,AJK,photo,0,2098,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0091_p01,data\interim\images\AJK_0091_p01.png,azad Kashmir\0095_767150AdmissionScheduleHSSC-I2A2025.pdf,1,AJK_0091,AJK_0091,AJK,photo,0,2042,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0092_p01,data\interim\images\AJK_0092_p01.png,azad Kashmir\0096_366394PRResultHSSC-I1stAnnual2025.pdf,1,AJK_0092,AJK_0092,AJK,photo,0,2550,1759,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0093_p01,data\interim\images\AJK_0093_p01.png,azad Kashmir\0097_926940WhatsAppImage2025-10-29at5.03.48PM.jpeg.jpg,1,AJK_0093,AJK_0093,AJK,photo,1,837,1539,2025,train,0,
+AJK_0094_p01,data\interim\images\AJK_0094_p01.png,azad Kashmir\0098_83770PRSSC-IRollNoslips.pdf,1,AJK_0094,AJK_0094,AJK,photo,0,2071,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0095_p01,data\interim\images\AJK_0095_p01.png,azad Kashmir\0099_23498CamScanner10-22-202513.13.pdf,1,AJK_0095,AJK_0095,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0095_p02,data\interim\images\AJK_0095_p02.png,azad Kashmir\0099_23498CamScanner10-22-202513.13.pdf,2,AJK_0095,AJK_0095,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0096_p01,data\interim\images\AJK_0096_p01.png,azad Kashmir\0100_200225PRSSCDuties2ndA25.pdf,1,AJK_0096,AJK_0096,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0097_p01,data\interim\images\AJK_0097_p01.png,azad Kashmir\0101_514678IMG-20251010-WA0063.jpg,1,AJK_0097,AJK_0097,AJK,photo,0,1000,1610,,train,1,
+AJK_0098_p01,data\interim\images\AJK_0098_p01.png,azad Kashmir\0102_708374PRRevisedScheduleHSSC-II2A2025.pdf,1,AJK_0098,AJK_0098,AJK,photo,0,2023,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0099_p01,data\interim\images\AJK_0099_p01.png,azad Kashmir\0103_549041PRRevisedHSSCRegSchedule2025-27.pdf,1,AJK_0099,AJK_0099,AJK,photo,0,2153,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0100_p01,data\interim\images\AJK_0100_p01.png,azad Kashmir\0105_897338DISQ-NOT.jpeg.jpg,1,AJK_0100,AJK_0100,AJK,scan,0,976,1600,,train,1,
+AJK_0101_p01,data\interim\images\AJK_0101_p01.png,azad Kashmir\0106_727661IMG-20250922-WA0055.jpg,1,AJK_0101,AJK_0101,AJK,photo,0,2301,3798,,train,0,
+AJK_0102_p01,data\interim\images\AJK_0102_p01.png,azad Kashmir\0107_474670WhatsAppImage2025-09-19at15.40.11.jpeg.jpg,1,AJK_0102,AJK_0102,AJK,photo,1,920,1280,2025,val,1,
+AJK_0103_p01,data\interim\images\AJK_0103_p01.png,azad Kashmir\0108_585937RevisedScheduleSSC-I_9th_Admission.pdf,1,AJK_0103,AJK_0103,AJK,photo,0,1996,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0104_p01,data\interim\images\AJK_0104_p01.png,azad Kashmir\0109_207885Re-admissionscheduleSSC-I2025-27.pdf,1,AJK_0104,AJK_0104,AJK,photo,0,2094,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0105_p01,data\interim\images\AJK_0105_p01.png,azad Kashmir\0110_374023RevisedNotificationHSSCRegistration.pdf,1,AJK_0105,AJK_0105,AJK,photo,0,2140,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0106_p01,data\interim\images\AJK_0106_p01.png,azad Kashmir\0111_284271PRExamDutiesHSSC2ndAnnual2025.pdf,1,AJK_0106,AJK_0106,AJK,photo,0,2069,3301,2025,val,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0107_p01,data\interim\images\AJK_0107_p01.png,azad Kashmir\0112_789764AdmissionScheduleHSSC-II2A2025.pdf,1,AJK_0107,AJK_0107,AJK,scan,0,2480,3509,2025,test,1,Pdftools SDK
+AJK_0107_p02,data\interim\images\AJK_0107_p02.png,azad Kashmir\0112_789764AdmissionScheduleHSSC-II2A2025.pdf,2,AJK_0107,AJK_0107,AJK,scan,0,2480,3509,2025,test,1,Pdftools SDK
+AJK_0108_p01,data\interim\images\AJK_0108_p01.png,azad Kashmir\0113_110198CamScanner09-12-202510.25.pdf,1,AJK_0108,AJK_0108,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0109_p01,data\interim\images\AJK_0109_p01.png,azad Kashmir\0114_313568WhatsAppImage2025-09-10at18.13.51.jpeg.jpg,1,AJK_0109,AJK_0109,AJK,photo,0,979,1600,2025,val,1,
+AJK_0110_p01,data\interim\images\AJK_0110_p01.png,azad Kashmir\0115_877532CamScanner09-05-202512.26.pdf,1,AJK_0110,AJK_0110,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0111_p01,data\interim\images\AJK_0111_p01.png,azad Kashmir\0116_62072PRHSSCA25Rechecking.pdf,1,AJK_0111,AJK_0111,AJK,photo,0,2019,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0112_p01,data\interim\images\AJK_0112_p01.png,azad Kashmir\0117_688171PRResultHSSC1stAnnual2025.pdf,1,AJK_0112,AJK_0112,AJK,photo,0,2071,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0113_p01,data\interim\images\AJK_0113_p01.png,azad Kashmir\0118_930358TNote.jpeg.jpg,1,AJK_0113,AJK_0113,AJK,scan,1,948,1599,,train,0,
+AJK_0114_p01,data\interim\images\AJK_0114_p01.png,azad Kashmir\0119_227935DepartmentalExamschedule.pdf,1,AJK_0114,AJK_0114,AJK,photo,0,1999,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0115_p01,data\interim\images\AJK_0115_p01.png,azad Kashmir\0120_739349ExamDity.pdf,1,AJK_0115,AJK_0115,AJK,photo,0,2008,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0116_p01,data\interim\images\AJK_0116_p01.png,azad Kashmir\0121_285003ScheduleSSC2ndAnnual2025.pdf,1,AJK_0116,AJK_0116,AJK,photo,0,2035,3301,2025,val,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0116_p02,data\interim\images\AJK_0116_p02.png,azad Kashmir\0121_285003ScheduleSSC2ndAnnual2025.pdf,2,AJK_0116,AJK_0116,AJK,photo,0,1985,3301,2025,val,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0117_p01,data\interim\images\AJK_0117_p01.png,azad Kashmir\0122_27832Disqualificationfromexamduties.jpg,1,AJK_0117,AJK_0117,AJK,scan,0,938,1600,,train,0,
+AJK_0118_p01,data\interim\images\AJK_0118_p01.png,azad Kashmir\0123_73516PR-090825.pdf,1,AJK_0118,AJK_0118,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0119_p01,data\interim\images\AJK_0119_p01.png,azad Kashmir\0124_108795HSSCMT2025-27.pdf,1,AJK_0119,AJK_0119,AJK,photo,0,1919,3301,2025,train,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0119_p02,data\interim\images\AJK_0119_p02.png,azad Kashmir\0124_108795HSSCMT2025-27.pdf,2,AJK_0119,AJK_0119,AJK,photo,0,1978,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0120_p01,data\interim\images\AJK_0120_p01.png,azad Kashmir\0125_135253HSSCRegistration2025-27.pdf,1,AJK_0120,AJK_0120,AJK,photo,0,2072,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0120_p02,data\interim\images\AJK_0120_p02.png,azad Kashmir\0125_135253HSSCRegistration2025-27.pdf,2,AJK_0120,AJK_0120,AJK,photo,0,1996,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0121_p01,data\interim\images\AJK_0121_p01.png,azad Kashmir\0126_571929WhatsAppImage2025-08-01at16.24.47.jpeg.jpg,1,AJK_0121,AJK_0121,AJK,photo,0,942,1600,2025,val,1,
+AJK_0122_p01,data\interim\images\AJK_0122_p01.png,azad Kashmir\0127_276733SSC-PR-25.jpeg.jpg,1,AJK_0122,AJK_0122,AJK,scan,1,876,1280,,train,1,
+AJK_0123_p01,data\interim\images\AJK_0123_p01.png,azad Kashmir\0128_656738PressReleaseResultSSC1A2025.pdf,1,AJK_0123,AJK_0123,AJK,photo,0,2063,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0124_p01,data\interim\images\AJK_0124_p01.png,azad Kashmir\0129_847320PR-Emarking.pdf,1,AJK_0124,AJK_0124,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0125_p01,data\interim\images\AJK_0125_p01.png,azad Kashmir\0130_252655CamScanner06-30-202516.43.pdf,1,AJK_0125,AJK_0125,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0126_p01,data\interim\images\AJK_0126_p01.png,azad Kashmir\0131_688720PRPracticalslipsHSSC1stA2025.pdf,1,AJK_0126,AJK_0126,AJK,photo,0,2104,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0127_p01,data\interim\images\AJK_0127_p01.png,azad Kashmir\0132_643737REG9EXT.pdf,1,AJK_0127,AJK_0127,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0128_p01,data\interim\images\AJK_0128_p01.png,azad Kashmir\0133_541656RegSSC1Ext.pdf,1,AJK_0128,AJK_0128,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0129_p01,data\interim\images\AJK_0129_p01.png,azad Kashmir\0134_694458IMG-20250521-WA0055.jpg,1,AJK_0129,AJK_0129,AJK,photo,1,720,1280,,train,0,
+AJK_0130_p01,data\interim\images\AJK_0130_p01.png,azad Kashmir\0135_276092MT-Lang25.pdf,1,AJK_0130,AJK_0130,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0131_p01,data\interim\images\AJK_0131_p01.png,azad Kashmir\0136_836242CamScanner05-15-202511.19.pdf,1,AJK_0131,AJK_0131,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0132_p01,data\interim\images\AJK_0132_p01.png,azad Kashmir\0137_295013PRPracticalDuty.pdf,1,AJK_0132,AJK_0132,AJK,photo,0,2081,3301,,train,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0133_p01,data\interim\images\AJK_0133_p01.png,azad Kashmir\0138_857696PRSSCPract2025.jpeg.jpg,1,AJK_0133,AJK_0133,AJK,scan,0,2107,3360,2025,test,1,
+AJK_0134_p01,data\interim\images\AJK_0134_p01.png,azad Kashmir\0139_36956PRHSSCExam2025.jpeg.jpg,1,AJK_0134,AJK_0134,AJK,scan,0,1069,1600,2025,test,1,
+AJK_0135_p01,data\interim\images\AJK_0135_p01.png,azad Kashmir\0140_878784FB_IMG_1746982215038.jpg,1,AJK_0135,AJK_0135,AJK,photo,1,856,1384,,train,0,
+AJK_0136_p01,data\interim\images\AJK_0136_p01.png,azad Kashmir\0141_444305CamScanner09-05-202515.39.pdf,1,AJK_0136,AJK_0136,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0137_p01,data\interim\images\AJK_0137_p01.png,azad Kashmir\0142_646728WhatsAppImage2025-05-07at17.42.26.jpeg.jpg,1,AJK_0137,AJK_0137,AJK,photo,0,2148,3098,2025,val,1,
+AJK_0138_p01,data\interim\images\AJK_0138_p01.png,azad Kashmir\0143_522125IMG-20250507-WA0148.jpg,1,AJK_0138,AJK_0138,AJK,photo,0,2120,3051,,train,0,
+AJK_0139_p01,data\interim\images\AJK_0139_p01.png,azad Kashmir\0144_634185RegistrationScheduleSSC2025-27.pdf,1,AJK_0139,AJK_0139,AJK,photo,0,2132,3301,2025,val,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0139_p02,data\interim\images\AJK_0139_p02.png,azad Kashmir\0144_634185RegistrationScheduleSSC2025-27.pdf,2,AJK_0139,AJK_0139,AJK,photo,0,2100,3301,2025,val,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0140_p01,data\interim\images\AJK_0140_p01.png,azad Kashmir\0145_200836PRE-Sheets1stExam.pdf,1,AJK_0140,AJK_0140,AJK,photo,0,2250,3301,,train,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0141_p01,data\interim\images\AJK_0141_p01.png,azad Kashmir\0146_475952eservicenoc.pdf,1,AJK_0141,AJK_0141,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0142_p01,data\interim\images\AJK_0142_p01.png,azad Kashmir\0147_439727teachduty.jpg,1,AJK_0142,AJK_0142,AJK,scan,0,977,1600,,train,0,
+AJK_0143_p01,data\interim\images\AJK_0143_p01.png,azad Kashmir\0148_315704PRRollNoSlipsHSSC-II.pdf,1,AJK_0143,AJK_0143,AJK,scan,0,2550,3301,2025,test,1,3.0.24 (5.1.10)
+AJK_0144_p01,data\interim\images\AJK_0144_p01.png,azad Kashmir\0149_804748PRAdmformHSSC-II1stAnnual2025.pdf,1,AJK_0144,AJK_0144,AJK,photo,0,2000,3301,2025,val,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0145_p01,data\interim\images\AJK_0145_p01.png,azad Kashmir\0150_75622PRFehmulQuranpaper.pdf,1,AJK_0145,AJK_0145,AJK,photo,0,2023,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0146_p01,data\interim\images\AJK_0146_p01.png,azad Kashmir\0151_462768PRSSCPracticalSlips.pdf,1,AJK_0146,AJK_0146,AJK,photo,0,2148,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0147_p01,data\interim\images\AJK_0147_p01.png,azad Kashmir\0152_525634IMG-20250328-WA0057.jpg,1,AJK_0147,AJK_0147,AJK,photo,1,949,1581,,train,0,
+AJK_0148_p01,data\interim\images\AJK_0148_p01.png,azad Kashmir\0153_461853WhatsAppImage2025-03-26at10.54.39.jpeg.jpg,1,AJK_0148,AJK_0148,AJK,photo,1,895,1280,2025,val,1,
+AJK_0149_p01,data\interim\images\AJK_0149_p01.png,azad Kashmir\0154_807098PRRollNoSlipSSC-I1stA2025.pdf,1,AJK_0149,AJK_0149,AJK,photo,0,2120,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0150_p01,data\interim\images\AJK_0150_p01.png,azad Kashmir\0155_585662WhatsAppImage2025-03-12at07.58.57.jpeg.jpg,1,AJK_0150,AJK_0150,AJK,photo,1,925,1263,2025,val,1,
+AJK_0151_p01,data\interim\images\AJK_0151_p01.png,azad Kashmir\0156_833404PRRollNoSlipsSSC.pdf,1,AJK_0151,AJK_0151,AJK,photo,0,2083,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0152_p01,data\interim\images\AJK_0152_p01.png,azad Kashmir\0157_170898HSSCPaperMarking1stA2025.pdf,1,AJK_0152,AJK_0152,AJK,photo,0,2084,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0152_p02,data\interim\images\AJK_0152_p02.png,azad Kashmir\0157_170898HSSCPaperMarking1stA2025.pdf,2,AJK_0152,AJK_0152,AJK,photo,0,2129,3301,2025,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0153_p01,data\interim\images\AJK_0153_p01.png,azad Kashmir\0158_768524887c3058-0e0e-4584-af1c-ad5380e3be8b.jpg,1,AJK_0153,AJK_0153,AJK,scan,1,1029,1539,,train,0,
+AJK_0154_p01,data\interim\images\AJK_0154_p01.png,azad Kashmir\0159_632324CamScanner02-10-202512.15.pdf,1,AJK_0154,AJK_0154,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0155_p01,data\interim\images\AJK_0155_p01.png,azad Kashmir\0160_780731PressReleasePracticalSlipsSSC.pdf,1,AJK_0155,AJK_0155,AJK,photo,0,2075,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0156_p01,data\interim\images\AJK_0156_p01.png,azad Kashmir\0161_970001PRRollNoSlipsHSSC2A.pdf,1,AJK_0156,AJK_0156,AJK,photo,0,1982,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0157_p01,data\interim\images\AJK_0157_p01.png,azad Kashmir\0162_640197PRHSSC-Iadmissiondateextension.pdf,1,AJK_0157,AJK_0157,AJK,photo,0,2449,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0158_p01,data\interim\images\AJK_0158_p01.png,azad Kashmir\0163_46081SSC19THRNOSLIP.pdf,1,AJK_0158,AJK_0158,AJK,photo,0,2306,3301,,train,0,Adobe Scan for Android 24.09.12-google-dynamic Adobe Scan fo
+AJK_0159_p01,data\interim\images\AJK_0159_p01.png,azad Kashmir\0164_128662CamScanner10-03-202413.31.pdf,1,AJK_0159,AJK_0159,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0160_p01,data\interim\images\AJK_0160_p01.png,azad Kashmir\0165_833374rev-pr-rc-11.pdf,1,AJK_0160,AJK_0160,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0161_p01,data\interim\images\AJK_0161_p01.png,azad Kashmir\0166_302795HSSCReadmissionSchedule.pdf,1,AJK_0161,AJK_0161,AJK,photo,0,2279,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0162_p01,data\interim\images\AJK_0162_p01.png,azad Kashmir\0167_251953PressReleaseHSSC-IResult.pdf,1,AJK_0162,AJK_0162,AJK,photo,0,2293,3301,,train,1,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0163_p01,data\interim\images\AJK_0163_p01.png,azad Kashmir\0168_216064PR-HSSCI-11th.pdf,1,AJK_0163,AJK_0163,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0164_p01,data\interim\images\AJK_0164_p01.png,azad Kashmir\0169_581939HSSC-RES-11.pdf,1,AJK_0164,AJK_0164,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0165_p01,data\interim\images\AJK_0165_p01.png,azad Kashmir\0170_870452SSC-RNOSLIPS.pdf,1,AJK_0165,AJK_0165,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0166_p01,data\interim\images\AJK_0166_p01.png,azad Kashmir\0171_502410PR-HSSCI-Reg.pdf,1,AJK_0166,AJK_0166,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0167_p01,data\interim\images\AJK_0167_p01.png,azad Kashmir\0173_635986PR-HSSC.pdf,1,AJK_0167,AJK_0167,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0168_p01,data\interim\images\AJK_0168_p01.png,azad Kashmir\0174_401367PressReleaseDateextension9th.pdf,1,AJK_0168,AJK_0168,AJK,photo,0,2456,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0169_p01,data\interim\images\AJK_0169_p01.png,azad Kashmir\0175_617950HSSC-Ext.pdf,1,AJK_0169,AJK_0169,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0170_p01,data\interim\images\AJK_0170_p01.png,azad Kashmir\0176_9029239TH-DT-EXT.pdf,1,AJK_0170,AJK_0170,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0171_p01,data\interim\images\AJK_0171_p01.png,azad Kashmir\0177_562530HSSC-POL.pdf,1,AJK_0171,AJK_0171,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0172_p01,data\interim\images\AJK_0172_p01.png,azad Kashmir\0178_663940ReAdmiss.pdf,1,AJK_0172,AJK_0172,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0173_p01,data\interim\images\AJK_0173_p01.png,azad Kashmir\0179_552764PR-9th-Rech.pdf,1,AJK_0173,AJK_0173,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0174_p01,data\interim\images\AJK_0174_p01.png,azad Kashmir\0180_454833ssc-9th-pol.pdf,1,AJK_0174,AJK_0174,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0175_p01,data\interim\images\AJK_0175_p01.png,azad Kashmir\0181_459899SSC-DUTY-.pdf,1,AJK_0175,AJK_0175,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0176_p01,data\interim\images\AJK_0176_p01.png,azad Kashmir\0182_337829TT-2425.pdf,1,AJK_0176,AJK_0176,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0176_p02,data\interim\images\AJK_0176_p02.png,azad Kashmir\0182_337829TT-2425.pdf,2,AJK_0176,AJK_0176,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0177_p01,data\interim\images\AJK_0177_p01.png,azad Kashmir\0183_60974HSSC-DUTY.pdf,1,AJK_0177,AJK_0177,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0178_p01,data\interim\images\AJK_0178_p01.png,azad Kashmir\0184_736358hssc-2nd-24.pdf,1,AJK_0178,AJK_0178,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0178_p02,data\interim\images\AJK_0178_p02.png,azad Kashmir\0184_736358hssc-2nd-24.pdf,2,AJK_0178,AJK_0178,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0179_p01,data\interim\images\AJK_0179_p01.png,azad Kashmir\0185_622833SSC-Dpt-24-compressed.pdf,1,AJK_0179,AJK_0179,AJK,scan,0,2481,3508,,train,0,Pdftools SDK
+AJK_0179_p02,data\interim\images\AJK_0179_p02.png,azad Kashmir\0185_622833SSC-Dpt-24-compressed.pdf,2,AJK_0179,AJK_0179,AJK,scan,0,2481,3508,,train,0,Pdftools SDK
+AJK_0180_p01,data\interim\images\AJK_0180_p01.png,azad Kashmir\0186_261718PR-SSC-9TH.pdf,1,AJK_0180,AJK_0180,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0181_p01,data\interim\images\AJK_0181_p01.png,azad Kashmir\0187_445739PR-HSSC-230824.pdf,1,AJK_0181,AJK_0181,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0182_p01,data\interim\images\AJK_0182_p01.png,azad Kashmir\0188_323577regHSSC24-26.pdf,1,AJK_0182,AJK_0182,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0182_p02,data\interim\images\AJK_0182_p02.png,azad Kashmir\0188_323577regHSSC24-26.pdf,2,AJK_0182,AJK_0182,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0183_p01,data\interim\images\AJK_0183_p01.png,azad Kashmir\0189_260803RegMT24-26.pdf,1,AJK_0183,AJK_0183,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0183_p02,data\interim\images\AJK_0183_p02.png,azad Kashmir\0189_260803RegMT24-26.pdf,2,AJK_0183,AJK_0183,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0184_p01,data\interim\images\AJK_0184_p01.png,azad Kashmir\0190_734069CamScanner08-19-202413.02.pdf,1,AJK_0184,AJK_0184,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0185_p01,data\interim\images\AJK_0185_p01.png,azad Kashmir\0191_893035PR-HSSC-160824.pdf,1,AJK_0185,AJK_0185,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0186_p01,data\interim\images\AJK_0186_p01.png,azad Kashmir\0192_990783PR-Reg-130824.pdf,1,AJK_0186,AJK_0186,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0187_p01,data\interim\images\AJK_0187_p01.png,azad Kashmir\0193_459259SSC2ndAnnualAdmissionShadule2024-compressed.pdf,1,AJK_0187,AJK_0187,AJK,scan,0,2481,3508,2024,test,1,3-Heights™ PDF Optimization Shell 6.3.1.5 (http://www.pdf-to
+AJK_0187_p02,data\interim\images\AJK_0187_p02.png,azad Kashmir\0193_459259SSC2ndAnnualAdmissionShadule2024-compressed.pdf,2,AJK_0187,AJK_0187,AJK,scan,0,2481,3508,2024,test,1,3-Heights™ PDF Optimization Shell 6.3.1.5 (http://www.pdf-to
+AJK_0188_p01,data\interim\images\AJK_0188_p01.png,azad Kashmir\0194_364440PRRecheckingSchedule.pdf,1,AJK_0188,AJK_0188,AJK,photo,0,2223,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0189_p01,data\interim\images\AJK_0189_p01.png,azad Kashmir\0195_339508prssc2024.jpeg.jpg,1,AJK_0189,AJK_0189,AJK,scan,0,1146,1600,2024,test,1,
+AJK_0190_p01,data\interim\images\AJK_0190_p01.png,azad Kashmir\0196_347534WhatsAppImage2024-07-10at5.03.46PM.jpeg.jpg,1,AJK_0190,AJK_0190,AJK,photo,0,1182,1600,2024,train,0,
+AJK_0191_p01,data\interim\images\AJK_0191_p01.png,azad Kashmir\0197_34545WhatsAppImage2024-06-21at3.15.19PM.jpeg.jpg,1,AJK_0191,AJK_0191,AJK,photo,0,1154,1600,2024,train,0,
+AJK_0192_p01,data\interim\images\AJK_0192_p01.png,azad Kashmir\0198_342041CamScanner06-20-202416.00.pdf,1,AJK_0192,AJK_0192,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0193_p01,data\interim\images\AJK_0193_p01.png,azad Kashmir\0199_213562syllabus.jpeg.jpg,1,AJK_0193,AJK_0193,AJK,scan,0,2695,3975,,train,1,
+AJK_0194_p01,data\interim\images\AJK_0194_p01.png,azad Kashmir\0200_71868PRREG2426.pdf,1,AJK_0194,AJK_0194,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0195_p01,data\interim\images\AJK_0195_p01.png,azad Kashmir\0201_763183IMG-20240527-WA0059.jpg,1,AJK_0195,AJK_0195,AJK,photo,0,1270,1797,,train,0,
+AJK_0196_p01,data\interim\images\AJK_0196_p01.png,azad Kashmir\0202_440063prhsscpraca24.pdf,1,AJK_0196,AJK_0196,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0197_p01,data\interim\images\AJK_0197_p01.png,azad Kashmir\0203_649414IMG-20240524-WA0039.jpg,1,AJK_0197,AJK_0197,AJK,photo,1,787,1280,,train,0,
+AJK_0198_p01,data\interim\images\AJK_0198_p01.png,azad Kashmir\0204_184295PRMath-Ipaper.pdf,1,AJK_0198,AJK_0198,AJK,photo,0,2276,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0199_p01,data\interim\images\AJK_0199_p01.png,azad Kashmir\0205_374114WhatsAppImage2024-05-16at4.18.06PM.jpeg.jpg,1,AJK_0199,AJK_0199,AJK,photo,0,1203,1600,2024,train,0,
+AJK_0200_p01,data\interim\images\AJK_0200_p01.png,azad Kashmir\0206_82305WhatsAppImage2024-05-16at8.52.19AM.jpeg.jpg,1,AJK_0200,AJK_0200,AJK,photo,1,896,1280,2024,train,1,
+AJK_0201_p01,data\interim\images\AJK_0201_p01.png,azad Kashmir\0207_159759WhatsAppImage2024-05-15at4.39.24PM.jpeg.jpg,1,AJK_0201,AJK_0201,AJK,photo,1,941,1280,2024,train,1,
+AJK_0202_p01,data\interim\images\AJK_0202_p01.png,azad Kashmir\0208_64178PressReleaseHSSCDatesheetA24.pdf,1,AJK_0202,AJK_0202,AJK,photo,0,2215,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0203_p01,data\interim\images\AJK_0203_p01.png,azad Kashmir\0209_884307RevisedScheduleSSCPractical.pdf,1,AJK_0203,AJK_0203,AJK,photo,0,2384,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0203_p02,data\interim\images\AJK_0203_p02.png,azad Kashmir\0209_884307RevisedScheduleSSCPractical.pdf,2,AJK_0203,AJK_0203,AJK,photo,0,2132,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0204_p01,data\interim\images\AJK_0204_p01.png,azad Kashmir\0210_945159WhatsAppImage2024-05-13at7.41.07PM.jpeg.jpg,1,AJK_0204,AJK_0204,AJK,photo,0,1068,1600,2024,train,0,
+AJK_0205_p01,data\interim\images\AJK_0205_p01.png,azad Kashmir\0211_541381WhatsAppImage2024-05-12at2.26.08PM.jpeg.jpg,1,AJK_0205,AJK_0205,AJK,photo,1,1051,1188,2024,train,0,
+AJK_0206_p01,data\interim\images\AJK_0206_p01.png,azad Kashmir\0212_492156IMG-20240511-WA0038.jpg,1,AJK_0206,AJK_0206,AJK,photo,1,904,1280,,train,1,
+AJK_0207_p01,data\interim\images\AJK_0207_p01.png,azad Kashmir\0213_562438PressReleaseEnglish-IIG2.pdf,1,AJK_0207,AJK_0207,AJK,photo,0,2443,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0208_p01,data\interim\images\AJK_0208_p01.png,azad Kashmir\0214_370269WhatsAppImage2024-04-24at1.32.44PM.jpeg.jpg,1,AJK_0208,AJK_0208,AJK,photo,0,1130,1600,2024,train,0,
+AJK_0209_p01,data\interim\images\AJK_0209_p01.png,azad Kashmir\0215_95184WhatsAppImage2024-04-24at11.59.58AM.jpeg.jpg,1,AJK_0209,AJK_0209,AJK,photo,0,1147,1600,2024,train,0,
+AJK_0210_p01,data\interim\images\AJK_0210_p01.png,azad Kashmir\0216_239562PressReleaseHSSC.pdf,1,AJK_0210,AJK_0210,AJK,photo,0,2311,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0210_p02,data\interim\images\AJK_0210_p02.png,azad Kashmir\0216_239562PressReleaseHSSC.pdf,2,AJK_0210,AJK_0210,AJK,photo,0,2438,3301,,train,0,Adobe Scan for Android 24.03.28-google-dynamic Adobe Scan fo
+AJK_0211_p01,data\interim\images\AJK_0211_p01.png,azad Kashmir\0217_896820c6611b03-9c9e-4477-b1d6-5c7654f9d57b.jpg,1,AJK_0211,AJK_0211,AJK,scan,0,1060,1600,,train,1,
+AJK_0212_p01,data\interim\images\AJK_0212_p01.png,azad Kashmir\0218_923400WhatsAppImage2024-04-18at10.56.30AM.jpeg.jpg,1,AJK_0212,AJK_0212,AJK,photo,1,770,1040,2024,train,0,
+AJK_0213_p01,data\interim\images\AJK_0213_p01.png,azad Kashmir\0219_540252CamScanner04-16-202417.27.pdf,1,AJK_0213,AJK_0213,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0214_p01,data\interim\images\AJK_0214_p01.png,azad Kashmir\0220_215118CamScanner04-08-202412.41.pdf,1,AJK_0214,AJK_0214,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0215_p01,data\interim\images\AJK_0215_p01.png,azad Kashmir\0221_822021AdobeScanApr05_2024.pdf,1,AJK_0215,AJK_0208,AJK,photo,0,2258,3301,2024,train,0,Adobe Scan for Android 24.03.18-google-dynamic Adobe Scan fo
+AJK_0216_p01,data\interim\images\AJK_0216_p01.png,azad Kashmir\0222_178344SSCRegistration2024-26.pdf,1,AJK_0216,AJK_0216,AJK,photo,0,2127,3301,2024,train,0,Adobe Scan for Android 24.03.18-google-dynamic Adobe Scan fo
+AJK_0216_p02,data\interim\images\AJK_0216_p02.png,azad Kashmir\0222_178344SSCRegistration2024-26.pdf,2,AJK_0216,AJK_0216,AJK,photo,0,2211,3301,2024,train,0,Adobe Scan for Android 24.03.18-google-dynamic Adobe Scan fo
+AJK_0217_p01,data\interim\images\AJK_0217_p01.png,azad Kashmir\0223_901550WhatsAppImage2024-03-29at12.54.25PM.jpeg.jpg,1,AJK_0217,AJK_0217,AJK,photo,0,1002,1600,2024,train,1,
+AJK_0218_p01,data\interim\images\AJK_0218_p01.png,azad Kashmir\0224_550659WhatsAppImage2024-03-14at4.25.22PM.jpeg.jpg,1,AJK_0218,AJK_0218,AJK,photo,0,1071,1600,2024,train,0,
+AJK_0219_p01,data\interim\images\AJK_0219_p01.png,azad Kashmir\0225_522735PressReleaseSSCRollNoslipdownload.pdf,1,AJK_0219,AJK_0219,AJK,photo,0,2269,3301,,train,1,Adobe Scan for Android 24.02.21-google-dynamic Adobe Scan fo
+AJK_0220_p01,data\interim\images\AJK_0220_p01.png,azad Kashmir\0226_674987PRRegistrationRenewal.pdf,1,AJK_0220,AJK_0220,AJK,photo,0,2311,3301,,train,0,Adobe Scan for Android 24.02.21-google-dynamic Adobe Scan fo
+AJK_0221_p01,data\interim\images\AJK_0221_p01.png,azad Kashmir\0227_960998CamScanner02-23-202417.55.pdf,1,AJK_0221,AJK_0221,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0222_p01,data\interim\images\AJK_0222_p01.png,azad Kashmir\0228_264953PressReleaseHSSCadmextension.pdf,1,AJK_0222,AJK_0222,AJK,photo,0,2387,3301,,train,1,Adobe Scan for Android 23.12.15-google-dynamic Adobe Scan fo
+AJK_0223_p01,data\interim\images\AJK_0223_p01.png,azad Kashmir\0229_787628Prac-NB.jpeg.jpg,1,AJK_0223,AJK_0223,AJK,scan,1,1280,1100,,train,1,
+AJK_0224_p01,data\interim\images\AJK_0224_p01.png,azad Kashmir\0230_247406CamScanner02-07-202412.11.pdf,1,AJK_0224,AJK_0224,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0225_p01,data\interim\images\AJK_0225_p01.png,azad Kashmir\0231_376495IMG-20240206-WA0095.jpg,1,AJK_0225,AJK_0225,AJK,photo,1,810,1280,,train,0,
+AJK_0226_p01,data\interim\images\AJK_0226_p01.png,azad Kashmir\0232_182220Marking.pdf,1,AJK_0226,AJK_0226,AJK,photo,0,2470,3301,,train,0,Adobe Scan for Android 23.12.15-google-dynamic Adobe Scan fo
+AJK_0226_p02,data\interim\images\AJK_0226_p02.png,azad Kashmir\0232_182220Marking.pdf,2,AJK_0226,AJK_0226,AJK,photo,0,2358,3301,,train,0,Adobe Scan for Android 23.12.15-google-dynamic Adobe Scan fo
+AJK_0227_p01,data\interim\images\AJK_0227_p01.png,azad Kashmir\0233_471130CamScanner02-01-202416.40.pdf,1,AJK_0227,AJK_0227,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0228_p01,data\interim\images\AJK_0228_p01.png,azad Kashmir\0234_530761RevisedNotification.pdf,1,AJK_0228,AJK_0228,AJK,photo,0,2270,3301,,train,0,Adobe Scan for Android 23.12.15-google-dynamic Adobe Scan fo
+AJK_0229_p01,data\interim\images\AJK_0229_p01.png,azad Kashmir\0235_686401PRHSSCDuties.pdf,1,AJK_0229,AJK_0229,AJK,scan,0,2480,3509,,train,1,
+AJK_0230_p01,data\interim\images\AJK_0230_p01.png,azad Kashmir\0236_413726PRREG2426.jpg,1,AJK_0230,AJK_0230,AJK,scan,0,2443,3469,,train,0,
+AJK_0231_p01,data\interim\images\AJK_0231_p01.png,azad Kashmir\0237_677551PressReleaseSSC2024exam.pdf,1,AJK_0231,AJK_0231,AJK,photo,0,2396,3301,2024,train,0,Adobe Scan for Android 23.12.15-google-dynamic Adobe Scan fo
+AJK_0232_p01,data\interim\images\AJK_0232_p01.png,azad Kashmir\0238_837280CamScanner01-04-202416.38.pdf,1,AJK_0232,AJK_0232,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0233_p01,data\interim\images\AJK_0233_p01.png,azad Kashmir\0239_762329Image_609_.pdf,1,AJK_0233,AJK_0233,AJK,scan,0,2480,3509,,train,0,
+AJK_0233_p02,data\interim\images\AJK_0233_p02.png,azad Kashmir\0239_762329Image_609_.pdf,2,AJK_0233,AJK_0233,AJK,scan,0,2480,3509,,train,0,
+AJK_0234_p01,data\interim\images\AJK_0234_p01.png,azad Kashmir\0240_476074IMG-20231228-WA0020.jpg,1,AJK_0234,AJK_0234,AJK,photo,0,1141,1600,,train,0,
+AJK_0235_p01,data\interim\images\AJK_0235_p01.png,azad Kashmir\0241_778625IMG-20231223-WA0004.jpg,1,AJK_0235,AJK_0235,AJK,photo,1,905,1280,,train,0,
+AJK_0236_p01,data\interim\images\AJK_0236_p01.png,azad Kashmir\0242_298065prexamdutyssca24.pdf,1,AJK_0236,AJK_0236,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0237_p01,data\interim\images\AJK_0237_p01.png,azad Kashmir\0243_381866PRSSCadmissionextension_1_.pdf,1,AJK_0237,AJK_0237,AJK,scan,0,2480,3509,,train,0,
+AJK_0238_p01,data\interim\images\AJK_0238_p01.png,azad Kashmir\0244_248046PressReleaseHSSC2A2023Result.pdf,1,AJK_0238,AJK_0238,AJK,photo,0,2324,3301,2023,train,0,Adobe Scan for Android 23.12.08-google-dynamic Adobe Scan fo
+AJK_0239_p01,data\interim\images\AJK_0239_p01.png,azad Kashmir\0245_546203NotificationHSSC1A2024.pdf,1,AJK_0239,AJK_0239,AJK,photo,0,2073,3301,2024,train,0,Adobe Scan for Android 23.12.08-google-dynamic Adobe Scan fo
+AJK_0239_p02,data\interim\images\AJK_0239_p02.png,azad Kashmir\0245_546203NotificationHSSC1A2024.pdf,2,AJK_0239,AJK_0239,AJK,photo,0,2148,3301,2024,train,0,Adobe Scan for Android 23.12.08-google-dynamic Adobe Scan fo
+AJK_0240_p01,data\interim\images\AJK_0240_p01.png,azad Kashmir\0246_823974IMG-20231211-WA0040.jpg,1,AJK_0240,AJK_0240,AJK,photo,1,849,1280,,train,0,
+AJK_0241_p01,data\interim\images\AJK_0241_p01.png,azad Kashmir\0247_131011IMG-20231208-WA0038.jpg,1,AJK_0241,AJK_0241,AJK,photo,1,719,1016,,train,1,
+AJK_0242_p01,data\interim\images\AJK_0242_p01.png,azad Kashmir\0248_940368pressrelease.pdf,1,AJK_0242,AJK_0242,AJK,photo,0,2318,3301,,train,0,Adobe Scan for Android 23.10.02-google-dynamic Adobe Scan fo
+AJK_0243_p01,data\interim\images\AJK_0243_p01.png,azad Kashmir\0249_316772Image_560_.jpg,1,AJK_0243,AJK_0243,AJK,scan,0,2320,3626,,train,0,
+AJK_0244_p01,data\interim\images\AJK_0244_p01.png,azad Kashmir\0250_763427PR-211123.pdf,1,AJK_0244,AJK_0244,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0245_p01,data\interim\images\AJK_0245_p01.png,azad Kashmir\0252_419403PRSPORTS.pdf,1,AJK_0245,AJK_0245,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0246_p01,data\interim\images\AJK_0246_p01.png,azad Kashmir\0253_526184PRGRDPOLICY.jpeg.jpg,1,AJK_0246,AJK_0246,AJK,scan,1,899,1280,,train,0,
+AJK_0247_p01,data\interim\images\AJK_0247_p01.png,azad Kashmir\0254_642181SSCADMIS2024.pdf,1,AJK_0247,AJK_0247,AJK,scan,0,2480,3509,2024,test,1,
+AJK_0247_p02,data\interim\images\AJK_0247_p02.png,azad Kashmir\0254_642181SSCADMIS2024.pdf,2,AJK_0247,AJK_0247,AJK,scan,0,2480,3509,2024,test,1,
+AJK_0248_p01,data\interim\images\AJK_0248_p01.png,azad Kashmir\0255_861511PRHSSC141123.jpg,1,AJK_0248,AJK_0248,AJK,scan,0,2434,3696,,train,1,
+AJK_0249_p01,data\interim\images\AJK_0249_p01.png,azad Kashmir\0256_77789WhatsAppImage2023-11-10at10.54.39AM.jpeg.jpg,1,AJK_0249,AJK_0249,AJK,photo,1,826,1132,2023,train,0,
+AJK_0250_p01,data\interim\images\AJK_0250_p01.png,azad Kashmir\0257_770385pr-reg-071123.jpg,1,AJK_0250,AJK_0250,AJK,scan,0,2469,3348,,train,1,
+AJK_0251_p01,data\interim\images\AJK_0251_p01.png,azad Kashmir\0258_148925HSSC041123.pdf,1,AJK_0251,AJK_0251,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0252_p01,data\interim\images\AJK_0252_p01.png,azad Kashmir\0259_825592IMG-20231021-WA0024.jpg,1,AJK_0252,AJK_0252,AJK,photo,1,720,1087,,train,0,
+AJK_0253_p01,data\interim\images\AJK_0253_p01.png,azad Kashmir\0260_880584PR-RECH-HSSC-1-23.jpeg.jpg,1,AJK_0253,AJK_0253,AJK,scan,1,756,1032,,train,0,
+AJK_0254_p01,data\interim\images\AJK_0254_p01.png,azad Kashmir\0261_683654ajk-sports.jpeg.jpg,1,AJK_0254,AJK_0254,AJK,scan,1,945,1280,,train,0,
+AJK_0255_p01,data\interim\images\AJK_0255_p01.png,azad Kashmir\0262_360046PR-HSSC-11-23.pdf,1,AJK_0255,AJK_0255,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0256_p01,data\interim\images\AJK_0256_p01.png,azad Kashmir\0263_490081PR-SSC-PRAC-23.pdf,1,AJK_0256,AJK_0256,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0257_p01,data\interim\images\AJK_0257_p01.png,azad Kashmir\0264_246276PressReleaseHSSC2NDA-2023.pdf,1,AJK_0257,AJK_0257,AJK,photo,0,2177,3301,2023,train,0,Adobe Scan for Android 23.10.02-google-dynamic Adobe Scan fo
+AJK_0258_p01,data\interim\images\AJK_0258_p01.png,azad Kashmir\0265_599853025778ed-0aac-46c4-a7ba-5d4bdd99bd90.jpg,1,AJK_0258,AJK_0258,AJK,scan,1,953,1280,,train,0,
+AJK_0259_p01,data\interim\images\AJK_0259_p01.png,azad Kashmir\0266_738067PR-Duty-23.pdf,1,AJK_0259,AJK_0259,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0260_p01,data\interim\images\AJK_0260_p01.png,azad Kashmir\0267_34149SSC-RE-AD-23-25.jpg,1,AJK_0260,AJK_0260,AJK,scan,0,2486,3443,,train,0,
+AJK_0261_p01,data\interim\images\AJK_0261_p01.png,azad Kashmir\0268_11322MEDTECREG-23-25.pdf,1,AJK_0261,AJK_0261,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0261_p02,data\interim\images\AJK_0261_p02.png,azad Kashmir\0268_11322MEDTECREG-23-25.pdf,2,AJK_0261,AJK_0261,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0262_p01,data\interim\images\AJK_0262_p01.png,azad Kashmir\0269_70068ReviseScheduleHSSC2ndA2023.pdf,1,AJK_0262,AJK_0262,AJK,scan,0,2472,3475,2023,test,1,
+AJK_0263_p01,data\interim\images\AJK_0263_p01.png,azad Kashmir\0270_999267PR-HSSC-210923.pdf,1,AJK_0263,AJK_0263,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0264_p01,data\interim\images\AJK_0264_p01.png,azad Kashmir\0271_330474PR-SSC-23.pdf,1,AJK_0264,AJK_0264,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0265_p01,data\interim\images\AJK_0265_p01.png,azad Kashmir\0272_741851PR-REG-200923.pdf,1,AJK_0265,AJK_0265,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0266_p01,data\interim\images\AJK_0266_p01.png,azad Kashmir\0273_455963CamScanner09-18-202316.20.pdf,1,AJK_0266,AJK_0266,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0266_p02,data\interim\images\AJK_0266_p02.png,azad Kashmir\0273_455963CamScanner09-18-202316.20.pdf,2,AJK_0266,AJK_0266,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0267_p01,data\interim\images\AJK_0267_p01.png,azad Kashmir\0274_530029DOC-20230915-WA0096..pdf,1,AJK_0267,AJK_0267,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0267_p02,data\interim\images\AJK_0267_p02.png,azad Kashmir\0274_530029DOC-20230915-WA0096..pdf,2,AJK_0267,AJK_0267,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0268_p01,data\interim\images\AJK_0268_p01.png,azad Kashmir\0275_3047792.jpg,1,AJK_0268,AJK_0268,AJK,scan,0,2328,3511,,train,0,
+AJK_0269_p01,data\interim\images\AJK_0269_p01.png,azad Kashmir\0276_8648681.jpg,1,AJK_0269,AJK_0269,AJK,scan,0,2408,3315,,train,1,
+AJK_0270_p01,data\interim\images\AJK_0270_p01.png,azad Kashmir\0277_1865841ff32e09-1290-47fa-b7fb-921fdd72bb0e.jpg,1,AJK_0270,AJK_0270,AJK,scan,1,892,1280,,train,0,
+AJK_0271_p01,data\interim\images\AJK_0271_p01.png,azad Kashmir\0278_290100REV-SSC-SCHL.pdf,1,AJK_0271,AJK_0271,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0272_p01,data\interim\images\AJK_0272_p01.png,azad Kashmir\0279_545837PR-9TH-290823.pdf,1,AJK_0272,AJK_0272,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0273_p01,data\interim\images\AJK_0273_p01.png,azad Kashmir\0280_41015PR-9th-250823.pdf,1,AJK_0273,AJK_0273,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0274_p01,data\interim\images\AJK_0274_p01.png,azad Kashmir\0281_243896Notification.pdf,1,AJK_0274,AJK_0274,AJK,scan,0,2479,3507,2023,test,1,Microsoft: Print To PDF
+AJK_0274_p02,data\interim\images\AJK_0274_p02.png,azad Kashmir\0281_243896Notification.pdf,2,AJK_0274,AJK_0274,AJK,scan,0,2479,3507,2023,test,1,Microsoft: Print To PDF
+AJK_0275_p01,data\interim\images\AJK_0275_p01.png,azad Kashmir\0282_777984SSC-150823.jpeg.jpg,1,AJK_0275,AJK_0275,AJK,scan,0,1025,1600,,train,1,
+AJK_0276_p01,data\interim\images\AJK_0276_p01.png,azad Kashmir\0284_176330PRREGEXT080823.jpeg.jpg,1,AJK_0276,AJK_0276,AJK,scan,1,797,1180,,train,0,
+AJK_0277_p01,data\interim\images\AJK_0277_p01.png,azad Kashmir\0285_381408SSCNOT030823.pdf,1,AJK_0277,AJK_0277,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0277_p02,data\interim\images\AJK_0277_p02.png,azad Kashmir\0285_381408SSCNOT030823.pdf,2,AJK_0277,AJK_0277,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0278_p01,data\interim\images\AJK_0278_p01.png,azad Kashmir\0286_654693PRSSC0208231.jpeg.jpg,1,AJK_0278,AJK_0278,AJK,scan,0,1156,1600,,train,1,
+AJK_0279_p01,data\interim\images\AJK_0279_p01.png,azad Kashmir\0287_678527PR-SSC-020823.pdf,1,AJK_0279,AJK_0279,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0280_p01,data\interim\images\AJK_0280_p01.png,azad Kashmir\0288_209197PR-SSC-300723.pdf,1,AJK_0280,AJK_0280,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0281_p01,data\interim\images\AJK_0281_p01.png,azad Kashmir\0289_636352PR-HSSC-270723.pdf,1,AJK_0281,AJK_0281,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0282_p01,data\interim\images\AJK_0282_p01.png,azad Kashmir\0290_313018WhatsAppImage2023-07-21at4.03.07PM.jpeg.jpg,1,AJK_0282,AJK_0282,AJK,photo,1,1157,1599,2023,train,0,
+AJK_0283_p01,data\interim\images\AJK_0283_p01.png,azad Kashmir\0291_857818WhatsAppImage2023-07-21at12.11.58PM.jpeg.jpg,1,AJK_0283,AJK_0283,AJK,photo,1,960,1280,2023,train,0,
+AJK_0284_p01,data\interim\images\AJK_0284_p01.png,azad Kashmir\0292_527557PR-HSSC-200723.jpeg.jpg,1,AJK_0284,AJK_0284,AJK,scan,0,2371,3595,,train,0,
+AJK_0285_p01,data\interim\images\AJK_0285_p01.png,azad Kashmir\0293_614044PR-HSSC-180723.jpeg.jpg,1,AJK_0285,AJK_0285,AJK,scan,0,2343,3413,,train,0,
+AJK_0286_p01,data\interim\images\AJK_0286_p01.png,azad Kashmir\0294_708587PR-13-July-23.pdf,1,AJK_0286,AJK_0286,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0287_p01,data\interim\images\AJK_0287_p01.png,azad Kashmir\0295_195617WhatsAppImage2023-07-07at4.16.23PM.jpeg.jpg,1,AJK_0287,AJK_0287,AJK,photo,1,942,1280,2023,train,1,
+AJK_0288_p01,data\interim\images\AJK_0288_p01.png,azad Kashmir\0296_7723381.jpg,1,AJK_0288,AJK_0288,AJK,scan,0,2437,3224,,train,0,
+AJK_0289_p01,data\interim\images\AJK_0289_p01.png,azad Kashmir\0297_249664PR-INTER-PRAC-23.jpeg.jpg,1,AJK_0289,AJK_0289,AJK,scan,0,1188,1600,,train,1,
+AJK_0290_p01,data\interim\images\AJK_0290_p01.png,azad Kashmir\0298_59356SSC-Prac-2023.pdf,1,AJK_0290,AJK_0290,AJK,photo,0,2480,3509,2023,train,0,intsig.com pdf producer
+AJK_0291_p01,data\interim\images\AJK_0291_p01.png,azad Kashmir\0299_684082PR-HSSC-23.jpeg.jpg,1,AJK_0291,AJK_0291,AJK,scan,1,1151,1479,,train,1,
+AJK_0292_p01,data\interim\images\AJK_0292_p01.png,azad Kashmir\0300_756958REVFEEPDF.pdf,1,AJK_0292,AJK_0292,AJK,scan,0,1993,3504,,train,0,
+AJK_0292_p02,data\interim\images\AJK_0292_p02.png,azad Kashmir\0300_756958REVFEEPDF.pdf,2,AJK_0292,AJK_0292,AJK,scan,0,2152,3522,,train,0,
+AJK_0292_p03,data\interim\images\AJK_0292_p03.png,azad Kashmir\0300_756958REVFEEPDF.pdf,3,AJK_0292,AJK_0292,AJK,scan,0,2044,3457,,train,0,
+AJK_0293_p01,data\interim\images\AJK_0293_p01.png,azad Kashmir\0301_163391PressReleaseaboutDigitalPaperComputerScience.jpeg.jpg,1,AJK_0293,AJK_0293,AJK,scan,0,1179,1600,,train,0,
+AJK_0294_p01,data\interim\images\AJK_0294_p01.png,azad Kashmir\0302_12756FeeandCompensation.jpeg.jpg,1,AJK_0294,AJK_0294,AJK,scan,1,1204,1467,,train,0,
+AJK_0295_p01,data\interim\images\AJK_0295_p01.png,azad Kashmir\0303_314392PR-HSSC-PRAC-23.jpeg.jpg,1,AJK_0295,AJK_0295,AJK,scan,1,1103,1599,,train,0,
+AJK_0296_p01,data\interim\images\AJK_0296_p01.png,azad Kashmir\0304_482666SSC-I-REG-NOT-23-25.pdf,1,AJK_0296,AJK_0296,AJK,photo,0,2172,3301,,train,0,Adobe Scan for Android 23.05.22-regular Adobe Scan for Andro
+AJK_0296_p02,data\interim\images\AJK_0296_p02.png,azad Kashmir\0304_482666SSC-I-REG-NOT-23-25.pdf,2,AJK_0296,AJK_0296,AJK,photo,0,2144,3301,,train,0,Adobe Scan for Android 23.05.22-regular Adobe Scan for Andro
+AJK_0297_p01,data\interim\images\AJK_0297_p01.png,azad Kashmir\0305_94696PR-HSSSC-SM.jpeg.jpg,1,AJK_0297,AJK_0297,AJK,scan,1,1099,1403,,train,0,
+AJK_0298_p01,data\interim\images\AJK_0298_p01.png,azad Kashmir\0306_49652PR-HSSC-PI-23.jpeg.jpg,1,AJK_0298,AJK_0298,AJK,scan,0,1156,1600,,train,1,
+AJK_0299_p01,data\interim\images\AJK_0299_p01.png,azad Kashmir\0307_620727HSSC-250523.jpeg.jpg,1,AJK_0299,AJK_0299,AJK,scan,1,1144,1518,,train,0,
+AJK_0300_p01,data\interim\images\AJK_0300_p01.png,azad Kashmir\0308_381469InstructionHSSC-23.jpeg.jpg,1,AJK_0300,AJK_0300,AJK,scan,1,1171,1599,,train,0,
+AJK_0301_p01,data\interim\images\AJK_0301_p01.png,azad Kashmir\0309_868316pr-adm-17-05-23.jpeg.jpg,1,AJK_0301,AJK_0301,AJK,scan,1,928,1280,2023,test,1,
+AJK_0302_p01,data\interim\images\AJK_0302_p01.png,azad Kashmir\0310_387908PR-HSSC-RNO-SLIPS-A-23.jpeg.jpg,1,AJK_0302,AJK_0302,AJK,scan,0,2212,3091,,train,0,
+AJK_0303_p01,data\interim\images\AJK_0303_p01.png,azad Kashmir\0311_171813PR-Reg-9th-23-25.jpeg.jpg,1,AJK_0303,AJK_0303,AJK,scan,1,1208,1583,,train,0,
+AJK_0304_p01,data\interim\images\AJK_0304_p01.png,azad Kashmir\0312_7873SSC-1st-Prac-Exam-23.jpeg.jpg,1,AJK_0304,AJK_0304,AJK,scan,0,1161,1600,,train,0,
+AJK_0305_p01,data\interim\images\AJK_0305_p01.png,azad Kashmir\0313_805450NACTA.jpg,1,AJK_0305,AJK_0305,AJK,scan,1,720,846,,train,1,
+AJK_0306_p01,data\interim\images\AJK_0306_p01.png,azad Kashmir\0314_791595PR-SSC-I-PC.jpeg.jpg,1,AJK_0306,AJK_0306,AJK,scan,1,899,1280,,train,0,
+AJK_0307_p01,data\interim\images\AJK_0307_p01.png,azad Kashmir\0315_414398SSC-9TH-070423.jpeg.jpg,1,AJK_0307,AJK_0307,AJK,scan,1,929,1280,,train,0,
+AJK_0308_p01,data\interim\images\AJK_0308_p01.png,azad Kashmir\0316_739593PR-SSC-A-23.jpeg.jpg,1,AJK_0308,AJK_0308,AJK,scan,1,934,1280,,train,1,
+AJK_0309_p01,data\interim\images\AJK_0309_p01.png,azad Kashmir\0317_84228PR-HSSC-290323.jpeg.jpg,1,AJK_0309,AJK_0309,AJK,scan,1,921,1280,,train,0,
+AJK_0310_p01,data\interim\images\AJK_0310_p01.png,azad Kashmir\0318_861846WhatsAppImage2023-03-22at3.24.51PM.jpeg.jpg,1,AJK_0310,AJK_0310,AJK,photo,0,1126,1600,2023,train,0,
+AJK_0311_p01,data\interim\images\AJK_0311_p01.png,azad Kashmir\0319_2105phones.jpeg.jpg,1,AJK_0311,AJK_0311,AJK,scan,1,1195,1599,,train,0,
+AJK_0312_p01,data\interim\images\AJK_0312_p01.png,azad Kashmir\0320_938476IB-SpeechComp.jpeg.jpg,1,AJK_0312,AJK_0312,AJK,scan,1,1168,1398,,train,0,
+AJK_0313_p01,data\interim\images\AJK_0313_p01.png,azad Kashmir\0321_211517HSSC-II-2023.jpeg.jpg,1,AJK_0313,AJK_0313,AJK,scan,1,1108,1514,2023,test,1,
+AJK_0314_p01,data\interim\images\AJK_0314_p01.png,azad Kashmir\0322_886505imgonline-com-ua-twotoone-OSIKPzKcetcoCjih.jpg,1,AJK_0314,AJK_0314,AJK,scan,0,729,1690,,train,1,
+AJK_0315_p01,data\interim\images\AJK_0315_p01.png,azad Kashmir\0323_627471HSSC-I-23.jpeg.jpg,1,AJK_0315,AJK_0315,AJK,scan,1,745,1221,,train,0,
+AJK_0316_p01,data\interim\images\AJK_0316_p01.png,azad Kashmir\0324_231048WhatsAppImage2023-02-24at2.37.41PM.jpeg.jpg,1,AJK_0316,AJK_0316,AJK,photo,1,896,1280,2023,train,1,
+AJK_0317_p01,data\interim\images\AJK_0317_p01.png,azad Kashmir\0325_500182nd-Med-Tech.jpeg.jpg,1,AJK_0317,AJK_0317,AJK,scan,1,861,1280,,train,0,
+AJK_0318_p01,data\interim\images\AJK_0318_p01.png,azad Kashmir\0326_359558WhatsAppImage2023-02-09at4.34.41PM.jpeg.jpg,1,AJK_0318,AJK_0318,AJK,photo,0,2192,3220,2023,train,0,
+AJK_0319_p01,data\interim\images\AJK_0319_p01.png,azad Kashmir\0327_180206WhatsAppImage2023-02-09at4.32.56PM.jpeg.jpg,1,AJK_0319,AJK_0319,AJK,photo,0,1130,1600,2023,train,0,
+AJK_0320_p01,data\interim\images\AJK_0320_p01.png,azad Kashmir\0328_485870WhatsAppImage2023-02-09at4.32.18PM.jpeg.jpg,1,AJK_0320,AJK_0320,AJK,photo,0,1132,1600,2023,train,0,
+AJK_0321_p01,data\interim\images\AJK_0321_p01.png,azad Kashmir\0329_196350PR-RECH-HSSC-2ND-22.jpeg.jpg,1,AJK_0321,AJK_0321,AJK,scan,0,1167,1600,,train,0,
+AJK_0322_p01,data\interim\images\AJK_0322_p01.png,azad Kashmir\0330_481109SSC-SCH-2023.jpeg.jpg,1,AJK_0322,AJK_0322,AJK,scan,1,1057,1478,2023,test,1,
+AJK_0323_p01,data\interim\images\AJK_0323_p01.png,azad Kashmir\0331_833251PR-HSSC-2nd-2022.jpeg.jpg,1,AJK_0323,AJK_0323,AJK,scan,1,1151,1599,2022,test,1,
+AJK_0324_p01,data\interim\images\AJK_0324_p01.png,azad Kashmir\0332_74523Screenshot_20230203-182054.jpg,1,AJK_0324,AJK_0324,AJK,photo,1,1060,1526,,train,0,
+AJK_0325_p01,data\interim\images\AJK_0325_p01.png,azad Kashmir\0333_212249HSSCadmissionSchedule2023.pdf,1,AJK_0325,AJK_0325,AJK,photo,0,2009,3301,2023,train,0,Adobe Scan for Android 23.01.17-regular Adobe Scan for Andro
+AJK_0325_p02,data\interim\images\AJK_0325_p02.png,azad Kashmir\0333_212249HSSCadmissionSchedule2023.pdf,2,AJK_0325,AJK_0325,AJK,photo,0,1961,3301,2023,train,1,Adobe Scan for Android 23.01.17-regular Adobe Scan for Andro
+AJK_0326_p01,data\interim\images\AJK_0326_p01.png,azad Kashmir\0335_586151PressReleaseHSSCTranslationoftheHolyQuranPaper.pdf,1,AJK_0326,AJK_0326,AJK,photo,0,2101,3301,,train,0,Adobe Scan for Android 22.12.16-regular Adobe Scan for Andro
+AJK_0327_p01,data\interim\images\AJK_0327_p01.png,azad Kashmir\0336_131134CamScanner01-17-202316.29_2_.jpg,1,AJK_0327,AJK_0327,AJK,photo,0,2412,3315,,train,0,
+AJK_0328_p01,data\interim\images\AJK_0328_p01.png,azad Kashmir\0337_561737AffiliationfeesSchedule.pdf,1,AJK_0328,AJK_0328,AJK,photo,0,2188,3301,,train,0,Adobe Scan for Android 22.12.16-regular Adobe Scan for Andro
+AJK_0328_p02,data\interim\images\AJK_0328_p02.png,azad Kashmir\0337_561737AffiliationfeesSchedule.pdf,2,AJK_0328,AJK_0328,AJK,photo,0,2023,3301,,train,0,Adobe Scan for Android 22.12.16-regular Adobe Scan for Andro
+AJK_0329_p01,data\interim\images\AJK_0329_p01.png,azad Kashmir\0338_126251SSC-2ND-A-2023.jpeg.jpg,1,AJK_0329,AJK_0329,AJK,scan,0,1744,2440,2023,test,1,
+AJK_0330_p01,data\interim\images\AJK_0330_p01.png,azad Kashmir\0339_21606PR-SSC-REG-CARDS-2022-24.jpeg.jpg,1,AJK_0330,AJK_0330,AJK,scan,0,1053,1600,2022,test,1,
+AJK_0331_p01,data\interim\images\AJK_0331_p01.png,azad Kashmir\0340_171142PR-SSC-IMP-23.pdf,1,AJK_0331,AJK_0331,AJK,photo,0,2550,3205,,train,0,Adobe Scan for Android 22.12.16-regular Adobe Scan for Andro
+AJK_0332_p01,data\interim\images\AJK_0332_p01.png,azad Kashmir\0341_544708SSC-9th-Special.pdf,1,AJK_0332,AJK_0332,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0333_p01,data\interim\images\AJK_0333_p01.png,azad Kashmir\0342_31250SSC-PVT-INST-23.pdf,1,AJK_0333,AJK_0333,AJK,photo,0,2003,3301,,train,0,Adobe Scan for Android 22.12.16-regular Adobe Scan for Andro
+AJK_0334_p01,data\interim\images\AJK_0334_p01.png,azad Kashmir\0343_331268HSSC-211222.jpeg.jpg,1,AJK_0334,AJK_0334,AJK,scan,1,720,1050,,train,0,
+AJK_0335_p01,data\interim\images\AJK_0335_p01.png,azad Kashmir\0344_472930SSC-1ST-A-2023.pdf,1,AJK_0335,AJK_0335,AJK,photo,0,2167,3301,2023,train,0,Adobe Scan for Android 22.12.16-regular Adobe Scan for Andro
+AJK_0335_p02,data\interim\images\AJK_0335_p02.png,azad Kashmir\0344_472930SSC-1ST-A-2023.pdf,2,AJK_0335,AJK_0335,AJK,photo,0,2076,3301,2023,train,0,Adobe Scan for Android 22.12.16-regular Adobe Scan for Andro
+AJK_0336_p01,data\interim\images\AJK_0336_p01.png,azad Kashmir\0345_369018PR-HSSC-15122022.pdf,1,AJK_0336,AJK_0336,AJK,photo,0,2175,3301,,train,0,Adobe Scan for Android 22.12.13-regular Adobe Scan for Andro
+AJK_0337_p01,data\interim\images\AJK_0337_p01.png,azad Kashmir\0346_513366PR-HSSC-141222.pdf,1,AJK_0337,AJK_0337,AJK,photo,0,2381,3301,,train,0,Adobe Scan for Android 22.11.18-regular Adobe Scan for Andro
+AJK_0338_p01,data\interim\images\AJK_0338_p01.png,azad Kashmir\0348_370422IMG-20221204-WA0134.jpg,1,AJK_0338,AJK_0338,AJK,photo,1,997,1080,,train,0,
+AJK_0339_p01,data\interim\images\AJK_0339_p01.png,azad Kashmir\0349_840087AdobeScanNov29_2022_1_.pdf,1,AJK_0339,AJK_0339,AJK,photo,0,2155,3301,2022,train,1,Adobe Scan for Android 22.11.18-regular Adobe Scan for Andro
+AJK_0340_p01,data\interim\images\AJK_0340_p01.png,azad Kashmir\0350_378509PRESSRELEASE.pdf,1,AJK_0340,AJK_0340,AJK,photo,0,2349,3301,,train,0,Adobe Scan for Android 22.11.18-regular Adobe Scan for Andro
+AJK_0341_p01,data\interim\images\AJK_0341_p01.png,azad Kashmir\0351_361419PR-HSSC-PI-221122.pdf,1,AJK_0341,AJK_0341,AJK,photo,0,2480,3509,,train,1,intsig.com pdf producer
+AJK_0341_p02,data\interim\images\AJK_0341_p02.png,azad Kashmir\0351_361419PR-HSSC-PI-221122.pdf,2,AJK_0341,AJK_0341,AJK,photo,0,2480,3509,,train,0,intsig.com pdf producer
+AJK_0342_p01,data\interim\images\AJK_0342_p01.png,azad Kashmir\0352_556274PressReleaseHSSC-IResultA22.pdf,1,AJK_0342,AJK_0342,AJK,photo,0,2380,3301,,train,0,Adobe Scan for Android 22.10.11-regular Adobe Scan for Andro
+AJK_0343_p01,data\interim\images\AJK_0343_p01.png,azad Kashmir\0353_44982NotificationforExaminer_HE.pdf,1,AJK_0343,AJK_0343,AJK,photo,0,1993,3301,,train,1,Adobe Scan for Android 22.10.11-regular Adobe Scan for Andro
+AJK_0344_p01,data\interim\images\AJK_0344_p01.png,azad Kashmir\0354_691314RevisedScheduleMT.pdf,1,AJK_0344,AJK_0344,AJK,photo,0,2104,3301,,train,0,Adobe Scan for Android 22.10.11-regular Adobe Scan for Andro
+AJK_0345_p01,data\interim\images\AJK_0345_p01.png,azad Kashmir\0355_876098WhatsAppImage2022-11-10at12.33.18.jpeg.jpg,1,AJK_0345,AJK_0345,AJK,photo,0,1134,1600,2022,train,0,
+AJK_0346_p01,data\interim\images\AJK_0346_p01.png,azad Kashmir\0356_419311WhatsAppImage2022-11-09at11.08.56AM.jpeg.jpg,1,AJK_0346,AJK_0346,AJK,photo,1,618,907,2022,train,0,
+AJK_0347_p01,data\interim\images\AJK_0347_p01.png,azad Kashmir\0357_247741Pr-SSC-Prac-22.pdf,1,AJK_0347,AJK_0347,AJK,photo,0,2454,3301,,train,1,Adobe Scan for Android 22.10.11-regular Adobe Scan for Andro
+AJK_0348_p01,data\interim\images\AJK_0348_p01.png,azad Kashmir\0358_867919MedicalTechnology.jpeg.jpg,1,AJK_0348,AJK_0348,AJK,scan,0,1014,1600,,train,0,
+AJK_0349_p01,data\interim\images\AJK_0349_p01.png,azad Kashmir\0359_385681AdobeScanNov01_2022.pdf,1,AJK_0349,AJK_0349,AJK,photo,0,2296,3301,2022,train,0,Adobe Scan for Android 22.10.11-regular Adobe Scan for Andro
+AJK_0350_p01,data\interim\images\AJK_0350_p01.png,azad Kashmir\0360_898803WhatsAppImage2022-10-31at16.20.07.jpeg.jpg,1,AJK_0350,AJK_0350,AJK,photo,1,931,1280,2022,train,1,
+AJK_0351_p01,data\interim\images\AJK_0351_p01.png,azad Kashmir\0361_772064Adobe_Scan_Oct_26_2022-000.png,1,AJK_0351,AJK_0351,AJK,scan,0,2144,2424,2022,val,1,
+AJK_0352_p01,data\interim\images\AJK_0352_p01.png,azad Kashmir\0362_498321Adobe_Scan_Oct_26_2022-001.png,1,AJK_0352,AJK_0352,AJK,scan,0,2328,2536,2022,val,1,
+AJK_0353_p01,data\interim\images\AJK_0353_p01.png,azad Kashmir\0363_656341313014112_10158395407782373_536806886071030719_n.jpg,1,AJK_0353,AJK_0353,AJK,scan,1,895,1191,,train,0,
+AJK_0354_p01,data\interim\images\AJK_0354_p01.png,azad Kashmir\0364_88256ot-drawing-agrotechetc.pdf,1,AJK_0354,AJK_0354,AJK,photo,0,1981,3301,,train,0,Adobe Scan for Android 22.10.11-regular Adobe Scan for Andro
+AJK_0354_p02,data\interim\images\AJK_0354_p02.png,azad Kashmir\0364_88256ot-drawing-agrotechetc.pdf,2,AJK_0354,AJK_0354,AJK,photo,0,2089,3301,,train,0,Adobe Scan for Android 22.10.11-regular Adobe Scan for Andro
+AJK_0355_p01,data\interim\images\AJK_0355_p01.png,azad Kashmir\0365_55267hssciipaperrecheking.pdf,1,AJK_0355,AJK_0355,AJK,photo,0,2425,3301,,train,1,Adobe Scan for Android 22.10.11-regular Adobe Scan for Andro
+AJK_0356_p01,data\interim\images\AJK_0356_p01.png,azad Kashmir\0366_40252DATESHEETHSSCA2022.pdf,1,AJK_0356,AJK_0356,AJK,photo,0,2480,3509,2022,train,0,intsig.com pdf producer
+AJK_0356_p02,data\interim\images\AJK_0356_p02.png,azad Kashmir\0366_40252DATESHEETHSSCA2022.pdf,2,AJK_0356,AJK_0356,AJK,photo,0,2480,3509,2022,train,0,intsig.com pdf producer
+AJK_0357_p01,data\interim\images\AJK_0357_p01.png,azad Kashmir\0367_713134WhatsAppImage2022-10-18at14.56.30_1_.jpeg.jpg,1,AJK_0357,AJK_0357,AJK,photo,0,1315,1754,2022,train,0,
+AJK_0358_p01,data\interim\images\AJK_0358_p01.png,azad Kashmir\0368_131591WhatsAppImage2022-10-18at14.56.30.jpeg.jpg,1,AJK_0358,AJK_0358,AJK,photo,1,769,1100,2022,train,1,
+AJK_0359_p01,data\interim\images\AJK_0359_p01.png,azad Kashmir\0369_816619Image_2_.jpg,1,AJK_0359,AJK_0359,AJK,scan,0,2574,3696,,train,0,
+AJK_0360_p01,data\interim\images\AJK_0360_p01.png,azad Kashmir\0370_140533MedicalTechnology.pdf,1,AJK_0360,AJK_0360,AJK,photo,0,2025,3301,,train,0,Adobe Scan for Android 22.08.29-regular Adobe Scan for Andro
+AJK_0360_p02,data\interim\images\AJK_0360_p02.png,azad Kashmir\0370_140533MedicalTechnology.pdf,2,AJK_0360,AJK_0360,AJK,photo,0,1999,3301,,train,0,Adobe Scan for Android 22.08.29-regular Adobe Scan for Andro
+AJK_0361_p01,data\interim\images\AJK_0361_p01.png,azad Kashmir\0371_184356Image_164_.pdf,1,AJK_0361,AJK_0361,AJK,scan,0,2480,3509,,train,0,iLovePDF
+AJK_0361_p02,data\interim\images\AJK_0361_p02.png,azad Kashmir\0371_184356Image_164_.pdf,2,AJK_0361,AJK_0361,AJK,scan,0,2480,3509,,train,1,iLovePDF
+AJK_0362_p01,data\interim\images\AJK_0362_p01.png,azad Kashmir\0372_766296Image_168_.jpg,1,AJK_0362,AJK_0362,AJK,scan,0,2495,3615,,train,0,
+AJK_0363_p01,data\interim\images\AJK_0363_p01.png,azad Kashmir\0373_194305Image_142_.jpg,1,AJK_0363,AJK_0363,AJK,scan,0,2370,3477,,train,0,
+AJK_0364_p01,data\interim\images\AJK_0364_p01.png,azad Kashmir\0374_279815AdobeScanSep12_2022_1_.pdf,1,AJK_0364,AJK_0364,AJK,photo,0,2090,3301,2022,train,0,Adobe Scan for Android 22.08.29-regular Adobe Scan for Andro
+AJK_0365_p01,data\interim\images\AJK_0365_p01.png,azad Kashmir\0375_321441AdobeScanSep12_2022.pdf,1,AJK_0365,AJK_0365,AJK,photo,0,2054,3301,2022,train,1,Adobe Scan for Android 22.08.29-regular Adobe Scan for Andro
+AJK_0365_p02,data\interim\images\AJK_0365_p02.png,azad Kashmir\0375_321441AdobeScanSep12_2022.pdf,2,AJK_0365,AJK_0365,AJK,photo,0,2057,3301,2022,train,0,Adobe Scan for Android 22.08.29-regular Adobe Scan for Andro
+AJK_0366_p01,data\interim\images\AJK_0366_p01.png,azad Kashmir\0376_451232Image_94_.jpg,1,AJK_0366,AJK_0366,AJK,scan,0,2323,3665,,train,1,
+AJK_0367_p01,data\interim\images\AJK_0367_p01.png,azad Kashmir\0377_244995Image_94_.jpg,1,AJK_0367,AJK_0367,AJK,scan,0,2574,3696,,train,0,
+AJK_0368_p01,data\interim\images\AJK_0368_p01.png,azad Kashmir\0378_764526Image_80_.jpg,1,AJK_0368,AJK_0368,AJK,scan,0,2275,3389,,train,0,
+AJK_0369_p01,data\interim\images\AJK_0369_p01.png,azad Kashmir\0379_708679Image_77_.jpg,1,AJK_0369,AJK_0369,AJK,scan,0,2326,3491,,train,1,
+AJK_0370_p01,data\interim\images\AJK_0370_p01.png,azad Kashmir\0380_342498Image_74_.jpg,1,AJK_0370,AJK_0370,AJK,scan,0,2348,3382,,train,0,
+AJK_0371_p01,data\interim\images\AJK_0371_p01.png,azad Kashmir\0381_867584Image_72_.jpg,1,AJK_0371,AJK_0371,AJK,scan,0,2355,3353,,train,1,
+AJK_0372_p01,data\interim\images\AJK_0372_p01.png,azad Kashmir\0382_597961Image_70_.jpg,1,AJK_0372,AJK_0372,AJK,scan,0,2452,3576,,train,1,
+AJK_0373_p01,data\interim\images\AJK_0373_p01.png,azad Kashmir\0383_779754Image_33_.jpg,1,AJK_0373,AJK_0373,AJK,scan,0,2464,2536,,train,0,
+AJK_0374_p01,data\interim\images\AJK_0374_p01.png,azad Kashmir\0384_272583SSCRevisedNotificationRegistration.pdf,1,AJK_0374,AJK_0374,AJK,photo,0,2222,3301,,train,0,Adobe Scan for Android 22.07.19-regular Adobe Scan for Andro
+AJK_0375_p01,data\interim\images\AJK_0375_p01.png,azad Kashmir\0385_79406WhatsAppImage2022-08-02at1.01.26PM.jpeg.jpg,1,AJK_0375,AJK_0375,AJK,photo,1,1080,1416,2022,train,0,
+AJK_0376_p01,data\interim\images\AJK_0376_p01.png,azad Kashmir\0386_845520Image_23_.jpg,1,AJK_0376,AJK_0376,AJK,scan,0,2365,3611,,train,0,
+AJK_0377_p01,data\interim\images\AJK_0377_p01.png,azad Kashmir\0387_976409Image_14_.jpg,1,AJK_0377,AJK_0377,AJK,scan,0,2210,3138,,train,0,
+AJK_0378_p01,data\interim\images\AJK_0378_p01.png,azad Kashmir\0389_943542PressRelease.jpg,1,AJK_0378,AJK_0378,AJK,scan,0,2412,3327,,train,0,
+AJK_0379_p01,data\interim\images\AJK_0379_p01.png,azad Kashmir\0390_702148IMG-20220622-WA0165.jpg,1,AJK_0379,AJK_0379,AJK,photo,0,1127,1600,,train,0,
+AJK_0380_p01,data\interim\images\AJK_0380_p01.png,azad Kashmir\0391_736083Image_8_.jpg,1,AJK_0380,AJK_0380,AJK,scan,0,2312,3448,,train,1,
+AJK_0381_p01,data\interim\images\AJK_0381_p01.png,azad Kashmir\0392_776519Image_2_.jpg,1,AJK_0381,AJK_0381,AJK,scan,0,2322,3410,,train,0,
+AJK_0382_p01,data\interim\images\AJK_0382_p01.png,azad Kashmir\0393_251342PressReleaseRollNoSlipsHSSCA22.pdf,1,AJK_0382,AJK_0382,AJK,photo,0,2100,3301,,train,0,Adobe Scan for Android 22.05.19-regular Adobe Scan for Andro
+AJK_0383_p01,data\interim\images\AJK_0383_p01.png,azad Kashmir\0394_411987RegistrationScheduleSSC2022-24.pdf,1,AJK_0383,AJK_0383,AJK,scan,0,2480,3509,2022,val,1,
+AJK_0383_p02,data\interim\images\AJK_0383_p02.png,azad Kashmir\0394_411987RegistrationScheduleSSC2022-24.pdf,2,AJK_0383,AJK_0383,AJK,scan,0,2480,3509,2022,val,1,
+AJK_0384_p01,data\interim\images\AJK_0384_p01.png,azad Kashmir\0395_629608WhatsAppImage2022-05-31at12.23.53PM.jpeg.jpg,1,AJK_0384,AJK_0384,AJK,photo,1,660,1071,2022,train,0,
+AJK_0385_p01,data\interim\images\AJK_0385_p01.png,azad Kashmir\0396_709777WhatsAppImage2022-05-31at10.14.05AM.jpeg.jpg,1,AJK_0385,AJK_0385,AJK,photo,0,1111,1600,2022,train,1,
+AJK_0386_p01,data\interim\images\AJK_0386_p01.png,azad Kashmir\0397_102325Image_229_.jpg,1,AJK_0386,AJK_0386,AJK,scan,0,2428,3491,,train,1,
+AJK_0387_p01,data\interim\images\AJK_0387_p01.png,azad Kashmir\0398_906127Image_191_.jpg,1,AJK_0387,AJK_0387,AJK,scan,0,2472,3491,,train,1,
+AJK_0388_p01,data\interim\images\AJK_0388_p01.png,azad Kashmir\0399_861511Image_184_.jpg,1,AJK_0388,AJK_0388,AJK,scan,0,2355,3003,,train,1,
+AJK_0389_p01,data\interim\images\AJK_0389_p01.png,azad Kashmir\0400_62194PR13052022.jpeg.jpg,1,AJK_0389,AJK_0389,AJK,scan,1,1199,1599,,train,0,
+AJK_0390_p01,data\interim\images\AJK_0390_p01.png,azad Kashmir\0401_485870Image_102_.jpg,1,AJK_0390,AJK_0390,AJK,scan,0,2399,3557,,train,1,
+AJK_0391_p01,data\interim\images\AJK_0391_p01.png,azad Kashmir\0402_726348Image_221_.jpg,1,AJK_0391,AJK_0391,AJK,scan,0,2472,3061,,train,0,
+AJK_0392_p01,data\interim\images\AJK_0392_p01.png,azad Kashmir\0403_28564Image_203_.jpg,1,AJK_0392,AJK_0392,AJK,scan,0,2347,3383,,train,0,
+AJK_0393_p01,data\interim\images\AJK_0393_p01.png,azad Kashmir\0404_547149IMG-20220407-WA0082.jpg,1,AJK_0393,AJK_0393,AJK,photo,1,874,1280,,train,0,
+AJK_0394_p01,data\interim\images\AJK_0394_p01.png,azad Kashmir\0405_846466Image_196_.jpg,1,AJK_0394,AJK_0394,AJK,scan,0,2169,3482,,train,0,
+AJK_0395_p01,data\interim\images\AJK_0395_p01.png,azad Kashmir\0406_368682Image_193_.jpg,1,AJK_0395,AJK_0395,AJK,scan,0,2194,3471,,train,0,
+AJK_0396_p01,data\interim\images\AJK_0396_p01.png,azad Kashmir\0407_97747scheduleofexamhssc.jpg,1,AJK_0396,AJK_0396,AJK,scan,0,2256,3343,,train,1,
+AJK_0397_p01,data\interim\images\AJK_0397_p01.png,azad Kashmir\0408_740447Image_116_.jpg,1,AJK_0397,AJK_0397,AJK,scan,0,2392,3564,,train,0,
+AJK_0398_p01,data\interim\images\AJK_0398_p01.png,azad Kashmir\0409_423248Image_114_.jpg,1,AJK_0398,AJK_0398,AJK,scan,0,2359,3619,,train,1,
+AJK_0399_p01,data\interim\images\AJK_0399_p01.png,azad Kashmir\0410_525543Image_105_.jpg,1,AJK_0399,AJK_0399,AJK,scan,0,2450,3455,,train,0,
+AJK_0400_p01,data\interim\images\AJK_0400_p01.png,azad Kashmir\0411_561248Image_97_.jpg,1,AJK_0400,AJK_0400,AJK,scan,0,2414,3593,,train,0,
+AJK_0401_p01,data\interim\images\AJK_0401_p01.png,azad Kashmir\0412_603454PracticalExam2022.pdf,1,AJK_0401,AJK_0401,AJK,scan,0,2479,3507,2022,test,1,Microsoft: Print To PDF
+AJK_0401_p02,data\interim\images\AJK_0401_p02.png,azad Kashmir\0412_603454PracticalExam2022.pdf,2,AJK_0401,AJK_0401,AJK,scan,0,2479,3507,2022,test,1,Microsoft: Print To PDF
+AJK_0402_p01,data\interim\images\AJK_0402_p01.png,azad Kashmir\0413_97952236b7bee3-ef2a-4628-803f-582d174dfbe0.jpg,1,AJK_0402,AJK_0402,AJK,scan,1,964,1280,,train,0,
+AJK_0403_p01,data\interim\images\AJK_0403_p01.png,azad Kashmir\0414_131896Image_95_.jpg,1,AJK_0403,AJK_0403,AJK,scan,0,2334,3244,,train,0,
+AJK_0404_p01,data\interim\images\AJK_0404_p01.png,azad Kashmir\0415_634643Image_78_.jpg,1,AJK_0404,AJK_0404,AJK,scan,0,2421,3506,,train,0,
+AJK_0405_p01,data\interim\images\AJK_0405_p01.png,azad Kashmir\0416_768493Image_79_.jpg,1,AJK_0405,AJK_0405,AJK,scan,0,2359,3676,,train,0,
+AJK_0406_p01,data\interim\images\AJK_0406_p01.png,azad Kashmir\0417_788482onlineexamschedule2022.pdf,1,AJK_0406,AJK_0406,AJK,photo,0,2480,3509,2022,train,0,intsig.com pdf producer
+AJK_0406_p02,data\interim\images\AJK_0406_p02.png,azad Kashmir\0417_788482onlineexamschedule2022.pdf,2,AJK_0406,AJK_0406,AJK,photo,0,2480,3509,2022,train,0,intsig.com pdf producer
+AJK_0407_p01,data\interim\images\AJK_0407_p01.png,azad Kashmir\0419_546478Image_42_.jpg,1,AJK_0407,AJK_0407,AJK,scan,0,2493,3135,,train,0,
+AJK_0408_p01,data\interim\images\AJK_0408_p01.png,azad Kashmir\0420_102264REG-converted-compressed.pdf,1,AJK_0408,AJK_0408,AJK,scan,0,2480,3509,,train,0,3-Heights™ PDF Optimization Shell 6.3.1.5 (http://www.pdf-to
+AJK_0408_p02,data\interim\images\AJK_0408_p02.png,azad Kashmir\0420_102264REG-converted-compressed.pdf,2,AJK_0408,AJK_0408,AJK,scan,0,2480,3509,,train,0,3-Heights™ PDF Optimization Shell 6.3.1.5 (http://www.pdf-to
+AJK_0409_p01,data\interim\images\AJK_0409_p01.png,azad Kashmir\0421_968414Image_50_-converted-compressed.pdf,1,AJK_0409,AJK_0409,AJK,scan,0,2480,3509,,train,0,3-Heights™ PDF Optimization Shell 6.3.1.5 (http://www.pdf-to
+AJK_0409_p02,data\interim\images\AJK_0409_p02.png,azad Kashmir\0421_968414Image_50_-converted-compressed.pdf,2,AJK_0409,AJK_0409,AJK,scan,0,2480,3509,,train,0,3-Heights™ PDF Optimization Shell 6.3.1.5 (http://www.pdf-to
+AJK_0410_p01,data\interim\images\AJK_0410_p01.png,azad Kashmir\0422_66864WhatsAppImage2022-02-03at4.24.43PM.jpeg.jpg,1,AJK_0410,AJK_0410,AJK,photo,1,822,1239,2022,train,0,
+AJK_0411_p01,data\interim\images\AJK_0411_p01.png,azad Kashmir\0423_628051WhatsAppImage2022-01-26at2.49.03PM.jpeg.jpg,1,AJK_0411,AJK_0411,AJK,photo,1,761,1100,2022,train,0,
+AJK_0412_p01,data\interim\images\AJK_0412_p01.png,azad Kashmir\0424_785308PressReleaseHSSCSpecialExam2021.pdf,1,AJK_0412,AJK_0412,AJK,photo,0,2229,3301,2021,train,0,Adobe Scan for Android 21.12.20-regular Adobe Scan for Andro
+AJK_0413_p01,data\interim\images\AJK_0413_p01.png,azad Kashmir\0425_22003AdobeScan11Jan2022.pdf,1,AJK_0413,AJK_0413,AJK,photo,0,2078,3301,2022,train,0,Adobe Scan for Android 21.12.20-regular Adobe Scan for Andro
+AJK_0414_p01,data\interim\images\AJK_0414_p01.png,azad Kashmir\0426_422882AdobeScanJan11_2022.pdf,1,AJK_0414,AJK_0414,AJK,photo,0,2380,3301,2022,train,0,Adobe Scan for Android 21.12.20-regular Adobe Scan for Andro
+AJK_0415_p01,data\interim\images\AJK_0415_p01.png,azad Kashmir\0427_887725Image_94_.jpg,1,AJK_0415,AJK_0415,AJK,scan,0,2486,3324,,train,0,
+AJK_0416_p01,data\interim\images\AJK_0416_p01.png,azad Kashmir\0428_268859notification05-01-22.jpg,1,AJK_0416,AJK_0416,AJK,scan,0,2421,3389,2022,val,1,
+AJK_0417_p01,data\interim\images\AJK_0417_p01.png,azad Kashmir\0429_216705Image_78_.jpg,1,AJK_0417,AJK_0417,AJK,scan,0,2341,3696,,train,1,
+AJK_0418_p01,data\interim\images\AJK_0418_p01.png,azad Kashmir\0430_966613Image_77_.jpg,1,AJK_0418,AJK_0418,AJK,scan,0,2355,3244,,train,0,
+AJK_0419_p01,data\interim\images\AJK_0419_p01.png,azad Kashmir\0431_20080AdobeScanDec15_2021.pdf,1,AJK_0419,AJK_0419,AJK,photo,0,2456,3301,2021,train,0,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0420_p01,data\interim\images\AJK_0420_p01.png,azad Kashmir\0432_84832702bbf022-6dea-4584-ac99-e63290475c76.jpg,1,AJK_0420,AJK_0420,AJK,scan,1,910,1280,,train,0,
+AJK_0421_p01,data\interim\images\AJK_0421_p01.png,azad Kashmir\0433_766967press.jpg,1,AJK_0421,AJK_0421,AJK,scan,1,893,1280,,train,0,
+AJK_0422_p01,data\interim\images\AJK_0422_p01.png,azad Kashmir\0434_62683new.jpg,1,AJK_0422,AJK_0422,AJK,scan,0,1134,1600,,train,0,
+AJK_0423_p01,data\interim\images\AJK_0423_p01.png,azad Kashmir\0435_103210WhatsAppImage2021-12-08at12.49.22PM.jpeg.jpg,1,AJK_0423,AJK_0423,AJK,photo,1,801,1112,2021,train,0,
+AJK_0424_p01,data\interim\images\AJK_0424_p01.png,azad Kashmir\0436_413391mecicalTech.pdf,1,AJK_0424,AJK_0424,AJK,scan,0,2480,3509,,train,1,3-Heights™ PDF Optimization Shell 6.3.1.5 (http://www.pdf-to
+AJK_0424_p02,data\interim\images\AJK_0424_p02.png,azad Kashmir\0436_413391mecicalTech.pdf,2,AJK_0424,AJK_0424,AJK,scan,0,2480,3509,,train,0,3-Heights™ PDF Optimization Shell 6.3.1.5 (http://www.pdf-to
+AJK_0425_p01,data\interim\images\AJK_0425_p01.png,azad Kashmir\0437_780181PR-REG-011221-1.jpeg.jpg,1,AJK_0425,AJK_0425,AJK,scan,1,960,1169,,train,0,
+AJK_0426_p01,data\interim\images\AJK_0426_p01.png,azad Kashmir\0438_608062PR-REG-011221-2.jpeg.jpg,1,AJK_0426,AJK_0426,AJK,scan,1,960,1165,,train,1,
+AJK_0427_p01,data\interim\images\AJK_0427_p01.png,azad Kashmir\0439_352111PR-REG-011221-3.jpeg.jpg,1,AJK_0427,AJK_0427,AJK,scan,1,960,1176,,train,0,
+AJK_0428_p01,data\interim\images\AJK_0428_p01.png,azad Kashmir\0440_95458AdobeScan22Nov2021.pdf,1,AJK_0428,AJK_0428,AJK,photo,0,2123,3301,2021,train,1,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0429_p01,data\interim\images\AJK_0429_p01.png,azad Kashmir\0441_255859PrRegHSSC2021-23.jpg,1,AJK_0429,AJK_0429,AJK,scan,1,527,770,2021,val,1,
+AJK_0430_p01,data\interim\images\AJK_0430_p01.png,azad Kashmir\0442_303741HSSCRegistrationNotification.pdf,1,AJK_0430,AJK_0430,AJK,photo,0,2061,3301,,train,1,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0430_p02,data\interim\images\AJK_0430_p02.png,azad Kashmir\0442_303741HSSCRegistrationNotification.pdf,2,AJK_0430,AJK_0430,AJK,photo,0,1927,3301,,train,0,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0431_p01,data\interim\images\AJK_0431_p01.png,azad Kashmir\0443_928619AdobeScanNov17_2021.pdf,1,AJK_0431,AJK_0431,AJK,photo,0,2088,3301,2021,train,1,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0431_p02,data\interim\images\AJK_0431_p02.png,azad Kashmir\0443_928619AdobeScanNov17_2021.pdf,2,AJK_0431,AJK_0431,AJK,photo,0,2107,3301,2021,train,0,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0432_p01,data\interim\images\AJK_0432_p01.png,azad Kashmir\0444_795989WhatsAppImage2021-11-09at15.59.10.jpeg.jpg,1,AJK_0432,AJK_0432,AJK,photo,1,791,1100,2021,train,0,
+AJK_0433_p01,data\interim\images\AJK_0433_p01.png,azad Kashmir\0445_393432IMG-20211108-WA0119.jpg,1,AJK_0433,AJK_0433,AJK,photo,1,885,1280,,train,0,
+AJK_0434_p01,data\interim\images\AJK_0434_p01.png,azad Kashmir\0446_146484Merged_document_1_.jpg,1,AJK_0434,AJK_0434,AJK,scan,0,893,2560,,train,1,
+AJK_0435_p01,data\interim\images\AJK_0435_p01.png,azad Kashmir\0447_680450AdobeScan02Nov2021.pdf,1,AJK_0435,AJK_0435,AJK,photo,0,2145,3301,2021,train,0,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0436_p01,data\interim\images\AJK_0436_p01.png,azad Kashmir\0448_747558WhatsAppImage2021-11-01at9.15.30AM.jpeg.jpg,1,AJK_0436,AJK_0436,AJK,photo,1,858,1250,2021,train,0,
+AJK_0437_p01,data\interim\images\AJK_0437_p01.png,azad Kashmir\0449_965515Merged_document.jpg,1,AJK_0437,AJK_0437,AJK,scan,0,864,2304,,train,0,
+AJK_0438_p01,data\interim\images\AJK_0438_p01.png,azad Kashmir\0450_101989AdobeScan28Oct2021.pdf,1,AJK_0438,AJK_0438,AJK,photo,0,2045,3301,2021,train,1,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0439_p01,data\interim\images\AJK_0439_p01.png,azad Kashmir\0451_118682NOTFSPEX2021.pdf,1,AJK_0439,AJK_0439,AJK,photo,0,2117,3301,2021,train,0,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0439_p02,data\interim\images\AJK_0439_p02.png,azad Kashmir\0451_118682NOTFSPEX2021.pdf,2,AJK_0439,AJK_0439,AJK,photo,0,2016,3301,2021,train,0,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0440_p01,data\interim\images\AJK_0440_p01.png,azad Kashmir\0452_428100PRSSCSPEX2021.pdf,1,AJK_0440,AJK_0440,AJK,photo,0,2162,3301,2021,train,0,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0441_p01,data\interim\images\AJK_0441_p01.png,azad Kashmir\0453_464050notfiintersp2021.pdf,1,AJK_0441,AJK_0441,AJK,photo,0,2078,3301,2021,train,0,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0442_p01,data\interim\images\AJK_0442_p01.png,azad Kashmir\0454_773193PRInterSp2021.pdf,1,AJK_0442,AJK_0442,AJK,photo,0,1873,3301,2021,train,0,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0443_p01,data\interim\images\AJK_0443_p01.png,azad Kashmir\0455_437774AdobeScan18Oct2021.pdf,1,AJK_0443,AJK_0443,AJK,photo,0,2208,3301,2021,train,0,Adobe Scan for Android 21.09.20-regular Adobe Scan for Andro
+AJK_0444_p01,data\interim\images\AJK_0444_p01.png,azad Kashmir\0456_639953IMG-20211015-WA0264.jpg,1,AJK_0444,AJK_0444,AJK,photo,1,744,1269,,train,0,
+AJK_0445_p01,data\interim\images\AJK_0445_p01.png,azad Kashmir\0457_62652WhatsAppImage2021-10-14at16.11.04.jpeg.jpg,1,AJK_0445,AJK_0445,AJK,photo,1,718,1100,2021,train,0,
+AJK_0446_p01,data\interim\images\AJK_0446_p01.png,azad Kashmir\0458_672576Screenshot_20211013-210713_Gallery.jpg,1,AJK_0446,AJK_0446,AJK,photo,1,1080,1530,,train,0,
+AJK_0447_p01,data\interim\images\AJK_0447_p01.png,azad Kashmir\0459_995910FB_IMG_1633025781370.jpg,1,AJK_0447,AJK_0447,AJK,photo,1,720,633,,train,0,
+AJK_0448_p01,data\interim\images\AJK_0448_p01.png,azad Kashmir\0460_604461PressReleaseSyllabus2021-22.jpeg.jpg,1,AJK_0448,AJK_0448,AJK,scan,1,809,1100,2021,val,1,
+AJK_0449_p01,data\interim\images\AJK_0449_p01.png,azad Kashmir\0461_59082prregssc2023ext.pdf,1,AJK_0449,AJK_0449,AJK,photo,0,2206,3508,2023,train,0,Adobe Scan for Android 21.06.28-regular Adobe Scan for Andro
+AJK_0450_p01,data\interim\images\AJK_0450_p01.png,azad Kashmir\0462_236572PR9TH25082021.pdf,1,AJK_0450,AJK_0450,AJK,photo,0,2366,3508,,train,0,Adobe Scan for Android 21.06.28-regular Adobe Scan for Andro
+AJK_0451_p01,data\interim\images\AJK_0451_p01.png,azad Kashmir\0463_693328WhatsAppImage2021-08-16at3.47.45PM.jpeg.jpg,1,AJK_0451,AJK_0451,AJK,photo,1,773,1100,2021,train,0,
+AJK_0452_p01,data\interim\images\AJK_0452_p01.png,azad Kashmir\0464_461669AdobeScan13Aug2021.pdf,1,AJK_0452,AJK_0452,AJK,photo,0,2481,3270,2021,train,0,Adobe Scan for Android 21.06.28-regular Adobe Scan for Andro
+AJK_0453_p01,data\interim\images\AJK_0453_p01.png,azad Kashmir\0465_680725WhatsAppImage2021-08-13at14.27.17.jpeg.jpg,1,AJK_0453,AJK_0453,AJK,photo,1,715,1100,2021,train,1,
+AJK_0454_p01,data\interim\images\AJK_0454_p01.png,azad Kashmir\0466_514343PressReleaseSSC-IExam-1.jpg,1,AJK_0454,AJK_0454,AJK,scan,0,1526,2200,,train,0,
+AJK_0455_p01,data\interim\images\AJK_0455_p01.png,azad Kashmir\0467_974304cbc3fc83-e69e-44f3-bcd5-c59e791a5acf.jpg,1,AJK_0455,AJK_0455,AJK,scan,0,2424,2959,,train,0,
+AJK_0456_p01,data\interim\images\AJK_0456_p01.png,azad Kashmir\0468_188873AdobeScan30Jul2021_1_.pdf,1,AJK_0456,AJK_0456,AJK,photo,0,2481,2943,2021,train,0,Adobe Scan for Android 21.06.28-regular Adobe Scan for Andro
+AJK_0457_p01,data\interim\images\AJK_0457_p01.png,azad Kashmir\0469_611999AdobeScan30Jul2021.pdf,1,AJK_0457,AJK_0457,AJK,photo,0,2481,2758,2021,train,0,Adobe Scan for Android 21.06.28-regular Adobe Scan for Andro
+AJK_0458_p01,data\interim\images\AJK_0458_p01.png,azad Kashmir\0470_951019AdobeScan19Jul2021.pdf,1,AJK_0458,AJK_0458,AJK,photo,0,2266,3508,2021,train,0,Adobe Scan for Android 21.06.28-regular Adobe Scan for Andro
+AJK_0459_p01,data\interim\images\AJK_0459_p01.png,azad Kashmir\0471_182586PressReleaseCertificates2010-14.jpeg.jpg,1,AJK_0459,AJK_0459,AJK,scan,1,745,1100,2010,train,0,
+AJK_0460_p01,data\interim\images\AJK_0460_p01.png,azad Kashmir\0472_441528PressReleaseHSSCAnnualExam2021.jpeg.jpg,1,AJK_0460,AJK_0460,AJK,scan,1,696,1100,2021,val,1,
+AJK_0461_p01,data\interim\images\AJK_0461_p01.png,azad Kashmir\0473_539947SSC2021-23RegistrationSchedule.pdf,1,AJK_0461,AJK_0461,AJK,photo,0,2120,3301,2021,train,1,Adobe Scan for Android 21.05.18-regular Adobe Scan for Andro
+AJK_0461_p02,data\interim\images\AJK_0461_p02.png,azad Kashmir\0473_539947SSC2021-23RegistrationSchedule.pdf,2,AJK_0461,AJK_0461,AJK,photo,0,2077,3301,2021,train,0,Adobe Scan for Android 21.05.18-regular Adobe Scan for Andro
+AJK_0462_p01,data\interim\images\AJK_0462_p01.png,azad Kashmir\0474_815307PressReleaseSSC9th_10thExamdates.jpeg.jpg,1,AJK_0462,AJK_0462,AJK,scan,1,800,1170,,train,0,
+AJK_0463_p01,data\interim\images\AJK_0463_p01.png,azad Kashmir\0475_4777523e7fc6d8-7744-4f7b-951e-0ed530090fab.jpg,1,AJK_0463,AJK_0463,AJK,scan,1,927,1280,,train,0,
+AJK_0464_p01,data\interim\images\AJK_0464_p01.png,azad Kashmir\0476_159576WhatsAppImage2021-05-25at10.37.17AM.jpeg.jpg,1,AJK_0464,AJK_0464,AJK,photo,1,827,1154,2021,train,0,
+AJK_0465_p01,data\interim\images\AJK_0465_p01.png,azad Kashmir\0477_355560WhatsAppImage2021-05-08at10.17.55.jpeg.jpg,1,AJK_0465,AJK_0465,AJK,photo,1,783,1170,2021,train,1,
+AJK_0466_p01,data\interim\images\AJK_0466_p01.png,azad Kashmir\0478_206970WhatsAppImage2021-04-28at9.31.31AM.jpeg.jpg,1,AJK_0466,AJK_0466,AJK,photo,1,763,1082,2021,train,0,
+AJK_0467_p01,data\interim\images\AJK_0467_p01.png,azad Kashmir\0479_30212HSSCEXAMDATE.jpeg.jpg,1,AJK_0467,AJK_0467,AJK,scan,1,864,1110,,train,0,
+AJK_0468_p01,data\interim\images\AJK_0468_p01.png,azad Kashmir\0480_48004WhatsAppImage2021-04-21at3.23.51PM.jpeg.jpg,1,AJK_0468,AJK_0468,AJK,photo,1,760,1170,2021,train,0,
+AJK_0469_p01,data\interim\images\AJK_0469_p01.png,azad Kashmir\0481_218078Extra3_Marks.jpeg.jpg,1,AJK_0469,AJK_0469,AJK,scan,1,726,1084,,train,0,
+AJK_0470_p01,data\interim\images\AJK_0470_p01.png,azad Kashmir\0482_52459Capture.JPG,1,AJK_0470,AJK_0470,AJK,scan,1,636,797,,train,0,
+AJK_0471_p01,data\interim\images\AJK_0471_p01.png,azad Kashmir\0483_897155CamScanner03-19-202111.47.jpg,1,AJK_0471,AJK_0471,AJK,photo,0,2040,2984,,train,0,
+AJK_0472_p01,data\interim\images\AJK_0472_p01.png,azad Kashmir\0484_466705WhatsAppImage2021-03-11at4.19.44PM.jpeg.jpg,1,AJK_0472,AJK_0472,AJK,photo,0,1544,2339,2021,train,0,
+AJK_0473_p01,data\interim\images\AJK_0473_p01.png,azad Kashmir\0485_510131HSSCREVISEDADMISSIONNOTIFICATION.pdf,1,AJK_0473,AJK_0473,AJK,photo,0,2298,3508,,train,0,Adobe Scan for Android 21.02.24-regular Adobe Scan for Andro
+AJK_0474_p01,data\interim\images\AJK_0474_p01.png,azad Kashmir\0486_568511PressReleaseforcertificates2010to2014.jpeg.jpg,1,AJK_0474,AJK_0474,AJK,scan,1,810,1152,2014,train,0,
+AJK_0475_p01,data\interim\images\AJK_0475_p01.png,azad Kashmir\0487_854675NotificationforAffiliationofAffiliation2021-23.pdf,1,AJK_0475,AJK_0475,AJK,scan,0,2344,4001,2021,val,1,Nitro Pro 11
+AJK_0475_p02,data\interim\images\AJK_0475_p02.png,azad Kashmir\0487_854675NotificationforAffiliationofAffiliation2021-23.pdf,2,AJK_0475,AJK_0475,AJK,scan,0,2357,4001,2021,val,1,Nitro Pro 11
+AJK_0476_p01,data\interim\images\AJK_0476_p01.png,azad Kashmir\0488_407379WhatsAppImage2021-03-02at11.01.25AM.jpeg.jpg,1,AJK_0476,AJK_0476,AJK,photo,1,806,1280,2021,train,0,
+AJK_0477_p01,data\interim\images\AJK_0477_p01.png,azad Kashmir\0489_427856SSCEXAMDATESCHEDULE.jpeg.jpg,1,AJK_0477,AJK_0477,AJK,scan,0,1072,1656,,train,0,
+AJK_0478_p01,data\interim\images\AJK_0478_p01.png,azad Kashmir\0490_862121PressReleaseHSSCExamdateA2021.jpeg.jpg,1,AJK_0478,AJK_0478,AJK,scan,1,819,1152,2021,val,1,
+AJK_0479_p01,data\interim\images\AJK_0479_p01.png,azad Kashmir\0491_7672153b85016-d476-48ae-bca3-1aee5fe353e8_1_.jpg,1,AJK_0479,AJK_0479,AJK,scan,1,1280,937,2021,val,1,
+AJK_0480_p01,data\interim\images\AJK_0480_p01.png,azad Kashmir\0492_648895RevisedNotificationshoukathussainkazmi.jpeg.jpg,1,AJK_0480,AJK_0480,AJK,scan,1,850,1280,,train,0,
+AJK_0481_p01,data\interim\images\AJK_0481_p01.png,azad Kashmir\0493_757110SSCRevisedadmissionNotification.pdf,1,AJK_0481,AJK_0481,AJK,photo,0,2116,3508,,train,0,Adobe Scan for Android 21.01.06-regular Adobe Scan for Andro
+AJK_0482_p01,data\interim\images\AJK_0482_p01.png,azad Kashmir\0494_884735InstitutesInspectionNotification.pdf,1,AJK_0482,AJK_0482,AJK,photo,0,2283,3508,,train,0,Adobe Scan for Android 21.01.06-regular Adobe Scan for Andro
+AJK_0483_p01,data\interim\images\AJK_0483_p01.png,azad Kashmir\0495_403137HSSCAdmissionformschedule.pdf,1,AJK_0483,AJK_0483,AJK,photo,0,2245,3508,,train,1,Adobe Scan for Android 21.01.06-regular Adobe Scan for Andro
+AJK_0483_p02,data\interim\images\AJK_0483_p02.png,azad Kashmir\0495_403137HSSCAdmissionformschedule.pdf,2,AJK_0483,AJK_0483,AJK,photo,0,2161,3508,,train,0,Adobe Scan for Android 21.01.06-regular Adobe Scan for Andro
+AJK_0484_p01,data\interim\images\AJK_0484_p01.png,azad Kashmir\0496_669891RevisedNotification.jpg,1,AJK_0484,AJK_0484,AJK,scan,0,1333,2000,2021,val,1,
+AJK_0485_p01,data\interim\images\AJK_0485_p01.png,azad Kashmir\0497_128143AdobeScan15Jan2021.pdf,1,AJK_0485,AJK_0485,AJK,photo,0,2456,3508,2021,train,0,Adobe Scan for Android 21.01.06-regular Adobe Scan for Andro
+AJK_0486_p01,data\interim\images\AJK_0486_p01.png,azad Kashmir\0498_476715Revised9thRegistrationFeesNotificationonlineadmission.pdf,1,AJK_0486,AJK_0486,AJK,photo,0,2234,3508,,train,0,Adobe Scan for Android 21.01.06-regular Adobe Scan for Andro
+AJK_0487_p01,data\interim\images\AJK_0487_p01.png,azad Kashmir\0499_6253059thAdmissionNotification.pdf,1,AJK_0487,AJK_0487,AJK,scan,0,2297,3508,,train,0,
+AJK_0487_p02,data\interim\images\AJK_0487_p02.png,azad Kashmir\0499_6253059thAdmissionNotification.pdf,2,AJK_0487,AJK_0487,AJK,scan,0,2202,3517,,train,0,
+AJK_0488_p01,data\interim\images\AJK_0488_p01.png,azad Kashmir\0500_172760sscadmissionschedule.pdf,1,AJK_0488,AJK_0488,AJK,photo,0,2220,3508,,train,1,Adobe Scan for Android 20.12.09-regular Adobe Scan for Andro
+AJK_0489_p01,data\interim\images\AJK_0489_p01.png,azad Kashmir\0501_49835AdobeScan07Jan2021.pdf,1,AJK_0489,AJK_0489,AJK,photo,0,2406,3508,2021,train,1,Adobe Scan for Android 20.12.09-regular Adobe Scan for Andro
+AJK_0490_p01,data\interim\images\AJK_0490_p01.png,azad Kashmir\0502_472229WhatsAppImage2020-12-31at4.00.15PM.jpeg.jpg,1,AJK_0490,AJK_0490,AJK,photo,1,804,1280,2020,train,0,
+AJK_0491_p01,data\interim\images\AJK_0491_p01.png,azad Kashmir\0503_855499WhatsAppImage2020-12-28at3.26.20PM.jpeg.jpg,1,AJK_0491,AJK_0491,AJK,photo,0,2472,1959,2020,train,1,
+AJK_0492_p01,data\interim\images\AJK_0492_p01.png,azad Kashmir\0505_30609HSSCRegistrationExtensionnotification.jpeg.jpg,1,AJK_0492,AJK_0492,AJK,scan,1,826,1152,,train,0,
+AJK_0493_p01,data\interim\images\AJK_0493_p01.png,azad Kashmir\0506_550384c3036e70-20fe-42f0-a51f-2371441c43d9.jpg,1,AJK_0493,AJK_0493,AJK,scan,1,917,1280,,train,0,
+AJK_0494_p01,data\interim\images\AJK_0494_p01.png,azad Kashmir\0507_164550PRPAPERRECHECKINGHSSC.pdf,1,AJK_0494,AJK_0494,AJK,photo,0,2328,3508,,train,0,Adobe Scan for Android 20.11.07-regular Adobe Scan for Andro
+AJK_0495_p01,data\interim\images\AJK_0495_p01.png,azad Kashmir\0508_801788COVID-19-RESULT.pdf,1,AJK_0495,AJK_0495,AJK,photo,0,2261,3508,,train,0,Adobe Scan for Android 20.11.07-regular Adobe Scan for Andro
+AJK_0496_p01,data\interim\images\AJK_0496_p01.png,azad Kashmir\0509_730499EXTENSIONNOTIFICATIONHSSCREGISTRATION2020-22.pdf,1,AJK_0496,AJK_0496,AJK,photo,0,2204,3508,2020,train,0,Adobe Scan for Android 20.09.22-regular Adobe Scan for Andro
+AJK_0497_p01,data\interim\images\AJK_0497_p01.png,azad Kashmir\0510_453765PressReleaseMTRegistrationExtension.jpeg.jpg,1,AJK_0497,AJK_0497,AJK,scan,1,782,1126,,train,0,
+AJK_0498_p01,data\interim\images\AJK_0498_p01.png,azad Kashmir\0511_695983AdobeScan27Oct2020.pdf,1,AJK_0498,AJK_0496,AJK,photo,0,2262,3508,2020,train,0,Adobe Scan for Android 20.09.22-regular Adobe Scan for Andro
+AJK_0499_p01,data\interim\images\AJK_0499_p01.png,azad Kashmir\0512_412780PressReleaseSSCEXAM.jpeg.jpg,1,AJK_0499,AJK_0499,AJK,scan,0,1246,1991,,train,0,
+AJK_0500_p01,data\interim\images\AJK_0500_p01.png,azad Kashmir\0513_976867AdmissionScheduleTeacherTrainingCourses.pdf,1,AJK_0500,AJK_0500,AJK,scan,0,2480,3509,,train,0,
+AJK_0500_p02,data\interim\images\AJK_0500_p02.png,azad Kashmir\0513_976867AdmissionScheduleTeacherTrainingCourses.pdf,2,AJK_0500,AJK_0500,AJK,scan,0,2480,3509,,train,0,
+AJK_0501_p01,data\interim\images\AJK_0501_p01.png,azad Kashmir\0514_225250Screenshot_20201009-125330_WhatsApp.jpg,1,AJK_0501,AJK_0501,AJK,photo,1,1079,1471,,train,0,
+AJK_0502_p01,data\interim\images\AJK_0502_p01.png,azad Kashmir\0515_709320HSSCREGISTRATIONNOTIFICATION2020-22.pdf,1,AJK_0502,AJK_0502,AJK,photo,0,2481,3508,2020,train,0,Adobe Scan for Android 20.09.22-regular Adobe Scan for Andro
+AJK_0502_p02,data\interim\images\AJK_0502_p02.png,azad Kashmir\0515_709320HSSCREGISTRATIONNOTIFICATION2020-22.pdf,2,AJK_0502,AJK_0502,AJK,photo,0,2481,3508,2020,train,0,Adobe Scan for Android 20.09.22-regular Adobe Scan for Andro
+AJK_0503_p01,data\interim\images\AJK_0503_p01.png,azad Kashmir\0516_143829PressReleaseInterExam.jpg,1,AJK_0503,AJK_0503,AJK,scan,0,2550,3507,,train,0,
+AJK_0504_p01,data\interim\images\AJK_0504_p01.png,azad Kashmir\0517_7294613d3e89c6-07af-4e2e-ac07-bcb27f23028b.jpg,1,AJK_0504,AJK_0504,AJK,scan,1,916,1280,,train,0,
+AJK_0505_p01,data\interim\images\AJK_0505_p01.png,azad Kashmir\0518_196929Screenshot_20201003-132041_WhatsApp.jpg,1,AJK_0505,AJK_0505,AJK,photo,1,1079,1356,,train,0,
+AJK_0506_p01,data\interim\images\AJK_0506_p01.png,azad Kashmir\0520_131256WhatsAppImage2020-09-24at15.03.00.jpeg.jpg,1,AJK_0506,AJK_0506,AJK,photo,1,699,1165,2020,train,0,
+AJK_0507_p01,data\interim\images\AJK_0507_p01.png,azad Kashmir\0521_89874PressReleaseResultSSCAnnual2020.jpg,1,AJK_0507,AJK_0507,AJK,scan,0,2550,3507,2020,train,1,
+AJK_0508_p01,data\interim\images\AJK_0508_p01.png,azad Kashmir\0522_82220420200922_183739.jpg,1,AJK_0508,AJK_0508,AJK,scan,0,1060,1698,,train,0,
+AJK_0509_p01,data\interim\images\AJK_0509_p01.png,azad Kashmir\0523_927062NotificatonforMTINSREG.pdf,1,AJK_0509,AJK_0509,AJK,scan,0,2550,3301,2020,train,1,Microsoft® Word 2010 Microsoft® Word 2010
+AJK_0509_p02,data\interim\images\AJK_0509_p02.png,azad Kashmir\0523_927062NotificatonforMTINSREG.pdf,2,AJK_0509,AJK_0509,AJK,scan,0,2550,3301,2020,train,0,Microsoft® Word 2010 Microsoft® Word 2010
+AJK_0510_p01,data\interim\images\AJK_0510_p01.png,azad Kashmir\0524_978363PressReleasedateextension.jpg,1,AJK_0510,AJK_0510,AJK,scan,0,2246,3319,,train,0,
+AJK_0511_p01,data\interim\images\AJK_0511_p01.png,azad Kashmir\0525_343811PressReleaseHSSCResult.jpg,1,AJK_0511,AJK_0511,AJK,scan,0,2550,3507,,train,0,
+AJK_0512_p01,data\interim\images\AJK_0512_p01.png,azad Kashmir\0526_658111PressReleaseSSC17-08-2020.jpg,1,AJK_0512,AJK_0512,AJK,scan,0,2525,3507,2020,train,0,
+AJK_0513_p01,data\interim\images\AJK_0513_p01.png,azad Kashmir\0527_959838PressRelease17-08-2020.jpg,1,AJK_0513,AJK_0513,AJK,scan,0,2525,3507,2020,train,0,
+AJK_0514_p01,data\interim\images\AJK_0514_p01.png,azad Kashmir\0528_755218promotionpolicy.png,1,AJK_0514,AJK_0514,AJK,scan,0,827,2317,,train,0,
+AJK_0515_p01,data\interim\images\AJK_0515_p01.png,azad Kashmir\0529_555877Notification.pdf,1,AJK_0515,AJK_0515,AJK,scan,0,2479,3507,2020,train,0,Microsoft: Print To PDF
+AJK_0515_p02,data\interim\images\AJK_0515_p02.png,azad Kashmir\0529_555877Notification.pdf,2,AJK_0515,AJK_0515,AJK,scan,0,2479,3507,2020,train,0,Microsoft: Print To PDF
+AJK_0516_p01,data\interim\images\AJK_0516_p01.png,azad Kashmir\0530_181701PressRelease.jpg,1,AJK_0516,AJK_0516,AJK,scan,0,2550,3507,,train,0,
+AJK_0517_p01,data\interim\images\AJK_0517_p01.png,azad Kashmir\0531_234069WhatsAppImage2020-06-25at14.11.10.jpeg.jpg,1,AJK_0517,AJK_0517,AJK,photo,1,719,1197,2020,train,0,
+AJK_0518_p01,data\interim\images\AJK_0518_p01.png,azad Kashmir\0532_66040WhatsAppImage2020-06-11at12.34.06.jpeg.jpg,1,AJK_0518,AJK_0518,AJK,photo,1,944,1067,2020,train,0,
+AJK_0519_p01,data\interim\images\AJK_0519_p01.png,azad Kashmir\0533_374023WhatsAppImage2020-06-11at12.35.37.jpeg.jpg,1,AJK_0519,AJK_0519,AJK,photo,1,977,1055,2020,train,1,
+AJK_0520_p01,data\interim\images\AJK_0520_p01.png,azad Kashmir\0534_928405IMG-20200518-WA0030.jpg,1,AJK_0520,AJK_0520,AJK,photo,1,811,1280,,train,0,
+AJK_0521_p01,data\interim\images\AJK_0521_p01.png,azad Kashmir\0536_196929NotificationExamination2020.jpeg.jpg,1,AJK_0521,AJK_0521,AJK,scan,1,622,1178,2020,val,1,
+AJK_0522_p01,data\interim\images\AJK_0522_p01.png,azad Kashmir\0537_941619WhatsAppImage2020-04-15at8.11.27PM.jpeg.jpg,1,AJK_0522,AJK_0522,AJK,photo,1,568,1024,2020,train,0,
+AJK_0523_p01,data\interim\images\AJK_0523_p01.png,azad Kashmir\0538_337097Marks33to45.jpg,1,AJK_0523,AJK_0523,AJK,scan,0,2314,1514,,train,0,
+AJK_0524_p01,data\interim\images\AJK_0524_p01.png,azad Kashmir\0539_669860NotificationforCancellationofPapers.jpg,1,AJK_0524,AJK_0524,AJK,scan,0,2398,3136,,train,1,
+AJK_0525_p01,data\interim\images\AJK_0525_p01.png,azad Kashmir\0540_565582PressRelease.jpg,1,AJK_0525,AJK_0525,AJK,scan,0,2550,3507,,train,0,
+AJK_0526_p01,data\interim\images\AJK_0526_p01.png,azad Kashmir\0541_688110PassPercentage.jpg,1,AJK_0526,AJK_0526,AJK,scan,0,2118,1522,,train,1,
+AJK_0527_p01,data\interim\images\AJK_0527_p01.png,azad Kashmir\0542_691680EssentialService.jpeg.jpg,1,AJK_0527,AJK_0527,AJK,scan,1,720,1034,,train,0,
+AJK_0528_p01,data\interim\images\AJK_0528_p01.png,azad Kashmir\0543_769195PressReleaseSSCA20.jpg,1,AJK_0528,AJK_0528,AJK,scan,0,2550,3507,,train,0,
+AJK_0529_p01,data\interim\images\AJK_0529_p01.png,azad Kashmir\0544_320953PressreleaseAlternatecentre01.jpg,1,AJK_0529,AJK_0529,AJK,scan,0,2550,3507,,train,0,
+AJK_0530_p01,data\interim\images\AJK_0530_p01.png,azad Kashmir\0545_241302PressreleaseAlternatecentre02.jpg,1,AJK_0530,AJK_0530,AJK,scan,0,2550,3507,,train,1,
+AJK_0531_p01,data\interim\images\AJK_0531_p01.png,azad Kashmir\0546_925048PressReleaseInspection.jpg,1,AJK_0531,AJK_0531,AJK,scan,0,2550,3507,,train,0,
+AJK_0532_p01,data\interim\images\AJK_0532_p01.png,azad Kashmir\0548_46142PressReleaseExaminationCentre.jpg,1,AJK_0532,AJK_0532,AJK,scan,0,2102,2456,,train,1,
+AJK_0533_p01,data\interim\images\AJK_0533_p01.png,azad Kashmir\0549_678009PressReleaseHSSCS19Result.jpg,1,AJK_0533,AJK_0533,AJK,scan,0,2550,3507,,train,0,
+AJK_0534_p01,data\interim\images\AJK_0534_p01.png,azad Kashmir\0550_743469OnlineScheduleHSSCAnnual2020.pdf,1,AJK_0534,AJK_0534,AJK,scan,0,2481,3508,2020,train,0,Microsoft® Word 2010 Microsoft® Word 2010
+AJK_0534_p02,data\interim\images\AJK_0534_p02.png,azad Kashmir\0550_743469OnlineScheduleHSSCAnnual2020.pdf,2,AJK_0534,AJK_0534,AJK,scan,0,2481,3508,2020,train,0,Microsoft® Word 2010 Microsoft® Word 2010
+AJK_0535_p01,data\interim\images\AJK_0535_p01.png,azad Kashmir\0551_49133PressReleaseSSCReChecking.jpg,1,AJK_0535,AJK_0535,AJK,scan,0,2550,3507,,train,0,
+AJK_0536_p01,data\interim\images\AJK_0536_p01.png,azad Kashmir\0552_993011NotificationAdmissionScheduleforSSCAppearinSupply2019.jpg,1,AJK_0536,AJK_0536,AJK,scan,0,2550,3507,2019,train,1,
+AJK_0537_p01,data\interim\images\AJK_0537_p01.png,azad Kashmir\0553_481323PressReleaseSSCResult.jpg,1,AJK_0537,AJK_0537,AJK,scan,0,2250,2973,,train,0,
+AJK_0538_p01,data\interim\images\AJK_0538_p01.png,azad Kashmir\0554_490631PressReleasesports.jpg,1,AJK_0538,AJK_0538,AJK,scan,0,2538,3507,,train,0,
+AJK_0539_p01,data\interim\images\AJK_0539_p01.png,azad Kashmir\0555_832397PressReleaseChangeofsportsSchedule.jpg,1,AJK_0539,AJK_0539,AJK,scan,0,2550,3507,,train,0,
+AJK_0540_p01,data\interim\images\AJK_0540_p01.png,azad Kashmir\0556_894012ChangeofGrouporSubject.jpg,1,AJK_0540,AJK_0540,AJK,scan,0,2550,3507,,train,0,
+AJK_0541_p01,data\interim\images\AJK_0541_p01.png,azad Kashmir\0557_564331ReAdmissionExtendionDate.jpg,1,AJK_0541,AJK_0541,AJK,scan,0,2157,2248,,train,0,
+AJK_0542_p01,data\interim\images\AJK_0542_p01.png,azad Kashmir\0558_901916SSCAnnual2020Schedule.pdf,1,AJK_0542,AJK_0542,AJK,scan,0,2481,3508,2020,train,0,Microsoft® Word 2010 Microsoft® Word 2010
+AJK_0542_p02,data\interim\images\AJK_0542_p02.png,azad Kashmir\0558_901916SSCAnnual2020Schedule.pdf,2,AJK_0542,AJK_0542,AJK,scan,0,2481,3508,2020,train,1,Microsoft® Word 2010 Microsoft® Word 2010
+AJK_0542_p03,data\interim\images\AJK_0542_p03.png,azad Kashmir\0558_901916SSCAnnual2020Schedule.pdf,3,AJK_0542,AJK_0542,AJK,scan,0,2481,3508,2020,train,0,Microsoft® Word 2010 Microsoft® Word 2010
+AJK_0543_p01,data\interim\images\AJK_0543_p01.png,azad Kashmir\0559_529754PressReleaseSports.jpg,1,AJK_0543,AJK_0543,AJK,scan,0,2550,3507,,train,0,
+AJK_0544_p01,data\interim\images\AJK_0544_p01.png,azad Kashmir\0560_265808PressReleasePracticalHSSCS19.jpg,1,AJK_0544,AJK_0544,AJK,scan,0,2550,3507,,train,0,
+AJK_0545_p01,data\interim\images\AJK_0545_p01.png,azad Kashmir\0561_77606PressRelease23-10-2019_SSCFORMSCHEDULE_.jpg,1,AJK_0545,AJK_0545,AJK,scan,0,2413,3438,2019,train,0,
+AJK_0546_p01,data\interim\images\AJK_0546_p01.png,azad Kashmir\0562_398315PressRelease23-10-2019_Languages_.jpg,1,AJK_0546,AJK_0546,AJK,scan,0,2550,3507,2019,train,0,
+AJK_0547_p01,data\interim\images\AJK_0547_p01.png,azad Kashmir\0563_355102PressReleaseRecheckingHSSC-I.jpg,1,AJK_0547,AJK_0547,AJK,scan,0,2550,3507,,train,0,
+AJK_0548_p01,data\interim\images\AJK_0548_p01.png,azad Kashmir\0564_328521PressReleaseHSSC07-10-2019.jpg,1,AJK_0548,AJK_0548,AJK,scan,0,2550,3507,2019,train,0,
+AJK_0549_p01,data\interim\images\AJK_0549_p01.png,azad Kashmir\0565_463317PressReleaseOnlineRegistration.jpg,1,AJK_0549,AJK_0549,AJK,scan,0,2550,3507,,train,0,
+AJK_0550_p01,data\interim\images\AJK_0550_p01.png,azad Kashmir\0566_535766PressReleaseHSSC-IResult.jpg,1,AJK_0550,AJK_0550,AJK,scan,0,2550,3507,,train,0,
+AJK_0551_p01,data\interim\images\AJK_0551_p01.png,azad Kashmir\0567_963500PressReleaseSportsCancellation.jpg,1,AJK_0551,AJK_0551,AJK,scan,0,2550,3507,,train,0,
+AJK_0552_p01,data\interim\images\AJK_0552_p01.png,azad Kashmir\0568_770355PressReleaseHSSCS19EXAM.jpg,1,AJK_0552,AJK_0552,AJK,scan,0,2114,2898,,train,0,
+AJK_0553_p01,data\interim\images\AJK_0553_p01.png,azad Kashmir\0569_9968879d338a4d-ff15-46c0-ae04-3ab3fd754f1f.jpg,1,AJK_0553,AJK_0553,AJK,scan,1,720,987,,train,1,
+AJK_0554_p01,data\interim\images\AJK_0554_p01.png,azad Kashmir\0570_760223HSSCEXAMS19SCHEDULE.jpg,1,AJK_0554,AJK_0554,AJK,scan,0,1600,2326,,train,0,
+AJK_0555_p01,data\interim\images\AJK_0555_p01.png,azad Kashmir\0571_901306PressReleaseHSSCRechecking.jpg,1,AJK_0555,AJK_0555,AJK,scan,0,2550,3507,,train,0,
+AJK_0556_p01,data\interim\images\AJK_0556_p01.png,azad Kashmir\0572_855712PressReleaseHSSCResult.jpg,1,AJK_0556,AJK_0556,AJK,scan,0,2550,3507,,train,0,
+AJK_0557_p01,data\interim\images\AJK_0557_p01.png,azad Kashmir\0573_428802CircularRegistration.jpg,1,AJK_0557,AJK_0557,AJK,scan,0,2513,2342,,train,0,
+AJK_0558_p01,data\interim\images\AJK_0558_p01.png,azad Kashmir\0574_676239NotificationRegistration2019-21-vert.jpg,1,AJK_0558,AJK_0558,AJK,scan,0,950,3015,2019,train,1,
+AJK_0559_p01,data\interim\images\AJK_0559_p01.png,azad Kashmir\0575_127868PressRelease9thRechecking.jpg,1,AJK_0559,AJK_0559,AJK,scan,0,2106,3265,,train,1,
+AJK_0560_p01,data\interim\images\AJK_0560_p01.png,azad Kashmir\0576_208831PressRelease9th.jpg,1,AJK_0560,AJK_0560,AJK,scan,0,2364,2823,,train,0,
+AJK_0561_p01,data\interim\images\AJK_0561_p01.png,azad Kashmir\0577_775665SSCSupplySchedule01-vert.jpg,1,AJK_0561,AJK_0561,AJK,scan,0,1600,2316,,train,0,
+AJK_0562_p01,data\interim\images\AJK_0562_p01.png,azad Kashmir\0578_389312SSCFormSchedule01-vert.jpg,1,AJK_0562,AJK_0562,AJK,scan,0,1389,3840,,train,0,
+AJK_0563_p01,data\interim\images\AJK_0563_p01.png,azad Kashmir\0579_407318PressReleaseResult.jpg,1,AJK_0563,AJK_0563,AJK,scan,0,2356,3490,,train,0,
+AJK_0564_p01,data\interim\images\AJK_0564_p01.png,azad Kashmir\0580_994232PressRelease21-06-2019.jpg,1,AJK_0564,AJK_0564,AJK,scan,0,2339,3403,2019,train,0,
+AJK_0565_p01,data\interim\images\AJK_0565_p01.png,azad Kashmir\0581_887176IMG_20190613_121805.jpg,1,AJK_0565,AJK_0565,AJK,photo,1,1315,1446,2019,train,0,HUAWEI RNE-L21
+AJK_0566_p01,data\interim\images\AJK_0566_p01.png,azad Kashmir\0582_944274PracticalHSSC.jpeg.jpg,1,AJK_0566,AJK_0566,AJK,scan,1,1034,1226,,train,1,
+AJK_0567_p01,data\interim\images\AJK_0567_p01.png,azad Kashmir\0583_831787PressRelease24-5-2019.jpg,1,AJK_0567,AJK_0567,AJK,scan,0,2082,2731,2019,train,0,
+AJK_0568_p01,data\interim\images\AJK_0568_p01.png,azad Kashmir\0584_50537Circular.jpg,1,AJK_0568,AJK_0568,AJK,scan,0,2381,1514,,train,0,
+AJK_0569_p01,data\interim\images\AJK_0569_p01.png,azad Kashmir\0585_157897PressReleasePartI21-05-2019.jpg,1,AJK_0569,AJK_0569,AJK,scan,0,2550,3507,2019,train,0,
+AJK_0570_p01,data\interim\images\AJK_0570_p01.png,azad Kashmir\0586_658538PressRelease1stYear.jpg,1,AJK_0570,AJK_0570,AJK,scan,0,2550,3507,,train,0,
+AJK_0571_p01,data\interim\images\AJK_0571_p01.png,azad Kashmir\0587_477020PressRelease30-04-2019.jpg,1,AJK_0571,AJK_0571,AJK,scan,0,2550,3507,2019,train,0,
+AJK_0572_p01,data\interim\images\AJK_0572_p01.png,azad Kashmir\0588_9155PressRelease25-04-2019.jpg,1,AJK_0572,AJK_0572,AJK,scan,0,2402,2677,2019,train,0,
+AJK_0573_p01,data\interim\images\AJK_0573_p01.png,azad Kashmir\0589_559997RegistrationScheduleSSC2019-21A-vert.jpg,1,AJK_0573,AJK_0573,AJK,scan,0,1170,3789,2019,train,0,
+AJK_0574_p01,data\interim\images\AJK_0574_p01.png,azad Kashmir\0590_927398PRESSRELEASE.jpg,1,AJK_0574,AJK_0574,AJK,scan,1,823,1280,,train,0,
+AJK_0575_p01,data\interim\images\AJK_0575_p01.png,azad Kashmir\0591_80261NewDoc2019-03-1314.57.50_3.jpg,1,AJK_0575,AJK_0575,AJK,scan,0,2336,3240,2019,train,0,
+AJK_0576_p01,data\interim\images\AJK_0576_p01.png,azad Kashmir\0592_245513PressRelease.jpg,1,AJK_0576,AJK_0576,AJK,scan,1,1044,1280,,train,0,
+AJK_0577_p01,data\interim\images\AJK_0577_p01.png,azad Kashmir\0593_158874admissionscheduelext.jpg,1,AJK_0577,AJK_0577,AJK,scan,0,2102,3173,,train,0,
+AJK_0578_p01,data\interim\images\AJK_0578_p01.png,azad Kashmir\0594_204040478.jpg,1,AJK_0578,AJK_0578,AJK,scan,1,654,1026,,train,1,
+AJK_0579_p01,data\interim\images\AJK_0579_p01.png,azad Kashmir\0595_317718admnotification2019.jpg,1,AJK_0579,AJK_0579,AJK,scan,0,2492,1896,2019,train,0,
+AJK_0580_p01,data\interim\images\AJK_0580_p01.png,azad Kashmir\0596_127380pressrelease.jpg,1,AJK_0580,AJK_0580,AJK,scan,1,698,960,,train,0,
+AJK_0581_p01,data\interim\images\AJK_0581_p01.png,azad Kashmir\0597_250946PressReleaseHSSC12-11-2018.jpg,1,AJK_0581,AJK_0581,AJK,scan,0,2538,3507,2018,train,1,
+AJK_0582_p01,data\interim\images\AJK_0582_p01.png,azad Kashmir\0598_542541notificationssc20191-vert.jpg,1,AJK_0582,AJK_0582,AJK,scan,0,1374,3781,,train,0,
+AJK_0583_p01,data\interim\images\AJK_0583_p01.png,azad Kashmir\0599_855468PressRelease05-11-201802.jpg,1,AJK_0583,AJK_0583,AJK,scan,0,2226,3263,,train,0,
+AJK_0584_p01,data\interim\images\AJK_0584_p01.png,azad Kashmir\0600_509277PressRelease05-11-201801.jpg,1,AJK_0584,AJK_0584,AJK,scan,0,2217,3503,,train,0,
+AJK_0585_p01,data\interim\images\AJK_0585_p01.png,azad Kashmir\0601_36691229102012.jpg,1,AJK_0585,AJK_0585,AJK,scan,0,1216,1822,,train,1,
+AJK_0586_p01,data\interim\images\AJK_0586_p01.png,azad Kashmir\0602_205352capture-20181022-153309.png,1,AJK_0586,AJK_0586,AJK,scan,1,1066,758,,train,0,
+AJK_0587_p01,data\interim\images\AJK_0587_p01.png,azad Kashmir\0603_168792AmendmentNotificationOnline12102018.jpg,1,AJK_0587,AJK_0587,AJK,scan,0,1358,1920,,train,0,
+AJK_0588_p01,data\interim\images\AJK_0588_p01.png,azad Kashmir\0604_646820PressRelease10-10-2018.jpg,1,AJK_0588,AJK_0588,AJK,scan,0,2475,3271,2018,train,0,
+AJK_0589_p01,data\interim\images\AJK_0589_p01.png,azad Kashmir\0605_859741PressRelease4-10-2018.jpg,1,AJK_0589,AJK_0589,AJK,scan,0,1123,1600,2018,train,0,
+AJK_0590_p01,data\interim\images\AJK_0590_p01.png,azad Kashmir\0606_597229Notification25-09-2018.jpg,1,AJK_0590,AJK_0590,AJK,scan,0,2409,3424,2018,train,0,
+AJK_0591_p01,data\interim\images\AJK_0591_p01.png,azad Kashmir\0607_202911WhatsAppImage2018-09-25at15.20.08.jpeg.jpg,1,AJK_0591,AJK_0591,AJK,photo,1,1223,915,2018,train,1,
+AJK_0592_p01,data\interim\images\AJK_0592_p01.png,azad Kashmir\0608_780181WhatsAppImage2018-09-12at09.37.18.jpeg.jpg,1,AJK_0592,AJK_0592,AJK,photo,1,948,1063,2018,train,0,
+AJK_0593_p01,data\interim\images\AJK_0593_p01.png,azad Kashmir\0609_55236WhatsAppImage2018-09-05at10.51.07.jpeg.jpg,1,AJK_0593,AJK_0593,AJK,photo,1,924,1192,2018,train,1,
+AJK_0594_p01,data\interim\images\AJK_0594_p01.png,azad Kashmir\0610_875671PressReleaseHSSCRESULT.jpg,1,AJK_0594,AJK_0594,AJK,scan,0,1506,1920,,train,0,
+AJK_0595_p01,data\interim\images\AJK_0595_p01.png,azad Kashmir\0611_392669WhatsAppImage2018-08-31at11.08.12.jpeg.jpg,1,AJK_0595,AJK_0595,AJK,photo,1,1185,834,2018,train,1,
+AJK_0596_p01,data\interim\images\AJK_0596_p01.png,azad Kashmir\0612_514434HSSCSupplyExam2018.pdf,1,AJK_0596,AJK_0596,AJK,scan,0,3751,2725,2018,train,1,Soda PDF Soda PDF
+AJK_0596_p02,data\interim\images\AJK_0596_p02.png,azad Kashmir\0612_514434HSSCSupplyExam2018.pdf,2,AJK_0596,AJK_0596,AJK,scan,0,3751,2729,2018,train,0,Soda PDF Soda PDF
+AJK_0597_p01,data\interim\images\AJK_0597_p01.png,azad Kashmir\0613_382995PressRelease10-08-2018.jpg,1,AJK_0597,AJK_0597,AJK,scan,1,1093,1544,2018,train,0,
+AJK_0598_p01,data\interim\images\AJK_0598_p01.png,azad Kashmir\0614_532867NewNotificationOnline.pdf,1,AJK_0598,AJK_0598,AJK,scan,0,2550,4200,2018,train,1,Soda PDF Soda PDF
+AJK_0598_p02,data\interim\images\AJK_0598_p02.png,azad Kashmir\0614_532867NewNotificationOnline.pdf,2,AJK_0598,AJK_0598,AJK,scan,0,2550,4200,2018,train,0,Soda PDF Soda PDF
+AJK_0599_p01,data\interim\images\AJK_0599_p01.png,azad Kashmir\0615_35430Notification24-07-2018.jpg,1,AJK_0599,AJK_0599,AJK,scan,0,1980,1440,2018,train,0,
+AJK_0600_p01,data\interim\images\AJK_0600_p01.png,azad Kashmir\0616_943115pressreleasematricresult.jpg,1,AJK_0600,AJK_0600,AJK,scan,1,687,960,,train,1,
+AJK_0601_p01,data\interim\images\AJK_0601_p01.png,azad Kashmir\0617_365478PressReleaseMedicalTech.Prac10-07-2018.jpg,1,AJK_0601,AJK_0601,AJK,scan,0,2550,3507,2018,train,0,
+AJK_0602_p01,data\interim\images\AJK_0602_p01.png,azad Kashmir\0618_414642guzzatefee.jpg,1,AJK_0602,AJK_0602,AJK,scan,1,698,960,,train,0,
+AJK_0603_p01,data\interim\images\AJK_0603_p01.png,azad Kashmir\0619_438171IMG_20180609_122123.jpg,1,AJK_0603,AJK_0603,AJK,photo,0,1200,1600,2018,train,0,HUAWEI BLN-L21
+AJK_0604_p01,data\interim\images\AJK_0604_p01.png,azad Kashmir\0620_935668PressRelease27-04-2018_2_.jpg,1,AJK_0604,AJK_0604,AJK,scan,0,1301,1920,2018,train,0,
+AJK_0605_p01,data\interim\images\AJK_0605_p01.png,azad Kashmir\0621_839996PressRelease24-04-2018.jpg,1,AJK_0605,AJK_0605,AJK,scan,0,1396,1920,2018,train,0,
+AJK_0606_p01,data\interim\images\AJK_0606_p01.png,azad Kashmir\0622_298034RegistrationSchedule01-vert.jpg,1,AJK_0606,AJK_0606,AJK,scan,0,1396,3811,,train,1,
+AJK_0607_p01,data\interim\images\AJK_0607_p01.png,azad Kashmir\0623_177459NewDoc2018-04-16_1.jpg,1,AJK_0607,AJK_0607,AJK,scan,0,1217,1600,2018,train,1,
+AJK_0608_p01,data\interim\images\AJK_0608_p01.png,azad Kashmir\0624_869964NewDoc2018-04-12_1.jpg,1,AJK_0608,AJK_0608,AJK,scan,0,1061,1600,2018,train,0,
+AJK_0609_p01,data\interim\images\AJK_0609_p01.png,azad Kashmir\0625_75927NewDoc2018-03-19-01.jpeg.jpg,1,AJK_0609,AJK_0609,AJK,scan,1,840,1246,2018,train,0,
+AJK_0610_p01,data\interim\images\AJK_0610_p01.png,azad Kashmir\0626_690826IMG_20180227_140905.jpg,1,AJK_0610,AJK_0610,AJK,photo,1,833,1258,2018,train,0,HUAWEI BLN-L21
+AJK_0611_p01,data\interim\images\AJK_0611_p01.png,azad Kashmir\0627_253509NewDoc2018-02-14_1.jpg,1,AJK_0611,AJK_0611,AJK,scan,1,850,1232,2018,train,1,
+AJK_0612_p01,data\interim\images\AJK_0612_p01.png,azad Kashmir\0628_267333IMG_20180125_141031.jpg,1,AJK_0612,AJK_0612,AJK,photo,0,1110,1600,2018,train,1,HUAWEI BLN-L21
+AJK_0613_p01,data\interim\images\AJK_0613_p01.png,azad Kashmir\0629_829406NotificationAffiliation.pdf,1,AJK_0613,AJK_0613,AJK,scan,0,2480,3509,2018,train,1,PDFConverter.com PDF Library 2.0.22 PScript5.dll Version 5.2
+AJK_0613_p02,data\interim\images\AJK_0613_p02.png,azad Kashmir\0629_829406NotificationAffiliation.pdf,2,AJK_0613,AJK_0613,AJK,scan,0,2480,3509,2018,train,0,PDFConverter.com PDF Library 2.0.22 PScript5.dll Version 5.2
+AJK_0614_p01,data\interim\images\AJK_0614_p01.png,azad Kashmir\0630_680755IMG_20180110_102815.jpg,1,AJK_0614,AJK_0614,AJK,photo,1,865,1211,2018,train,1,HUAWEI BLN-L21
+AJK_0615_p01,data\interim\images\AJK_0615_p01.png,azad Kashmir\0631_183166IMG_20180110_094652.jpg,1,AJK_0615,AJK_0615,AJK,photo,1,839,1249,2018,train,0,HUAWEI BLN-L21
+AJK_0616_p01,data\interim\images\AJK_0616_p01.png,azad Kashmir\0632_101684IMG_20180104_141657.jpg,1,AJK_0616,AJK_0616,AJK,photo,1,861,1216,2018,train,0,HUAWEI BLN-L21
+AJK_0617_p01,data\interim\images\AJK_0617_p01.png,azad Kashmir\0634_5187IMG_20171216_123959.jpg,1,AJK_0617,AJK_0617,AJK,photo,1,848,1234,2017,train,0,HUAWEI BLN-L21
+AJK_0618_p01,data\interim\images\AJK_0618_p01.png,azad Kashmir\0635_759490NewDoc2017-12-13.jpg,1,AJK_0618,AJK_0618,AJK,scan,1,842,1243,2017,train,1,
+AJK_0619_p01,data\interim\images\AJK_0619_p01.png,azad Kashmir\0636_586791NewDoc2017-12-11.jpg,1,AJK_0619,AJK_0619,AJK,scan,1,931,1125,2017,train,0,
+AJK_0620_p01,data\interim\images\AJK_0620_p01.png,azad Kashmir\0637_448822New_Doc_2017-12-07_1_.pdf,1,AJK_0620,AJK_0620,AJK,scan,0,2480,3509,2017,train,1,RAD PDF 3.0.2.0 - http://www.radpdf.com RAD PDF
+AJK_0620_p02,data\interim\images\AJK_0620_p02.png,azad Kashmir\0637_448822New_Doc_2017-12-07_1_.pdf,2,AJK_0620,AJK_0620,AJK,scan,0,2480,3509,2017,train,0,RAD PDF 3.0.2.0 - http://www.radpdf.com RAD PDF
+AJK_0621_p01,data\interim\images\AJK_0621_p01.png,azad Kashmir\0638_256866IMG_20171103_120319_BURST002-vert.jpg,1,AJK_0621,AJK_0621,AJK,photo,0,595,1761,2017,train,1,HUAWEI BLN-L21
+AJK_0622_p01,data\interim\images\AJK_0622_p01.png,azad Kashmir\0639_769317IMG_20171103_114339.jpg,1,AJK_0622,AJK_0622,AJK,photo,1,853,1228,2017,train,0,HUAWEI BLN-L21
+AJK_0623_p01,data\interim\images\AJK_0623_p01.png,azad Kashmir\0640_177764IMG_20171023_141910.jpg,1,AJK_0623,AJK_0623,AJK,photo,1,899,1164,2017,train,0,HUAWEI BLN-L21
+AJK_0624_p01,data\interim\images\AJK_0624_p01.png,azad Kashmir\0641_797790IMG_20171018_115403.jpg,1,AJK_0624,AJK_0624,AJK,photo,1,852,1229,2017,train,0,HUAWEI BLN-L21
+AJK_0625_p01,data\interim\images\AJK_0625_p01.png,azad Kashmir\0642_831970notification.jpg,1,AJK_0625,AJK_0625,AJK,scan,1,887,1180,,train,1,
+AJK_0626_p01,data\interim\images\AJK_0626_p01.png,azad Kashmir\0643_328216onlineregistrationschedule1.jpg,1,AJK_0626,AJK_0626,AJK,photo,0,4648,3696,2017,train,0,HUAWEI BLN-L21
+AJK_0627_p01,data\interim\images\AJK_0627_p01.png,azad Kashmir\0644_344512036.jpg,1,AJK_0627,AJK_0627,AJK,photo,1,886,1182,2017,train,1,HUAWEI BLN-L21
+AJK_0628_p01,data\interim\images\AJK_0628_p01.png,azad Kashmir\0645_808898049.jpg,1,AJK_0628,AJK_0628,AJK,photo,1,841,1246,2017,train,0,HUAWEI BLN-L21
+AJK_0629_p01,data\interim\images\AJK_0629_p01.png,azad Kashmir\0646_956146457.jpg,1,AJK_0629,AJK_0629,AJK,photo,1,826,1268,2017,train,0,HUAWEI BLN-L21
+AJK_0630_p01,data\interim\images\AJK_0630_p01.png,azad Kashmir\0647_333282NewFeeScheduleAJKBISE.pdf,1,AJK_0630,AJK_0630,AJK,scan,0,3966,6000,2017,train,0,Soda PDF 8 Soda PDF 8
+AJK_0630_p02,data\interim\images\AJK_0630_p02.png,azad Kashmir\0647_333282NewFeeScheduleAJKBISE.pdf,2,AJK_0630,AJK_0630,AJK,scan,0,4091,5985,2017,train,0,Soda PDF 8 Soda PDF 8
+AJK_0630_p03,data\interim\images\AJK_0630_p03.png,azad Kashmir\0647_333282NewFeeScheduleAJKBISE.pdf,3,AJK_0630,AJK_0630,AJK,scan,0,4341,6000,2017,train,0,Soda PDF 8 Soda PDF 8
+AJK_0631_p01,data\interim\images\AJK_0631_p01.png,azad Kashmir\0648_31921049.jpg,1,AJK_0631,AJK_0631,AJK,photo,1,822,1274,2017,train,0,HUAWEI BLN-L21
+AJK_0632_p01,data\interim\images\AJK_0632_p01.png,azad Kashmir\0649_268280020.jpg,1,AJK_0632,AJK_0632,AJK,photo,1,844,1240,2017,train,0,HUAWEI BLN-L21
+AJK_0633_p01,data\interim\images\AJK_0633_p01.png,azad Kashmir\0650_323028Quotation1.jpg,1,AJK_0633,AJK_0633,AJK,scan,1,858,1220,,train,0,
+AJK_0634_p01,data\interim\images\AJK_0634_p01.png,azad Kashmir\0651_454681Notification.jpg,1,AJK_0634,AJK_0634,AJK,scan,1,832,1259,,train,0,
+AJK_0635_p01,data\interim\images\AJK_0635_p01.png,azad Kashmir\0652_686492099.jpg,1,AJK_0635,AJK_0635,AJK,photo,1,915,1145,2017,train,0,HUAWEI BLN-L21
+AJK_0636_p01,data\interim\images\AJK_0636_p01.png,azad Kashmir\0653_879882SSCRegistionSchedule2017-19.pdf,1,AJK_0636,AJK_0636,AJK,scan,0,7117,11280,2017,train,0,Synactis PDF In-The-Box version 3.12 (Demo)
+AJK_0636_p02,data\interim\images\AJK_0636_p02.png,azad Kashmir\0653_879882SSCRegistionSchedule2017-19.pdf,2,AJK_0636,AJK_0636,AJK,scan,0,7117,11280,2017,train,0,Synactis PDF In-The-Box version 3.12 (Demo)
+AJK_0637_p01,data\interim\images\AJK_0637_p01.png,azad Kashmir\0654_215393031.jpg,1,AJK_0637,AJK_0637,AJK,photo,1,766,1200,2017,train,0,HUAWEI BLN-L21
+AJK_0638_p01,data\interim\images\AJK_0638_p01.png,azad Kashmir\0655_723876003.jpg,1,AJK_0638,AJK_0638,AJK,scan,1,907,1155,,train,0,
+AJK_0639_p01,data\interim\images\AJK_0639_p01.png,azad Kashmir\0656_601318NewNotificationDarsiKutabNew.pdf,1,AJK_0639,AJK_0639,AJK,scan,0,4844,6760,2017,train,0,Soda PDF 8 Soda PDF 8
+AJK_0639_p02,data\interim\images\AJK_0639_p02.png,azad Kashmir\0656_601318NewNotificationDarsiKutabNew.pdf,2,AJK_0639,AJK_0639,AJK,scan,0,5091,7216,2017,train,0,Soda PDF 8 Soda PDF 8
+AJK_0640_p01,data\interim\images\AJK_0640_p01.png,azad Kashmir\0657_141143abc.jpg,1,AJK_0640,AJK_0640,AJK,scan,0,1432,1772,,train,0,
+AJK_0641_p01,data\interim\images\AJK_0641_p01.png,azad Kashmir\0658_155426admissionextension.jpg,1,AJK_0641,AJK_0641,AJK,photo,0,1712,1280,,train,0,HP HP Scanjet G4050
+AJK_0642_p01,data\interim\images\AJK_0642_p01.png,azad Kashmir\0659_791534PressRelease27-02-2017.jpg,1,AJK_0642,AJK_0642,AJK,scan,1,847,1236,2017,train,0,
+AJK_0643_p01,data\interim\images\AJK_0643_p01.png,azad Kashmir\0660_123138PressRelease21-02-2017.jpg,1,AJK_0643,AJK_0643,AJK,scan,1,853,1228,2017,train,0,
+AJK_0644_p01,data\interim\images\AJK_0644_p01.png,azad Kashmir\0662_178100notification.jpg,1,AJK_0644,AJK_0644,AJK,photo,1,1192,968,,train,1,HP HP Scanjet G4050
+AJK_0645_p01,data\interim\images\AJK_0645_p01.png,azad Kashmir\0663_661346PressRelease28-01-2017.jpg,1,AJK_0645,AJK_0645,AJK,scan,1,910,1151,2017,train,0,
+AJK_0646_p01,data\interim\images\AJK_0646_p01.png,azad Kashmir\0664_132080PressRelease18-01-2017.jpg,1,AJK_0646,AJK_0646,AJK,scan,1,896,1169,2017,train,0,
+AJK_0647_p01,data\interim\images\AJK_0647_p01.png,azad Kashmir\0665_809844paperrechecking.jpg,1,AJK_0647,AJK_0647,AJK,photo,0,1512,2254,,train,1,HP HP Scanjet G4050
+AJK_0648_p01,data\interim\images\AJK_0648_p01.png,azad Kashmir\0666_188385JabbarResultannouncement.jpg,1,AJK_0648,AJK_0648,AJK,photo,0,1015,1606,,train,0,HP HP Scanjet G4050
+AJK_0649_p01,data\interim\images\AJK_0649_p01.png,azad Kashmir\0667_917205PressRelease03-01-2017.jpg,1,AJK_0649,AJK_0649,AJK,scan,1,932,1124,2017,train,1,
+AJK_0650_p01,data\interim\images\AJK_0650_p01.png,azad Kashmir\0668_604095NEWCombineResultManual.pdf,1,AJK_0650,AJK_0650,AJK,scan,0,3369,5000,2016,train,0,Soda PDF 8 Soda PDF 8
+AJK_0650_p02,data\interim\images\AJK_0650_p02.png,azad Kashmir\0668_604095NEWCombineResultManual.pdf,2,AJK_0650,AJK_0650,AJK,scan,0,3397,5000,2016,train,0,Soda PDF 8 Soda PDF 8
+AJK_0651_p01,data\interim\images\AJK_0651_p01.png,azad Kashmir\0669_628723newCombineResultOnline.pdf,1,AJK_0651,AJK_0651,AJK,scan,0,3479,5000,2016,train,1,Soda PDF 8 Soda PDF 8
+AJK_0651_p02,data\interim\images\AJK_0651_p02.png,azad Kashmir\0669_628723newCombineResultOnline.pdf,2,AJK_0651,AJK_0651,AJK,scan,0,3457,5000,2016,train,0,Soda PDF 8 Soda PDF 8
+AJK_0652_p01,data\interim\images\AJK_0652_p01.png,azad Kashmir\0670_581420PressRelease07-12-2016.jpg,1,AJK_0652,AJK_0652,AJK,scan,1,977,1072,2016,train,0,
+AJK_0653_p01,data\interim\images\AJK_0653_p01.png,azad Kashmir\0671_896240scan0059.jpg,1,AJK_0653,AJK_0653,AJK,photo,1,708,918,,train,0,HP HP Scanjet G4050
+AJK_0654_p01,data\interim\images\AJK_0654_p01.png,azad Kashmir\0672_763549notification.jpg,1,AJK_0654,AJK_0654,AJK,scan,1,894,1172,,train,0,
+AJK_0655_p01,data\interim\images\AJK_0655_p01.png,azad Kashmir\0673_484568PressRelease25-11-2016.jpg,1,AJK_0655,AJK_0655,AJK,scan,0,2033,2217,2016,train,1,
+AJK_0656_p01,data\interim\images\AJK_0656_p01.png,azad Kashmir\0674_989293Notification21-11-2016.jpg,1,AJK_0656,AJK_0656,AJK,scan,0,1610,1353,2016,train,0,
+AJK_0657_p01,data\interim\images\AJK_0657_p01.png,azad Kashmir\0675_638038Combinepdfsscadmission2017_Compressed.pdf,1,AJK_0657,AJK_0657,AJK,scan,0,5017,7838,2017,train,0,Synactis PDF In-The-Box version 3.12 (Demo)
+AJK_0657_p02,data\interim\images\AJK_0657_p02.png,azad Kashmir\0675_638038Combinepdfsscadmission2017_Compressed.pdf,2,AJK_0657,AJK_0657,AJK,scan,0,5017,7838,2017,train,0,Synactis PDF In-The-Box version 3.12 (Demo)
+AJK_0658_p01,data\interim\images\AJK_0658_p01.png,azad Kashmir\0676_464787PressRelease10-11-2016.jpg,1,AJK_0658,AJK_0658,AJK,scan,1,1343,1321,2016,train,0,
+AJK_0659_p01,data\interim\images\AJK_0659_p01.png,azad Kashmir\0677_962233PressRelease27-10-2016.jpg,1,AJK_0659,AJK_0659,AJK,scan,1,1008,1400,2016,train,0,
+AJK_0660_p01,data\interim\images\AJK_0660_p01.png,azad Kashmir\0678_786471PressReleaseSSC18-10-2016.jpg,1,AJK_0660,AJK_0660,AJK,scan,1,1007,1440,2016,train,1,
+AJK_0661_p01,data\interim\images\AJK_0661_p01.png,azad Kashmir\0679_7419PressReleaseHSSC18-10-2016.jpg,1,AJK_0661,AJK_0661,AJK,scan,0,1371,1903,2016,train,0,
+AJK_0662_p01,data\interim\images\AJK_0662_p01.png,azad Kashmir\0680_40623PressRelease15-10-2016.pdf,1,AJK_0662,AJK_0662,AJK,scan,0,6100,6057,2016,train,0,Soda PDF 8 Soda PDF 8
+AJK_0663_p01,data\interim\images\AJK_0663_p01.png,azad Kashmir\0681_545115PressRelease10-10-20160008.jpg,1,AJK_0663,AJK_0663,AJK,scan,0,2315,2022,2016,train,0,
+AJK_0664_p01,data\interim\images\AJK_0664_p01.png,azad Kashmir\0683_635427scan0010.jpg,1,AJK_0664,AJK_0664,AJK,photo,1,1043,1280,,train,0,HP HP Scanjet G4050
+AJK_0665_p01,data\interim\images\AJK_0665_p01.png,azad Kashmir\0684_108173345974scan0001.jpg,1,AJK_0665,AJK_0665,AJK,photo,1,776,599,,train,1,HP HP Scanjet G4050
+AJK_0666_p01,data\interim\images\AJK_0666_p01.png,azad Kashmir\0685_713401PressReleasesports25-08-2016.jpg,1,AJK_0666,AJK_0666,AJK,scan,0,1474,1920,2016,train,0,
+AJK_0667_p01,data\interim\images\AJK_0667_p01.png,azad Kashmir\0686_6406PressRelease22-08-2016.jpg,1,AJK_0667,AJK_0667,AJK,scan,0,1227,1920,2016,train,0,
+AJK_0668_p01,data\interim\images\AJK_0668_p01.png,azad Kashmir\0687_725734PRESSRELEASE220816-16.jpg,1,AJK_0668,AJK_0668,AJK,scan,0,1577,1920,,train,0,
+AJK_0669_p01,data\interim\images\AJK_0669_p01.png,azad Kashmir\0688_166568PressRelease16-08-2016.jpg,1,AJK_0669,AJK_0669,AJK,scan,0,1275,1754,2016,train,0,
+AJK_0670_p01,data\interim\images\AJK_0670_p01.png,azad Kashmir\0689_401186hssc-reg-notification-2016-rtl.jpg,1,AJK_0670,AJK_0670,AJK,scan,1,1497,838,2016,train,0,
+AJK_0671_p01,data\interim\images\AJK_0671_p01.png,azad Kashmir\0690_331323admission-fee-update-08-12-2015.jpg,1,AJK_0671,AJK_0671,AJK,scan,1,727,1071,2015,train,0,
+AJK_0672_p01,data\interim\images\AJK_0672_p01.png,azad Kashmir\0691_630868sports-performa-2016.pdf,1,AJK_0672,AJK_0672,AJK,scan,0,2550,3901,2016,train,0,Microsoft® Office Word 2007 Microsoft® Office Word 2007
+AJK_0672_p02,data\interim\images\AJK_0672_p02.png,azad Kashmir\0691_630868sports-performa-2016.pdf,2,AJK_0672,AJK_0672,AJK,scan,0,2550,3901,2016,train,0,Microsoft® Office Word 2007 Microsoft® Office Word 2007
+AJK_0672_p03,data\interim\images\AJK_0672_p03.png,azad Kashmir\0691_630868sports-performa-2016.pdf,3,AJK_0672,AJK_0672,AJK,scan,0,2550,3901,2016,train,0,Microsoft® Office Word 2007 Microsoft® Office Word 2007
+AJK_0672_p04,data\interim\images\AJK_0672_p04.png,azad Kashmir\0691_630868sports-performa-2016.pdf,4,AJK_0672,AJK_0672,AJK,scan,0,2550,3901,2016,train,0,Microsoft® Office Word 2007 Microsoft® Office Word 2007
+AJK_0672_p05,data\interim\images\AJK_0672_p05.png,azad Kashmir\0691_630868sports-performa-2016.pdf,5,AJK_0672,AJK_0672,AJK,scan,0,2550,3901,2016,train,0,Microsoft® Office Word 2007 Microsoft® Office Word 2007
+FBR_0673_p01,data\interim\images\FBR_0673_p01.png,FBR\107(I)_2019.pdf,1,FBR_0673,FBR_0673,FBR,digital,0,2482,3507,2019,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0674_p01,data\interim\images\FBR_0674_p01.png,FBR\108(I)_2019.pdf,1,FBR_0674,FBR_0674,FBR,digital,0,2482,3507,2019,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0675_p01,data\interim\images\FBR_0675_p01.png,FBR\1200(I)_2018.pdf,1,FBR_0675,FBR_0674,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0676_p01,data\interim\images\FBR_0676_p01.png,FBR\1265(I)_2018.pdf,1,FBR_0676,FBR_0676,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0676_p02,data\interim\images\FBR_0676_p02.png,FBR\1265(I)_2018.pdf,2,FBR_0676,FBR_0676,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0676_p03,data\interim\images\FBR_0676_p03.png,FBR\1265(I)_2018.pdf,3,FBR_0676,FBR_0676,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0676_p04,data\interim\images\FBR_0676_p04.png,FBR\1265(I)_2018.pdf,4,FBR_0676,FBR_0676,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0676_p05,data\interim\images\FBR_0676_p05.png,FBR\1265(I)_2018.pdf,5,FBR_0676,FBR_0676,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0676_p06,data\interim\images\FBR_0676_p06.png,FBR\1265(I)_2018.pdf,6,FBR_0676,FBR_0676,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0676_p07,data\interim\images\FBR_0676_p07.png,FBR\1265(I)_2018.pdf,7,FBR_0676,FBR_0676,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0676_p08,data\interim\images\FBR_0676_p08.png,FBR\1265(I)_2018.pdf,8,FBR_0676,FBR_0676,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0676_p09,data\interim\images\FBR_0676_p09.png,FBR\1265(I)_2018.pdf,9,FBR_0676,FBR_0676,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0676_p10,data\interim\images\FBR_0676_p10.png,FBR\1265(I)_2018.pdf,10,FBR_0676,FBR_0676,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0677_p01,data\interim\images\FBR_0677_p01.png,FBR\1266(I)_2018.pdf,1,FBR_0677,FBR_0677,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0678_p01,data\interim\images\FBR_0678_p01.png,FBR\1276(I)_2018.pdf,1,FBR_0678,FBR_0674,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0679_p01,data\interim\images\FBR_0679_p01.png,FBR\1540(I)_2018.pdf,1,FBR_0679,FBR_0679,FBR,digital,0,2482,3507,2018,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0680_p01,data\interim\images\FBR_0680_p01.png,FBR\18(I)_2019.pdf,1,FBR_0680,FBR_0677,FBR,digital,0,2482,3507,2019,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0681_p01,data\interim\images\FBR_0681_p01.png,FBR\191(I)_2019.pdf,1,FBR_0681,FBR_0681,FBR,digital,0,2482,3507,2019,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0682_p01,data\interim\images\FBR_0682_p01.png,FBR\192(I)_2019.pdf,1,FBR_0682,FBR_0674,FBR,digital,0,2482,3507,2019,test_unseen,1,Microsoft® Word 2013 Microsoft® Word 2013
+FBR_0683_p01,data\interim\images\FBR_0683_p01.png,FBR\251(I)_2019.pdf,1,FBR_0683,FBR_0683,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016
+FBR_0683_p02,data\interim\images\FBR_0683_p02.png,FBR\251(I)_2019.pdf,2,FBR_0683,FBR_0683,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016
+FBR_0683_p03,data\interim\images\FBR_0683_p03.png,FBR\251(I)_2019.pdf,3,FBR_0683,FBR_0683,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016
+FBR_0683_p04,data\interim\images\FBR_0683_p04.png,FBR\251(I)_2019.pdf,4,FBR_0683,FBR_0683,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016
+FBR_0683_p05,data\interim\images\FBR_0683_p05.png,FBR\251(I)_2019.pdf,5,FBR_0683,FBR_0683,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016
+FBR_0683_p06,data\interim\images\FBR_0683_p06.png,FBR\251(I)_2019.pdf,6,FBR_0683,FBR_0683,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016
+FBR_0683_p07,data\interim\images\FBR_0683_p07.png,FBR\251(I)_2019.pdf,7,FBR_0683,FBR_0683,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016
+FBR_0683_p08,data\interim\images\FBR_0683_p08.png,FBR\251(I)_2019.pdf,8,FBR_0683,FBR_0683,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016
+FBR_0683_p09,data\interim\images\FBR_0683_p09.png,FBR\251(I)_2019.pdf,9,FBR_0683,FBR_0683,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016
+FBR_0683_p10,data\interim\images\FBR_0683_p10.png,FBR\251(I)_2019.pdf,10,FBR_0683,FBR_0683,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016
+FBR_0684_p01,data\interim\images\FBR_0684_p01.png,FBR\371(I)_2019.pdf,1,FBR_0684,FBR_0684,FBR,digital,0,2550,3301,2019,test_unseen,1,Microsoft® Word 2016 Microsoft® Word 2016

@@ -1,0 +1,143 @@
+{
+ "page_id": "AJK_0465_p01",
+ "file": "azad Kashmir\\0477_355560WhatsAppImage2021-05-08at10.17.55.jpeg.jpg",
+ "image": "data/interim/images/AJK_0465_p01.png",
+ "width": 783,
+ "height": 1170,
+ "source": "AJK",
+ "type": "photo",
+ "split": "train",
+ "low_res": 1,
+ "page_flags": [
+  "no_date",
+  "no_reference_no"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    105.1,
+    80.0,
+    554.4,
+    48.0
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": null,
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز",
+   "bbox": [
+    660.3,
+    218.8,
+    84.8,
+    26.3
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    105.1,
+    80.0,
+    554.4,
+    48.0
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    660.3,
+    218.8,
+    84.8,
+    26.3
+   ],
+   "text": "پریس ریلیز",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_3",
+   "label": "body",
+   "bbox": [
+    25.6,
+    289.6,
+    721.1,
+    108.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "body",
+   "bbox": [
+    204.2,
+    395.3,
+    542.9,
+    38.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    151.4,
+    486.7,
+    180.5,
+    43.5
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    123.9,
+    534.7,
+    116.2,
+    64.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "body",
+   "bbox": [
+    339.1,
+    606.1,
+    409.1,
+    30.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_8",
+   "label": "distribution_list",
+   "bbox": [
+    147.0,
+    640.0,
+    601.0,
+    335.0
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

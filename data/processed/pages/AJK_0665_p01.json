@@ -1,0 +1,168 @@
+{
+ "page_id": "AJK_0665_p01",
+ "file": "azad Kashmir\\0684_108173345974scan0001.jpg",
+ "image": "data/interim/images/AJK_0665_p01.png",
+ "width": 776,
+ "height": 599,
+ "source": "AJK",
+ "type": "photo",
+ "split": "train",
+ "low_res": 1,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    25.0,
+    18.4,
+    739.6,
+    72.0
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "960006-05827",
+   "bbox": [
+    105.7,
+    492.5,
+    166.0,
+    65.6
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "16-9-55",
+   "bbox": [
+    304.3,
+    572.4,
+    314.5,
+    25.1
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز:",
+   "bbox": [
+    615.0,
+    108.8,
+    137.1,
+    52.6
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    25.0,
+    18.4,
+    739.6,
+    72.0
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    615.0,
+    108.8,
+    137.1,
+    52.6
+   ],
+   "text": "پریس ریلیز:",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    12.1,
+    151.8,
+    735.1,
+    204.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "stamp_signature",
+   "bbox": [
+    54.2,
+    392.5,
+    255.4,
+    92.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    105.7,
+    492.5,
+    166.0,
+    65.6
+   ],
+   "text": "960006-05827",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_7",
+   "label": "stamp_signature",
+   "bbox": [
+    105.7,
+    492.5,
+    166.0,
+    65.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    304.3,
+    572.4,
+    314.5,
+    25.1
+   ],
+   "text": "16-9-55",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_8",
+   "label": "body",
+   "bbox": [
+    304.3,
+    572.4,
+    314.5,
+    25.1
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

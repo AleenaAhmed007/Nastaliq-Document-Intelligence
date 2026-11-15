@@ -1,0 +1,180 @@
+{
+ "page_id": "AJK_0289_p01",
+ "file": "azad Kashmir\\0297_249664PR-INTER-PRAC-23.jpeg.jpg",
+ "image": "data/interim/images/AJK_0289_p01.png",
+ "width": 1188,
+ "height": 1600,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_date"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    240.2,
+    75.0,
+    717.0,
+    49.9
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "5007-0960/",
+   "bbox": [
+    605.0,
+    638.2,
+    527.9,
+    61.0
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": null,
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    831.6,
+    144.0,
+    261.4,
+    64.0
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    240.2,
+    75.0,
+    717.0,
+    49.9
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    831.6,
+    144.0,
+    261.4,
+    64.0
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "body",
+   "bbox": [
+    962.9,
+    175.0,
+    162.5,
+    37.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    62.6,
+    203.0,
+    1065.0,
+    187.5
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    200.1,
+    402.2,
+    142.7,
+    73.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "body",
+   "bbox": [
+    242.5,
+    481.9,
+    69.6,
+    29.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_8",
+   "label": "body",
+   "bbox": [
+    161.3,
+    527.4,
+    213.4,
+    29.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_9",
+   "label": "body",
+   "bbox": [
+    174.0,
+    582.1,
+    185.6,
+    23.5
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    605.0,
+    638.2,
+    527.9,
+    61.0
+   ],
+   "text": "5007-0960/",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_10",
+   "label": "distribution_list",
+   "bbox": [
+    4.0,
+    691.0,
+    1145.9,
+    897.0
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}
