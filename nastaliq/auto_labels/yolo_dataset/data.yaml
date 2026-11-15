@@ -1,0 +1,5 @@
+path: /content/drive/MyDrive/nastaliq/auto_labels/yolo_dataset
+train: images/train
+val: images/val
+test: images/test
+names: ['header', 'title', 'body', 'table', 'reference', 'signature', 'distribution']
