@@ -1,0 +1,14 @@
+pages written: 239 | by split: {'test': 49, 'test_unseen': 30, 'val': 31, 'train': 129}
+not annotated yet: 0
+excluded (personal data / bad image): 0 []
+boxes by label: {'text_line': 5407, 'header_department': 239, 'subject': 203, 'body': 1634, 'table': 121, 'reference_no': 167, 'date': 195, 'stamp_signature': 384, 'distribution_list': 159}
+box flags: {'subject:implicit_subject': 203, 'reference_no:handwritten': 155, 'date:handwritten': 162}
+line crops: 0
+
+field status:
+  department    {'present': 239}
+  reference_no  {'marked absent': 72, 'present': 167}
+  date          {'marked absent': 44, 'present': 195}
+  subject       {'present': 203, 'marked absent': 36}
+
+warnings: 0

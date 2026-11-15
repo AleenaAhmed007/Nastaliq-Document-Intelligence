@@ -14,7 +14,7 @@ from io import BytesIO
 BASE = "https://ajkbise.net"
 PAGE = BASE + "/notifications.php"
 
-OUT = "ajkbise_dataset"
+OUT = os.path.join("Dataset", "DOCS-PDFS", "azad Kashmir")
 os.makedirs(OUT, exist_ok=True)
 
 session = requests.Session()

@@ -1,0 +1,144 @@
+{
+ "page_id": "AJK_0223_p01",
+ "file": "azad Kashmir\\0229_787628Prac-NB.jpeg.jpg",
+ "image": "pages/images/AJK_0223_p01.png",
+ "width": 1280,
+ "height": 1100,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 1,
+ "page_flags": [
+  "no_reference_no"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    240.6,
+    69.3,
+    721.3,
+    59.1
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": {
+   "region_id": "reg_3",
+   "text": "01-01-2024",
+   "bbox": [
+    34.4,
+    577.4,
+    250.0,
+    136.4
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    896.0,
+    99.0,
+    281.6,
+    44.0
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    240.6,
+    69.3,
+    721.3,
+    59.1
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    896.0,
+    99.0,
+    281.6,
+    44.0
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "body",
+   "bbox": [
+    501.9,
+    168.1,
+    183.7,
+    102.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    66.2,
+    319.5,
+    980.0,
+    114.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    75.0,
+    439.5,
+    975.0,
+    111.7
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "stamp_signature",
+   "bbox": [
+    284.4,
+    577.4,
+    248.7,
+    136.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "date",
+   "bbox": [
+    34.4,
+    577.4,
+    250.0,
+    136.4
+   ],
+   "text": "01-01-2024",
+   "flags": [
+    "handwritten"
+   ]
+  }
+ ]
+}

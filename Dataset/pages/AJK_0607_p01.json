@@ -1,0 +1,168 @@
+{
+ "page_id": "AJK_0607_p01",
+ "file": "azad Kashmir\\0623_177459NewDoc2018-04-16_1.jpg",
+ "image": "pages/images/AJK_0607_p01.png",
+ "width": 1217,
+ "height": 1600,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    279.3,
+    116.5,
+    679.8,
+    51.5
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "2018/5354-61",
+   "bbox": [
+    293.5,
+    890.6,
+    603.8,
+    62.6
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "18-4-14",
+   "bbox": [
+    127.8,
+    304.6,
+    990.0,
+    421.9
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    851.9,
+    144.0,
+    267.7,
+    64.0
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    279.3,
+    116.5,
+    679.8,
+    51.5
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    851.9,
+    144.0,
+    267.7,
+    64.0
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    127.8,
+    304.6,
+    990.0,
+    421.9
+   ],
+   "text": "18-4-14",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    127.8,
+    304.6,
+    990.0,
+    421.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    117.1,
+    729.8,
+    369.6,
+    178.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    293.5,
+    890.6,
+    603.8,
+    62.6
+   ],
+   "text": "2018/5354-61",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_7",
+   "label": "stamp_signature",
+   "bbox": [
+    998.3,
+    941.4,
+    116.5,
+    39.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_8",
+   "label": "distribution_list",
+   "bbox": [
+    227.0,
+    945.0,
+    886.0,
+    462.1
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

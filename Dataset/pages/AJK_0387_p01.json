@@ -1,0 +1,168 @@
+{
+ "page_id": "AJK_0387_p01",
+ "file": "azad Kashmir\\0398_906127Image_191_.jpg",
+ "image": "pages/images/AJK_0387_p01.png",
+ "width": 2472,
+ "height": 3491,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    657.8,
+    66.3,
+    1513.6,
+    133.0
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "17-05-2022",
+   "bbox": [
+    925.8,
+    1771.0,
+    1301.3,
+    139.6
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "17-05-2022",
+   "bbox": [
+    299.4,
+    538.7,
+    1907.1,
+    525.0
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    1730.4,
+    314.2,
+    543.8,
+    139.6
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    657.8,
+    66.3,
+    1513.6,
+    133.0
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    1730.4,
+    314.2,
+    543.8,
+    139.6
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    299.4,
+    538.7,
+    1907.1,
+    525.0
+   ],
+   "text": "17-05-2022",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    299.4,
+    538.7,
+    1907.1,
+    525.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    309.0,
+    1055.0,
+    1907.1,
+    357.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "body",
+   "bbox": [
+    325.8,
+    1517.2,
+    709.7,
+    272.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    925.8,
+    1771.0,
+    1301.3,
+    139.6
+   ],
+   "text": "17-05-2022",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_8",
+   "label": "distribution_list",
+   "bbox": [
+    376.0,
+    1863.1,
+    1857.0,
+    1550.0
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

@@ -1,4 +1,4 @@
-# data collection, triage, Gemini OCR, evaluation
+# Data collection, triage, and Label Studio annotation pipeline
 requests
 beautifulsoup4
 pypdf
@@ -6,10 +6,4 @@ pypdfium2
 pillow
 pandas
 numpy
-google-genai
-jiwer
-
-# heavy: layout + OCR (Surya) and YOLO layout model
-# on Windows with an NVIDIA GPU install the CUDA build of PyTorch first (pytorch.org), then run pip install -r requirements.txt
-surya-ocr
-ultralytics
+label-studio

@@ -4,21 +4,18 @@ Turn scanned Urdu notices (Nastaliq script) into structured records. For every p
 **date, department, subject and reference number**, and links each value to its region in the original
 image so a human can verify it.
 
-> Course project, Group 2. Status: work in progress (see [Status](#status)). Stages marked *planned* are not implemented yet.
+> Course project, Group 2. Current stage: **Data Collection, Triage, and Complete Ground-Truth Annotation**.
 
 ## Pipeline overview
 
 ```mermaid
 flowchart TD
-    A[Raw documents<br/>FBR SROs + AJK BISE notices] --> B[1. Triage<br/>render pages, tag capture type, split by document]
-    B --> C[2. Preprocessing<br/>orientation, deskew, denoise]
-    C --> D[3. Layout analysis<br/>Surya blocks mapped to 7 classes]
-    D --> E[4. Line OCR<br/>Gemini on region crops, Tesseract / UTRNet baselines]
-    E --> F[5. Field extraction<br/>date, department, subject, reference number]
-    F --> G[6. LLM error correction<br/>raw and corrected value both kept]
-    G --> H[7. Structured record<br/>value + bounding box evidence]
-    H --> I[8. Human verification<br/>preview with boxes, ok / wrong]
-    H --> J[9. Evaluation<br/>CER, WER, layout mAP, field F1, LLM fixed vs introduced]
+    A["Raw documents<br/>FBR SROs + AJK BISE notices"] --> B["1. Triage<br/>render pages, tag capture type, split by document"]
+    B --> C["2. Preprocessing & Task Creation<br/>privacy filtering, pass2 line selection, tasks.json"]
+    C --> D["3. Annotation (Label Studio)<br/>9 layout regions, 4 target fields, per-box & page flags"]
+    D --> E["4. Clean Dataset Export<br/>export_to_json.py -> per-page JSON; optional line crops"]
+    E --> F["5. Line OCR (Planned)<br/>Multimodal OCR baselines"]
+    F --> G["6. Field Extraction & Evaluation (Planned)<br/>CER, WER, Field F1, layout mAP"]
 ```
 
 ## Stages in detail
@@ -26,53 +23,64 @@ flowchart TD
 | # | Stage | Input | Output | Tool / status |
 |---|---|---|---|---|
 | 1 | **Triage** | PDFs and images in `Dataset/DOCS-PDFS` | `pages/images/*.png`, `pages/manifest.csv` (capture type `digital / scan / photo`, `low_res`, `year`, `split`, `annotate`) | `triage.py` (done) |
-| 2 | **Preprocessing** | page image | corrected image (EXIF rotation done in triage; deskew and denoise optional) | *planned* |
-| 3 | **Layout analysis** | page image | blocks with class `header, title, body, table, reference, signature, stamp` and a box each | Surya in `auto_label_surya.ipynb`; optional YOLO layout model trained on corrected labels |
-| 4 | **Line OCR** | line / region crops from stage 3 | text per line with an exact pixel box | Gemini (`gemini-3.5-flash`) via `gemini_ocr.py`; baselines Tesseract (`urd`) and UTRNet |
-| 5 | **Field extraction** | layout blocks + OCR lines | `date`, `department`, `subject`, `reference_number`, each with source line(s) and box | rules, keywords and position; *planned* |
-| 6 | **LLM error correction** | raw OCR text of lines and fields | corrected text; the raw text is never overwritten | LLM post-correction; *planned* |
-| 7 | **Structured record** | stages 3-6 | one JSON per page (see below) | *planned* |
-| 8 | **Human verification** | record + page image | preview image with boxes, `review.csv` with status `ok / wrong` | notebook previews; Label Studio for corrections |
-| 9 | **Evaluation** | records + ground truth | metrics table, per capture type | *planned* |
+| 2 | **Task Creation** | `pages/manifest.csv`, `pages/review_personal_data.csv` | `tasks.json` (239 tasks: test, test_unseen, val, train; 120 pass2 line transcription tasks) | `make_tasks.py` (done) |
+| 3 | **Annotation Setup & Guidelines** | `labelstudio_config.xml`, `annotation_guide.md` | Label Studio UI with 9 classes (`header_department`, `reference_no`, `date`, `subject`, `body`, `table`, `stamp_signature`, `distribution_list`, `text_line`), per-box flags, page flags | Label Studio (done) |
+| 4 | **Ground-Truth Annotation** | `tasks.json`, page images | `export.json` (239 annotated tasks, verified coordinates and clean Nastaliq text) | Verified annotations (done) |
+| 5 | **Dataset Export & Validation** | `export.json` | `Dataset/pages/*.json`, `Dataset/all_pages.jsonl`, `Dataset/report.txt`; line crops and `lines.tsv` are optional (`--crops`) | `export_to_json.py` (done, 0 warnings) |
+| 6 | **Line OCR & Field Extraction** | crops and pages from stage 5 | Text per line, extracted fields (`date`, `department`, `subject`, `reference_no`) | *planned* |
+| 7 | **Evaluation** | records + ground truth (`lines.tsv`) | CER, WER, layout mAP, field F1 | *planned* |
 
-Design choices:
-- **Every value keeps its evidence.** OCR runs on crops, so each text has an exact box that comes from our own layout step, not from a guessed coordinate.
-- **Raw and corrected text are both stored**, so the effect of the LLM can be measured.
-- **Splits are by document**, never by page, and near-duplicate documents stay together.
+---
 
 ## Output record (one per page)
 
 ```json
 {
-  "page_id": "<page id>",
-  "doc_id": "<document id>",
+  "page_id": "AJK_0001_p01",
+  "file": "azad Kashmir\\0001_541442IMG_0066.jpg",
+  "image": "pages/images/AJK_0001_p01.png",
+  "width": 2108,
+  "height": 3197,
   "source": "AJK",
-  "capture_type": "photo",
+  "type": "photo",
+  "split": "train",
+  "low_res": 0,
+  "page_flags": [],
   "fields": {
-    "date": {
-      "text_raw": "<OCR text>",
-      "text_corrected": "<text after LLM correction>",
-      "value": "<normalised value, e.g. ISO date>",
-      "bbox": [0, 0, 0, 0],
-      "line_ids": [0],
-      "ocr_engine": "gemini-3.5-flash",
-      "found_by": "rule",
-      "llm_changed": true,
-      "review_status": "pending"
+    "department": {
+      "region_id": "reg_1",
+      "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+      "bbox": [419.1, 110.0, 1284.0, 95.9],
+      "flags": []
     },
-    "department": {},
-    "subject": {},
-    "reference_number": {}
+    "reference_no": {
+      "region_id": "reg_3",
+      "text": "8389-8400 / 2026",
+      "bbox": [1380.0, 2009.0, 510.0, 71.9],
+      "flags": ["handwritten"]
+    },
+    "date": {
+      "region_id": "reg_4",
+      "text": "12-11-2026",
+      "bbox": [937.0, 2006.1, 350.0, 68.1],
+      "flags": ["handwritten"]
+    },
+    "subject": {
+      "region_id": "reg_2",
+      "text": "پریس ریلیز!",
+      "bbox": [1621.1, 220.0, 298.1, 117.0],
+      "flags": ["implicit_subject"]
+    }
   },
-  "layout": [{"label": "header", "bbox": [0, 0, 0, 0]}],
-  "lines": [{"id": 0, "text": "<line text>", "bbox": [0, 0, 0, 0]}]
+  "regions": [ ... ]
 }
 ```
-Values above are placeholders. `bbox` is `[x_min, y_min, x_max, y_max]` in image pixels.
+
+---
 
 ## Data
 
-The raw documents are stored in `Dataset/DOCS-PDFS/` (private repository).
+The raw documents are stored in `Dataset/DOCS-PDFS/`:
 
 | Folder | Content | Type |
 |---|---|---|
@@ -85,33 +93,44 @@ Splits (set by `triage.py`):
 
 | Split | Content | Use |
 |---|---|---|
-| `train` | older AJK documents | layout model training, few-shot examples |
-| `val` | next newest AJK documents | tuning prompts and rules |
-| `test` | newest AJK documents, every capture type represented | final scores (manually corrected pages only) |
-| `test_unseen` | FBR documents | unseen-issuer test |
+| `train` | older AJK documents (129 pages) | layout model training, few-shot examples |
+| `val` | next newest AJK documents (31 pages) | tuning prompts and rules |
+| `test` | newest AJK documents, every capture type represented (49 pages) | final scores (manually verified pages) |
+| `test_unseen` | FBR documents (30 pages) | unseen-issuer test |
 
-Rules we follow:
-- public documents only, source URL recorded for every file
-- no private identity documents; files that may list candidate names or roll numbers are held back and reviewed
-- test pages are never used to tune prompts or rules
-
-Not included: the UROCR text-line dataset (download it from its original source).
+---
 
 ## Repository layout
 
 ```
 .
-├── README.md
-├── requirements.txt
-├── Dataset/
-│   ├── DOCS-PDFS/            raw documents (FBR, azad Kashmir)
-│   └── ajkbise_manifest.csv  source URLs and dates
-├── pages/                    triage output: manifest.csv and page images
-├── download_ajkbise.py       collect the AJK BISE notices
-├── triage.py                 render pages, tag capture type, split by document
-├── auto_label_surya.ipynb    Surya layout + OCR pre-labelling (Colab T4)
-└── gemini_ocr.py             OCR with Gemini
+├── README.md                 # Project overview and roadmap
+├── requirements.txt          # Clean dependencies for triage & annotation
+├── outcomes.json             # Single outcome file: all 239 page annotations & fields
+├── export.json               # Complete verified Label Studio annotations export
+├── tasks.json                # 239 tasks for Label Studio import
+├── labelstudio_config.xml    # Label Studio UI configuration (9 classes, flags)
+├── annotation_guide.md       # Team annotation guidelines (Urdu / Roman Urdu)
+├── make_tasks.py             # Generates tasks.json from manifest.csv
+├── export_to_json.py         # Validates annotations -> clean dataset + report
+├── download_ajkbise.py       # Scrapes AJK BISE notices
+├── triage.py                 # Renders pages, tags capture type, splits by document
+├── pages/                    # Triage outputs
+│   ├── images/               # 789 rendered page PNG images
+│   ├── manifest.csv          # Metadata manifest (splits, types, resolution)
+│   └── review_personal_data.csv # Student privacy review list
+└── Dataset/                  # Raw source documents & per-page ground truth
+    ├── DOCS-PDFS/            # Raw PDFs and images (FBR, azad Kashmir)
+    │   ├── azad Kashmir/     # 672 AJK BISE notices
+    │   └── FBR/              # 12 FBR Urdu SROs
+    ├── ajkbise_manifest.csv  # Source URLs and dates
+    ├── scrape_failed.csv     # Scraper failed URLs log
+    ├── pages/                # 239 clean per-page JSON records
+    ├── all_pages.jsonl       # All page records in JSONL format
+    └── report.txt            # Validation summary (0 warnings)
 ```
+
+---
 
 ## Setup
 
@@ -121,66 +140,43 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-For Gemini OCR set an API key (never commit it):
+---
 
-```powershell
-$env:GEMINI_API_KEY="your_key"
-```
+## How to run (up to Annotation)
 
-## How to run
+1. **Triage:**
+   ```powershell
+   python triage.py --input Dataset/DOCS-PDFS --out pages
+   ```
+2. **Build Label Studio tasks:**
+   ```powershell
+   python make_tasks.py --manifest pages/manifest.csv --review pages/review_personal_data.csv --out tasks.json
+   ```
+3. **Export & Validate Dataset:**
+   ```powershell
+   python export_to_json.py --export export.json --out Dataset --doc-root . --crops
+   ```
+   Check `Dataset/report.txt` to verify field presence and warnings. Add `--crops` to generate `Dataset/lines/` and `Dataset/lines.tsv` for OCR training; the current export has no line crops.
 
-1. Triage: `python triage.py --input Dataset/DOCS-PDFS --out pages`
-2. Pre-label layout with Surya (`auto_label_surya.ipynb`), then correct the test pages in Label Studio
-3. OCR: `python gemini_ocr.py --pages pages/manifest.csv --split test --out gemini_out`
-4. Field extraction, LLM correction and evaluation: *planned scripts*
-
-## Annotation guide (short)
-
-| Field | Meaning |
-|---|---|
-| `date` | date printed or written on the notice (not the website upload date) |
-| `department` | issuing office (FBR: Revenue Division; AJK: Board / Controller of Examinations) |
-| `subject` | subject of the notice as written on the page |
-| `reference_number` | FBR: SRO number; AJK: outward number (often handwritten); `null` if absent |
-
-Layout classes: header, title, body, table, reference, signature, stamp. Handwritten parts get a flag.
-
-For the test pages we also transcribe the text lines by hand (needed for CER / WER). OCR output is never used as ground truth.
-
-## Evaluation protocol
-
-| Metric | Computed on | How |
-|---|---|---|
-| **CER, WER** | manually transcribed test lines | `jiwer`; same normalisation for every engine (digits, spaces, zero-width characters) |
-| **Layout mAP** | manually corrected test pages | mAP@0.5 and mAP@0.5:0.95 over the 7 classes |
-| **Field F1** | first page of every test document | exact match after normalising dates and numbers; per field and averaged |
-| **LLM fixed / introduced** | same test lines and fields | align words with ground truth: *fixed* = wrong before and right after, *introduced* = right before and wrong after |
-| **Robustness (stretch)** | test pages grouped by `capture_type` and `low_res` | clean vs low-resolution vs phone-camera photos |
-
-Engines compared for OCR: Gemini, Tesseract, optionally UTRNet. Scores are reported only on manually corrected test pages, never on automatic labels, and separately for AJK `test` and FBR `test_unseen`.
+---
 
 ## Status
 
 - [x] Data collection (FBR Urdu SROs, AJK BISE notices)
 - [x] Triage and document-level split
-- [ ] Surya pre-labelling
-- [ ] Annotation of test / validation pages
-- [ ] Baseline OCR (Tesseract)
-- [ ] Gemini OCR
-- [ ] Layout model
-- [ ] Field extraction
-- [ ] LLM error correction
-- [ ] Structured records and human verification view
-- [ ] Final evaluation and report
+- [x] Label Studio XML configuration and team annotation guidelines
+- [x] Ground-truth annotation of 239 pages (5,407 transcribed lines)
+- [x] Export to clean structured dataset (`Dataset/pages/`, `Dataset/all_pages.jsonl`) with 0 warnings
+- [ ] Generate line crops and `Dataset/lines.tsv` (`export_to_json.py --crops`)
+- [ ] Baseline OCR (Tesseract / Multimodal models)
+- [ ] Field extraction and normalization rules
+- [ ] Evaluation (CER, WER, Layout mAP, Field F1)
+
+---
 
 ## Team
 
 - Aleena Ahmed
 - Seerat Fatima
 - Muhammad Adil
-- Muhammad Omer 
-
-## Notes and licences
-
-- Source documents belong to their issuers.
-- Pre-trained models keep their own licences (for example UTRNet is CC BY-NC 4.0, non-commercial).
+- Muhammad Omer

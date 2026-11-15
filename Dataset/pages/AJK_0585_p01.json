@@ -1,0 +1,144 @@
+{
+ "page_id": "AJK_0585_p01",
+ "file": "azad Kashmir\\0601_36691229102012.jpg",
+ "image": "pages/images/AJK_0585_p01.png",
+ "width": 1216,
+ "height": 1822,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_reference_no"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    159.1,
+    68.0,
+    945.0,
+    70.0
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": {
+   "region_id": "reg_3",
+   "text": "29-10-2018",
+   "bbox": [
+    47.5,
+    856.7,
+    250.0,
+    122.8
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز",
+   "bbox": [
+    991.0,
+    157.1,
+    159.1,
+    42.1
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    159.1,
+    68.0,
+    945.0,
+    70.0
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    991.0,
+    157.1,
+    159.1,
+    42.1
+   ],
+   "text": "پریس ریلیز",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "body",
+   "bbox": [
+    113.5,
+    210.8,
+    1034.3,
+    350.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    115.2,
+    571.9,
+    1033.1,
+    169.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    158.0,
+    758.9,
+    266.1,
+    101.5
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "date",
+   "bbox": [
+    47.5,
+    856.7,
+    250.0,
+    122.8
+   ],
+   "text": "29-10-2018",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_7",
+   "label": "distribution_list",
+   "bbox": [
+    162.9,
+    931.0,
+    987.0,
+    753.9
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

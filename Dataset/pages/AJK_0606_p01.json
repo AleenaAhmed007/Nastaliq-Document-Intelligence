@@ -1,0 +1,456 @@
+{
+ "page_id": "AJK_0606_p01",
+ "file": "azad Kashmir\\0622_298034RegistrationSchedule01-vert.jpg",
+ "image": "pages/images/AJK_0606_p01.png",
+ "width": 1396,
+ "height": 3811,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    216.8,
+    55.6,
+    913.4,
+    74.3
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "7361-5561",
+   "bbox": [
+    646.9,
+    3290.0,
+    601.3,
+    44.6
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "18-06-2018",
+   "bbox": [
+    166.0,
+    333.8,
+    120.1,
+    17.1
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    977.2,
+    343.0,
+    307.1,
+    152.4
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    216.8,
+    55.6,
+    913.4,
+    74.3
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "table",
+   "bbox": [
+    87.2,
+    208.5,
+    1188.8,
+    267.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    166.0,
+    333.8,
+    120.1,
+    17.1
+   ],
+   "text": "18-06-2018",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    977.2,
+    343.0,
+    307.1,
+    152.4
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    63.4,
+    519.1,
+    1209.2,
+    279.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_7",
+   "label": "body",
+   "bbox": [
+    227.7,
+    809.5,
+    1041.6,
+    78.1
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_8",
+   "label": "body",
+   "bbox": [
+    64.1,
+    885.7,
+    1186.0,
+    119.3
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_9",
+   "label": "body",
+   "bbox": [
+    476.5,
+    1030.9,
+    800.2,
+    44.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_10",
+   "label": "body",
+   "bbox": [
+    66.0,
+    1073.6,
+    1198.3,
+    167.7
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_11",
+   "label": "body",
+   "bbox": [
+    67.6,
+    1241.2,
+    1201.0,
+    115.5
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_12",
+   "label": "body",
+   "bbox": [
+    406.2,
+    1367.8,
+    858.8,
+    41.2
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_13",
+   "label": "body",
+   "bbox": [
+    66.0,
+    1389.9,
+    1203.8,
+    93.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_14",
+   "label": "body",
+   "bbox": [
+    291.1,
+    1488.6,
+    977.3,
+    44.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_15",
+   "label": "body",
+   "bbox": [
+    66.0,
+    1535.1,
+    1201.1,
+    204.7
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_16",
+   "label": "body",
+   "bbox": [
+    176.5,
+    1734.4,
+    1111.1,
+    44.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_17",
+   "label": "body",
+   "bbox": [
+    61.3,
+    1782.8,
+    1205.2,
+    74.3
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_18",
+   "label": "body",
+   "bbox": [
+    70.9,
+    1905.5,
+    1191.5,
+    245.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_19",
+   "label": "body",
+   "bbox": [
+    79.9,
+    2152.8,
+    1176.5,
+    93.0
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_20",
+   "label": "body",
+   "bbox": [
+    76.4,
+    2234.8,
+    1188.8,
+    152.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_21",
+   "label": "body",
+   "bbox": [
+    87.2,
+    2385.7,
+    1183.4,
+    74.3
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_22",
+   "label": "body",
+   "bbox": [
+    415.0,
+    2454.3,
+    863.0,
+    41.2
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_23",
+   "label": "body",
+   "bbox": [
+    82.5,
+    2484.0,
+    1192.7,
+    70.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_24",
+   "label": "body",
+   "bbox": [
+    627.1,
+    2569.8,
+    613.5,
+    41.2
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_25",
+   "label": "body",
+   "bbox": [
+    79.2,
+    2601.4,
+    1112.3,
+    118.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_26",
+   "label": "body",
+   "bbox": [
+    542.6,
+    2729.8,
+    728.0,
+    48.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_27",
+   "label": "body",
+   "bbox": [
+    84.5,
+    2763.4,
+    1147.9,
+    152.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_28",
+   "label": "stamp_signature",
+   "bbox": [
+    913.4,
+    2921.5,
+    354.4,
+    44.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_29",
+   "label": "body",
+   "bbox": [
+    116.6,
+    2945.5,
+    1154.6,
+    137.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_30",
+   "label": "body",
+   "bbox": [
+    509.3,
+    3083.5,
+    688.4,
+    41.2
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_31",
+   "label": "stamp_signature",
+   "bbox": [
+    80.4,
+    3126.2,
+    196.3,
+    223.3
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    646.9,
+    3290.0,
+    601.3,
+    44.6
+   ],
+   "text": "7361-5561",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_32",
+   "label": "distribution_list",
+   "bbox": [
+    301.0,
+    3312.1,
+    971.1,
+    485.1
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

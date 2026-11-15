@@ -1,0 +1,164 @@
+{
+ "page_id": "AJK_0250_p01",
+ "file": "azad Kashmir\\0257_770385pr-reg-071123.jpg",
+ "image": "pages/images/AJK_0250_p01.png",
+ "width": 2469,
+ "height": 3348,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    400.0,
+    85.0,
+    1736.0,
+    118.9
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "03-11-23",
+   "bbox": [
+    588.4,
+    1522.0,
+    1702.4,
+    114.5
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_4",
+   "text": "20 دسمبر 2022",
+   "bbox": [
+    225.9,
+    351.9,
+    1918.9,
+    92.1
+   ],
+   "flags": []
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "پریس ریلیز!",
+   "bbox": [
+    1728.3,
+    301.3,
+    543.2,
+    133.9
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    400.0,
+    85.0,
+    1736.0,
+    118.9
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    1728.3,
+    301.3,
+    543.2,
+    133.9
+   ],
+   "text": "پریس ریلیز!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    221.7,
+    325.4,
+    2068.8,
+    480.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "date",
+   "bbox": [
+    225.9,
+    351.9,
+    1918.9,
+    92.1
+   ],
+   "text": "20 دسمبر 2022",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    255.5,
+    850.1,
+    598.0,
+    536.3
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    588.4,
+    1522.0,
+    1702.4,
+    114.5
+   ],
+   "text": "03-11-23",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_7",
+   "label": "stamp_signature",
+   "bbox": [
+    2049.5,
+    1744.3,
+    245.9,
+    88.4
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_8",
+   "label": "distribution_list",
+   "bbox": [
+    1008.1,
+    1760.0,
+    1292.0,
+    767.0
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}

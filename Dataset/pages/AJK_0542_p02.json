@@ -1,0 +1,70 @@
+{
+ "page_id": "AJK_0542_p02",
+ "file": "azad Kashmir\\0558_901916SSCAnnual2020Schedule.pdf",
+ "image": "pages/images/AJK_0542_p02.png",
+ "width": 2481,
+ "height": 3508,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_date",
+  "no_reference_no",
+  "no_subject"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    496.2,
+    105.2,
+    1488.6,
+    175.4
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": null,
+  "subject": null
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    496.2,
+    105.2,
+    1488.6,
+    175.4
+   ],
+   "text": "آزاد جموں وکشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "body",
+   "bbox": [
+    288.3,
+    323.8,
+    1918.8,
+    2730.3
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "stamp_signature",
+   "bbox": [
+    1699.5,
+    3290.5,
+    336.9,
+    37.5
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}
