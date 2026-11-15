@@ -1,0 +1,120 @@
+{
+ "page_id": "AJK_0076_p03",
+ "file": "azad Kashmir\\0079_900024PressRelease.pdf",
+ "image": "data/interim/images/AJK_0076_p03.png",
+ "width": 2480,
+ "height": 3509,
+ "source": "AJK",
+ "type": "photo",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_reference_no"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "FEDERAL BOARD OF INTERMEDIATE AND SECONDARY EDUCATION, H-8/4, ISLAMABAD",
+   "bbox": [
+    820.9,
+    263.2,
+    1096.2,
+    196.5
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": {
+   "region_id": "reg_3",
+   "text": "11/11/2025",
+   "bbox": [
+    1810.4,
+    512.3,
+    429.0,
+    77.2
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_2",
+   "text": "Marking Analysis Report",
+   "bbox": [
+    957.3,
+    533.4,
+    634.9,
+    70.2
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    820.9,
+    263.2,
+    1096.2,
+    196.5
+   ],
+   "text": "FEDERAL BOARD OF INTERMEDIATE AND SECONDARY EDUCATION, H-8/4, ISLAMABAD",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "date",
+   "bbox": [
+    1810.4,
+    512.3,
+    429.0,
+    77.2
+   ],
+   "text": "11/11/2025",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    957.3,
+    533.4,
+    634.9,
+    70.2
+   ],
+   "text": "Marking Analysis Report",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "body",
+   "bbox": [
+    285.2,
+    814.1,
+    2003.8,
+    466.7
+   ],
+   "text": "The examiner employed a consistently lenient marking approach. The marking approach demonstrates an emphasis on rewarding candidate effort and maximizing credit for responses. The examiner consistently employed a generous, holistic interpretation of the rubrics, granting full credit where student responses demonstrated a clear conceptual understanding, even if minor technical flaws were present.",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "stamp_signature",
+   "bbox": [
+    262.9,
+    1354.5,
+    2058.4,
+    1031.6
+   ],
+   "text": "Mr. Muhammad Ikram (Physics Examiner) Mr. Muhammad Tariq (Biology Examiner) Dr. Shahid Iqbal Farooqi (Chemistry Examiner) Mr. Nasir Mahmood (English Examiner) Mr. Muhammad Usman (Computer Science Examiner)",
+   "flags": []
+  }
+ ]
+}

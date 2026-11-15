@@ -1,0 +1,120 @@
+{
+ "page_id": "AJK_0135_p01",
+ "file": "azad Kashmir\\0140_878784FB_IMG_1746982215038.jpg",
+ "image": "data/interim/images/AJK_0135_p01.png",
+ "width": 856,
+ "height": 1384,
+ "source": "AJK",
+ "type": "photo",
+ "split": "train",
+ "low_res": 1,
+ "page_flags": [
+  "no_subject"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "CONTROLLER OF EXAMINATIONS\nAJK Board of Intermediate &\nSecondary Education, Mirpur",
+   "bbox": [
+    91.6,
+    24.9,
+    334.7,
+    110.7
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_2",
+   "text": "No. Board/Inter/001/2025",
+   "bbox": [
+    91.6,
+    170.2,
+    256.8,
+    38.8
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_3",
+   "text": "Dated: 11/05/25",
+   "bbox": [
+    629.2,
+    167.5,
+    131.0,
+    36.0
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": null
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    91.6,
+    24.9,
+    334.7,
+    110.7
+   ],
+   "text": "CONTROLLER OF EXAMINATIONS\nAJK Board of Intermediate &\nSecondary Education, Mirpur",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "date",
+   "bbox": [
+    629.2,
+    167.5,
+    131.0,
+    36.0
+   ],
+   "text": "Dated: 11/05/25",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_2",
+   "label": "reference_no",
+   "bbox": [
+    91.6,
+    170.2,
+    256.8,
+    38.8
+   ],
+   "text": "No. Board/Inter/001/2025",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "body",
+   "bbox": [
+    91.6,
+    227.0,
+    709.6,
+    817.9
+   ],
+   "text": "بجواب پریس ریلیز نمبر بورڈ /انٹر 3568-3578 مورخہ 09/05/2025\nآزاد جموں و کشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور\nکے زیر انتظام جاری امتحانات انٹر /میٹرک تا حکم ثانی ملتوی\nہیں۔\nلہذا کل مورخہ 12/05/2025 بروز سوموار سیشن صبح و شام تمام\nمضامین بائیولوجی، لائبریری سائنس، ریاضی (Mathematics)\nپنجاب /فیڈرل سلیبس نہیں ہوں گے نیز پریکٹیکل پیپر بھی نہیں ہوں گے۔\nجملہ متعلقین (ادارہ جات /طلبہ و طالبات/والدین/اساتذہ کرام) کو\nمطلع کیا جاتا ہے کہ سوشل میڈیا پر وائرل فیک معلومات\nکو خاطر میں نہ لائیں توجہ نہ دیں۔\nنوٹ: ری وائزڈ ڈیٹ شیٹ II جاری ہونے تک مورخہ 10/04/25\nسے جاری شدہ ڈیٹ شیٹ غیر مؤثر /غیر فعال تصور ہو\n(از 07/05/2025 تا ری وائزڈ ڈیٹ شیٹ تاریخ)",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "stamp_signature",
+   "bbox": [
+    89.9,
+    1047.7,
+    218.3,
+    239.4
+   ],
+   "text": "پروفیسر طاری محمد مشتاق\n11/05/2025\nController of Exams (Inter)\nBoard of Intermediate & Secondary\nEducation Mirpur (Azad Kashmir)",
+   "flags": []
+  }
+ ]
+}

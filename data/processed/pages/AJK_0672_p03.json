@@ -1,0 +1,106 @@
+{
+ "page_id": "AJK_0672_p03",
+ "file": "azad Kashmir\\0691_630868sports-performa-2016.pdf",
+ "image": "data/interim/images/AJK_0672_p03.png",
+ "width": 2550,
+ "height": 3901,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_date",
+  "no_reference_no",
+  "no_subject"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "PHOTOS OF PLAYERS",
+   "bbox": [
+    2238.9,
+    452.5,
+    63.8,
+    444.7
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": null,
+  "subject": null
+ },
+ "regions": [
+  {
+   "id": "reg_5",
+   "label": "table",
+   "bbox": [
+    275.4,
+    440.8,
+    1963.5,
+    3128.6
+   ],
+   "text": "Name............ Name............ Name............ Name............ F/Name........... F/Name........... F/Name........... F/Name...........",
+   "flags": []
+  },
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    2238.9,
+    452.5,
+    63.8,
+    444.7
+   ],
+   "text": "PHOTOS OF PLAYERS",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "header_department",
+   "bbox": [
+    2249.1,
+    1244.4,
+    53.6,
+    120.9
+   ],
+   "text": "GAME",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "header_department",
+   "bbox": [
+    2249.1,
+    1771.1,
+    53.6,
+    444.7
+   ],
+   "text": "SCHOOL/COLLEGE",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "stamp_signature",
+   "bbox": [
+    349.3,
+    2808.7,
+    163.2,
+    425.2
+   ],
+   "text": "SIGNATURE & SEAL\nHEAD OF INSTITUTION\nCELL #",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "header_department",
+   "bbox": [
+    2238.9,
+    3050.6,
+    51.0,
+    191.1
+   ],
+   "text": "SESSION",
+   "flags": []
+  }
+ ]
+}

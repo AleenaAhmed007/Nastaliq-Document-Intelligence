@@ -1,0 +1,121 @@
+{
+ "page_id": "AJK_0672_p01",
+ "file": "azad Kashmir\\0691_630868sports-performa-2016.pdf",
+ "image": "data/interim/images/AJK_0672_p01.png",
+ "width": 2550,
+ "height": 3901,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_date",
+  "no_reference_no"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں و کشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    627.3,
+    214.6,
+    1280.1,
+    101.4
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": null,
+  "subject": {
+   "region_id": "reg_2",
+   "text": "عنوان :۔ فارم شمولیت ٹورنامنٹ و انٹری فیس",
+   "bbox": [
+    734.4,
+    483.7,
+    1073.6,
+    124.8
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    627.3,
+    214.6,
+    1280.1,
+    101.4
+   ],
+   "text": "آزاد جموں و کشمیر انٹر میڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "subject",
+   "bbox": [
+    734.4,
+    483.7,
+    1073.6,
+    124.8
+   ],
+   "text": "عنوان :۔ فارم شمولیت ٹورنامنٹ و انٹری فیس",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_3",
+   "label": "body",
+   "bbox": [
+    267.8,
+    671.0,
+    1961.0,
+    1033.8
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "stamp_signature",
+   "bbox": [
+    285.6,
+    1743.7,
+    826.2,
+    366.7
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_5",
+   "label": "subject",
+   "bbox": [
+    471.8,
+    2243.1,
+    1711.0,
+    308.2
+   ],
+   "text": "ہدایات\nدرج ذیل ہدایات پر سختی سے عمل کرنا ضروری ہے۔",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_6",
+   "label": "body",
+   "bbox": [
+    242.2,
+    2687.8,
+    2006.9,
+    1088.4
+   ],
+   "text": "",
+   "flags": []
+  }
+ ]
+}
