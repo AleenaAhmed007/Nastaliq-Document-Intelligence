@@ -171,7 +171,6 @@ All 789 preview images in `data/previews/` follow standardized color coding:
 │   ├── annotations/
 │   │   ├── tasks.json                # 239 Label Studio import tasks
 │   │   ├── export.json               # 789 tasks (Gold + Gemini Vision)
-│   │   ├── export_full.json          # Complete 789-task archive
 │   │   └── gemini_cache/             # 550 raw Gemini Vision API response caches
 │   ├── processed/                    # Clean, model-ready dataset
 │   │   ├── pages/                    # 789 per-page JSON records

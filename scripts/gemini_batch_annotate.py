@@ -11,7 +11,7 @@ Features:
 - Caches raw Gemini JSON responses in data/annotations/gemini_cache/<page_id>.json (resumable)
 - Parallel worker pool with rate limit handling (429 exponential backoff)
 - Bounding box clamp and validation
-- Replaces auto-annotated entries in export_full.json and export.json
+- Replaces the auto-annotated entries (everything after the 239 gold tasks) in export.json
 - Redraws visual previews in data/previews/<page_id>_annotated.png
 - Automatically runs export_to_json.py to update outcomes.json, all_pages.jsonl, and report.txt
 """
@@ -43,7 +43,6 @@ MODELS = ["gemini-3.5-flash-lite", "gemini-3-flash-preview"]
 IMG_DIR = os.path.join(ROOT, "data", "interim", "images")
 CACHE_DIR = os.path.join(ROOT, "data", "annotations", "gemini_cache")
 PREV_DIR = os.path.join(ROOT, "data", "previews")
-EXPORT_FULL_PATH = os.path.join(ROOT, "data", "annotations", "export_full.json")
 EXPORT_PATH = os.path.join(ROOT, "data", "annotations", "export.json")
 
 os.makedirs(CACHE_DIR, exist_ok=True)
@@ -275,8 +274,8 @@ def draw_preview(img, results, out_path):
 
 
 def main():
-    print("Loading export_full.json...", flush=True)
-    with open(EXPORT_FULL_PATH, "r", encoding="utf-8") as f:
+    print("Loading export.json...", flush=True)
+    with open(EXPORT_PATH, "r", encoding="utf-8") as f:
         all_tasks = json.load(f)
 
     gold_tasks = all_tasks[:239]
@@ -407,13 +406,10 @@ def main():
     print("Merging with Gold tasks...", flush=True)
     full_dataset = gold_tasks + updated_auto_tasks
 
-    with open(EXPORT_FULL_PATH, "w", encoding="utf-8") as f:
-        json.dump(full_dataset, f, ensure_ascii=False, indent=2)
-
     with open(EXPORT_PATH, "w", encoding="utf-8") as f:
         json.dump(full_dataset, f, ensure_ascii=False, indent=2)
 
-    print(f"Successfully saved {len(full_dataset)} tasks to export.json and export_full.json!", flush=True)
+    print(f"Successfully saved {len(full_dataset)} tasks to export.json!", flush=True)
 
     # Re-run export_to_json.py
     print("\nRunning export_to_json.py to update outcomes.json, all_pages.jsonl, and report.txt...", flush=True)

@@ -147,7 +147,7 @@ Each task carries:
 **Interface:** `labelstudio_config.xml`
 - **9 layout labels** (rectangle boxes): `header_department`, `reference_no`, `date`, `subject`, `body`, `table`, `stamp_signature`, `distribution_list`, `text_line`
 - **Per-box textarea** for typing the exact text inside each field box
-- **Per-box flags**: `handwritten`, `implicit_subject`, `auto_heuristic`
+- **Per-box flags**: `handwritten`, `stamp_over`, `unclear`, `implicit_subject`
 - **Page-level flags**: `no_date`, `no_reference_no`, `no_subject`, `contains_personal_data`, `skip_bad_image`
 
 **Guide:** `annotation_guide.md` — step-by-step instructions for annotators
@@ -301,7 +301,7 @@ Draws coloured bounding boxes on every page image so annotators and reviewers ca
 ### 10.1 Background & Need for Vision-Based Annotation
 Initially, two approaches were evaluated for the remaining 550 auto-pages:
 1. **Surya OCR (`auto_label_surya.ipynb`):** Failed heavily on Nastaliq script — corrupted Urdu character glyphs (replacing Urdu `ی/ک` with Arabic `ي/ك`), merged lines erratically, and misclassified body paragraphs as header dates.
-2. **Geometric Ink-Density Heuristics (`auto_annotate_remaining.py`):** Produced rigid, approximate geometric bands (e.g., top 12% for department) that lacked precise boundaries around skewed or irregular document structures.
+2. **Geometric Ink-Density Heuristics (`auto_annotate_remaining.py`, since removed):** Produced rigid, approximate geometric bands (e.g., top 12% for department) that lacked precise boundaries around skewed or irregular document structures.
 
 To produce a production-grade benchmark, we implemented a custom batch annotation pipeline powered by Google's **Gemini Vision API** (`gemini-3.5-flash-lite` and `gemini-3-flash-preview`).
 
@@ -353,7 +353,6 @@ Nastaliq-Document-Intelligence/
 │   ├── annotations/
 │   │   ├── tasks.json                  # 239 Label Studio import tasks
 │   │   ├── export.json                 # Complete 789 tasks (Gold + Gemini Vision)
-│   │   ├── export_full.json            # 789 tasks master archive
 │   │   └── gemini_cache/               # 550 raw Gemini Vision JSON detections
 │   ├── processed/
 │   │   ├── pages/                      # 789 per-page structured JSON records

@@ -27,15 +27,11 @@ PRIVACY_REVIEW   = os.path.join(INTERIM_DIR, "review_personal_data.csv")
 # data/annotations: Label Studio tasks + exports
 ANN_DIR          = os.path.join("data", "annotations")
 TASKS_JSON       = os.path.join(ANN_DIR, "tasks.json")
-EXPORT_GOLD      = os.path.join(ANN_DIR, "export.json")         # 239 human-verified pages
-EXPORT_FULL      = os.path.join(ANN_DIR, "export_full.json")    # gold + auto-heuristic (789 pages)
-AUTO_DIR         = os.path.join(ANN_DIR, "auto")
-REMAINING_PAGES  = os.path.join(AUTO_DIR, "remaining_pages.json")
-REMAINING_ANNS   = os.path.join(AUTO_DIR, "remaining_annotations.json")
+EXPORT_GOLD      = os.path.join(ANN_DIR, "export.json")         # 789 tasks: 239 gold first, then 550 Gemini
+GEMINI_CACHE     = os.path.join(ANN_DIR, "gemini_cache")        # raw Gemini responses (git-ignored)
 
 # data/processed: clean, model-ready dataset
 PROCESSED_DIR    = os.path.join("data", "processed")
-ALL_PAGES_FULL   = os.path.join(PROCESSED_DIR, "all_pages_full.jsonl")
 
 # data/previews: annotation overlays for visual QA
 PREVIEWS_DIR     = os.path.join("data", "previews")
