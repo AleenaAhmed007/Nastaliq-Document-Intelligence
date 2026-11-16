@@ -1,0 +1,64 @@
+{
+  "regions": [
+    {
+      "label": "header_department",
+      "box_2d": [
+        116,
+        878,
+        230,
+        903
+      ],
+      "text": "PHOTOS OF PLAYERS"
+    },
+    {
+      "label": "header_department",
+      "box_2d": [
+        319,
+        882,
+        350,
+        903
+      ],
+      "text": "GAME"
+    },
+    {
+      "label": "header_department",
+      "box_2d": [
+        454,
+        882,
+        568,
+        903
+      ],
+      "text": "SCHOOL/COLLEGE"
+    },
+    {
+      "label": "header_department",
+      "box_2d": [
+        782,
+        878,
+        831,
+        898
+      ],
+      "text": "SESSION"
+    },
+    {
+      "label": "table",
+      "box_2d": [
+        113,
+        108,
+        915,
+        878
+      ],
+      "text": "Name............ Name............ Name............ Name............ F/Name........... F/Name........... F/Name........... F/Name..........."
+    },
+    {
+      "label": "stamp_signature",
+      "box_2d": [
+        720,
+        137,
+        829,
+        201
+      ],
+      "text": "SIGNATURE & SEAL\nHEAD OF INSTITUTION\nCELL #"
+    }
+  ]
+}

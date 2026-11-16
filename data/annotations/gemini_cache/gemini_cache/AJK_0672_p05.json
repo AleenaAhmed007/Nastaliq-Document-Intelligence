@@ -1,0 +1,44 @@
+{
+  "regions": [
+    {
+      "label": "table",
+      "box_2d": [
+        43,
+        149,
+        973,
+        891
+      ],
+      "text": "S. No. Player's Name Father's Name Class Roll No. Date and Admission No. Date of Birth Age Matric Reg. No. Board Name Inter Reg. No. Board Name Matric Pass Roll No. Year Inter P-I Roll No. Year 9- 10- 11- 12- 13- 14- 15- 16-"
+    },
+    {
+      "label": "body",
+      "box_2d": [
+        308,
+        153,
+        363,
+        372
+      ],
+      "text": "Certified that above particulars of students are correct."
+    },
+    {
+      "label": "stamp_signature",
+      "box_2d": [
+        649,
+        64,
+        786,
+        117
+      ],
+      "text": "SIGNATURE OF DPE / PET TELEPHONE #"
+    },
+    {
+      "label": "stamp_signature",
+      "box_2d": [
+        649,
+        66,
+        781,
+        110
+      ],
+      "text": "SIGNATURE & SEAL HEAD OF INSTITUTION"
+    }
+  ]
+}

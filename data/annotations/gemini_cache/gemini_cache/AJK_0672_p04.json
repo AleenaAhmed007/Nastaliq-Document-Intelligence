@@ -1,0 +1,24 @@
+{
+  "regions": [
+    {
+      "label": "header_department",
+      "box_2d": [
+        217,
+        73,
+        706,
+        100
+      ],
+      "text": "BOARD OF INTERMEDIATE AND SECONDARY EDUCATION MIRPUR(AK)"
+    },
+    {
+      "label": "table",
+      "box_2d": [
+        46,
+        148,
+        936,
+        814
+      ],
+      "text": ""
+    }
+  ]
+}

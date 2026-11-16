@@ -459,6 +459,6 @@ build/
 # optional OCR line crops (export_to_json.py --crops)
 data/processed/lines/
 # intermediate raw API cache
-data/annotations/gemini_cache/
+
 .gemini_keys
 

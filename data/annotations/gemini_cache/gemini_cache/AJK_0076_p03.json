@@ -1,0 +1,54 @@
+{
+  "regions": [
+    {
+      "label": "header_department",
+      "box_2d": [
+        75,
+        331,
+        131,
+        773
+      ],
+      "text": "FEDERAL BOARD OF INTERMEDIATE AND SECONDARY EDUCATION, H-8/4, ISLAMABAD"
+    },
+    {
+      "label": "subject",
+      "box_2d": [
+        152,
+        386,
+        172,
+        642
+      ],
+      "text": "Marking Analysis Report"
+    },
+    {
+      "label": "date",
+      "box_2d": [
+        146,
+        730,
+        168,
+        903
+      ],
+      "text": "11/11/2025"
+    },
+    {
+      "label": "body",
+      "box_2d": [
+        232,
+        115,
+        365,
+        923
+      ],
+      "text": "The examiner employed a consistently lenient marking approach. The marking approach demonstrates an emphasis on rewarding candidate effort and maximizing credit for responses. The examiner consistently employed a generous, holistic interpretation of the rubrics, granting full credit where student responses demonstrated a clear conceptual understanding, even if minor technical flaws were present."
+    },
+    {
+      "label": "stamp_signature",
+      "box_2d": [
+        386,
+        106,
+        680,
+        936
+      ],
+      "text": "Mr. Muhammad Ikram (Physics Examiner) Mr. Muhammad Tariq (Biology Examiner) Dr. Shahid Iqbal Farooqi (Chemistry Examiner) Mr. Nasir Mahmood (English Examiner) Mr. Muhammad Usman (Computer Science Examiner)"
+    }
+  ]
+}
