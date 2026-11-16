@@ -348,7 +348,7 @@ paket-files/
 
 # Python Tools for Visual Studio (PTVS)
 **/__pycache__/
-*.pyc
+*.py[cod]
 
 # Cake - Uncomment if you are using it
 #tools/**
@@ -431,6 +431,29 @@ FodyWeavers.xsd
 *.zip
 
 # --- Nastaliq project ---
+# Local secrets and Python environments
+.env
+.venv/
+venv/
+env/
+
+# Python caches and test/type-check artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.tox/
+.nox/
+htmlcov/
+.coverage
+.coverage.*
+*.egg-info/
+*.err
+*.error
+*.errors
+
 # packaged uploads (e.g. annotate_upload.zip), regenerable
 build/
 # optional OCR line crops (export_to_json.py --crops)
