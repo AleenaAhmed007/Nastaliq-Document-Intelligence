@@ -1,0 +1,58 @@
+{
+ "page_id": "AJK_0672_p04",
+ "file": "azad Kashmir\\0691_630868sports-performa-2016.pdf",
+ "image": "data/interim/images/AJK_0672_p04.png",
+ "width": 2550,
+ "height": 3901,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_date",
+  "no_reference_no",
+  "no_subject"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "BOARD OF INTERMEDIATE AND SECONDARY EDUCATION MIRPUR(AK)",
+   "bbox": [
+    186.1,
+    846.5,
+    68.9,
+    1907.6
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": null,
+  "subject": null
+ },
+ "regions": [
+  {
+   "id": "reg_2",
+   "label": "table",
+   "bbox": [
+    377.4,
+    179.4,
+    1698.3,
+    3471.9
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    186.1,
+    846.5,
+    68.9,
+    1907.6
+   ],
+   "text": "BOARD OF INTERMEDIATE AND SECONDARY EDUCATION MIRPUR(AK)",
+   "flags": []
+  }
+ ]
+}

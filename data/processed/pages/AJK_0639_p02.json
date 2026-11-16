@@ -1,0 +1,144 @@
+{
+ "page_id": "AJK_0639_p02",
+ "file": "azad Kashmir\\0656_601318NewNotificationDarsiKutabNew.pdf",
+ "image": "data/interim/images/AJK_0639_p02.png",
+ "width": 5091,
+ "height": 7216,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد حکومت ریاست جموں وکشمیر\nآزاد جموں وکشمیر ٹیکسٹ بک بورڈ",
+   "bbox": [
+    789.1,
+    382.4,
+    3456.8,
+    433.0
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_2",
+   "text": "نمبر: ٹیکسٹ بک بورڈ 1230",
+   "bbox": [
+    2932.4,
+    930.9,
+    1028.4,
+    151.5
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_3",
+   "text": "مورخہ: 14_1_03__2017",
+   "bbox": [
+    1430.6,
+    945.3,
+    870.6,
+    137.1
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_4",
+   "text": "تفصیل تیار کردہ درسی کتب جماعت دہم",
+   "bbox": [
+    1674.9,
+    1219.5,
+    1593.5,
+    259.8
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    789.1,
+    382.4,
+    3456.8,
+    433.0
+   ],
+   "text": "آزاد حکومت ریاست جموں وکشمیر\nآزاد جموں وکشمیر ٹیکسٹ بک بورڈ",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "reference_no",
+   "bbox": [
+    2932.4,
+    930.9,
+    1028.4,
+    151.5
+   ],
+   "text": "نمبر: ٹیکسٹ بک بورڈ 1230",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_3",
+   "label": "date",
+   "bbox": [
+    1430.6,
+    945.3,
+    870.6,
+    137.1
+   ],
+   "text": "مورخہ: 14_1_03__2017",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "subject",
+   "bbox": [
+    1674.9,
+    1219.5,
+    1593.5,
+    259.8
+   ],
+   "text": "تفصیل تیار کردہ درسی کتب جماعت دہم",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "table",
+   "bbox": [
+    997.8,
+    1450.4,
+    3100.4,
+    4697.6
+   ],
+   "text": "",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "stamp_signature",
+   "bbox": [
+    687.3,
+    6003.7,
+    1756.4,
+    1197.9
+   ],
+   "text": "سیکرٹری\nآزاد جموں وکشمیر ٹیکسٹ بک بورڈ",
+   "flags": []
+  }
+ ]
+}

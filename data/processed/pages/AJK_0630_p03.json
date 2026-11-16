@@ -1,0 +1,85 @@
+{
+ "page_id": "AJK_0630_p03",
+ "file": "azad Kashmir\\0647_333282NewFeeScheduleAJKBISE.pdf",
+ "image": "data/interim/images/AJK_0630_p03.png",
+ "width": 4341,
+ "height": 6000,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_date",
+  "no_subject"
+ ],
+ "fields": {
+  "department": null,
+  "reference_no": {
+   "region_id": "reg_3",
+   "text": "نمبر بورڈ میٹنگ / 22-3112 / 17 مورخہ 09-08-2017",
+   "bbox": [
+    2951.9,
+    4806.0,
+    1120.0,
+    108.0
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": null,
+  "subject": null
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "table",
+   "bbox": [
+    342.9,
+    222.0,
+    3707.2,
+    714.0
+   ],
+   "text": "ٹیبل کا مواد جس میں فیس اور تاریخیں درج ہیں",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "stamp_signature",
+   "bbox": [
+    781.4,
+    4266.0,
+    620.8,
+    600.0
+   ],
+   "text": "ڈپٹی سیکریٹری",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "reference_no",
+   "bbox": [
+    2951.9,
+    4806.0,
+    1120.0,
+    108.0
+   ],
+   "text": "نمبر بورڈ میٹنگ / 22-3112 / 17 مورخہ 09-08-2017",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "distribution_list",
+   "bbox": [
+    2639.3,
+    4932.0,
+    1441.2,
+    984.0
+   ],
+   "text": "نقل بالا بحضمت:\n1- کنٹرولر صاحب امتحانات کالجرز اسکولز۔\n2- سسٹم انالسٹ صاحبہ بورڈ۔\n3- اسسٹنٹ سیکریٹری صاحب رجسٹریشن۔\n4- آڈٹ آفیسر صاحب بورڈ۔\n5- ممبران شعبہ مالیات / ایڈمن / پرائیویٹ سیکریٹری ٹو چیئرمین۔\n6- محاسب دفتر اکیسٹر بورڈ۔\n7- جملہ شعبہ جات بورڈ۔\n8- مسل متعلقہ / آفس ریکارڈ۔",
+   "flags": []
+  }
+ ]
+}

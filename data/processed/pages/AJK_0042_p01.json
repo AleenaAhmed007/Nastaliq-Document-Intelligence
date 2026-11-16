@@ -1,0 +1,144 @@
+{
+ "page_id": "AJK_0042_p01",
+ "file": "azad Kashmir\\0043_379913IMG-20260605-WA0368.jpg",
+ "image": "data/interim/images/AJK_0042_p01.png",
+ "width": 1600,
+ "height": 1262,
+ "source": "AJK",
+ "type": "photo",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں و کشمیر انٹرمیڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    531.2,
+    94.6,
+    936.0,
+    108.5
+   ],
+   "flags": []
+  },
+  "reference_no": {
+   "region_id": "reg_2",
+   "text": "نمبر بورڈ/انٹرا 1885 / 2026",
+   "bbox": [
+    833.6,
+    238.5,
+    641.6,
+    51.7
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "date": {
+   "region_id": "reg_3",
+   "text": "مورخہ 05 جون 2026",
+   "bbox": [
+    835.2,
+    238.5,
+    212.8,
+    51.7
+   ],
+   "flags": [
+    "handwritten"
+   ]
+  },
+  "subject": {
+   "region_id": "reg_4",
+   "text": "سرکلر!",
+   "bbox": [
+    1315.2,
+    407.6,
+    120.0,
+    78.2
+   ],
+   "flags": [
+    "implicit_subject"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    531.2,
+    94.6,
+    936.0,
+    108.5
+   ],
+   "text": "آزاد جموں و کشمیر انٹرمیڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "date",
+   "bbox": [
+    835.2,
+    238.5,
+    212.8,
+    51.7
+   ],
+   "text": "مورخہ 05 جون 2026",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_2",
+   "label": "reference_no",
+   "bbox": [
+    833.6,
+    238.5,
+    641.6,
+    51.7
+   ],
+   "text": "نمبر بورڈ/انٹرا 1885 / 2026",
+   "flags": [
+    "handwritten"
+   ]
+  },
+  {
+   "id": "reg_4",
+   "label": "subject",
+   "bbox": [
+    1315.2,
+    407.6,
+    120.0,
+    78.2
+   ],
+   "text": "سرکلر!",
+   "flags": [
+    "implicit_subject"
+   ]
+  },
+  {
+   "id": "reg_5",
+   "label": "body",
+   "bbox": [
+    392.0,
+    517.4,
+    905.6,
+    68.1
+   ],
+   "text": "امتحان انٹرمیڈیٹ فرسٹ اینول 2026ء تک حکم ثانی ملتوی کیا جاتا ہے۔",
+   "flags": []
+  },
+  {
+   "id": "reg_6",
+   "label": "stamp_signature",
+   "bbox": [
+    132.8,
+    639.8,
+    577.6,
+    313.0
+   ],
+   "text": "کنٹرولر امتحانات (کالجز) 05827-960006",
+   "flags": []
+  }
+ ]
+}

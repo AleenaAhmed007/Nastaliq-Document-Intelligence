@@ -1,0 +1,72 @@
+{
+ "page_id": "AJK_0672_p05",
+ "file": "azad Kashmir\\0691_630868sports-performa-2016.pdf",
+ "image": "data/interim/images/AJK_0672_p05.png",
+ "width": 2550,
+ "height": 3901,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 0,
+ "page_flags": [
+  "no_date",
+  "no_reference_no",
+  "no_subject"
+ ],
+ "fields": {
+  "department": null,
+  "reference_no": null,
+  "date": null,
+  "subject": null
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "table",
+   "bbox": [
+    379.9,
+    167.7,
+    1892.1,
+    3627.9
+   ],
+   "text": "S. No. Player's Name Father's Name Class Roll No. Date and Admission No. Date of Birth Age Matric Reg. No. Board Name Inter Reg. No. Board Name Matric Pass Roll No. Year Inter P-I Roll No. Year 9- 10- 11- 12- 13- 14- 15- 16-",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "body",
+   "bbox": [
+    390.1,
+    1201.5,
+    558.4,
+    214.6
+   ],
+   "text": "Certified that above particulars of students are correct.",
+   "flags": []
+  },
+  {
+   "id": "reg_4",
+   "label": "stamp_signature",
+   "bbox": [
+    168.3,
+    2531.7,
+    112.2,
+    514.9
+   ],
+   "text": "SIGNATURE & SEAL HEAD OF INSTITUTION",
+   "flags": []
+  },
+  {
+   "id": "reg_3",
+   "label": "stamp_signature",
+   "bbox": [
+    163.2,
+    2531.7,
+    135.2,
+    534.4
+   ],
+   "text": "SIGNATURE OF DPE / PET TELEPHONE #",
+   "flags": []
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "page_id": "AJK_0311_p01",
+ "file": "azad Kashmir\\0319_2105phones.jpeg.jpg",
+ "image": "data/interim/images/AJK_0311_p01.png",
+ "width": 1195,
+ "height": 1599,
+ "source": "AJK",
+ "type": "scan",
+ "split": "train",
+ "low_res": 1,
+ "page_flags": [
+  "no_date",
+  "no_reference_no",
+  "no_subject"
+ ],
+ "fields": {
+  "department": {
+   "region_id": "reg_1",
+   "text": "آزاد جموں و کشمیر انٹرمیڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "bbox": [
+    114.7,
+    108.7,
+    927.3,
+    51.2
+   ],
+   "flags": []
+  },
+  "reference_no": null,
+  "date": null,
+  "subject": null
+ },
+ "regions": [
+  {
+   "id": "reg_1",
+   "label": "header_department",
+   "bbox": [
+    114.7,
+    108.7,
+    927.3,
+    51.2
+   ],
+   "text": "آزاد جموں و کشمیر انٹرمیڈیٹ و ثانوی تعلیمی بورڈ میرپور",
+   "flags": []
+  },
+  {
+   "id": "reg_2",
+   "label": "body",
+   "bbox": [
+    421.8,
+    233.5,
+    738.5,
+    54.4
+   ],
+   "text": "عوام الناس کی سہولت کے لئے بورڈ ہذا کے اہم شعبہ جات کے رابطہ نمبر حسب ذیل ہیں۔",
+   "flags": []
+  }
+ ]
+}

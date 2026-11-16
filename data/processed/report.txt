@@ -1,14 +1,89 @@
-pages written: 239 | by split: {'test': 49, 'test_unseen': 30, 'val': 31, 'train': 129}
+pages written: 789 | by split: {'test': 52, 'test_unseen': 30, 'val': 32, 'train': 675}
 not annotated yet: 0
 excluded (personal data / bad image): 0 []
-boxes by label: {'text_line': 5407, 'header_department': 239, 'subject': 203, 'body': 1634, 'table': 121, 'reference_no': 167, 'date': 195, 'stamp_signature': 384, 'distribution_list': 159}
-box flags: {'subject:implicit_subject': 203, 'reference_no:handwritten': 155, 'date:handwritten': 162}
+boxes by label: {'text_line': 5407, 'header_department': 744, 'subject': 703, 'body': 2380, 'table': 362, 'reference_no': 663, 'date': 616, 'stamp_signature': 898, 'distribution_list': 702}
+box flags: {'subject:implicit_subject': 703, 'reference_no:handwritten': 651, 'date:handwritten': 583}
 line crops: 0
 
 field status:
-  department    {'present': 239}
-  reference_no  {'marked absent': 72, 'present': 167}
-  date          {'marked absent': 44, 'present': 195}
-  subject       {'present': 203, 'marked absent': 36}
+  department    {'present': 737, 'MISSING (not flagged)': 52}
+  reference_no  {'marked absent': 135, 'present': 654}
+  date          {'marked absent': 178, 'present': 611}
+  subject       {'present': 693, 'marked absent': 96}
 
-warnings: 0
+warnings: 75
+  AJK_0034_p02: no department box and the page is not flagged 
+  AJK_0047_p04: 2 boxes labelled header_department, using the top-most one
+  AJK_0064_p02: no department box and the page is not flagged 
+  AJK_0064_p03: no department box and the page is not flagged 
+  AJK_0068_p02: no department box and the page is not flagged 
+  AJK_0068_p02: 2 boxes labelled date, using the top-most one
+  AJK_0095_p02: no department box and the page is not flagged 
+  AJK_0119_p02: no department box and the page is not flagged 
+  AJK_0120_p02: no department box and the page is not flagged 
+  AJK_0157_p01: 2 boxes labelled reference_no, using the top-most one
+  AJK_0164_p01: 3 boxes labelled reference_no, using the top-most one
+  AJK_0176_p02: no department box and the page is not flagged 
+  AJK_0178_p02: no department box and the page is not flagged 
+  AJK_0179_p02: no department box and the page is not flagged 
+  AJK_0183_p02: no department box and the page is not flagged 
+  AJK_0202_p01: 2 boxes labelled reference_no, using the top-most one
+  AJK_0216_p02: no department box and the page is not flagged 
+  AJK_0233_p02: no department box and the page is not flagged 
+  AJK_0239_p02: no department box and the page is not flagged 
+  AJK_0258_p01: no department box and the page is not flagged 
+  AJK_0261_p02: no department box and the page is not flagged 
+  AJK_0266_p02: no department box and the page is not flagged 
+  AJK_0267_p02: no department box and the page is not flagged 
+  AJK_0277_p02: no department box and the page is not flagged 
+  AJK_0292_p03: no department box and the page is not flagged 
+  AJK_0296_p02: no department box and the page is not flagged 
+  AJK_0328_p02: no department box and the page is not flagged 
+  AJK_0335_p02: no department box and the page is not flagged 
+  AJK_0341_p02: no department box and the page is not flagged 
+  AJK_0354_p02: no department box and the page is not flagged 
+  AJK_0356_p02: no department box and the page is not flagged 
+  AJK_0359_p01: no department box and the page is not flagged 
+  AJK_0360_p02: no department box and the page is not flagged 
+  AJK_0364_p01: 2 boxes labelled reference_no, using the top-most one
+  AJK_0364_p01: 2 boxes labelled date, using the top-most one
+  AJK_0365_p02: no department box and the page is not flagged 
+  AJK_0408_p02: no department box and the page is not flagged 
+  AJK_0409_p02: no department box and the page is not flagged 
+  AJK_0424_p02: no department box and the page is not flagged 
+  AJK_0430_p02: no department box and the page is not flagged 
+  AJK_0431_p02: no department box and the page is not flagged 
+  AJK_0432_p01: 2 boxes labelled date, using the top-most one
+  AJK_0461_p02: no department box and the page is not flagged 
+  AJK_0487_p02: no department box and the page is not flagged 
+  AJK_0500_p02: no department box and the page is not flagged 
+  AJK_0502_p02: no department box and the page is not flagged 
+  AJK_0505_p01: no department box and the page is not flagged 
+  AJK_0513_p01: 2 boxes labelled reference_no, using the top-most one
+  AJK_0513_p01: 2 boxes labelled date, using the top-most one
+  AJK_0515_p02: no department box and the page is not flagged 
+  AJK_0522_p01: 2 boxes labelled reference_no, using the top-most one
+  AJK_0534_p02: no department box and the page is not flagged 
+  AJK_0596_p02: no department box and the page is not flagged 
+  AJK_0598_p02: no department box and the page is not flagged 
+  AJK_0598_p02: 6 boxes labelled subject, using the top-most one
+  AJK_0599_p01: 2 boxes labelled subject, using the top-most one
+  AJK_0610_p01: 2 boxes labelled header_department, using the top-most one
+  AJK_0613_p02: no department box and the page is not flagged 
+  AJK_0615_p01: 2 boxes labelled subject, using the top-most one
+  AJK_0616_p01: 2 boxes labelled header_department, using the top-most one
+  AJK_0620_p02: no department box and the page is not flagged 
+  AJK_0630_p02: no department box and the page is not flagged 
+  AJK_0630_p03: no department box and the page is not flagged 
+  AJK_0636_p02: no department box and the page is not flagged 
+  AJK_0645_p01: 2 boxes labelled reference_no, using the top-most one
+  AJK_0645_p01: 2 boxes labelled date, using the top-most one
+  AJK_0650_p01: 2 boxes labelled header_department, using the top-most one
+  AJK_0650_p02: no department box and the page is not flagged 
+  AJK_0651_p02: no department box and the page is not flagged 
+  AJK_0651_p02: 2 boxes labelled reference_no, using the top-most one
+  AJK_0657_p01: 3 boxes labelled subject, using the top-most one
+  AJK_0672_p01: 2 boxes labelled subject, using the top-most one
+  AJK_0672_p02: no department box and the page is not flagged 
+  AJK_0672_p03: 4 boxes labelled header_department, using the top-most one
+  AJK_0672_p05: no department box and the page is not flagged 
