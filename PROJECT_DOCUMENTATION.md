@@ -35,8 +35,8 @@ The pipeline also locates every region on the page (body text, table, stamp, dis
 ### 2.1 AJK BISE (Primary Source)
 - **Who:** Azad Jammu & Kashmir Board of Intermediate and Secondary Education, Mirpur
 - **What:** Notices, press releases, and notifications published on [ajkbise.net](https://ajkbise.net)
-- **Downloaded with:** `download_ajkbise.py` — a custom scraper that walks the AJK BISE website, downloads each document, computes its SHA-256 hash, and writes `Dataset/ajkbise_manifest.csv`
-- **Volume:** **691 unique source files** (430 images + 255 PDFs + 6 other)
+- **Downloaded with:** `scripts/download_ajkbise.py` — a custom scraper that walks the AJK BISE website, downloads each document, computes its SHA-256 hash, and writes `data/raw/ajkbise_manifest.csv`
+- **Volume:** **672 source files**
 - **Years covered:** 2010 – 2026 (bulk: 2016 – 2026)
 - **Document types:** Phone-camera photos (WhatsApp, CamScanner), flatbed scans, and a small number of native-digital PDFs
 
@@ -50,25 +50,25 @@ The pipeline also locates every region on the page (body text, table, stamp, dis
 
 | Source | Files | Pages after rendering |
 |---|---|---|
-| AJK BISE | 691 | 759 |
+| AJK BISE | 672 | 759 |
 | FBR | 12 | 30 |
-| **Combined** | **703** | **789** |
+| **Combined** | **684** | **789** |
 
 ---
 
 ## 3. Stage 1 — Data Collection (`download_ajkbise.py`)
 
 ```
-download_ajkbise.py
+scripts/download_ajkbise.py
 │
 ├── Scrapes ajkbise.net notification listing pages
 ├── Downloads each file (JPG, PDF, PNG) with its metadata
 ├── Computes SHA-256 hash of each file
-└── Writes Dataset/ajkbise_manifest.csv
+└── Writes data/raw/ajkbise_manifest.csv
      Columns: file_name, date, title, format, category, source_url, sha256
 ```
 
-**Output:** `Dataset/ajkbise_manifest.csv` — 691 rows, one per source document, with the original website publish date and title in English.
+**Output:** `data/raw/ajkbise_manifest.csv` — 672 rows, one per source document, with the original website publish date and title in English.
 
 ---
 
@@ -76,7 +76,7 @@ download_ajkbise.py
 
 ### What it does
 
-Reads every PDF and image in `Dataset/DOCS-PDFS/` and:
+Reads every PDF and image in `data/raw/documents/` and:
 
 1. **Renders PDFs to images** at 300 DPI using `pypdfium2`
 2. **Classifies capture type** for every page:
@@ -96,9 +96,9 @@ Reads every PDF and image in `Dataset/DOCS-PDFS/` and:
 
 | File | Description |
 |---|---|
-| `pages/images/*.png` | 789 rendered page images |
-| `pages/manifest.csv` | 789 rows — page_id, image path, capture type, year, split, annotate flag |
-| `pages/review_personal_data.csv` | 45 files flagged for personal data review |
+| `data/interim/images/*.png` | 789 rendered page images |
+| `data/interim/manifest.csv` | 789 rows — page_id, image path, capture type, year, split, annotate flag |
+| `data/interim/review_personal_data.csv` | Files flagged for personal data review |
 
 ### Dataset split summary
 
@@ -144,13 +144,13 @@ Each task carries:
 
 ### Label Studio Setup
 
-**Interface:** `labelstudio_config.xml`
+**Interface:** `configs/labelstudio_config.xml`
 - **9 layout labels** (rectangle boxes): `header_department`, `reference_no`, `date`, `subject`, `body`, `table`, `stamp_signature`, `distribution_list`, `text_line`
 - **Per-box textarea** for typing the exact text inside each field box
 - **Per-box flags**: `handwritten`, `stamp_over`, `unclear`, `implicit_subject`
 - **Page-level flags**: `no_date`, `no_reference_no`, `no_subject`, `contains_personal_data`, `skip_bad_image`
 
-**Guide:** `annotation_guide.md` — step-by-step instructions for annotators
+**Guide:** `docs/annotation_guide.md` — step-by-step instructions for annotators
 
 ### Annotation Rules
 
@@ -240,15 +240,16 @@ python export_to_json.py --export export.json --out Dataset --doc-root .
 
 | File | Description |
 |---|---|
-| `Dataset/pages/<page_id>.json` | One clean JSON per page |
-| `Dataset/all_pages.jsonl` | 239-line JSONL (gold pages only) |
-| `Dataset/report.txt` | Validation report — 0 warnings |
+| `data/processed/pages/<page_id>.json` | One clean JSON per page |
+| `data/processed/all_pages.jsonl` | One JSON record per page |
+| `data/processed/outcomes.json` | All exported page records as a JSON array |
+| `data/processed/report.txt` | Validation report |
 
 **Per-page JSON structure:**
 ```json
 {
   "page_id": "AJK_0001_p01",
-  "image": "pages/images/AJK_0001_p01.png",
+  "image": "data/interim/images/AJK_0001_p01.png",
   "width": 2108, "height": 3197,
   "source": "AJK", "type": "photo", "split": "train",
   "page_flags": [],
@@ -292,14 +293,14 @@ Draws coloured bounding boxes on every page image so annotators and reviewers ca
 | `distribution_list` | 🩷 Mauve |
 | `text_line` | 💙 Light Blue |
 
-**Output:** `pages/annotated_previews/` — 239 gold preview PNGs (labelled **GOLD**)
+**Output:** `data/previews/` — annotation preview PNGs
 
 ---
 
 ## 10. Stage 8 — Gemini Vision Annotation Engine (`gemini_batch_annotate.py`)
 
 ### 10.1 Background & Need for Vision-Based Annotation
-Initially, two approaches were evaluated for the remaining 550 auto-pages:
+Initially, two approaches were evaluated for the pages assigned to automated annotation:
 1. **Surya OCR (`auto_label_surya.ipynb`):** Failed heavily on Nastaliq script — corrupted Urdu character glyphs (replacing Urdu `ی/ک` with Arabic `ي/ك`), merged lines erratically, and misclassified body paragraphs as header dates.
 2. **Geometric Ink-Density Heuristics (`auto_annotate_remaining.py`, since removed):** Produced rigid, approximate geometric bands (e.g., top 12% for department) that lacked precise boundaries around skewed or irregular document structures.
 
@@ -312,7 +313,7 @@ To produce a production-grade benchmark, we implemented a custom batch annotatio
 - **Label Studio Format Translation:** Maps detected normalized boxes to Label Studio `rectanglelabels` percentages, clamps out-of-bound coordinates, attaches extracted Urdu strings to `textarea` results, and applies default field flags (`implicit_subject`, `handwritten`).
 - **Visual Preview Generation:** Concurrently draws color-coded bounding boxes and label tags onto each document image and saves the preview to `data/previews/<page_id>_annotated.png`.
 
-**Output:** 550 high-precision annotated tasks merged with the 239 gold tasks to yield a complete 789-task ground truth.
+**Output:** The complete set of 789 annotated pages. Current EDA source attribution reports 250 human/Label Studio pages and 539 Gemini Vision pages.
 
 ---
 
@@ -344,7 +345,7 @@ Nastaliq-Document-Intelligence/
 │   │   ├── documents/
 │   │   │   ├── azad Kashmir/           # 672 AJK source files (images & PDFs)
 │   │   │   └── FBR/                    # 12 FBR digital Urdu SROs
-│   │   ├── ajkbise_manifest.csv        # 691 source metadata records
+│   │   ├── ajkbise_manifest.csv        # 672 source metadata records
 │   │   └── scrape_failed.csv           # Scrape log
 │   ├── interim/
 │   │   ├── images/                     # 789 rendered high-res PNG pages
@@ -359,23 +360,45 @@ Nastaliq-Document-Intelligence/
 │   │   ├── all_pages.jsonl             # 789 JSON Lines records
 │   │   ├── outcomes.json               # 789 records array (outcomes format)
 │   │   └── report.txt                  # Official validation report (0 unannotated)
-│   └── previews/                       # 789 visual preview PNGs with color boxes
+│   ├── previews/                       # 789 visual preview PNGs with color boxes
+│   └── eda/                            # EDA summary and 14 charts
 └── build/                              # Optional, git-ignored packaging output
 ```
+
+### Exploratory Data Analysis
+
+The current EDA report is [`data/eda/eda_summary.txt`](data/eda/eda_summary.txt); the folder also contains 14 charts.
+
+| Measure | Result |
+|---|---|
+| Documents / rendered pages | 684 documents / 789 pages |
+| Annotation boxes | 12,475 |
+| Source pages | AJK: 759; FBR: 30 |
+| Split | Train: 675; validation: 32; test: 52; unseen test: 30 |
+| Capture type | Photo: 409; scan: 350; digital: 30 |
+| Low-resolution pages | 202 (25.6%) |
+| Field presence | Date: 611 (77.4%); department: 737 (93.4%); subject: 693 (87.8%); reference number: 654 (82.9%) |
+| Annotation source | Human/Label Studio: 250; Gemini Vision: 539 |
+| Files flagged for personal-data review | 44 of 684 (6.4%), based on filenames; not confirmed personal data |
+
+The 239-page figure elsewhere in this document is the verified gold-task count; 250 is the EDA's human/Label Studio source attribution.
+
+Charts: [split](data/eda/01_split_distribution.png), [capture type](data/eda/02_capture_type.png), [low resolution](data/eda/04_low_res.png), [field presence](data/eda/06_field_presence.png), [label distribution](data/eda/08_label_distribution.png), [boxes per page](data/eda/09_boxes_per_page.png), [annotation source](data/eda/13_annotation_source.png), [personal-data review candidates](data/eda/14_personal_data_review.png).
 
 ### Verified Dataset Metrics
 
 | Metric | Target | Verified Value |
 |---|---|---|
-| Total Source Documents | 703 | 703 (691 AJK + 12 FBR) |
+| Total Source Documents | 684 | 684 (672 AJK + 12 FBR) |
 | Total Rendered Pages | 789 | 789 |
 | Gold Human-Verified Pages | 239 | 239 |
-| Gemini Vision Annotated Pages | 550 | 550 |
+| Gemini Vision Source Pages | 539 | 539 |
+| Human/Label Studio Source Pages | 250 | 250 |
 | Total Annotated Tasks in `export.json` | 789 | **789 / 789 (100%)** ✅ |
 | Total Visual Previews Generated | 789 | **789 (`data/previews/`)** ✅ |
 | Pages Not Annotated Yet | 0 | **0** ✅ |
 | Personal Data Excluded | 0 | **0** ✅ |
-| Total Detected Layout Boxes | — | **11,765 boxes** |
+| Total Detected Layout Boxes | — | **12,475 boxes** |
 | Total Transcribed Text Lines | — | **5,407 lines** |
 
 ### Breakdown of Detected Labels Across All 789 Pages
@@ -392,15 +415,15 @@ Nastaliq-Document-Intelligence/
 | `distribution_list` | 702 | Bottom dispatch / carbon copy (نقل برائے) lists |
 | `text_line` | 5,407 | Individual transcribed text lines |
 
-### Split × Quality Matrix
+### Dataset Split Breakdown
 
-| Split | Gold Verified | Gemini Vision | Total Pages | Split Purpose |
-|---|---|---|---|---|
-| `train` | 129 | 546 | 675 | Model training & few-shot fine-tuning |
-| `test` | 49 | 3 | 52 | Final benchmark evaluation |
-| `val` | 31 | 1 | 32 | Hyperparameter tuning & validation |
-| `test_unseen` | 30 | 0 | 30 | Generalization benchmark (FBR unseen issuer) |
-| **Total** | **239** | **550** | **789** | **Complete Dataset** |
+| Split | Pages | Split Purpose |
+|---|---:|---|
+| `train` | 675 | Model training & few-shot fine-tuning |
+| `test` | 52 | Final benchmark evaluation |
+| `val` | 32 | Hyperparameter tuning & validation |
+| `test_unseen` | 30 | Generalization benchmark (FBR unseen issuer) |
+| **Total** | **789** | **Complete Dataset** |
 
 ---
 
@@ -420,9 +443,9 @@ Nastaliq-Document-Intelligence/
 
 ```mermaid
 flowchart TD
-    A["✅ Data Collection (703 docs)"] --> B["✅ Triage & Split Assignment (789 pages)"]
+    A["✅ Data Collection (684 docs)"] --> B["✅ Triage & Split Assignment (789 pages)"]
     B --> C["✅ Manual Gold Annotation (239 pages, 5,407 lines)"]
-    C --> D["✅ Gemini Vision Batch Annotation (550 pages)"]
+    C --> D["✅ Gemini Vision Batch Annotation (539 source-attributed pages)"]
     D --> E["✅ Visual QA Previews for All 789 Pages"]
     E --> F["✅ Clean Dataset Export & Validation (outcomes.json, 0 unannotated)"]
     F --> G["🔜 Line Crops Generation (export_to_json.py --crops)"]
@@ -433,14 +456,14 @@ flowchart TD
 
 | Pipeline Stage | Status | Notes |
 |---|---|---|
-| 1. Data Collection | ✅ Complete | 672 AJK BISE notices + 12 FBR SROs |
+| 1. Data Collection | ✅ Complete | 672 AJK BISE notices + 12 FBR SROs (684 documents) |
 | 2. Triage & Rendering | ✅ Complete | 789 pages rendered at 300 DPI, capture type classified |
 | 3. Gold Annotation | ✅ Complete | 239 pages manually labeled and line-transcribed |
-| 4. Gemini Vision Annotation | ✅ Complete | 550 auto-pages annotated with Gemini 3.5 Flash Lite Vision |
+| 4. Gemini Vision Annotation | ✅ Complete | 539 pages attributed to Gemini Vision in the EDA |
 | 5. Visual QA Previews | ✅ Complete | 789 color-coded preview overlays in `data/previews/` |
 | 6. Validation & Export | ✅ Complete | `export.json`, `outcomes.json`, `all_pages.jsonl`, `report.txt` |
 | 7. Line Crops Generation | 🔜 Next Step | `scripts/export_to_json.py --crops` |
-| 8. Layout Model Training | 🔜 Planned | YOLO / LayoutLMv3 on 11,765 layout boxes |
+| 8. Layout Model Training | 🔜 Planned | YOLO / LayoutLMv3 on 12,475 layout boxes |
 | 9. Multimodal OCR Baselines | 🔜 Planned | Line-level CER/WER benchmark |
 | 10. Field Extraction & Metrics | 🔜 Planned | Field F1 & Layout mAP evaluation |
 

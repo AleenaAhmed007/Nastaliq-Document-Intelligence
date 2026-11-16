@@ -12,9 +12,9 @@ image so a human can verify it.
 
 ```mermaid
 flowchart TD
-    A["Raw Documents<br/>FBR SROs + AJK BISE Notices (703 docs)"] --> B["1. Triage (triage.py)<br/>Render 789 PNGs, tag capture type, document-level splits"]
+    A["Raw Documents<br/>FBR SROs + AJK BISE Notices (684 docs)"] --> B["1. Triage (triage.py)<br/>Render 789 PNGs, tag capture type, document-level splits"]
     B --> C["2. Preprocessing & Task Creation (make_tasks.py)<br/>Privacy filtering, pass2 line selection, tasks.json"]
-    C --> D["3. High-Precision Annotation<br/>• 239 Gold Pages (Human-verified & Transcribed)<br/>• 550 Pages (Gemini 3.5 Flash Vision API Layout & Text Detection)"]
+    C --> D["3. Annotation<br/>• 250 Label Studio / human_gold source pages<br/>• 539 Gemini Vision source pages"]
     D --> E["4. Visual QA Previews (gemini_batch_annotate.py)<br/>Color-coded bounding boxes & Urdu text overlay for all 789 pages"]
     E --> F["5. Clean Dataset Export (export_to_json.py)<br/>789 structured JSON records, outcomes.json, all_pages.jsonl"]
     F --> G["6. Line OCR & Layout Model Training (Planned)<br/>YOLO Layout Detection & Multimodal Line OCR"]
@@ -31,7 +31,7 @@ flowchart TD
 | 2 | **Task Creation** | `data/interim/manifest.csv`, `data/interim/review_personal_data.csv` | `data/annotations/tasks.json` (239 evaluation tasks, 120 pass2 line transcription tasks) | `scripts/make_tasks.py` (done) |
 | 3 | **Annotation Setup & Guidelines** | `configs/labelstudio_config.xml`, `docs/annotation_guide.md` | Label Studio UI with 9 classes (`header_department`, `reference_no`, `date`, `subject`, `body`, `table`, `stamp_signature`, `distribution_list`, `text_line`), per-box flags, page flags | Label Studio (done) |
 | 4 | **Gold Ground-Truth Annotation** | `data/annotations/tasks.json`, page images | 239 human-verified ground-truth pages with 5,407 transcribed lines | Manual verification (done) |
-| 5 | **Gemini Vision Annotation Engine** | Remaining 550 auto-pages, `data/interim/images/` | `data/annotations/gemini_cache/*.json`, high-precision bounding boxes & clean Nastaliq text for all 550 pages | `scripts/gemini_batch_annotate.py` (Gemini 3.5 Flash Lite Vision API, done) |
+| 5 | **Gemini Vision Annotation Engine** | Gemini-source pages, `data/interim/images/` | `data/annotations/gemini_cache/*.json`, high-precision bounding boxes & clean Nastaliq text for 539 pages | `scripts/gemini_batch_annotate.py` (Gemini Vision API, done) |
 | 6 | **Visual QA Previews** | `export.json`, original page PNGs | `data/previews/*.png` (789 visual preview images with color-coded boxes and tag labels) | `scripts/gemini_batch_annotate.py` / `draw_annotations.py` (done) |
 | 7 | **Dataset Export & Validation** | `data/annotations/export.json` (789 tasks) | `data/processed/pages/*.json` (789 pages), `all_pages.jsonl`, `outcomes.json`, `report.txt` (0 unannotated) | `scripts/export_to_json.py` (done, verified) |
 | 8 | **Line OCR & Field Extraction** | crops and pages from stage 7 | Text per line, extracted fields (`date`, `department`, `subject`, `reference_no`) | *planned* |
@@ -112,7 +112,7 @@ From official validation report (`data/processed/report.txt`):
 
 - **Total Annotated Pages:** 789 / 789 (100%)
 - **Pages Not Annotated Yet:** 0
-- **Total Detected Region Boxes:** 11,765 boxes
+- **Total Detected Region Boxes:** 12,475 boxes
   - `header_department`: 744 boxes
   - `subject`: 703 boxes
   - `reference_no`: 663 boxes
@@ -122,6 +122,26 @@ From official validation report (`data/processed/report.txt`):
   - `distribution_list`: 702 boxes
   - `body`: 2,380 boxes
   - `text_line`: 5,407 lines
+
+## Exploratory Data Analysis
+
+The current dataset summary and 14 charts are in [`data/eda/`](data/eda/). The full numeric report is [`eda_summary.txt`](data/eda/eda_summary.txt).
+
+| EDA measure | Result |
+|---|---|
+| Documents / rendered pages | 684 documents / 789 pages |
+| Annotation boxes | 12,475 |
+| Source pages | AJK: 759; FBR: 30 |
+| Split | Train: 675; validation: 32; test: 52; unseen test: 30 |
+| Capture type | Photo: 409; scan: 350; digital: 30 |
+| Low-resolution pages | 202 (25.6%) |
+| Field presence | Date: 611 (77.4%); department: 737 (93.4%); subject: 693 (87.8%); reference number: 654 (82.9%) |
+| Annotation source | Human/Label Studio: 250; Gemini Vision: 539 |
+| Files flagged for personal-data review | 44 of 684 (6.4%), based on filenames; not confirmed personal data |
+
+The 239-page figure elsewhere in this README is the verified gold-task count; 250 is the EDA's human/Label Studio source attribution.
+
+Charts: [split](data/eda/01_split_distribution.png), [capture type](data/eda/02_capture_type.png), [low resolution](data/eda/04_low_res.png), [field presence](data/eda/06_field_presence.png), [label distribution](data/eda/08_label_distribution.png), [boxes per page](data/eda/09_boxes_per_page.png), [annotation source](data/eda/13_annotation_source.png), [personal-data review candidates](data/eda/14_personal_data_review.png).
 
 ### Visual Preview Color-Coding
 All 789 preview images in `data/previews/` follow standardized color coding:
@@ -177,7 +197,8 @@ All 789 preview images in `data/previews/` follow standardized color coding:
 │   │   ├── all_pages.jsonl           # 789 records, one per line
 │   │   ├── outcomes.json             # 789 records as one JSON array
 │   │   └── report.txt                # Validation summary (0 unannotated)
-│   └── previews/                     # 789 annotation overlay PNGs for visual QA
+│   ├── previews/                     # 789 annotation overlay PNGs for visual QA
+│   └── eda/                          # EDA summary and 14 charts
 └── build/                            # Optional, git-ignored packaging output
 ```
 
@@ -215,7 +236,7 @@ Get-Content data/processed/report.txt
 - [x] Triage and document-level split (789 pages)
 - [x] Label Studio XML configuration and team annotation guidelines
 - [x] Ground-truth manual annotation of 239 evaluation pages (5,407 lines)
-- [x] High-precision Gemini Vision API layout detection for remaining 550 pages
+- [x] Gemini Vision API layout detection for 539 source-attributed pages
 - [x] Visual QA preview rendering for all 789 pages (`data/previews/`)
 - [x] Export to clean structured dataset (`data/processed/pages/`, `data/processed/all_pages.jsonl`, `outcomes.json`) with 0 unannotated pages
 - [ ] Line crops generation (`scripts/export_to_json.py --crops`)

@@ -1,0 +1,51 @@
+=== EDA Summary — Nastaliq Document Intelligence ===
+
+Total pages        : 789
+Total documents    : 684
+Total boxes        : 12475
+
+--- Split ---
+  train         : 675
+  val           : 32
+  test          : 52
+  test_unseen   : 30
+
+--- Capture type ---
+  photo     : 409
+  scan      : 350
+  digital   : 30
+
+--- Source ---
+  AJK       : 759
+  FBR       : 30
+
+--- Low-res pages : 202 (25.6%) ---
+
+--- Field presence ---
+  date           :  611/789 (77.4%)
+  department     :  737/789 (93.4%)
+  subject        :  693/789 (87.8%)
+  reference_no   :  654/789 (82.9%)
+
+--- Region labels ---
+  text_line           : 5407
+  body                : 2380
+  stamp_signature     : 898
+  header_department   : 744
+  subject             : 703
+  distribution_list   : 702
+  reference_no        : 663
+  date                : 616
+  table               : 362
+
+--- Boxes per page ---
+  min=1  max=186  mean=15.8  median=7
+
+--- Annotation source ---
+  gemini_vision       : 539
+  human_gold (Label Studio): 250
+
+--- Personal-data review candidates (filename screening) ---
+  flagged for review: 44/684
+  not filename-flagged: 640/684
+  note: filename screening does not confirm whether files contain personal data.
