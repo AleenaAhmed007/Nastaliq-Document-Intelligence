@@ -323,6 +323,7 @@ To produce a production-grade benchmark, we implemented a custom batch annotatio
 ```
 Nastaliq-Document-Intelligence/
 │
+├── .gitignore                          # Generated files and local-only artifacts
 ├── README.md                           # Main repository readme
 ├── PROJECT_DOCUMENTATION.md            # Comprehensive project documentation
 ├── requirements.txt                    # Python environment specifications
@@ -336,7 +337,6 @@ Nastaliq-Document-Intelligence/
 │   ├── triage.py                       # Rendering, capture classification, splitting
 │   ├── make_tasks.py                   # Label Studio task packaging
 │   ├── gemini_batch_annotate.py        # Gemini Vision API annotation & preview engine
-│   ├── build_clean_annotations.py      # Urdu dictionary & regex normalization rules
 │   ├── draw_annotations.py             # Visual preview generator
 │   └── export_to_json.py               # Validation, evidence linking & export pipeline
 ├── data/
@@ -353,14 +353,14 @@ Nastaliq-Document-Intelligence/
 │   ├── annotations/
 │   │   ├── tasks.json                  # 239 Label Studio import tasks
 │   │   ├── export.json                 # Complete 789 tasks (Gold + Gemini Vision)
-│   │   └── gemini_cache/               # 550 raw Gemini Vision JSON detections
+│   │   └── gemini_cache/               # Generated Gemini Vision response cache (ignored)
 │   ├── processed/
 │   │   ├── pages/                      # 789 per-page structured JSON records
 │   │   ├── all_pages.jsonl             # 789 JSON Lines records
 │   │   ├── outcomes.json               # 789 records array (outcomes format)
 │   │   └── report.txt                  # Official validation report (0 unannotated)
 │   └── previews/                       # 789 visual preview PNGs with color boxes
-└── build/                              # Packaging artefacts
+└── build/                              # Optional, git-ignored packaging output
 ```
 
 ### Verified Dataset Metrics

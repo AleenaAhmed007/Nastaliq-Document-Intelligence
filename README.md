@@ -141,6 +141,7 @@ All 789 preview images in `data/previews/` follow standardized color coding:
 
 ```
 .
+├── .gitignore
 ├── README.md
 ├── PROJECT_DOCUMENTATION.md          # Comprehensive technical report
 ├── requirements.txt                  # Python dependencies
@@ -154,7 +155,6 @@ All 789 preview images in `data/previews/` follow standardized color coding:
 │   ├── triage.py                     # 1. Render pages, tag capture type, split by document
 │   ├── make_tasks.py                 # 2. manifest -> Label Studio tasks.json
 │   ├── gemini_batch_annotate.py      # 3. Gemini Vision API batch annotation & preview engine
-│   ├── build_clean_annotations.py    # Clean dictionary & regex Urdu correction rules
 │   ├── draw_annotations.py           # Visual QA preview generator
 │   └── export_to_json.py             # 4. Validate export -> clean per-page JSON dataset
 ├── data/
@@ -171,14 +171,14 @@ All 789 preview images in `data/previews/` follow standardized color coding:
 │   ├── annotations/
 │   │   ├── tasks.json                # 239 Label Studio import tasks
 │   │   ├── export.json               # 789 tasks (Gold + Gemini Vision)
-│   │   └── gemini_cache/             # 550 raw Gemini Vision API response caches
+│   │   └── gemini_cache/             # Generated Gemini Vision response cache (ignored)
 │   ├── processed/                    # Clean, model-ready dataset
 │   │   ├── pages/                    # 789 per-page JSON records
 │   │   ├── all_pages.jsonl           # 789 records, one per line
 │   │   ├── outcomes.json             # 789 records as one JSON array
 │   │   └── report.txt                # Validation summary (0 unannotated)
 │   └── previews/                     # 789 annotation overlay PNGs for visual QA
-└── build/                            # Git-ignored packaging
+└── build/                            # Optional, git-ignored packaging output
 ```
 
 ---
