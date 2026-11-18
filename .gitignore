@@ -439,3 +439,6 @@ data/processed/lines/
 data/annotations/gemini_cache/
 .gemini_keys
 
+# UTRNet baseline: third-party clone + weights and its separate venv (see scripts/ocr_utrnet.py)
+third_party/
+.venv-utrnet/

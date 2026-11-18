@@ -3,7 +3,7 @@ not annotated yet: 0
 excluded (personal data / bad image): 0 []
 boxes by label: {'text_line': 5407, 'header_department': 744, 'subject': 703, 'body': 2380, 'table': 362, 'reference_no': 663, 'date': 616, 'stamp_signature': 898, 'distribution_list': 702}
 box flags: {'subject:implicit_subject': 703, 'reference_no:handwritten': 651, 'date:handwritten': 583}
-line crops: 0
+line crops: 5407
 
 field status:
   department    {'present': 737, 'MISSING (not flagged)': 52}

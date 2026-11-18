@@ -210,6 +210,75 @@ Get-Content data/processed/report.txt
 
 ---
 
+## OCR baseline: UTRNet
+
+[UTRNet](https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition) (ICDAR 2023, HRNet + DBiLSTM + CTC)
+runs in its own venv so its dependencies stay out of the main environment. Code and weights are CC BY-NC-SA 4.0
+(non-commercial research use only). `third_party/` and `.venv-utrnet/` are git-ignored.
+
+```powershell
+# one-time setup (CPU is enough for inference)
+git clone --depth 1 https://github.com/abdur75648/UTRNet-High-Resolution-Urdu-Text-Recognition.git third_party/UTRNet
+py -3.13 -m venv .venv-utrnet
+.venv-utrnet\Scripts\python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+.venv-utrnet\Scripts\python -m pip install numpy pillow gdown
+.venv-utrnet\Scripts\python -m gdown 1xXG7vsSePBw4vtapIEdPWEZ-qrbR9Q9K -O third_party/UTRNet/saved_models/UTRNet-Large/best_norm_ED.pth
+
+# line crops -> data/processed/lines.tsv + lines/*.png
+python scripts/export_to_json.py --export data/annotations/export.json --out data/processed --doc-root . --crops
+
+# predict (writes results/ocr/<name>.tsv), then score against the text_line transcriptions
+.venv-utrnet\Scripts\python scripts/ocr_utrnet.py --split val --sample 30
+python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val_n30.tsv
+```
+
+`eval_ocr.py` reports CER, CER without spaces, WER, NED and exact match, broken down by split, capture type,
+line category (`urdu` / `num_latin` / `handwritten`) and aspect ratio. It also lists the top character confusions and
+the worst lines. Any other OCR system can be compared by writing a TSV with `crop` and `pred` columns.
+
+### Verifying the line gold (do this before reporting CER)
+
+The existing `text_line` transcriptions contain many machine-OCR errors. For example, the fixed printed
+header is transcribed as `بورذ`, `میذینث`, `جمول` and `وٹانوی`, and `تشمیر` appears 94 times. CER against them
+mixes model errors with gold errors. The original gold and raw predictions are never edited. Verified text is
+stored separately:
+
+```powershell
+# 1. one Excel file per reviewer (crop image + original gold + UTRNet prediction + columns to fill);
+#    80 random lines go to two reviewers each, to measure inter-reviewer agreement
+python scripts/make_review_sheet.py --pred results/ocr/utrnet_large_w400_val.tsv --split val --batches 4 --overlap 80
+#    -> data/review/val_review_b1.xlsx ... b4.xlsx + val_review_manifest.json (dataset version, file assignment)
+
+# 2. reviewers set status (gold_ok / utrnet_ok / corrected / exclude / illegible), verified_text, reviewer
+
+# 3. collect all sheets (safe to rerun at any time; shows progress per file)
+python scripts/merge_review.py
+#    -> data/annotations/verified_lines.tsv    final text + status, reviewers, sheet date, lines.tsv version
+#    -> data/annotations/review_agreement.json agreement %, keep/drop kappa, inter-reviewer CER
+#    -> data/annotations/review_conflicts.tsv  double-reviewed lines where reviewers disagree
+
+# 3b. adjudicate conflicts: a third person fills this sheet; files named *adjudication* override
+python scripts/make_review_sheet.py --pred results/ocr/utrnet_large_w400_val.tsv --split val --only data/annotations/review_conflicts.tsv --name val_adjudication --batches 1
+
+# 4. score against verified text only
+python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val.tsv --verified data/annotations/verified_lines.tsv
+```
+
+With `--verified`, the report has two parts:
+- **A review coverage table.** It counts every line of the split as one of: verified (`gold_ok` / `utrnet_ok` /
+  `corrected`), excluded, illegible, conflict or unreviewed. Hard lines therefore can't disappear silently.
+- **An `original_gold` row next to each OCR system.** This is the original annotation scored against the verified
+  text (Evaluation A, annotation error rate). The other rows are OCR error rates (Evaluation B).
+
+All systems are scored on exactly the same lines, and the line count is printed.
+
+Every line in the evaluation set must be reviewed, not only the high-disagreement ones. Verifying only the lines
+where UTRNet disagrees with the gold would bias the comparison in UTRNet's favour against the other OCR systems.
+Keep `test` and `test_unseen` locked: do not run or inspect models on them until preprocessing, input width and
+model choices are final on `val`.
+
+---
+
 ## Status
 
 - [x] Data collection (FBR Urdu SROs, AJK BISE notices)
@@ -219,7 +288,8 @@ Get-Content data/processed/report.txt
 - [x] High-precision Gemini Vision API layout detection for remaining 550 pages
 - [x] Visual QA preview rendering for all 789 pages (`data/previews/`)
 - [x] Export to clean structured dataset (`data/processed/pages/`, `data/processed/all_pages.jsonl`, `outcomes.json`) with 0 unannotated pages
-- [ ] Line crops generation (`scripts/export_to_json.py --crops`)
+- [x] Line crops generation (`scripts/export_to_json.py --crops`, 5,407 crops)
+- [x] UTRNet-Large pretrained baseline + OCR evaluation script (`ocr_utrnet.py`, `eval_ocr.py`), smoke-tested on 30 val lines
 - [ ] Baseline OCR & Layout model training (YOLO / Multimodal models)
 - [ ] Field extraction and normalization rules
 - [ ] Final evaluation (CER, WER, Layout mAP@0.5, Field F1)

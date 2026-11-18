@@ -1,0 +1,16 @@
+{
+ "model": "UTRNet-Large",
+ "weights": "third_party\\UTRNet\\saved_models\\UTRNet-Large\\best_norm_ED.pth",
+ "imgH": 32,
+ "imgW": 800,
+ "splits": [
+  "val"
+ ],
+ "sample": 30,
+ "seed": 0,
+ "lines": 30,
+ "device": "cpu",
+ "seconds": 127.0,
+ "ms_per_line": 4233.8,
+ "torch": "2.15.0+cpu"
+}

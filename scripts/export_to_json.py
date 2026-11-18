@@ -147,14 +147,15 @@ def main():
                 crop = img.crop((max(0, int(x)), max(0, int(y)), int(x + w), int(y + h)))
                 cp = os.path.join("lines", "%s_L%02d.png" % (pid, n))
                 crop.save(os.path.join(args.out, cp))
-                line_rows.append((cp.replace("\\", "/"), pid, d.get("split"), d.get("type"), r["text"].replace("\t", " ")))
+                line_rows.append((cp.replace("\\", "/"), pid, d.get("split"), d.get("type"), r["id"],
+                                  ",".join("%.1f" % v for v in r["bbox"]), r["text"].replace("\t", " ")))
 
     with open(os.path.join(args.out, "all_pages.jsonl"), "w", encoding="utf-8") as f:
         for p in written:
             f.write(json.dumps(p, ensure_ascii=False) + "\n")
     if line_rows:
         with open(os.path.join(args.out, "lines.tsv"), "w", encoding="utf-8", newline="") as f:
-            f.write("crop\tpage_id\tsplit\ttype\ttext\n")
+            f.write("crop\tpage_id\tsplit\ttype\tregion_id\tbbox\ttext\n")
             for row in line_rows:
                 f.write("\t".join(row) + "\n")
 
