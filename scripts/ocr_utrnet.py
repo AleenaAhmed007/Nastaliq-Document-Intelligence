@@ -27,6 +27,7 @@ import os
 import random
 import sys
 import time
+import zlib
 from types import SimpleNamespace
 
 import numpy as np
@@ -91,7 +92,13 @@ def main():
     ap.add_argument("--name", default=None, help="output name; default utrnet_large_w<imgW>_<splits>")
     ap.add_argument("--out-dir", default=os.path.join("results", "ocr"))
     ap.add_argument("--resume", action="store_true", help="continue an interrupted run, skipping crops already written")
+    ap.add_argument("--per-line-seed", action="store_true",
+                    help="deterministic per line: batch 1, RNG reseeded from (seed, crop name) before each line, "
+                         "so a line's prediction no longer depends on its batch, the run order or --resume. "
+                         "Use it to compare settings (e.g. imgW 400 vs 800) on identical lines. Output name gets _det")
     args = ap.parse_args()
+    if args.per_line_seed:
+        args.batch = 1
 
     with open(args.lines, encoding="utf-8", newline="") as f:
         rows = [r for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE) if r["split"] in args.split]
@@ -110,6 +117,8 @@ def main():
 
     name = args.name or "utrnet_large_w%d_%s%s" % (args.imgW, "+".join(args.split),
                                                    "_n%d" % args.sample if args.sample else "")
+    if args.per_line_seed and not args.name:
+        name += "_det"
     os.makedirs(args.out_dir, exist_ok=True)
     out_tsv = os.path.join(args.out_dir, name + ".tsv")
     done = set()
@@ -135,20 +144,26 @@ def main():
         for b in range(0, len(todo), args.batch):                 # written per batch: a killed run can --resume
             chunk = todo[b:b + args.batch]
             x = np.stack([preprocess(os.path.join(args.crop_root, r["crop"]), args.imgH, args.imgW) for r in chunk])
+            if args.per_line_seed:      # temporal-dropout masks come from np.random (modules/dropout_layer.py)
+                np.random.seed((args.seed * 1000003 + zlib.crc32(chunk[0]["crop"].encode("utf-8"))) % 2 ** 32)
             logits = model(torch.from_numpy(x).unsqueeze(1).to(device))   # [b, T, n_class]
             for r, idx in zip(chunk, logits.argmax(2).cpu().numpy()):
                 p = ctc_greedy(idx.tolist(), charset)
                 f.write("\t".join([r["crop"], r["page_id"], r["split"], r["type"], p.replace("\t", " ")]) + "\n")
             f.flush()
-            print("  %d / %d  (%.0f s)" % (min(b + args.batch, len(todo)), len(todo), time.time() - t0), flush=True)
+            if not args.per_line_seed or (b + 1) % 32 == 0 or b + 1 == len(todo):
+                print("  %d / %d  (%.0f s)" % (min(b + args.batch, len(todo)), len(todo), time.time() - t0), flush=True)
     secs = time.time() - t0
 
     summary = {"model": "UTRNet-Large", "weights": args.weights, "imgH": args.imgH, "imgW": args.imgW,
                "splits": args.split, "sample": args.sample, "seed": args.seed, "lines": len(rows),
                "lines_this_run": len(todo), "device": str(device), "seconds_this_run": round(secs, 1),
                "ms_per_line": round(1000 * secs / max(len(todo), 1), 1), "batch": args.batch,
-               "torch": torch.__version__,
-               "note": "a resumed run only times its own lines; seed reproducibility holds within one run"}
+               "torch": torch.__version__, "per_line_seed": args.per_line_seed,
+               "note": "a resumed run only times its own lines; " + (
+                   "per-line seed: each prediction depends only on (crop, seed, imgW)" if args.per_line_seed else
+                   "UTRNet's test-time temporal dropout is random per batch, so predictions are only "
+                   "reproducible for the same run (same lines, order, batch size, no --resume)")}
     with open(os.path.join(args.out_dir, name + ".json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=1)
     print("DONE wrote %s  (%.1f s, %.0f ms/line)" % (out_tsv, secs, 1000 * secs / max(len(todo), 1)), flush=True)

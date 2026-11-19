@@ -1,0 +1,14 @@
+{
+ "engine": "tesseract v5.4.0.20240606\r",
+ "lang": "urd+eng",
+ "psm": 7,
+ "oem": 1,
+ "tessdata": "third_party/tessdata",
+ "splits": [
+  "val"
+ ],
+ "lines": 1437,
+ "lines_this_run": 1437,
+ "seconds_this_run": 539.2,
+ "ms_per_line": 375.2
+}

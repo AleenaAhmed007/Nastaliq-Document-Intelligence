@@ -232,6 +232,50 @@ python scripts/export_to_json.py --export data/annotations/export.json --out dat
 python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val_n30.tsv
 ```
 
+Setup notes: `.venv-utrnet` only works on the machine that created it. Rebuild it on another PC with the commands
+above (Python 3.14 + `torch==2.15.0` CPU works too). If the Google Drive download stops part-way, rerun gdown
+with `--continue`. The weights file is 189,581,533 bytes.
+
+**UTRNet's predictions are random.** At test time it averages 5 passes with random "temporal dropout" masks
+drawn from `np.random`, one mask per batch. A line's prediction therefore depends on its batch, the run order
+and `--resume`. Two width-400 runs agreed on only 10 of 30 lines (differences of 1–2 characters). Comparing
+settings line by line, e.g. width 400 vs 800, needs `--per-line-seed`. It runs with batch 1 at the same speed
+on CPU and reseeds from the crop name before each line, so a prediction depends only on (crop, seed, width).
+Resume, rerun and batch size give identical output (checked 30/30). These runs are written as `..._det.tsv`:
+
+```powershell
+.venv-utrnet\Scripts\python scripts/ocr_utrnet.py --split val --imgW 400 --per-line-seed --resume
+.venv-utrnet\Scripts\python scripts/ocr_utrnet.py --split val --imgW 800 --per-line-seed --resume
+python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val_det.tsv results/ocr/utrnet_large_w800_val_det.tsv --out results/ocr/compare_w400_w800_val_det.report.md
+```
+
+### Second OCR system: Tesseract
+
+Tesseract 5 runs on the same crops (`--psm 7`, a single text line) and writes the same TSV format, so
+`eval_ocr.py` compares it with UTRNet line for line. It is deterministic. The Urdu and English models come
+from `tessdata_best` 4.1.0 and are kept in git-ignored `third_party/tessdata`:
+
+```powershell
+winget install UB-Mannheim.TesseractOCR
+mkdir third_party\tessdata
+curl.exe -L -o third_party/tessdata/urd.traineddata https://github.com/tesseract-ocr/tessdata_best/raw/4.1.0/urd.traineddata
+curl.exe -L -o third_party/tessdata/eng.traineddata https://github.com/tesseract-ocr/tessdata_best/raw/4.1.0/eng.traineddata
+python scripts/ocr_tesseract.py --split val --lang urd+eng --tessdata third_party/tessdata
+python scripts/ocr_tesseract.py --split val --lang eng --tessdata third_party/tessdata
+```
+
+The two engines complement each other. UTRNet wins on Urdu, Tesseract `eng` on digits and English.
+`combine_ocr.py` sends a line to Tesseract only when UTRNet's own prediction has no Urdu letter (decided from
+the predictions, never the gold) and records the choice in a `source` column:
+
+```powershell
+python scripts/combine_ocr.py results/ocr/utrnet_large_w400_val_det.tsv results/ocr/tesseract_eng_val.tsv --out results/ocr/hybrid_utrnet_w400_tesseract_eng_val.tsv
+```
+
+Ordering caveat: on lines without Urdu, Tesseract writes left-to-right visual order (`-5`), while the review
+rules ask for right-to-left reading order (`5-`). Until verified text exists, compare engines on dates and
+numbers by digit content, not by where the marks sit.
+
 `eval_ocr.py` reports CER, CER without spaces, WER, NED and exact match, broken down by split, capture type,
 line category (`urdu` / `num_latin` / `handwritten`) and aspect ratio. It also lists the top character confusions and
 the worst lines. Any other OCR system can be compared by writing a TSV with `crop` and `pred` columns.

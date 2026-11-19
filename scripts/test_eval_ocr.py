@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from eval_ocr import Acc, align, content_type, normalise, suspect_reference   # noqa: E402
 from merge_review import kappa                      # noqa: E402
 from postprocess_ocr import fix_ltr_line            # noqa: E402
+from combine_ocr import choose                      # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CHECKS = []
@@ -115,6 +116,14 @@ def ltr_postprocessing_only_touches_digit_punctuation_lines():
     for pred, want in cases.items():
         got = fix_ltr_line(pred)
         assert got == want, (pred, got, want)
+
+
+@check
+def hybrid_routes_only_lines_without_urdu_letters():
+    assert choose("5۔", "-5") == ("-5", "fallback")
+    assert choose("(77)", "(vi)") == ("(vi)", "fallback")
+    assert choose("", "12") == ("12", "fallback")
+    assert choose("مورخہ 10-12-2021", "garbage 10-12-2021") == ("مورخہ 10-12-2021", "primary")
 
 
 @check
