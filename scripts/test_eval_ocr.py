@@ -107,9 +107,10 @@ def suspect_references_are_flagged_and_real_ones_are_not():
 
 @check
 def ltr_postprocessing_only_touches_digit_punctuation_lines():
-    cases = {"5۔": "-5", "1-": "-1", "2021-12-10": "10-12-2021", "1830": "1830",   # digit runs keep order
-             "(12) 3": "3 (12)",            # brackets stay paired after reversing
-             "مورخہ 5۔": "مورخہ 5۔",        # Urdu line: RTL order is already the logical order
+    cases = {"2021-12-10": "10-12-2021", "2021/4/16": "16/4/2021", "25۔03": "03-25",   # date groups reversed
+             "5۔": "5۔", "1-": "1-",        # list markers stay in RTL reading order (review rule: -5 is typed 5-)
+             "1830": "1830", "(12) 3": "(12) 3",   # a single digit run and text around numbers keep their order
+             "مورخہ 2021-12-10": "مورخہ 2021-12-10",   # Urdu line: untouched
              "(7ز)": "(7ز)", "CS 5": "CS 5"}   # Urdu or Latin letters present: untouched
     for pred, want in cases.items():
         got = fix_ltr_line(pred)

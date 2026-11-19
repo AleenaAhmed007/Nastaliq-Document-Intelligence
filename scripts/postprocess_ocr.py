@@ -1,22 +1,29 @@
 #!/usr/bin/env python3
 """
-postprocess_ocr.py: fix the reading order UTRNet emits on lines that contain only digits / punctuation.
+postprocess_ocr.py: put dates / reference numbers that UTRNet reads backwards into logical order.
 
-    python scripts/postprocess_ocr.py results/ocr/utrnet_large_w400_val.tsv
-    # -> results/ocr/utrnet_large_w400_val_pp.tsv   (raw file is never modified)
+    python scripts/postprocess_ocr.py results/ocr/utrnet_large_w400_val.tsv --out results/ocr/utrnet_large_w400_val_pp.tsv
 
-Why: UTRNet reads a horizontally flipped crop, i.e. right to left. Inside a digit run it has learned
-the logical (left-to-right) digit order, but the runs and the punctuation between them come out in
-right-to-left order. On an Urdu line that is the correct logical order. On a line with no Urdu at
-all (a list marker "-5", a date "10-12-2021", a page number) it is backwards: the crop "-5" is read
-as "5۔". The Urdu full stop "۔" is also how it spells a hyphen there.
+The raw prediction file is never modified.
 
-Rule, decided from the PREDICTION only (never from the gold), so it is a legitimate part of the OCR
-system and applies the same way to unseen data:
+Why: UTRNet reads a horizontally flipped crop, i.e. right to left. Inside one digit run it has learned
+the left-to-right digit order (1830 stays 1830), but a date printed as 10-12-2021 comes out as
+2021-12-10: it reads the digit groups right to left. Under the Unicode bidi algorithm, digit groups
+joined by - / . : , form ONE left-to-right run, so the logical text is 10-12-2021. Both the original
+gold and the review rules (make_review_sheet.py) agree on that order.
+
+Marks before or after a number are NOT moved. The review rules say a list marker printed as "-5"
+(5 on the right) is typed "5-", in right-to-left reading order, which is what UTRNet already emits.
+An earlier version of this script (commit b93a362) moved such marks to the front. That matched the
+old gold's convention, which the review treats as wrong, so most of its apparent gain would have
+turned into a loss against verified text.
+
+Rule, decided from the PREDICTION only (never from the gold):
   if the prediction has no Urdu letters and no Latin letters:
-      "۔" -> "-"  and  reverse the order of the [digit run | single other character] tokens
-Lines with Urdu letters are untouched. Lines with Latin letters are untouched too: reversing them
-made Latin-only lines slightly worse on val, because those predictions are mostly misrecognised.
+      every group of digit runs joined by single separators (- / . : , ۔) has its parts reversed,
+      and a ۔ between two digit runs becomes "-" (an Urdu full stop never sits inside a number)
+Lines with Urdu or Latin letters are untouched: on val there was no evidence the rule helps there,
+because UTRNet never got a full date inside an Urdu line right in either order.
 """
 import argparse
 import os
@@ -24,14 +31,14 @@ import re
 
 from eval_ocr import LATIN, URDU_LETTER, read_tsv
 
-TOKEN = re.compile(r"[0-9۰-۹٠-٩]+|.", re.S)
-MIRROR = str.maketrans("()[]{}<>", ")(][}{><")      # Unicode bidi mirroring: reversing order flips brackets
+NUMBER_GROUP = re.compile(r"[0-9۰-۹٠-٩]+(?:[-/.:,۔][0-9۰-۹٠-٩]+)+")
+PART = re.compile(r"[0-9۰-۹٠-٩]+|.")
 
 
 def fix_ltr_line(pred):
     if URDU_LETTER.search(pred) or LATIN.search(pred):
         return pred
-    return "".join(reversed(TOKEN.findall(pred.replace("۔", "-")))).translate(MIRROR)
+    return NUMBER_GROUP.sub(lambda m: "".join(reversed(PART.findall(m.group().replace("۔", "-")))), pred)
 
 
 def main():

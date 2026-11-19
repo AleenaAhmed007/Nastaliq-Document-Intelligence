@@ -240,9 +240,10 @@ Lines whose reference cannot be a real transcription (Japanese / Chinese charact
 annotation model, or a long row of punctuation given for a full sentence) are left out of scoring and listed
 at the end of the report for reviewers to fix. Pass `--keep-suspect` to score them anyway.
 
-UTRNet reads right to left, so on lines with only digits and punctuation it emits the parts in reverse
-(`-5` comes out as `5۔`). `postprocess_ocr.py` fixes the order, deciding from the prediction only, and keeps
-the raw file:
+UTRNet reads right to left, so on lines with only digits and punctuation it emits a date's digit groups in
+reverse (`10-12-2021` comes out as `2021-12-10`). `postprocess_ocr.py` puts them back in logical order,
+deciding from the prediction only, and keeps the raw file. It leaves list markers as UTRNet emits them
+(`5-` for a printed `-5`), because that is the reading order the review rules ask for:
 
 ```powershell
 python scripts/postprocess_ocr.py results/ocr/utrnet_large_w400_val.tsv --out results/ocr/utrnet_large_w400_val_pp.tsv
@@ -250,9 +251,12 @@ python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val.tsv results/ocr/utr
 python scripts/test_eval_ocr.py      # needs only requirements.txt (openpyxl, pillow); not the UTRNet venv
 ```
 
-On val, postprocessing changed 166 predictions: 125 lines got better, 3 got worse (dates that were already
-misread, e.g. `322-222` for `02-08-2022`), and no line with Urdu was touched. It fixes output order only, not
-UTRNet's recognition. Both reports are kept: `utrnet_large_w400_val.report.md` (raw) and `..._pp.report.md`.
+On val, postprocessing changes 12 predictions: 9 lines get better and 3 get worse against the original gold
+(dates that were already misread), and overall CER is unchanged (23.2%). An earlier version (commit
+`b93a362`) also moved list markers to the front (`5-` → `-5`) and seemed to cut digit-only CER from 76% to
+62%. Almost all of that came from matching the original gold's marker order, which the review treats as wrong,
+so it was withdrawn. Marker order can only be scored fairly against verified text. Postprocessing fixes
+output order only, not UTRNet's recognition. Both reports are kept: `utrnet_large_w400_val.report.md` (raw) and `..._pp.report.md`.
 The reordering is not always right (the 3 worse lines), and it was only tested on lines with no letters.
 Don't extend it to mixed Urdu / English / digit lines without separate evidence.
 
