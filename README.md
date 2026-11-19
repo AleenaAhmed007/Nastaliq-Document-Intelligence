@@ -245,7 +245,7 @@ UTRNet reads right to left, so on lines with only digits and punctuation it emit
 the raw file:
 
 ```powershell
-python scripts/postprocess_ocr.py results/ocr/utrnet_large_w400_val.tsv        # -> ..._pp.tsv
+python scripts/postprocess_ocr.py results/ocr/utrnet_large_w400_val.tsv --out results/ocr/utrnet_large_w400_val_pp.tsv
 python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val.tsv results/ocr/utrnet_large_w400_val_pp.tsv --out results/ocr/utrnet_large_w400_val_pp.report.md
 python scripts/test_eval_ocr.py      # needs only requirements.txt (openpyxl, pillow); not the UTRNet venv
 ```
@@ -253,6 +253,11 @@ python scripts/test_eval_ocr.py      # needs only requirements.txt (openpyxl, pi
 On val, postprocessing changed 166 predictions: 125 lines got better, 3 got worse (dates that were already
 misread, e.g. `322-222` for `02-08-2022`), and no line with Urdu was touched. It fixes output order only, not
 UTRNet's recognition. Both reports are kept: `utrnet_large_w400_val.report.md` (raw) and `..._pp.report.md`.
+The reordering is not always right (the 3 worse lines), and it was only tested on lines with no letters.
+Don't extend it to mixed Urdu / English / digit lines without separate evidence.
+
+When reporting, keep three numbers apart: raw UTRNet (the pretrained model as it is), UTRNet + postprocessing
+(plus fixed rule-based order corrections), and the `--verified` evaluation (against human-checked text).
 
 ### Verifying the line gold (do this before reporting CER)
 
