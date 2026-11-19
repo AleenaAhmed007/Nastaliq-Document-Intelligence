@@ -16,12 +16,18 @@ Metrics (micro-averaged over characters / words unless stated):
   NED        mean over lines of edit / max(len(ref), len(pred))   (ICDAR-style, per line)
   exact      share of lines that match exactly
 
-Breakdowns: split, split x capture type, line category, aspect-ratio bucket.
-  category  urdu         contains Urdu/Arabic letters, not handwritten
+Breakdowns: split, split x capture type, line category, content, aspect-ratio bucket and crosses.
+  category  urdu         contains Urdu/Arabic letters, not in a handwritten field
             num_latin    no Urdu letters at all (dates, numbers, English)
-            handwritten  >= 50% of the line box lies inside a date / reference_no box
-                         flagged `handwritten` on the same page
+            hw_field     >= 50% of the line box lies inside a date / reference_no box flagged
+                         `handwritten`. This is a POSITION rule: such a line is often printed text
+                         with only the number / date handwritten. It is not a verified writing style.
+  content   what characters the (normalised) reference contains:
+            urdu_only, urdu+digits, urdu+latin (digits allowed), digits_only (digits + punctuation),
+            latin_only (Latin letters, digits allowed), other (punctuation only)
   aspect    w/h <= 12.5 fits UTRNet's 32x400 input; wider lines get squeezed
+An error-type table splits each content group's errors into substitutions, deletions and
+insertions (each as % of reference characters, so S + D + I = CER).
 
 Normalisation (--norm, default on): NFKC; Arabic yeh/kaf/heh/alef-maksura -> Urdu forms;
 Urdu / Arabic-Indic digits -> ASCII; drop tatweel, zero-width chars, harakat; collapse spaces.
@@ -114,6 +120,19 @@ def handwritten_lines(pages_jsonl):
     return hw
 
 
+DIGIT = re.compile(r"[0-9]")            # Urdu / Arabic-Indic digits are already mapped to ASCII
+LATIN = re.compile(r"[A-Za-z]")
+
+
+def content_type(ref):
+    u, d, l = bool(URDU_LETTER.search(ref)), bool(DIGIT.search(ref)), bool(LATIN.search(ref))
+    if u:
+        return "urdu+latin" if l else ("urdu+digits" if d else "urdu_only")
+    if l:
+        return "latin_only"
+    return "digits_only" if d else "other"
+
+
 def aspect_bucket(bbox):
     w, h = (float(v) for v in bbox.split(",")[2:4])
     r = w / max(h, 1e-6)
@@ -124,9 +143,18 @@ class Acc:
     def __init__(self):
         self.n = self.ce = self.cn = self.se = self.sn = self.we = self.wn = self.exact = 0
         self.ned = 0.0
+        self.sub = self.dele = self.ins = self.hn = 0
 
     def add(self, ref, hyp):
-        ce = edit(ref, hyp)
+        ce, ops = align(ref, hyp)
+        for a, b in ops:
+            if a == "∅":
+                self.ins += 1
+            elif b == "∅":
+                self.dele += 1
+            else:
+                self.sub += 1
+        self.hn += len(hyp)
         self.n += 1
         self.ce += ce
         self.cn += len(ref)
@@ -143,8 +171,29 @@ class Acc:
                 "%.3f" % (self.ned / self.n) if self.n else "-", pct(self.exact, self.n)]
 
 
+    def error_row(self):
+        pct = lambda a: "%.1f" % (100.0 * a / self.cn) if self.cn else "-"
+        return [str(self.n), str(self.cn), "%.1f" % (self.cn / self.n) if self.n else "-",
+                "%.1f" % (self.hn / self.n) if self.n else "-",
+                pct(self.ce), pct(self.sub), pct(self.dele), pct(self.ins)]
+
+
 HEAD = ["lines", "CER %", "CER_nosp %", "WER %", "NED", "exact %"]
-BREAKDOWNS = ("split", "split x type", "category", "aspect", "category x aspect", "category x type")
+ERR_HEAD = ["lines", "ref chars", "avg ref len", "avg pred len", "CER %", "S %", "D %", "I %"]
+BREAKDOWNS = ("split", "split x type", "category", "content", "aspect", "category x aspect", "category x type")
+
+
+def error_table(title, groups, systems):
+    out = ["### " + title, "", "S / D / I = substitutions / deletions / insertions as % of reference characters "
+           "(they add up to CER).", ""]
+    multi = len(systems) > 1
+    cols = (["group", "system"] if multi else ["group"]) + ERR_HEAD
+    out += ["| " + " | ".join(cols) + " |", "|" + "---|" * len(cols)]
+    for g in sorted(groups):
+        for s in systems:
+            if s in groups[g]:
+                out.append("| " + " | ".join(([g, s] if multi else [g]) + groups[g][s].error_row()) + " |")
+    return out + [""]
 
 
 def table(title, groups, systems):
@@ -207,6 +256,7 @@ def main():
     by = {k: defaultdict(lambda: defaultdict(Acc)) for k in BREAKDOWNS}
     overall = defaultdict(Acc)
     confusions = {s: Counter() for s in systems}
+    confusions_nl = {s: Counter() for s in systems}       # on digit / Latin characters, any line
     per_line = {s: [] for s in systems}
     empty_ref = []
     for crop in sorted(common):
@@ -216,7 +266,7 @@ def main():
             empty_ref.append(crop)
             continue
         if (g["page_id"], g["region_id"]) in hw:
-            cat = "handwritten"
+            cat = "hw_field"
         elif URDU_LETTER.search(ref):
             cat = "urdu"
         else:
@@ -224,6 +274,7 @@ def main():
         asp = aspect_bucket(g["bbox"])
         keys = {"split": g["split"], "split x type": "%s / %s" % (g["split"], g["type"]),
                 "category": "%s / %s" % (g["split"], cat), "aspect": "%s / %s" % (g["split"], asp),
+                "content": "%s / %s" % (g["split"], content_type(ref)),
                 "category x aspect": "%s / %s / %s" % (g["split"], cat, asp),
                 "category x type": "%s / %s / %s" % (g["split"], cat, g["type"])}
         for s in systems:
@@ -234,6 +285,8 @@ def main():
             ed, ops = align(ref, hyp)
             if cat == "urdu":
                 confusions[s].update(ops)
+            confusions_nl[s].update(o for o in ops
+                                    if DIGIT.match(o[0]) or LATIN.match(o[0]) or (o[0] == "∅" and content_type(ref) in ("digits_only", "latin_only")))
             per_line[s].append((ed / max(len(ref), 1), crop, ref, hyp))
 
     out = ["# OCR evaluation", "",
@@ -263,10 +316,15 @@ def main():
             len(empty_ref), ", ".join(empty_ref[:10])), ""]
     for k in BREAKDOWNS:
         out += table("By " + k, by[k], systems)
+    out += error_table("Error types by content", by["content"], systems)
     for s in systems:
         out += ["### Top character confusions on Urdu lines: %s" % s, "",
                 "ref → pred (∅ = missing / extra)", "", "| ref | pred | count |", "|---|---|---|"]
         out += ["| %s | %s | %d |" % (a, b, n) for (a, b), n in confusions[s].most_common(20)] + [""]
+        out += ["### Top confusions on digit / Latin characters: %s" % s, "",
+                "reference digit or Latin letter → pred, plus insertions on digit-only / Latin-only lines", "",
+                "| ref | pred | count |", "|---|---|---|"]
+        out += ["| %s | %s | %d |" % (a, b, n) for (a, b), n in confusions_nl[s].most_common(20)] + [""]
         out += ["### Worst %d lines: %s" % (args.worst, s), "", "| CER | crop | gold | pred |", "|---|---|---|---|"]
         for c, crop, ref, hyp in sorted(per_line[s], reverse=True)[:args.worst]:
             out.append("| %.2f | %s | %s | %s |" % (c, crop, ref.replace("|", "/"), hyp.replace("|", "/")))

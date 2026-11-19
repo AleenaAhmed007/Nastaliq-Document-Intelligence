@@ -14,7 +14,7 @@ import sys
 import tempfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from eval_ocr import Acc, align, normalise          # noqa: E402
+from eval_ocr import Acc, align, content_type, normalise   # noqa: E402
 from merge_review import kappa                      # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -69,6 +69,25 @@ def wer_counts_word_substitutions_and_deletions():
 def ned_is_per_line_over_longer_string():
     r = scored([("a", "abcd")])                   # 3 edits / max(1, 4)
     assert r["ned"] == "0.750", r
+
+
+@check
+def substitutions_deletions_insertions_add_up_to_cer():
+    a = Acc()
+    a.add("abcd", "axd")          # b->x substitution, c deleted
+    a.add("12", "1234")           # 2 insertions
+    row = dict(zip(["lines", "chars", "avg_ref", "avg_pred", "cer", "s", "d", "i"], a.error_row()))
+    assert (row["s"], row["d"], row["i"], row["cer"]) == ("16.7", "16.7", "33.3", "66.7"), row
+
+
+@check
+def content_type_classifies_lines():
+    cases = {"کتاب": "urdu_only", "مورخہ 2026": "urdu+digits", "۲۰۲۶ مورخہ": "urdu+digits",
+             "Online Account کے": "urdu+latin", "03-08-2022": "digits_only", "CS Scanned": "latin_only",
+             "F03-12": "latin_only", "-/:": "other"}
+    for text, want in cases.items():
+        got = content_type(normalise(text))
+        assert got == want, (text, got, want)
 
 
 @check

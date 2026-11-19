@@ -72,7 +72,13 @@ INSTRUCTIONS = [
     "Transcription rules:",
     "  - Use Urdu letters: ی not ي, ک not ك, ہ not ه, and ڈ ٹ ڑ (not ذ ث ر) where the image shows them.",
     "  - Write digits as they are printed: 2026 stays 2026, ۲۰۲۶ stays ۲۰۲۶ (the evaluation maps both).",
-    "  - Keep the punctuation that is printed (۔ / - :). Do not add text that is not in the crop.",
+    "  - Keep the punctuation that is printed. Look closely: Urdu full stop ۔ and hyphen - look alike.",
+    "    Do not add text that is not in the crop.",
+    "  - ORDER: type characters in the order you READ them, right to left, as you would type them in",
+    "    Word with an Urdu keyboard. A list number that looks like  -5  on the page (5 on the right) is",
+    "    typed 5 first, then the mark: 5- (or 5۔). A date or number itself keeps its own digit order: 2026.",
+    "    original_gold often has these marks in the wrong order; utrnet_pred usually has the right order.",
+    "  - original_gold sometimes contains garbage, even Japanese characters. Always use 'corrected' then.",
     "  - Only transcribe what is inside this crop, even if the sentence continues on the next line.",
     "  - Handwritten dates / numbers: transcribe them too; mark illegible if you are unsure.",
     "",
@@ -168,7 +174,7 @@ def write_sheet(path, rows, preds, hw, crop_root, img_h, max_w, overlap=frozense
         ng, np_ = normalise(gold), normalise(pred)
         dis = edit(ng, np_) / max(len(ng), 1) if r["crop"] in preds else None
         if (r["page_id"], r["region_id"]) in hw:
-            cat = "handwritten"
+            cat = "hw_field"
         elif URDU_LETTER.search(ng):
             cat = "urdu"
         else:
