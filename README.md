@@ -236,6 +236,24 @@ python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val_n30.tsv
 line category (`urdu` / `num_latin` / `handwritten`) and aspect ratio. It also lists the top character confusions and
 the worst lines. Any other OCR system can be compared by writing a TSV with `crop` and `pred` columns.
 
+Lines whose reference cannot be a real transcription (Japanese / Chinese characters hallucinated by the
+annotation model, or a long row of punctuation given for a full sentence) are left out of scoring and listed
+at the end of the report for reviewers to fix. Pass `--keep-suspect` to score them anyway.
+
+UTRNet reads right to left, so on lines with only digits and punctuation it emits the parts in reverse
+(`-5` comes out as `5۔`). `postprocess_ocr.py` fixes the order, deciding from the prediction only, and keeps
+the raw file:
+
+```powershell
+python scripts/postprocess_ocr.py results/ocr/utrnet_large_w400_val.tsv        # -> ..._pp.tsv
+python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val.tsv results/ocr/utrnet_large_w400_val_pp.tsv --out results/ocr/utrnet_large_w400_val_pp.report.md
+python scripts/test_eval_ocr.py      # needs only requirements.txt (openpyxl, pillow); not the UTRNet venv
+```
+
+On val, postprocessing changed 166 predictions: 125 lines got better, 3 got worse (dates that were already
+misread, e.g. `322-222` for `02-08-2022`), and no line with Urdu was touched. It fixes output order only, not
+UTRNet's recognition. Both reports are kept: `utrnet_large_w400_val.report.md` (raw) and `..._pp.report.md`.
+
 ### Verifying the line gold (do this before reporting CER)
 
 The existing `text_line` transcriptions contain many machine-OCR errors. For example, the fixed printed

@@ -14,8 +14,9 @@ import sys
 import tempfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from eval_ocr import Acc, align, content_type, normalise   # noqa: E402
+from eval_ocr import Acc, align, content_type, normalise, suspect_reference   # noqa: E402
 from merge_review import kappa                      # noqa: E402
+from postprocess_ocr import fix_ltr_line            # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CHECKS = []
@@ -94,6 +95,25 @@ def content_type_classifies_lines():
 def alignment_reports_the_missing_letter():
     d, ops = align("کتاب", "کتب")
     assert d == 1 and ops == [("ا", "∅")], (d, ops)
+
+
+@check
+def suspect_references_are_flagged_and_real_ones_are_not():
+    bad = ["からいというかんな", "۔۔۔۔۔۔۔۔۔۔", "中文"]
+    good = ["کتاب", "-5", "10-12-2021", "CS Scanned", "()", "☆", "۔۔۔"]   # short odd refs stay scored
+    assert all(suspect_reference(normalise(t)) for t in bad), [t for t in bad if not suspect_reference(normalise(t))]
+    assert not any(suspect_reference(normalise(t)) for t in good), [t for t in good if suspect_reference(normalise(t))]
+
+
+@check
+def ltr_postprocessing_only_touches_digit_punctuation_lines():
+    cases = {"5۔": "-5", "1-": "-1", "2021-12-10": "10-12-2021", "1830": "1830",   # digit runs keep order
+             "(12) 3": "3 (12)",            # brackets stay paired after reversing
+             "مورخہ 5۔": "مورخہ 5۔",        # Urdu line: RTL order is already the logical order
+             "(7ز)": "(7ز)", "CS 5": "CS 5"}   # Urdu or Latin letters present: untouched
+    for pred, want in cases.items():
+        got = fix_ltr_line(pred)
+        assert got == want, (pred, got, want)
 
 
 @check

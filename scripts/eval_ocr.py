@@ -29,6 +29,13 @@ Breakdowns: split, split x capture type, line category, content, aspect-ratio bu
 An error-type table splits each content group's errors into substitutions, deletions and
 insertions (each as % of reference characters, so S + D + I = CER).
 
+Suspect references (a heuristic, not proof the reference is wrong; left out of scoring unless
+--keep-suspect, and always listed in the report so reviewers can fix them): the reference contains Japanese / Chinese / Korean characters (an annotation-model
+hallucination; these documents are Urdu / English only), or has no letter or digit at all while being
+5+ characters long (e.g. a row of "۔" given as the text of a full Urdu sentence). Without this, such
+lines carry no Urdu letters and land in num_latin, where 10 of them caused 20% of that category's errors.
+A reference corrected by a reviewer (--verified) passes the check and is scored normally.
+
 Normalisation (--norm, default on): NFKC; Arabic yeh/kaf/heh/alef-maksura -> Urdu forms;
 Urdu / Arabic-Indic digits -> ASCII; drop tatweel, zero-width chars, harakat; collapse spaces.
 --no-norm only applies NFC + space collapse.
@@ -122,6 +129,19 @@ def handwritten_lines(pages_jsonl):
 
 DIGIT = re.compile(r"[0-9]")            # Urdu / Arabic-Indic digits are already mapped to ASCII
 LATIN = re.compile(r"[A-Za-z]")
+
+
+FOREIGN_SCRIPT = re.compile(r"[぀-ヿ㐀-䶿一-鿿가-힯ｦ-ﾟ]")
+LETTER_OR_DIGIT = re.compile(r"[^\W_]")
+
+
+def suspect_reference(ref):
+    """Reason string if the (normalised) reference cannot be a transcription of this corpus, else ''."""
+    if FOREIGN_SCRIPT.search(ref):
+        return "CJK / kana characters"
+    if len(ref) >= 5 and not LETTER_OR_DIGIT.search(ref):
+        return "no letters or digits"
+    return ""
 
 
 def content_type(ref):
@@ -220,6 +240,8 @@ def main():
     ap.add_argument("--verified", default=None,
                     help="data/annotations/verified_lines.tsv from merge_review.py: score only human-verified "
                          "lines against their verified text (exclude / illegible lines are dropped)")
+    ap.add_argument("--keep-suspect", action="store_true",
+                    help="score suspect references too (see docstring) instead of listing them separately")
     ap.add_argument("--no-norm", action="store_true")
     ap.add_argument("--out", default=None, help="markdown report; default <first pred>.report.md")
     ap.add_argument("--worst", type=int, default=15, help="list the N worst lines per system")
@@ -258,12 +280,16 @@ def main():
     confusions = {s: Counter() for s in systems}
     confusions_nl = {s: Counter() for s in systems}       # on digit / Latin characters, any line
     per_line = {s: [] for s in systems}
-    empty_ref = []
+    empty_ref, suspect = [], []
     for crop in sorted(common):
         g = gold[crop]
         ref = normalise(g["text"], not args.no_norm)
         if not ref:                       # nothing left to score against (e.g. only tatweel / diacritics)
             empty_ref.append(crop)
+            continue
+        why = suspect_reference(ref)
+        if why and not args.keep_suspect:
+            suspect.append((crop, why, ref))
             continue
         if (g["page_id"], g["region_id"]) in hw:
             cat = "hw_field"
@@ -292,8 +318,12 @@ def main():
     out = ["# OCR evaluation", "",
            "Systems: %s  " % ", ".join(systems),
            "Reference: %s  " % reference,
-           "Lines scored: %d (crops present in every prediction file, minus %d with an empty reference)  "
-           % (len(common) - len(empty_ref), len(empty_ref)),
+           "Lines scored: %d (crops present in every prediction file, minus %d with an empty reference"
+           "%s)  " % (len(common) - len(empty_ref) - len(suspect), len(empty_ref),
+                      ", minus %d with a suspect reference (listed at the end)" % len(suspect) if suspect else ""),
+           "Line accounting: %d lines in every prediction file = %d scored + %d empty reference + %d suspect "
+           "reference (excluded by heuristic, awaiting human correction)  "
+           % (len(common), len(common) - len(empty_ref) - len(suspect), len(empty_ref), len(suspect)),
            "CER / WER = total edits (S+D+I) / total reference characters / words over all lines (micro); "
            "NED = mean of per-line edit / max(len(ref), len(pred)); can exceed 100% when the OCR inserts text  ",
            "Normalisation: %s" % ("NFC + spaces only" if args.no_norm else "full (see eval_ocr.py docstring)"), ""]
@@ -329,6 +359,13 @@ def main():
         for c, crop, ref, hyp in sorted(per_line[s], reverse=True)[:args.worst]:
             out.append("| %.2f | %s | %s | %s |" % (c, crop, ref.replace("|", "/"), hyp.replace("|", "/")))
         out.append("")
+    if suspect:
+        out += ["### Suspect references (not scored; awaiting human correction)", "",
+                "Flagged by a heuristic (see eval_ocr.py docstring), not proof that each reference is wrong. "
+                "Each line is scored again once a reviewer confirms or corrects it (--verified), "
+                "or always with --keep-suspect.", "",
+                "| crop | reason | reference |", "|---|---|---|"]
+        out += ["| %s | %s | %s |" % (c, why, ref.replace("|", "/")) for c, why, ref in suspect] + [""]
     text = "\n".join(out)
     dest = args.out or os.path.splitext(args.pred[0])[0] + ".report.md"
     with open(dest, "w", encoding="utf-8") as f:
