@@ -4,7 +4,7 @@ Turn scanned Urdu notices (Nastaliq script) into structured records. For every p
 **date, department, subject and reference number**, and links each value to its exact region in the original
 image so a human can verify it.
 
-> Course Project, Group 2. Current stage: **Data Collection, Triage, and Complete 789-Page Annotation Pipeline (Gold + Gemini Vision API)**.
+> Course Project, Group 2. Current stage: **Line OCR baselines evaluated on val (UTRNet, Tesseract, hybrid); human verification of the line transcriptions in progress**. See [Results so far](#results-so-far-val-preliminary).
 
 ---
 
@@ -17,7 +17,7 @@ flowchart TD
     C --> D["3. High-Precision Annotation<br/>• 239 Gold Pages (Human-verified & Transcribed)<br/>• 550 Pages (Gemini 3.5 Flash Vision API Layout & Text Detection)"]
     D --> E["4. Visual QA Previews (gemini_batch_annotate.py)<br/>Color-coded bounding boxes & Urdu text overlay for all 789 pages"]
     E --> F["5. Clean Dataset Export (export_to_json.py)<br/>789 structured JSON records, outcomes.json, all_pages.jsonl"]
-    F --> G["6. Line OCR & Layout Model Training (Planned)<br/>YOLO Layout Detection & Multimodal Line OCR"]
+    F --> G["6. Line OCR (val baselines done) & Layout Model Training (Planned)<br/>UTRNet + Tesseract hybrid, gold verification, YOLO layout detection"]
     G --> H["7. Field Extraction & Evaluation (Planned)<br/>Layout mAP@0.5, Field F1, OCR CER/WER"]
 ```
 
@@ -34,8 +34,10 @@ flowchart TD
 | 5 | **Gemini Vision Annotation Engine** | Remaining 550 auto-pages, `data/interim/images/` | `data/annotations/gemini_cache/*.json`, high-precision bounding boxes & clean Nastaliq text for all 550 pages | `scripts/gemini_batch_annotate.py` (Gemini 3.5 Flash Lite Vision API, done) |
 | 6 | **Visual QA Previews** | `export.json`, original page PNGs | `data/previews/*.png` (789 visual preview images with color-coded boxes and tag labels) | `scripts/gemini_batch_annotate.py` / `draw_annotations.py` (done) |
 | 7 | **Dataset Export & Validation** | `data/annotations/export.json` (789 tasks) | `data/processed/pages/*.json` (789 pages), `all_pages.jsonl`, `outcomes.json`, `report.txt` (0 unannotated) | `scripts/export_to_json.py` (done, verified) |
-| 8 | **Line OCR & Field Extraction** | crops and pages from stage 7 | Text per line, extracted fields (`date`, `department`, `subject`, `reference_no`) | *planned* |
-| 9 | **Evaluation** | records + ground truth (`lines.tsv`) | CER, WER, layout mAP@0.5, field F1 | *planned* |
+| 8 | **Line OCR** | `data/processed/lines.tsv` + 5,407 line crops | `results/ocr/*.tsv` predictions per line (UTRNet-Large at width 400 / 800, Tesseract, hybrid) | `ocr_utrnet.py`, `ocr_tesseract.py`, `combine_ocr.py`, `postprocess_ocr.py` (val done) |
+| 9 | **Line-text verification** | review sheets with crop + gold + prediction | `data/annotations/verified_lines.tsv`, reviewer agreement | `make_review_sheet.py`, `merge_review.py` (sheets ready, review in progress) |
+| 10 | **Field Extraction** | pages + line text | extracted fields (`date`, `department`, `subject`, `reference_no`) | *planned* |
+| 11 | **Evaluation** | records + ground truth | CER, WER (`eval_ocr.py`, done for val), layout mAP@0.5, field F1 | OCR part done, rest *planned* |
 
 ---
 
@@ -156,7 +158,17 @@ All 789 preview images in `data/previews/` follow standardized color coding:
 │   ├── gemini_batch_annotate.py      # 3. Gemini Vision API batch annotation & preview engine
 │   ├── build_clean_annotations.py    # Clean dictionary & regex Urdu correction rules
 │   ├── draw_annotations.py           # Visual QA preview generator
-│   └── export_to_json.py             # 4. Validate export -> clean per-page JSON dataset
+│   ├── export_to_json.py             # 4. Validate export -> clean per-page JSON dataset (+ --crops line crops)
+│   ├── ocr_utrnet.py                 # 5. UTRNet-Large line OCR (separate venv; --per-line-seed, --resume)
+│   ├── ocr_tesseract.py              # 5. Tesseract 5 line OCR (urd+eng / eng)
+│   ├── postprocess_ocr.py            # 5. Fix reversed digit groups in UTRNet date / number lines
+│   ├── combine_ocr.py                # 5. Hybrid: Tesseract for lines where UTRNet reads no Urdu
+│   ├── eval_ocr.py                   # 6. CER / WER / NED with breakdowns, suspect-reference filter
+│   ├── test_eval_ocr.py              # 6. 14 checks of the metrics and rules
+│   ├── make_review_sheet.py          # 7. Excel sheets for human verification of line text
+│   └── merge_review.py               # 7. Merge reviews -> verified_lines.tsv + reviewer agreement
+├── results/ocr/                      # Predictions (*.tsv), run summaries (*.json), reports (*.report.md)
+├── third_party/                      # Git-ignored: UTRNet code + weights, Tesseract tessdata
 ├── data/
 │   ├── raw/                          # Immutable source data
 │   │   ├── documents/
@@ -177,7 +189,10 @@ All 789 preview images in `data/previews/` follow standardized color coding:
 │   │   ├── pages/                    # 789 per-page JSON records
 │   │   ├── all_pages.jsonl           # 789 records, one per line
 │   │   ├── outcomes.json             # 789 records as one JSON array
-│   │   └── report.txt                # Validation summary (0 unannotated)
+│   │   ├── report.txt                # Validation summary (0 unannotated)
+│   │   ├── lines.tsv                 # 5,407 text lines: crop, split, type, region_id, bbox, text
+│   │   └── lines/                    # Git-ignored line crops (rebuild with export_to_json.py --crops)
+│   ├── review/                       # val review sheets (4 x .xlsx) + manifest
 │   └── previews/                     # 789 annotation overlay PNGs for visual QA
 └── build/                            # Git-ignored packaging
 ```
@@ -234,7 +249,10 @@ python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val_n30.tsv
 
 Setup notes: `.venv-utrnet` only works on the machine that created it. Rebuild it on another PC with the commands
 above (Python 3.14 + `torch==2.15.0` CPU works too). If the Google Drive download stops part-way, rerun gdown
-with `--continue`. The weights file is 189,581,533 bytes.
+with `--continue`. The weights file is 189,581,533 bytes. If a crop in `data/processed/lines/` will not open
+(seen once: 208 files of random bytes on one disk), rebuild the crops into a temporary folder with
+`export_to_json.py --crops --out <tmp>`, check that the readable crops are byte-identical, then copy over only
+the broken ones.
 
 **UTRNet's predictions are random.** At test time it averages 5 passes with random "temporal dropout" masks
 drawn from `np.random`, one mask per batch. A line's prediction therefore depends on its batch, the run order
@@ -277,7 +295,7 @@ rules ask for right-to-left reading order (`5-`). Until verified text exists, co
 numbers by digit content, not by where the marks sit.
 
 `eval_ocr.py` reports CER, CER without spaces, WER, NED and exact match, broken down by split, capture type,
-line category (`urdu` / `num_latin` / `handwritten`) and aspect ratio. It also lists the top character confusions and
+line category (`urdu` / `num_latin` / `hw_field`), content and aspect ratio. It also lists the top character confusions and
 the worst lines. Any other OCR system can be compared by writing a TSV with `crop` and `pred` columns.
 
 Lines whose reference cannot be a real transcription (Japanese / Chinese characters hallucinated by the
@@ -306,6 +324,33 @@ Don't extend it to mixed Urdu / English / digit lines without separate evidence.
 
 When reporting, keep three numbers apart: raw UTRNet (the pretrained model as it is), UTRNet + postprocessing
 (plus fixed rule-based order corrections), and the `--verified` evaluation (against human-checked text).
+
+### Results so far (val, preliminary)
+
+All 1,437 val lines, scored against the **original, unverified** line text. 5 lines with a clearly invalid
+reference are excluded, so 1,432 lines are scored. Full tables: `results/ocr/compare_engines_val.report.md` and
+`results/ocr/compare_w400_w800_val_det.report.md`.
+
+| System | Overall CER | Printed Urdu (960) | Numbers / English (367) |
+|---|---|---|---|
+| UTRNet-Large, width 400 | 23.2% | 21.6% | 77.8% |
+| UTRNet-Large, width 800 | 21.3% | 19.7% | 78.0% |
+| Tesseract `urd+eng` | 70.7% | 72.5% | 36.4% |
+| Tesseract `eng` | 89.5% | 91.8% | 26.7% |
+| **Hybrid: UTRNet w800 + Tesseract `eng`** | **20.4%** | **19.7%** | **45.4%** |
+
+- **Width 800 helps only lines that width 400 squeezes.** On printed Urdu lines with width/height > 25, CER
+  falls by 4.6 points (95% CI −5.1 to −4.1, page-level bootstrap; 97 of 102 lines better, 3 worse); for 12.5–25
+  it falls by 1.7. Lines that fit in 400 px are unchanged (−0.04, CI includes 0). Both widths were run with
+  `--per-line-seed`, so the comparison is on identical lines with identical random masks.
+- **The engines complement each other.** UTRNet is far better on Nastaliq; Tesseract `eng` is far better on
+  digits and English, where UTRNet often turns Latin text into Urdu-like shapes.
+- **Why UTRNet fails on numbers/English lines:** wrong reference text (20% of that category's errors before
+  the suspect filter), right-to-left ordering of marks and digit groups, and real misreading of English and
+  small printed dates. Digits inside Urdu lines are also only about 53% correct.
+- **The reference text is unreliable.** The printed header is misspelled in the gold, 9 lines contain Japanese
+  text for Urdu images, and list markers are typed in the wrong order. These numbers are therefore not yet true
+  accuracy. The human review comes next.
 
 ### Verifying the line gold (do this before reporting CER)
 
@@ -360,10 +405,15 @@ model choices are final on `val`.
 - [x] Visual QA preview rendering for all 789 pages (`data/previews/`)
 - [x] Export to clean structured dataset (`data/processed/pages/`, `data/processed/all_pages.jsonl`, `outcomes.json`) with 0 unannotated pages
 - [x] Line crops generation (`scripts/export_to_json.py --crops`, 5,407 crops)
-- [x] UTRNet-Large pretrained baseline + OCR evaluation script (`ocr_utrnet.py`, `eval_ocr.py`), smoke-tested on 30 val lines
-- [ ] Baseline OCR & Layout model training (YOLO / Multimodal models)
+- [x] UTRNet-Large baseline on all val lines at width 400 and 800, deterministic (`--per-line-seed`)
+- [x] OCR evaluation with breakdowns, suspect-reference filter and 14 metric checks (`eval_ocr.py`, `test_eval_ocr.py`)
+- [x] Tesseract 5 baseline and UTRNet + Tesseract hybrid (`ocr_tesseract.py`, `combine_ocr.py`)
+- [x] Review sheets for human verification of val line text (`data/review/`, 80 lines double-reviewed)
+- [ ] Human review of val line text, agreement + adjudication, `eval_ocr.py --verified`
+- [ ] Width 800 + hybrid confirmed on verified text; then a single run on `test` / `test_unseen`
+- [ ] Layout model training (YOLO / multimodal models)
 - [ ] Field extraction and normalization rules
-- [ ] Final evaluation (CER, WER, Layout mAP@0.5, Field F1)
+- [ ] Final evaluation (verified CER/WER, Layout mAP@0.5, Field F1)
 
 ---
 
