@@ -524,8 +524,9 @@ Findings (provisional until the test text is verified):
 
 Verification sheets for `test` are prepared (`python scripts/make_review_sheet.py --pred
 results/ocr/utrnet_large_w800_test_det.tsv --split test --batches 7 --overlap 140`; 7 files of about 385 lines,
-140 lines double-reviewed; manifest in `data/review/test_review_manifest.json`). The `.xlsx` files are not in git
-(about 8 MB each); the same command rebuilds them identically. Once they are filled, rerun `merge_review.py` and
+140 lines double-reviewed; manifest in `data/review/test_review_manifest.json`). The sheets are in git as
+`data/review/test_review_b1.xlsx` … `b7.xlsx`, along with `val_adjudication_b1.xlsx` and `val_rereview_b4_b1.xlsx`.
+The same command rebuilds them identically. Once they are filled, rerun `merge_review.py` and
 `eval_ocr.py --verified` on the same prediction files. Do not re-tune anything.
 
 ---

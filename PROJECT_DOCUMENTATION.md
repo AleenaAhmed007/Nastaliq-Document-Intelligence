@@ -617,8 +617,8 @@ so these are upper bounds. Reports: `results/ocr/final_test_unverified.report.md
 
 1. Fill the prepared sheets: `data/review/val_adjudication_b1.xlsx` (15 conflicts; read the two reviews in
    `data/annotations/review_conflicts.tsv`) and `data/review/val_rereview_b4_b1.xlsx` (343 lines).
-2. Verify the `test` line text with the prepared sheets (7 files, 140 lines double-reviewed; rebuild them with the
-   command in the README, as the `.xlsx` files are not in git), then `test_unseen`. Rescore the existing prediction
+2. Verify the `test` line text with the prepared sheets (`data/review/test_review_b1.xlsx` … `b7.xlsx`, 140 lines
+   double-reviewed), then `test_unseen`. Rescore the existing prediction
    files with `eval_ocr.py --verified`, without re-tuning.
 3. Decide whether fine-tuning is worthwhile. This needs more training lines than the current 601.
 
