@@ -1,7 +1,7 @@
 # Nastaliq Document Intelligence — Complete Project Documentation
 
 > **Course Project — Group 2**
-> **Stage:** Data Collection, Triage, and Ground-Truth Annotation ✅ Complete · Line OCR baselines on val ✅ · Human verification of line text 🔄 In progress
+> **Stage:** Data Collection, Triage, and Ground-Truth Annotation ✅ Complete · Line OCR baselines on val ✅ · Human verification of val line text ✅ (1,067 lines) · Verified OCR evaluation on val ✅
 > **Date:** November 2026
 
 ---
@@ -199,7 +199,9 @@ Box flags:
 
 **Pass 2 — Line Transcription (CER/WER ground truth):**
 - 120 pages have all text lines individually boxed and transcribed
-- 5,407 Urdu Nastaliq text line images with verified ground-truth text
+- 5,407 Urdu Nastaliq text line images with transcribed text
+- Note: a later human review (§12.5) found this line text largely uncorrected machine OCR; 80% of the verified
+  val lines needed correction. Use `data/annotations/verified_lines.tsv` as the reference for OCR evaluation.
 
 ---
 
@@ -372,7 +374,7 @@ Nastaliq-Document-Intelligence/
 │   │   ├── report.txt                  # Official validation report (0 unannotated)
 │   │   ├── lines.tsv                   # 5,407 transcribed text lines with crop path and bbox
 │   │   └── lines/                      # Line crop PNGs (git-ignored, regenerable)
-│   ├── review/                         # 4 val review sheets + manifest
+│   ├── review/                         # Reviewed val sheets b1–b3 + manifest
 │   └── previews/                       # 789 visual preview PNGs with color boxes
 └── build/                              # Packaging artefacts
 ```
@@ -514,7 +516,65 @@ Verification workflow (`make_review_sheet.py` → reviewers → `merge_review.py
 - The verified evaluation reports two things separately: the **annotation error rate** (original gold vs
   verified text) and the **OCR error rate** (each system vs verified text).
 
-### 12.6 Practical notes
+**Review outcome (val):**
+
+| Batch | Lines | Used | Notes |
+|---|---|---|---|
+| b1, b2 | 372 + 381 | yes | reviewer: toqir dar |
+| b3 | 379 | yes | reviewer recorded only as "Reviewer" |
+| b4 | 385 | **no** | 316 of 358 "corrected" rows were UTRNet's output copied unchecked, e.g. `۹۹۔` for `11۔`, `(6660)` for `(IBCC)`, a garbled URL for `www.ajkbise.edu.pk`; not committed |
+
+- `data/annotations/verified_lines.tsv`: **1,067 usable verified lines** (172 `gold_ok`, 74 `utrnet_ok`,
+  821 `corrected`), 12 excluded or illegible, 15 unresolved conflicts (not scored), 343 unreviewed b4 lines.
+- Agreement (`review_agreement.json`): 38 lines reviewed by two people; 60.5% identical after normalisation,
+  2.3% CER between the two reviewers. Most disagreements are punctuation (`۔` vs `-`, quote style) or spacing.
+- An attempt to let the Gemini API review the sheets was tested and dropped: the free-tier quota allowed 20
+  requests per day on the stronger model, and the weaker free model accepted wrong text as exact in trials.
+
+### 12.6 Results on human-verified val
+
+All systems scored on the same 1,067 verified lines (`results/ocr/final_val_verified.report.md`).
+
+| System | CER | WER | Exact lines |
+|---|---|---|---|
+| UTRNet-Large, width 400 | 17.7% | 64.5% | 13.7% |
+| UTRNet-Large, width 800 | 15.2% | 54.5% | 13.6% |
+| Tesseract `urd+eng` | 70.6% | 95.6% | 7.8% |
+| Tesseract `eng` | 89.9% | 100.0% | 8.0% |
+| **Hybrid: UTRNet w800 + Tesseract `eng`** | **14.8%** | **54.1%** | **17.4%** |
+| *Original gold (annotation error rate)* | *16.2%* | *52.4%* | *19.6%* |
+
+| Content | Lines | UTRNet w800 | Hybrid w800 | Tesseract `eng` | Original gold |
+|---|---|---|---|---|---|
+| Urdu only | 430 | **10.4%** | 10.4% | 93.7% | 15.6% |
+| Urdu + digits | 267 | 14.7% | 14.5% | 90.1% | 17.2% |
+| Urdu + English | 100 | 19.7% | 19.7% | 88.9% | 15.2% |
+| Digits only | 218 | 59.9% | 40.0% | **37.5%** | 30.6% |
+| English only | 51 | 80.6% | 70.1% | **22.9%** | 2.5% |
+
+| UTRNet-Large by width/height | Lines | Width 400 | Width 800 |
+|---|---|---|---|
+| ≤ 12.5 | 712 | 21.6% | 21.4% |
+| 12.5–25 | 276 | 16.2% | 13.7% |
+| > 25 | 79 | 16.3% | **10.9%** |
+
+Findings:
+1. **Annotation quality (Evaluation A):** reviewers changed 858 of 1,067 lines (80%); the original gold has 16.2%
+   CER against the verified text and is exactly right on 19.6% of lines.
+2. **OCR quality (Evaluation B):** UTRNet-Large at width 800 reaches 15.2% CER overall and 10.4% on Urdu-only
+   lines. Against the unverified gold the same model scored 21.3%; most of that gap was reference error.
+3. **Width 800 is the better setting:** it fixes the squeezing of long lines and leaves short lines unchanged.
+4. **Hybrid:** Tesseract is much better on digit-only and English-only lines, so the hybrid is best (14.8%).
+   Its routing still sends most English-only lines to UTRNet (70.1% vs 22.9% for Tesseract alone).
+5. **Capture type:** little difference (UTRNet w800 14.8% on 711 photo lines, 16.1% on 356 scan lines).
+
+Limitations: 343 b4 lines unverified and 15 conflicts unresolved; agreement rests on 38 lines; reviewers saw
+UTRNet's width-400 output, so UTRNet's scores may be slightly optimistic; results are on val only.
+
+Headline wording: *UTRNet-Large achieved 15.2% CER on 1,067 human-verified validation lines, including 10.4%
+on Urdu-only lines; a hybrid with Tesseract for non-Urdu lines achieved 14.8%.*
+
+### 12.7 Practical notes
 
 - UTRNet runs at about 0.7 s per line at width 400 and about 2.4 s per line at width 800 on CPU. Tesseract runs
   at about 0.3–0.4 s per line.
@@ -522,15 +582,15 @@ Verification workflow (`make_review_sheet.py` → reviewers → `merge_review.py
   corrupted on disk. They were rebuilt with `export_to_json.py --crops` after checking that all 5,199 intact
   crops rebuild byte-identical.
 - Engine outputs follow different conventions on lines without Urdu: Tesseract writes `-5` (visual,
-  left to right), while UTRNet and the review rules use `5-` (reading order). Tesseract's advantage on numbers
-  may shrink once the reference text is verified.
+  left to right), while UTRNet and the review rules use `5-` (reading order). On verified text Tesseract still
+  wins on digit-only lines (37.5% vs 59.9%).
 
-### 12.7 Next steps
+### 12.8 Next steps
 
-1. Complete the human review of val, merge, adjudicate, and run `eval_ocr.py --verified`.
-2. Confirm width 800 and the hybrid on verified text. A broader routing rule looked better on numbers/English
-   (34.6%) but was designed after seeing val results and is kept as a candidate only.
-3. Review and evaluate `test` / `test_unseen` once, with the final configuration.
+1. Resolve the 15 review conflicts with an adjudication sheet, and re-review batch b4 (343 lines) properly.
+2. Fix the hybrid routing so English-only lines go to Tesseract, tuned on verified val only, then freeze the
+   configuration (UTRNet-Large width 800 + Tesseract `eng` for digit-only / English-only lines).
+3. Verify the line text of `test` / `test_unseen`, then run the frozen configuration on them once.
 4. Decide whether fine-tuning is worthwhile. This needs more training lines than the current 601.
 
 ---
@@ -558,8 +618,9 @@ flowchart TD
     E --> F["✅ Clean Dataset Export & Validation (outcomes.json, 0 unannotated)"]
     F --> G["✅ Line Crops Generation (5,407 crops)"]
     G --> I["✅ OCR Baselines on val: UTRNet w400/w800, Tesseract, Hybrid"]
-    I --> V["🔄 Human Verification of Line Text & Verified CER/WER"]
-    V --> H["🔜 Layout Model Fine-Tuning (YOLOv8 / LayoutLMv3)"]
+    I --> V["✅ Human Verification of val Line Text (1,067 lines) & Verified CER/WER"]
+    V --> T["🔜 Frozen OCR config, single run on test / test_unseen"]
+    T --> H["🔜 Layout Model Fine-Tuning (YOLOv8 / LayoutLMv3)"]
     H --> J["🔜 End-to-End Extraction Pipeline & Final Report"]
 ```
 
@@ -572,8 +633,10 @@ flowchart TD
 | 5. Visual QA Previews | ✅ Complete | 789 color-coded preview overlays in `data/previews/` |
 | 6. Validation & Export | ✅ Complete | `export.json`, `outcomes.json`, `all_pages.jsonl`, `report.txt` |
 | 7. Line Crops Generation | ✅ Complete | 5,407 crops + `lines.tsv` (`export_to_json.py --crops`) |
-| 8. OCR Baselines (val) | ✅ Complete | UTRNet-Large w400/w800 (deterministic), Tesseract, hybrid: best 20.4% CER, unverified gold (§12) |
-| 9. Line-Text Verification | 🔄 In progress | Review sheets ready; review, agreement, adjudication, `--verified` scoring pending |
+| 8. OCR Baselines (val) | ✅ Complete | UTRNet-Large w400/w800 (deterministic), Tesseract, hybrid (§12) |
+| 9. Line-Text Verification (val) | ✅ Complete | 1,067 verified lines (b1–b3); b4 excluded; 15 conflicts open (§12.5) |
+| 9b. Verified OCR Evaluation (val) | ✅ Complete | UTRNet w800 15.2% CER (10.4% Urdu-only), hybrid 14.8%, original gold 16.2% (§12.6) |
+| 9c. Frozen OCR config + test run | 🔜 Planned | Fix hybrid routing on val, verify test line text, single run on `test` / `test_unseen` |
 | 10. Layout Model Training | 🔜 Planned | YOLO / LayoutLMv3 on 11,765 layout boxes |
 | 11. Field Extraction & Metrics | 🔜 Planned | Field F1 & Layout mAP evaluation; final test-set OCR run |
 
