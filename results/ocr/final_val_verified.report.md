@@ -1,6 +1,6 @@
 # OCR evaluation
 
-Systems: utrnet_large_w400_val_det, utrnet_large_w800_val_det, tesseract_urd-eng_val, tesseract_eng_val, hybrid_utrnet_w400_tesseract_eng_val, hybrid_utrnet_w800_tesseract_eng_val, original_gold  
+Systems: utrnet_large_w400_val_det, utrnet_large_w800_val_det, tesseract_urd-eng_val, tesseract_eng_val, hybrid_utrnet_w400_tesseract_eng_val, hybrid_utrnet_w800_tesseract_eng_val, hybrid_final_val, original_gold  
 Reference: human-verified text (data/annotations/verified_lines.tsv): 1067 usable lines, 27 excluded/illegible  
 Lines scored: 1067 (crops present in every prediction file, minus 0 with an empty reference)  
 Line accounting: 1067 lines in every prediction file = 1067 scored + 0 empty reference + 0 suspect reference (excluded by heuristic, awaiting human correction)  
@@ -25,6 +25,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | all | tesseract_eng_val | 1067 | 89.9 | 95.6 | 100.0 | 0.805 | 8.0 |
 | all | hybrid_utrnet_w400_tesseract_eng_val | 1067 | 17.3 | 12.9 | 64.1 | 0.246 | 17.4 |
 | all | hybrid_utrnet_w800_tesseract_eng_val | 1067 | 14.8 | 11.3 | 54.1 | 0.235 | 17.4 |
+| all | hybrid_final_val | 1067 | 14.5 | 11.0 | 53.8 | 0.230 | 18.1 |
 | all | original_gold | 1067 | 16.2 | 14.0 | 52.4 | 0.245 | 19.6 |
 
 ### By split
@@ -37,6 +38,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val | tesseract_eng_val | 1067 | 89.9 | 95.6 | 100.0 | 0.805 | 8.0 |
 | val | hybrid_utrnet_w400_tesseract_eng_val | 1067 | 17.3 | 12.9 | 64.1 | 0.246 | 17.4 |
 | val | hybrid_utrnet_w800_tesseract_eng_val | 1067 | 14.8 | 11.3 | 54.1 | 0.235 | 17.4 |
+| val | hybrid_final_val | 1067 | 14.5 | 11.0 | 53.8 | 0.230 | 18.1 |
 | val | original_gold | 1067 | 16.2 | 14.0 | 52.4 | 0.245 | 19.6 |
 
 ### By split x type
@@ -49,6 +51,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / photo | tesseract_eng_val | 711 | 89.6 | 95.4 | 99.6 | 0.794 | 9.6 |
 | val / photo | hybrid_utrnet_w400_tesseract_eng_val | 711 | 17.1 | 12.5 | 65.3 | 0.222 | 19.8 |
 | val / photo | hybrid_utrnet_w800_tesseract_eng_val | 711 | 14.3 | 10.6 | 54.7 | 0.210 | 20.0 |
+| val / photo | hybrid_final_val | 711 | 14.0 | 10.3 | 54.5 | 0.204 | 20.5 |
 | val / photo | original_gold | 711 | 15.9 | 13.6 | 51.7 | 0.224 | 21.4 |
 | val / scan | utrnet_large_w400_val_det | 356 | 18.2 | 14.5 | 61.5 | 0.268 | 12.1 |
 | val / scan | utrnet_large_w800_val_det | 356 | 16.1 | 13.3 | 52.7 | 0.262 | 11.5 |
@@ -56,6 +59,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / scan | tesseract_eng_val | 356 | 90.7 | 96.1 | 100.8 | 0.828 | 4.8 |
 | val / scan | hybrid_utrnet_w400_tesseract_eng_val | 356 | 17.7 | 14.0 | 61.5 | 0.294 | 12.6 |
 | val / scan | hybrid_utrnet_w800_tesseract_eng_val | 356 | 15.7 | 12.8 | 52.6 | 0.286 | 12.4 |
+| val / scan | hybrid_final_val | 356 | 15.6 | 12.6 | 52.4 | 0.281 | 13.2 |
 | val / scan | original_gold | 356 | 17.0 | 14.7 | 54.1 | 0.288 | 16.0 |
 
 ### By category
@@ -68,6 +72,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / hw_field | tesseract_eng_val | 67 | 86.1 | 91.6 | 99.2 | 0.812 | 4.5 |
 | val / hw_field | hybrid_utrnet_w400_tesseract_eng_val | 67 | 18.2 | 14.6 | 63.8 | 0.249 | 9.0 |
 | val / hw_field | hybrid_utrnet_w800_tesseract_eng_val | 67 | 15.7 | 12.8 | 53.0 | 0.234 | 9.0 |
+| val / hw_field | hybrid_final_val | 67 | 15.7 | 12.8 | 53.0 | 0.234 | 9.0 |
 | val / hw_field | original_gold | 67 | 11.8 | 10.4 | 39.8 | 0.156 | 16.4 |
 | val / num_latin | utrnet_large_w400_val_det | 260 | 66.0 | 65.4 | 98.3 | 0.501 | 12.3 |
 | val / num_latin | utrnet_large_w800_val_det | 260 | 66.0 | 65.4 | 97.6 | 0.500 | 12.3 |
@@ -75,6 +80,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / num_latin | tesseract_eng_val | 260 | 32.4 | 32.0 | 68.1 | 0.480 | 31.5 |
 | val / num_latin | hybrid_utrnet_w400_tesseract_eng_val | 260 | 51.2 | 49.8 | 86.1 | 0.524 | 26.9 |
 | val / num_latin | hybrid_utrnet_w800_tesseract_eng_val | 260 | 49.4 | 48.2 | 83.7 | 0.518 | 27.3 |
+| val / num_latin | hybrid_final_val | 260 | 39.4 | 38.6 | 73.6 | 0.495 | 30.4 |
 | val / num_latin | original_gold | 260 | 22.1 | 22.1 | 49.7 | 0.448 | 48.5 |
 | val / urdu | utrnet_large_w400_val_det | 740 | 16.4 | 11.8 | 63.5 | 0.150 | 14.9 |
 | val / urdu | utrnet_large_w800_val_det | 740 | 13.8 | 10.1 | 53.3 | 0.138 | 14.7 |
@@ -82,6 +88,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / urdu | tesseract_eng_val | 740 | 91.7 | 98.0 | 101.0 | 0.919 | 0.0 |
 | val / urdu | hybrid_utrnet_w400_tesseract_eng_val | 740 | 16.3 | 11.7 | 63.5 | 0.148 | 14.9 |
 | val / urdu | hybrid_utrnet_w800_tesseract_eng_val | 740 | 13.8 | 10.0 | 53.3 | 0.136 | 14.7 |
+| val / urdu | hybrid_final_val | 740 | 13.7 | 10.0 | 53.3 | 0.136 | 14.6 |
 | val / urdu | original_gold | 740 | 16.5 | 14.1 | 53.8 | 0.182 | 9.7 |
 
 ### By content
@@ -94,6 +101,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / digits_only | tesseract_eng_val | 218 | 37.5 | 36.2 | 77.7 | 0.530 | 28.4 |
 | val / digits_only | hybrid_utrnet_w400_tesseract_eng_val | 218 | 40.0 | 38.2 | 83.2 | 0.529 | 28.4 |
 | val / digits_only | hybrid_utrnet_w800_tesseract_eng_val | 218 | 40.0 | 38.4 | 81.8 | 0.530 | 28.4 |
+| val / digits_only | hybrid_final_val | 218 | 40.0 | 38.4 | 81.8 | 0.530 | 28.4 |
 | val / digits_only | original_gold | 218 | 30.6 | 30.0 | 63.2 | 0.539 | 39.4 |
 | val / latin_only | utrnet_large_w400_val_det | 51 | 80.6 | 81.6 | 111.4 | 0.645 | 0.0 |
 | val / latin_only | utrnet_large_w800_val_det | 51 | 80.6 | 81.6 | 111.4 | 0.634 | 0.0 |
@@ -101,6 +109,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / latin_only | tesseract_eng_val | 51 | 22.9 | 23.6 | 44.3 | 0.263 | 45.1 |
 | val / latin_only | hybrid_utrnet_w400_tesseract_eng_val | 51 | 75.3 | 75.9 | 97.5 | 0.511 | 21.6 |
 | val / latin_only | hybrid_utrnet_w800_tesseract_eng_val | 51 | 70.1 | 70.9 | 93.7 | 0.475 | 23.5 |
+| val / latin_only | hybrid_final_val | 51 | 42.3 | 43.1 | 57.0 | 0.355 | 39.2 |
 | val / latin_only | original_gold | 51 | 2.5 | 2.4 | 7.6 | 0.020 | 92.2 |
 | val / other | utrnet_large_w400_val_det | 1 | 100.0 | 100.0 | 100.0 | 1.000 | 0.0 |
 | val / other | utrnet_large_w800_val_det | 1 | 100.0 | 100.0 | 100.0 | 1.000 | 0.0 |
@@ -108,6 +117,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / other | tesseract_eng_val | 1 | 100.0 | 100.0 | 100.0 | 1.000 | 0.0 |
 | val / other | hybrid_utrnet_w400_tesseract_eng_val | 1 | 100.0 | 100.0 | 100.0 | 1.000 | 0.0 |
 | val / other | hybrid_utrnet_w800_tesseract_eng_val | 1 | 100.0 | 100.0 | 100.0 | 1.000 | 0.0 |
+| val / other | hybrid_final_val | 1 | 100.0 | 100.0 | 100.0 | 1.000 | 0.0 |
 | val / other | original_gold | 1 | 0.0 | 0.0 | 0.0 | 0.000 | 100.0 |
 | val / urdu+digits | utrnet_large_w400_val_det | 267 | 17.5 | 12.8 | 65.9 | 0.203 | 2.2 |
 | val / urdu+digits | utrnet_large_w800_val_det | 267 | 14.7 | 11.2 | 54.6 | 0.187 | 2.2 |
@@ -115,6 +125,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / urdu+digits | tesseract_eng_val | 267 | 90.1 | 96.2 | 100.2 | 0.876 | 0.0 |
 | val / urdu+digits | hybrid_utrnet_w400_tesseract_eng_val | 267 | 17.3 | 12.6 | 65.9 | 0.197 | 2.2 |
 | val / urdu+digits | hybrid_utrnet_w800_tesseract_eng_val | 267 | 14.5 | 10.9 | 54.6 | 0.180 | 2.2 |
+| val / urdu+digits | hybrid_final_val | 267 | 14.4 | 10.8 | 54.6 | 0.177 | 2.2 |
 | val / urdu+digits | original_gold | 267 | 17.2 | 15.0 | 55.7 | 0.209 | 1.5 |
 | val / urdu+latin | utrnet_large_w400_val_det | 100 | 23.2 | 19.2 | 69.9 | 0.221 | 0.0 |
 | val / urdu+latin | utrnet_large_w800_val_det | 100 | 19.7 | 16.4 | 58.7 | 0.192 | 0.0 |
@@ -122,6 +133,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / urdu+latin | tesseract_eng_val | 100 | 88.9 | 95.0 | 99.3 | 0.883 | 0.0 |
 | val / urdu+latin | hybrid_utrnet_w400_tesseract_eng_val | 100 | 23.2 | 19.2 | 69.9 | 0.221 | 0.0 |
 | val / urdu+latin | hybrid_utrnet_w800_tesseract_eng_val | 100 | 19.7 | 16.4 | 58.7 | 0.192 | 0.0 |
+| val / urdu+latin | hybrid_final_val | 100 | 19.7 | 16.4 | 58.7 | 0.192 | 0.0 |
 | val / urdu+latin | original_gold | 100 | 15.2 | 13.1 | 46.3 | 0.161 | 2.0 |
 | val / urdu_only | utrnet_large_w400_val_det | 430 | 12.3 | 7.7 | 58.1 | 0.105 | 24.9 |
 | val / urdu_only | utrnet_large_w800_val_det | 430 | 10.4 | 6.5 | 49.2 | 0.099 | 24.7 |
@@ -129,6 +141,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / urdu_only | tesseract_eng_val | 430 | 93.7 | 99.9 | 102.2 | 0.947 | 0.0 |
 | val / urdu_only | hybrid_utrnet_w400_tesseract_eng_val | 430 | 12.3 | 7.7 | 58.1 | 0.105 | 24.9 |
 | val / urdu_only | hybrid_utrnet_w800_tesseract_eng_val | 430 | 10.4 | 6.5 | 49.2 | 0.099 | 24.7 |
+| val / urdu_only | hybrid_final_val | 430 | 10.4 | 6.5 | 49.2 | 0.102 | 24.4 |
 | val / urdu_only | original_gold | 430 | 15.6 | 13.0 | 52.8 | 0.165 | 16.0 |
 
 ### By aspect
@@ -141,6 +154,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / 12.5-25 | tesseract_eng_val | 276 | 90.7 | 96.9 | 100.3 | 0.888 | 0.4 |
 | val / 12.5-25 | hybrid_utrnet_w400_tesseract_eng_val | 276 | 16.2 | 11.3 | 65.4 | 0.167 | 0.4 |
 | val / 12.5-25 | hybrid_utrnet_w800_tesseract_eng_val | 276 | 13.6 | 9.8 | 53.6 | 0.144 | 0.7 |
+| val / 12.5-25 | hybrid_final_val | 276 | 13.4 | 9.7 | 53.4 | 0.141 | 0.7 |
 | val / 12.5-25 | original_gold | 276 | 15.6 | 13.2 | 52.2 | 0.158 | 3.6 |
 | val / <=12.5 | utrnet_large_w400_val_det | 712 | 21.6 | 19.3 | 57.8 | 0.279 | 20.4 |
 | val / <=12.5 | utrnet_large_w800_val_det | 712 | 21.4 | 19.3 | 57.7 | 0.278 | 20.1 |
@@ -148,6 +162,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / <=12.5 | tesseract_eng_val | 712 | 89.2 | 92.7 | 99.5 | 0.765 | 11.7 |
 | val / <=12.5 | hybrid_utrnet_w400_tesseract_eng_val | 712 | 20.1 | 17.6 | 56.6 | 0.285 | 26.0 |
 | val / <=12.5 | hybrid_utrnet_w800_tesseract_eng_val | 712 | 19.9 | 17.5 | 56.3 | 0.283 | 25.8 |
+| val / <=12.5 | hybrid_final_val | 712 | 19.6 | 17.1 | 56.0 | 0.277 | 26.7 |
 | val / <=12.5 | original_gold | 712 | 23.0 | 20.5 | 65.6 | 0.296 | 27.7 |
 | val / >25 | utrnet_large_w400_val_det | 79 | 16.3 | 10.5 | 70.3 | 0.172 | 0.0 |
 | val / >25 | utrnet_large_w800_val_det | 79 | 10.9 | 6.3 | 52.5 | 0.119 | 0.0 |
@@ -155,6 +170,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / >25 | tesseract_eng_val | 79 | 89.1 | 96.7 | 99.7 | 0.881 | 1.3 |
 | val / >25 | hybrid_utrnet_w400_tesseract_eng_val | 79 | 16.3 | 10.5 | 70.3 | 0.172 | 0.0 |
 | val / >25 | hybrid_utrnet_w800_tesseract_eng_val | 79 | 10.9 | 6.3 | 52.5 | 0.119 | 0.0 |
+| val / >25 | hybrid_final_val | 79 | 10.5 | 5.8 | 52.1 | 0.107 | 1.3 |
 | val / >25 | original_gold | 79 | 9.1 | 6.9 | 37.7 | 0.090 | 2.5 |
 
 ### By category x aspect
@@ -167,6 +183,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / hw_field / 12.5-25 | tesseract_eng_val | 38 | 87.4 | 93.0 | 99.1 | 0.868 | 0.0 |
 | val / hw_field / 12.5-25 | hybrid_utrnet_w400_tesseract_eng_val | 38 | 16.4 | 12.8 | 59.9 | 0.173 | 0.0 |
 | val / hw_field / 12.5-25 | hybrid_utrnet_w800_tesseract_eng_val | 38 | 14.6 | 11.5 | 50.9 | 0.155 | 0.0 |
+| val / hw_field / 12.5-25 | hybrid_final_val | 38 | 14.6 | 11.5 | 50.9 | 0.155 | 0.0 |
 | val / hw_field / 12.5-25 | original_gold | 38 | 10.9 | 9.4 | 38.7 | 0.118 | 2.6 |
 | val / hw_field / <=12.5 | utrnet_large_w400_val_det | 24 | 39.7 | 38.1 | 91.8 | 0.413 | 16.7 |
 | val / hw_field / <=12.5 | utrnet_large_w800_val_det | 24 | 40.2 | 39.1 | 91.8 | 0.415 | 16.7 |
@@ -174,6 +191,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / hw_field / <=12.5 | tesseract_eng_val | 24 | 73.5 | 74.9 | 101.6 | 0.714 | 12.5 |
 | val / hw_field / <=12.5 | hybrid_utrnet_w400_tesseract_eng_val | 24 | 34.5 | 32.6 | 88.5 | 0.383 | 25.0 |
 | val / hw_field / <=12.5 | hybrid_utrnet_w800_tesseract_eng_val | 24 | 34.8 | 33.4 | 88.5 | 0.381 | 25.0 |
+| val / hw_field / <=12.5 | hybrid_final_val | 24 | 34.8 | 33.4 | 88.5 | 0.381 | 25.0 |
 | val / hw_field / <=12.5 | original_gold | 24 | 25.3 | 22.5 | 75.4 | 0.228 | 41.7 |
 | val / hw_field / >25 | utrnet_large_w400_val_det | 5 | 18.8 | 13.0 | 73.1 | 0.188 | 0.0 |
 | val / hw_field / >25 | utrnet_large_w800_val_det | 5 | 11.9 | 7.5 | 50.3 | 0.122 | 0.0 |
@@ -181,6 +199,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / hw_field / >25 | tesseract_eng_val | 5 | 86.2 | 93.8 | 98.8 | 0.863 | 0.0 |
 | val / hw_field / >25 | hybrid_utrnet_w400_tesseract_eng_val | 5 | 18.8 | 13.0 | 73.1 | 0.188 | 0.0 |
 | val / hw_field / >25 | hybrid_utrnet_w800_tesseract_eng_val | 5 | 11.9 | 7.5 | 50.3 | 0.122 | 0.0 |
+| val / hw_field / >25 | hybrid_final_val | 5 | 11.9 | 7.5 | 50.3 | 0.122 | 0.0 |
 | val / hw_field / >25 | original_gold | 5 | 9.5 | 8.9 | 32.2 | 0.101 | 0.0 |
 | val / num_latin / 12.5-25 | utrnet_large_w400_val_det | 4 | 91.0 | 93.5 | 147.1 | 0.913 | 0.0 |
 | val / num_latin / 12.5-25 | utrnet_large_w800_val_det | 4 | 91.6 | 93.5 | 135.3 | 0.922 | 0.0 |
@@ -188,6 +207,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / num_latin / 12.5-25 | tesseract_eng_val | 4 | 12.7 | 13.1 | 41.2 | 0.125 | 25.0 |
 | val / num_latin / 12.5-25 | hybrid_utrnet_w400_tesseract_eng_val | 4 | 91.0 | 93.5 | 147.1 | 0.913 | 0.0 |
 | val / num_latin / 12.5-25 | hybrid_utrnet_w800_tesseract_eng_val | 4 | 77.7 | 79.7 | 123.5 | 0.692 | 0.0 |
+| val / num_latin / 12.5-25 | hybrid_final_val | 4 | 48.8 | 50.3 | 76.5 | 0.474 | 0.0 |
 | val / num_latin / 12.5-25 | original_gold | 4 | 4.2 | 4.6 | 11.8 | 0.040 | 75.0 |
 | val / num_latin / <=12.5 | utrnet_large_w400_val_det | 255 | 61.3 | 60.5 | 94.7 | 0.493 | 12.5 |
 | val / num_latin / <=12.5 | utrnet_large_w800_val_det | 255 | 61.0 | 60.1 | 94.3 | 0.492 | 12.5 |
@@ -195,6 +215,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / num_latin / <=12.5 | tesseract_eng_val | 255 | 36.9 | 36.0 | 71.9 | 0.488 | 31.4 |
 | val / num_latin / <=12.5 | hybrid_utrnet_w400_tesseract_eng_val | 255 | 43.6 | 42.1 | 81.4 | 0.516 | 27.5 |
 | val / num_latin / <=12.5 | hybrid_utrnet_w800_tesseract_eng_val | 255 | 43.3 | 41.8 | 79.8 | 0.514 | 27.8 |
+| val / num_latin / <=12.5 | hybrid_final_val | 255 | 40.0 | 38.6 | 75.7 | 0.497 | 30.6 |
 | val / num_latin / <=12.5 | original_gold | 255 | 25.8 | 25.4 | 53.6 | 0.456 | 47.8 |
 | val / num_latin / >25 | utrnet_large_w400_val_det | 1 | 87.3 | 89.6 | 112.5 | 0.873 | 0.0 |
 | val / num_latin / >25 | utrnet_large_w800_val_det | 1 | 90.9 | 97.9 | 125.0 | 0.909 | 0.0 |
@@ -202,6 +223,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / num_latin / >25 | tesseract_eng_val | 1 | 0.0 | 0.0 | 0.0 | 0.000 | 100.0 |
 | val / num_latin / >25 | hybrid_utrnet_w400_tesseract_eng_val | 1 | 87.3 | 89.6 | 112.5 | 0.873 | 0.0 |
 | val / num_latin / >25 | hybrid_utrnet_w800_tesseract_eng_val | 1 | 90.9 | 97.9 | 125.0 | 0.909 | 0.0 |
+| val / num_latin / >25 | hybrid_final_val | 1 | 0.0 | 0.0 | 0.0 | 0.000 | 100.0 |
 | val / num_latin / >25 | original_gold | 1 | 0.0 | 0.0 | 0.0 | 0.000 | 100.0 |
 | val / urdu / 12.5-25 | utrnet_large_w400_val_det | 234 | 15.7 | 10.6 | 66.0 | 0.155 | 0.4 |
 | val / urdu / 12.5-25 | utrnet_large_w800_val_det | 234 | 13.1 | 9.1 | 53.8 | 0.135 | 0.9 |
@@ -209,6 +231,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / urdu / 12.5-25 | tesseract_eng_val | 234 | 91.7 | 98.1 | 100.8 | 0.904 | 0.0 |
 | val / urdu / 12.5-25 | hybrid_utrnet_w400_tesseract_eng_val | 234 | 15.6 | 10.5 | 66.0 | 0.153 | 0.4 |
 | val / urdu / 12.5-25 | hybrid_utrnet_w800_tesseract_eng_val | 234 | 13.0 | 9.1 | 53.8 | 0.133 | 0.9 |
+| val / urdu / 12.5-25 | hybrid_final_val | 234 | 13.0 | 9.1 | 53.8 | 0.133 | 0.9 |
 | val / urdu / 12.5-25 | original_gold | 234 | 16.5 | 13.9 | 54.6 | 0.167 | 2.6 |
 | val / urdu / <=12.5 | utrnet_large_w400_val_det | 433 | 18.1 | 15.2 | 53.4 | 0.145 | 25.2 |
 | val / urdu / <=12.5 | utrnet_large_w800_val_det | 433 | 17.9 | 15.1 | 53.3 | 0.144 | 24.7 |
@@ -216,6 +239,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / urdu / <=12.5 | tesseract_eng_val | 433 | 93.5 | 98.2 | 102.2 | 0.931 | 0.0 |
 | val / urdu / <=12.5 | hybrid_utrnet_w400_tesseract_eng_val | 433 | 17.9 | 15.0 | 53.4 | 0.143 | 25.2 |
 | val / urdu / <=12.5 | hybrid_utrnet_w800_tesseract_eng_val | 433 | 17.8 | 14.9 | 53.2 | 0.142 | 24.7 |
+| val / urdu / <=12.5 | hybrid_final_val | 433 | 17.7 | 14.8 | 53.4 | 0.142 | 24.5 |
 | val / urdu / <=12.5 | original_gold | 433 | 22.7 | 20.0 | 66.5 | 0.205 | 15.0 |
 | val / urdu / >25 | utrnet_large_w400_val_det | 73 | 15.8 | 9.9 | 70.0 | 0.161 | 0.0 |
 | val / urdu / >25 | utrnet_large_w800_val_det | 73 | 10.4 | 5.7 | 52.4 | 0.108 | 0.0 |
@@ -223,6 +247,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / urdu / >25 | tesseract_eng_val | 73 | 89.7 | 97.3 | 100.1 | 0.894 | 0.0 |
 | val / urdu / >25 | hybrid_utrnet_w400_tesseract_eng_val | 73 | 15.8 | 9.9 | 70.0 | 0.161 | 0.0 |
 | val / urdu / >25 | hybrid_utrnet_w800_tesseract_eng_val | 73 | 10.4 | 5.7 | 52.4 | 0.108 | 0.0 |
+| val / urdu / >25 | hybrid_final_val | 73 | 10.4 | 5.7 | 52.4 | 0.108 | 0.0 |
 | val / urdu / >25 | original_gold | 73 | 9.1 | 6.8 | 38.2 | 0.090 | 1.4 |
 
 ### By category x type
@@ -235,6 +260,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / hw_field / photo | tesseract_eng_val | 51 | 87.6 | 93.4 | 99.5 | 0.868 | 0.0 |
 | val / hw_field / photo | hybrid_utrnet_w400_tesseract_eng_val | 51 | 17.4 | 13.5 | 63.7 | 0.236 | 0.0 |
 | val / hw_field / photo | hybrid_utrnet_w800_tesseract_eng_val | 51 | 14.8 | 11.7 | 52.2 | 0.219 | 0.0 |
+| val / hw_field / photo | hybrid_final_val | 51 | 14.8 | 11.7 | 52.2 | 0.219 | 0.0 |
 | val / hw_field / photo | original_gold | 51 | 11.5 | 10.2 | 39.2 | 0.147 | 9.8 |
 | val / hw_field / scan | utrnet_large_w400_val_det | 16 | 29.5 | 28.0 | 68.1 | 0.400 | 18.8 |
 | val / hw_field / scan | utrnet_large_w800_val_det | 16 | 27.9 | 26.2 | 63.8 | 0.395 | 18.8 |
@@ -242,6 +268,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / hw_field / scan | tesseract_eng_val | 16 | 73.5 | 77.1 | 96.8 | 0.635 | 18.8 |
 | val / hw_field / scan | hybrid_utrnet_w400_tesseract_eng_val | 16 | 25.2 | 23.3 | 64.9 | 0.292 | 37.5 |
 | val / hw_field / scan | hybrid_utrnet_w800_tesseract_eng_val | 16 | 23.4 | 21.2 | 60.6 | 0.281 | 37.5 |
+| val / hw_field / scan | hybrid_final_val | 16 | 23.4 | 21.2 | 60.6 | 0.281 | 37.5 |
 | val / hw_field / scan | original_gold | 16 | 14.2 | 12.0 | 45.7 | 0.184 | 37.5 |
 | val / num_latin / photo | utrnet_large_w400_val_det | 172 | 66.4 | 66.1 | 98.4 | 0.486 | 12.2 |
 | val / num_latin / photo | utrnet_large_w800_val_det | 172 | 66.4 | 66.1 | 97.4 | 0.486 | 12.2 |
@@ -249,6 +276,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / num_latin / photo | tesseract_eng_val | 172 | 27.7 | 27.6 | 59.4 | 0.411 | 39.5 |
 | val / num_latin / photo | hybrid_utrnet_w400_tesseract_eng_val | 172 | 49.0 | 47.8 | 78.6 | 0.452 | 34.9 |
 | val / num_latin / photo | hybrid_utrnet_w800_tesseract_eng_val | 172 | 46.5 | 45.6 | 76.6 | 0.446 | 34.9 |
+| val / num_latin / photo | hybrid_final_val | 172 | 35.3 | 34.8 | 65.1 | 0.422 | 37.8 |
 | val / num_latin / photo | original_gold | 172 | 16.5 | 16.4 | 41.7 | 0.380 | 56.4 |
 | val / num_latin / scan | utrnet_large_w400_val_det | 88 | 65.1 | 63.5 | 97.9 | 0.530 | 12.5 |
 | val / num_latin / scan | utrnet_large_w800_val_det | 88 | 65.1 | 63.5 | 97.9 | 0.530 | 12.5 |
@@ -256,6 +284,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / num_latin / scan | tesseract_eng_val | 88 | 44.4 | 43.2 | 85.4 | 0.615 | 15.9 |
 | val / num_latin / scan | hybrid_utrnet_w400_tesseract_eng_val | 88 | 57.0 | 55.0 | 101.0 | 0.664 | 11.4 |
 | val / num_latin / scan | hybrid_utrnet_w800_tesseract_eng_val | 88 | 57.0 | 55.0 | 97.9 | 0.660 | 12.5 |
+| val / num_latin / scan | hybrid_final_val | 88 | 49.9 | 48.3 | 90.6 | 0.637 | 15.9 |
 | val / num_latin / scan | original_gold | 88 | 36.5 | 36.5 | 65.6 | 0.581 | 33.0 |
 | val / urdu / photo | utrnet_large_w400_val_det | 488 | 16.2 | 11.3 | 65.2 | 0.140 | 16.6 |
 | val / urdu / photo | utrnet_large_w800_val_det | 488 | 13.4 | 9.4 | 54.4 | 0.127 | 16.8 |
@@ -263,6 +292,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / urdu / photo | tesseract_eng_val | 488 | 91.5 | 97.9 | 100.8 | 0.921 | 0.0 |
 | val / urdu / photo | hybrid_utrnet_w400_tesseract_eng_val | 488 | 16.2 | 11.2 | 65.2 | 0.139 | 16.6 |
 | val / urdu / photo | hybrid_utrnet_w800_tesseract_eng_val | 488 | 13.4 | 9.4 | 54.4 | 0.125 | 16.8 |
+| val / urdu / photo | hybrid_final_val | 488 | 13.3 | 9.3 | 54.5 | 0.125 | 16.6 |
 | val / urdu / photo | original_gold | 488 | 16.5 | 14.0 | 53.8 | 0.176 | 10.2 |
 | val / urdu / scan | utrnet_large_w400_val_det | 252 | 16.8 | 12.8 | 60.2 | 0.169 | 11.5 |
 | val / urdu / scan | utrnet_large_w800_val_det | 252 | 14.7 | 11.5 | 51.1 | 0.160 | 10.7 |
@@ -270,6 +300,7 @@ Normalisation: full (see eval_ocr.py docstring)
 | val / urdu / scan | tesseract_eng_val | 252 | 92.2 | 98.1 | 101.3 | 0.915 | 0.0 |
 | val / urdu / scan | hybrid_utrnet_w400_tesseract_eng_val | 252 | 16.7 | 12.6 | 60.2 | 0.165 | 11.5 |
 | val / urdu / scan | hybrid_utrnet_w800_tesseract_eng_val | 252 | 14.6 | 11.4 | 51.1 | 0.156 | 10.7 |
+| val / urdu / scan | hybrid_final_val | 252 | 14.6 | 11.4 | 51.1 | 0.156 | 10.7 |
 | val / urdu / scan | original_gold | 252 | 16.7 | 14.3 | 54.0 | 0.192 | 8.7 |
 
 ### Error types by content
@@ -284,6 +315,7 @@ S / D / I = substitutions / deletions / insertions as % of reference characters 
 | val / digits_only | tesseract_eng_val | 218 | 949 | 4.4 | 4.0 | 37.5 | 21.5 | 12.0 | 4.0 |
 | val / digits_only | hybrid_utrnet_w400_tesseract_eng_val | 218 | 949 | 4.4 | 4.1 | 40.0 | 25.8 | 9.5 | 4.7 |
 | val / digits_only | hybrid_utrnet_w800_tesseract_eng_val | 218 | 949 | 4.4 | 4.1 | 40.0 | 25.4 | 10.4 | 4.2 |
+| val / digits_only | hybrid_final_val | 218 | 949 | 4.4 | 4.1 | 40.0 | 25.4 | 10.4 | 4.2 |
 | val / digits_only | original_gold | 218 | 949 | 4.4 | 4.4 | 30.6 | 23.1 | 2.8 | 4.6 |
 | val / latin_only | utrnet_large_w400_val_det | 51 | 485 | 9.5 | 7.0 | 80.6 | 54.2 | 26.2 | 0.2 |
 | val / latin_only | utrnet_large_w800_val_det | 51 | 485 | 9.5 | 7.0 | 80.6 | 54.0 | 26.4 | 0.2 |
@@ -291,6 +323,7 @@ S / D / I = substitutions / deletions / insertions as % of reference characters 
 | val / latin_only | tesseract_eng_val | 51 | 485 | 9.5 | 8.2 | 22.9 | 7.8 | 14.2 | 0.8 |
 | val / latin_only | hybrid_utrnet_w400_tesseract_eng_val | 51 | 485 | 9.5 | 7.3 | 75.3 | 50.5 | 24.1 | 0.6 |
 | val / latin_only | hybrid_utrnet_w800_tesseract_eng_val | 51 | 485 | 9.5 | 7.4 | 70.1 | 47.0 | 22.5 | 0.6 |
+| val / latin_only | hybrid_final_val | 51 | 485 | 9.5 | 7.9 | 42.3 | 23.9 | 17.7 | 0.6 |
 | val / latin_only | original_gold | 51 | 485 | 9.5 | 9.6 | 2.5 | 1.4 | 0.0 | 1.0 |
 | val / other | utrnet_large_w400_val_det | 1 | 2 | 2.0 | 1.0 | 100.0 | 50.0 | 50.0 | 0.0 |
 | val / other | utrnet_large_w800_val_det | 1 | 2 | 2.0 | 1.0 | 100.0 | 50.0 | 50.0 | 0.0 |
@@ -298,6 +331,7 @@ S / D / I = substitutions / deletions / insertions as % of reference characters 
 | val / other | tesseract_eng_val | 1 | 2 | 2.0 | 1.0 | 100.0 | 50.0 | 50.0 | 0.0 |
 | val / other | hybrid_utrnet_w400_tesseract_eng_val | 1 | 2 | 2.0 | 1.0 | 100.0 | 50.0 | 50.0 | 0.0 |
 | val / other | hybrid_utrnet_w800_tesseract_eng_val | 1 | 2 | 2.0 | 1.0 | 100.0 | 50.0 | 50.0 | 0.0 |
+| val / other | hybrid_final_val | 1 | 2 | 2.0 | 1.0 | 100.0 | 50.0 | 50.0 | 0.0 |
 | val / other | original_gold | 1 | 2 | 2.0 | 2.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | val / urdu+digits | utrnet_large_w400_val_det | 267 | 22347 | 83.7 | 77.3 | 17.5 | 7.4 | 8.9 | 1.2 |
 | val / urdu+digits | utrnet_large_w800_val_det | 267 | 22347 | 83.7 | 78.4 | 14.7 | 6.3 | 7.3 | 1.0 |
@@ -305,6 +339,7 @@ S / D / I = substitutions / deletions / insertions as % of reference characters 
 | val / urdu+digits | tesseract_eng_val | 267 | 22347 | 83.7 | 29.9 | 90.1 | 25.4 | 64.4 | 0.2 |
 | val / urdu+digits | hybrid_utrnet_w400_tesseract_eng_val | 267 | 22347 | 83.7 | 77.3 | 17.3 | 7.2 | 8.8 | 1.2 |
 | val / urdu+digits | hybrid_utrnet_w800_tesseract_eng_val | 267 | 22347 | 83.7 | 78.5 | 14.5 | 6.2 | 7.2 | 1.0 |
+| val / urdu+digits | hybrid_final_val | 267 | 22347 | 83.7 | 78.5 | 14.4 | 6.2 | 7.2 | 1.0 |
 | val / urdu+digits | original_gold | 267 | 22347 | 83.7 | 81.1 | 17.2 | 8.2 | 6.1 | 3.0 |
 | val / urdu+latin | utrnet_large_w400_val_det | 100 | 11953 | 119.5 | 108.1 | 23.2 | 11.3 | 10.7 | 1.2 |
 | val / urdu+latin | utrnet_large_w800_val_det | 100 | 11953 | 119.5 | 109.1 | 19.7 | 9.1 | 9.7 | 1.0 |
@@ -312,6 +347,7 @@ S / D / I = substitutions / deletions / insertions as % of reference characters 
 | val / urdu+latin | tesseract_eng_val | 100 | 11953 | 119.5 | 46.2 | 88.9 | 27.1 | 61.5 | 0.2 |
 | val / urdu+latin | hybrid_utrnet_w400_tesseract_eng_val | 100 | 11953 | 119.5 | 108.1 | 23.2 | 11.3 | 10.7 | 1.2 |
 | val / urdu+latin | hybrid_utrnet_w800_tesseract_eng_val | 100 | 11953 | 119.5 | 109.1 | 19.7 | 9.1 | 9.7 | 1.0 |
+| val / urdu+latin | hybrid_final_val | 100 | 11953 | 119.5 | 109.1 | 19.7 | 9.1 | 9.7 | 1.0 |
 | val / urdu+latin | original_gold | 100 | 11953 | 119.5 | 115.7 | 15.2 | 7.2 | 5.6 | 2.4 |
 | val / urdu_only | utrnet_large_w400_val_det | 430 | 24306 | 56.5 | 52.7 | 12.3 | 3.6 | 7.7 | 1.0 |
 | val / urdu_only | utrnet_large_w800_val_det | 430 | 24306 | 56.5 | 53.6 | 10.4 | 3.1 | 6.3 | 1.0 |
@@ -319,6 +355,7 @@ S / D / I = substitutions / deletions / insertions as % of reference characters 
 | val / urdu_only | tesseract_eng_val | 430 | 24306 | 56.5 | 16.8 | 93.7 | 23.0 | 70.4 | 0.2 |
 | val / urdu_only | hybrid_utrnet_w400_tesseract_eng_val | 430 | 24306 | 56.5 | 52.7 | 12.3 | 3.7 | 7.7 | 1.0 |
 | val / urdu_only | hybrid_utrnet_w800_tesseract_eng_val | 430 | 24306 | 56.5 | 53.6 | 10.4 | 3.1 | 6.3 | 1.0 |
+| val / urdu_only | hybrid_final_val | 430 | 24306 | 56.5 | 53.6 | 10.4 | 3.1 | 6.3 | 1.0 |
 | val / urdu_only | original_gold | 430 | 24306 | 56.5 | 54.8 | 15.6 | 7.9 | 5.4 | 2.3 |
 
 ### Top character confusions on Urdu lines: utrnet_large_w400_val_det
@@ -746,6 +783,80 @@ reference digit or Latin letter → pred, plus insertions on digit-only / Latin-
 | O | ∅ | 14 |
 
 ### Worst 15 lines: hybrid_utrnet_w800_tesseract_eng_val
+
+| CER | crop | gold | pred |
+|---|---|---|---|
+| 2.00 | lines/AJK_0383_p02_L53.png | 7- | Ny J |
+| 2.00 | lines/AJK_0102_p01_L41.png | 7۔ | =r J |
+| 1.50 | lines/AJK_0383_p02_L47.png | 4- | =f] |
+| 1.50 | lines/AJK_0139_p02_L31.png | 6- | I 6] |
+| 1.50 | lines/AJK_0106_p01_L11.png | 2۔ | i 4 |
+| 1.50 | lines/AJK_0056_p01_L33.png | 7- | oii |
+| 1.50 | lines/AJK_0056_p01_L30.png | 6- | re. |
+| 1.33 | lines/AJK_0475_p01_L74.png | iii | ققلا |
+| 1.33 | lines/AJK_0102_p01_L55.png | 14۔ | BRT} |
+| 1.30 | lines/AJK_0478_p01_L06.png | 14-02-2021 | 221- lc ۔ سعتم |
+| 1.12 | lines/AJK_0144_p01_L10.png | 21/04/25 | ارم 59/ اح |
+| 1.11 | lines/AJK_0102_p01_L26.png | 19/9/2025 | کدہد191 111 |
+| 1.10 | lines/AJK_0448_p01_L06.png | 09-09-2021 | 2.211 -.9-و9 ہ |
+| 1.00 | lines/AJK_0521_p01_L27.png | پرنسپل سٹاف آفیسر/ پرائیویٹ سیکرٹری ہمراہ جناب سیکرٹری ہائیر ایجوکیشن۔ پرائیویٹ سیکرٹری ہمراہ جناب سیکرٹری ایلیمنٹری اینڈ سیکنڈری ایجوکیشن۔ جناب چیئرمین آزاد جموں وکشمیر بورڈ آف انٹرمیڈیٹ وسیکنڈری ایجوکیشن میرپور۔ سسٹم آفیسر، محکمہ سروسز اینڈ جنرل ایڈمنسٹریشن آزاد حکومت ریاست جموں وکشمیر مظفرآباد بغرض اشاعت سرکاری جریدہ۔ دفتر کاپی۔ | ے |
+| 1.00 | lines/AJK_0484_p01_L47.png | 9- | _9 |
+
+### Top character confusions on Urdu lines: hybrid_final_val
+
+ref → pred (∅ = missing / extra)
+
+| ref | pred | count |
+|---|---|---|
+|   | ∅ | 2084 |
+| ∅ |   | 313 |
+| ی | ∅ | 145 |
+|   | ا | 130 |
+| / |   | 130 |
+| / | ∅ | 126 |
+| ر | ∅ | 117 |
+| / | ا | 98 |
+| ا | ∅ | 96 |
+| م | ∅ | 93 |
+| س | ∅ | 91 |
+| ہ | ∅ | 66 |
+| و | ∅ | 64 |
+| - | ۔ | 61 |
+| ک | ∅ | 60 |
+| و | د | 59 |
+| - | ∅ | 58 |
+| ن | ∅ | 57 |
+| ٹ | ∅ | 51 |
+| ب | ∅ | 50 |
+
+### Top confusions on digit / Latin characters: hybrid_final_val
+
+reference digit or Latin letter → pred, plus insertions on digit-only / Latin-only lines
+
+| ref | pred | count |
+|---|---|---|
+| 0 | ∅ | 55 |
+| 0 | 2 | 54 |
+| 2 | ∅ | 44 |
+| 2 | 1 | 38 |
+| 1 | ∅ | 37 |
+| i | ∅ | 29 |
+| 0 |   | 28 |
+| 2 | 0 | 26 |
+| 0 | - | 22 |
+| 1 | 2 | 22 |
+| w | ∅ | 21 |
+| 5 | ∅ | 20 |
+| 2 | - | 19 |
+| 0 | 1 | 19 |
+| n | ∅ | 19 |
+| e | ∅ | 15 |
+| a | ∅ | 15 |
+| c | ∅ | 14 |
+| 3 | ∅ | 14 |
+| O | ∅ | 14 |
+
+### Worst 15 lines: hybrid_final_val
 
 | CER | crop | gold | pred |
 |---|---|---|---|

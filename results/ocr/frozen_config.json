@@ -1,0 +1,27 @@
+{
+ "frozen_at": "2026-11-20",
+ "tuned_on": "val, human-verified lines only (data/annotations/verified_lines.tsv, 1067 usable lines); test and test_unseen not inspected before freezing",
+ "systems": {
+  "utrnet_w800": {
+   "script": "scripts/ocr_utrnet.py",
+   "args": "--imgW 800 --per-line-seed --seed 0",
+   "model": "UTRNet-Large (third_party/UTRNet/saved_models/UTRNet-Large/best_norm_ED.pth)",
+   "env": "torch 2.15.0+cpu, numpy 2.5.5, pillow 13.0.0",
+   "why": "w800 beat w400 on val (verified CER 15.2 vs 17.7), mostly on very wide lines"
+  },
+  "tesseract_eng": {
+   "script": "scripts/ocr_tesseract.py",
+   "args": "--lang eng --psm 7 --tessdata third_party/tessdata",
+   "engine": "tesseract v5.4.0.20240606, tessdata_best 4.1.0 eng"
+  },
+  "hybrid_final": {
+   "script": "scripts/combine_ocr.py",
+   "inputs": ["utrnet_w800", "tesseract_eng"],
+   "rule": "Tesseract eng if UTRNet's prediction has no Urdu letter (A), or Tesseract's mean word confidence >= 70 and its text has a Latin letter or digit (B); else UTRNet",
+   "min_conf": 70,
+   "val_verified_cer": {"utrnet_w800": 15.2, "rule_A_only": 14.8, "hybrid_final": 14.5}
+  }
+ },
+ "metric": "scripts/eval_ocr.py, full normalisation, micro CER",
+ "primary_system": "hybrid_final"
+}

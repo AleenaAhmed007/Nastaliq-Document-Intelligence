@@ -6,7 +6,8 @@ ocr_tesseract.py: run Tesseract 5 on the text_line crops, as a second OCR system
     python scripts/ocr_tesseract.py --split val --lang eng          # English / digits only
 
 Input : data/processed/lines.tsv + data/processed/lines/*.png  (export_to_json.py --crops)
-Output: results/ocr/tesseract_<lang>_<splits>.tsv   crop, page_id, split, type, pred   (+ a .json run summary)
+Output: results/ocr/tesseract_<lang>_<splits>.tsv   crop, page_id, split, type, pred, conf   (+ a .json run summary)
+        conf = mean Tesseract word confidence (0-100, -1 = no word); combine_ocr.py routes on it
         Same format as ocr_utrnet.py, so eval_ocr.py scores both side by side on the same lines.
 
 Each crop is one text line, so Tesseract runs with --psm 7 (single text line) and the LSTM engine (--oem 1).
@@ -36,13 +37,27 @@ def find_exe(given):
 
 
 def run(exe, path, lang, psm, tessdata):
+    """-> (text, mean word confidence 0-100, or -1 when no word was read).
+
+    Uses Tesseract's TSV output (-c tessedit_create_tsv=1; the `tsv` config file is not in every tessdata
+    folder). The words joined by single spaces equal the plain-text output with collapsed whitespace
+    (checked on all 1437 val lines: eng identical; urd+eng differs only in where invisible LRM / RLM
+    direction marks sit, which eval_ocr.py's normalisation removes, so every score is unchanged)."""
     cmd = [exe, path, "stdout", "-l", lang, "--psm", str(psm), "--oem", "1"]
     if tessdata:
         cmd += ["--tessdata-dir", tessdata]
+    cmd += ["-c", "tessedit_create_tsv=1"]
     r = subprocess.run(cmd, capture_output=True, env=dict(os.environ, OMP_THREAD_LIMIT="1"))   # one core per line
     if r.returncode != 0:
         raise RuntimeError("tesseract failed on %s: %s" % (path, r.stderr.decode("utf-8", "replace")[-300:]))
-    return " ".join(r.stdout.decode("utf-8", "replace").split())     # one line, collapsed whitespace
+    words, confs = [], []
+    for line in r.stdout.decode("utf-8", "replace").splitlines()[1:]:
+        f = line.split("\t")
+        if len(f) >= 12 and f[0] == "5" and f[11].strip():          # level 5 = word
+            words.append(f[11])
+            confs.append(float(f[10]))
+    text = " ".join(" ".join(words).split())                         # one line, collapsed whitespace
+    return text, (sum(confs) / len(confs) if confs else -1.0)
 
 
 def main():
@@ -83,10 +98,11 @@ def main():
     t0 = time.time()
     with open(out_tsv, "a", encoding="utf-8", newline="") as f:
         if not done:
-            f.write("crop\tpage_id\tsplit\ttype\tpred\n")
+            f.write("crop\tpage_id\tsplit\ttype\tpred\tconf\n")
         for i, r in enumerate(todo, 1):
-            p = run(exe, os.path.join(args.crop_root, r["crop"]), args.lang, args.psm, args.tessdata)
-            f.write("\t".join([r["crop"], r["page_id"], r["split"], r["type"], p.replace("\t", " ")]) + "\n")
+            p, conf = run(exe, os.path.join(args.crop_root, r["crop"]), args.lang, args.psm, args.tessdata)
+            f.write("\t".join([r["crop"], r["page_id"], r["split"], r["type"], p.replace("\t", " "),
+                               "%.1f" % conf]) + "\n")
             f.flush()
             if i % 100 == 0 or i == len(todo):
                 print("  %d / %d  (%.0f s)" % (i, len(todo), time.time() - t0), flush=True)

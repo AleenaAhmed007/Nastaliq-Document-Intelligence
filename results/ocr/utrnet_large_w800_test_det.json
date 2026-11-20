@@ -1,0 +1,20 @@
+{
+ "model": "UTRNet-Large",
+ "weights": "third_party\\UTRNet\\saved_models\\UTRNet-Large\\best_norm_ED.pth",
+ "imgH": 32,
+ "imgW": 800,
+ "splits": [
+  "test"
+ ],
+ "sample": 0,
+ "seed": 0,
+ "lines": 2546,
+ "lines_this_run": 2546,
+ "device": "cpu",
+ "seconds_this_run": 17341.8,
+ "ms_per_line": 6811.4,
+ "batch": 1,
+ "torch": "2.15.0+cpu",
+ "per_line_seed": true,
+ "note": "a resumed run only times its own lines; per-line seed: each prediction depends only on (crop, seed, imgW)"
+}

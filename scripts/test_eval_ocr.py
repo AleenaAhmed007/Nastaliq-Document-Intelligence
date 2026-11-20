@@ -119,11 +119,22 @@ def ltr_postprocessing_only_touches_digit_punctuation_lines():
 
 
 @check
-def hybrid_routes_only_lines_without_urdu_letters():
-    assert choose("5۔", "-5") == ("-5", "fallback")
-    assert choose("(77)", "(vi)") == ("(vi)", "fallback")
-    assert choose("", "12") == ("12", "fallback")
-    assert choose("مورخہ 10-12-2021", "garbage 10-12-2021") == ("مورخہ 10-12-2021", "primary")
+def hybrid_routes_lines_without_urdu_letters():
+    # rule A: UTRNet read no Urdu letter -> Tesseract, whatever its confidence
+    assert choose("5۔", "-5", 10) == ("-5", "fallback", "A")
+    assert choose("(77)", "(vi)", -1) == ("(vi)", "fallback", "A")
+    assert choose("", "12", 0) == ("12", "fallback", "A")
+    assert choose("مورخہ 10-12-2021", "garbage 10-12-2021", 40) == ("مورخہ 10-12-2021", "primary", "-")
+
+
+@check
+def hybrid_routes_confident_latin_lines():
+    # rule B: UTRNet hallucinated Urdu letters on an English line, Tesseract is confident -> Tesseract
+    assert choose("(تتن)", "(iii)", 91) == ("(iii)", "fallback", "B")
+    assert choose("(تتن)", "(iii)", 70) == ("(iii)", "fallback", "B")          # threshold is inclusive
+    assert choose("(تتن)", "(iii)", 69.9) == ("(تتن)", "primary", "-")
+    # confident but no Latin letter or digit (punctuation only) -> keep UTRNet
+    assert choose("فیس", "::", 95) == ("فیس", "primary", "-")
 
 
 @check

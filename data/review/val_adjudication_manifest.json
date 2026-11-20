@@ -1,0 +1,31 @@
+{
+ "created_at": "2026-11-20T13:34:48",
+ "split": "val",
+ "lines_tsv": "data\\processed\\lines.tsv",
+ "lines_tsv_sha256": "e19ecd419a1f4f4ef9288ef0ac727835655f95c522d9dc39711f201a59af15e2",
+ "git_commit": "1e9891733eb90c960ed44882744e02bae3a07c86",
+ "pred_file": "results/ocr/utrnet_large_w400_val.tsv",
+ "pred_sha256": "dfc46acfd86df9251c4ebed7e3e05f6dbff3f1df474dd8f98e0a1f3ff1cdc5e9",
+ "only": "data/annotations/review_conflicts.tsv",
+ "seed": 0,
+ "overlap": [],
+ "files": {
+  "val_adjudication_b1.xlsx": [
+   "lines/AJK_0054_p01_L07.png",
+   "lines/AJK_0054_p01_L33.png",
+   "lines/AJK_0054_p01_L41.png",
+   "lines/AJK_0063_p01_L29.png",
+   "lines/AJK_0106_p01_L17.png",
+   "lines/AJK_0116_p02_L16.png",
+   "lines/AJK_0116_p02_L48.png",
+   "lines/AJK_0139_p01_L49.png",
+   "lines/AJK_0139_p01_L78.png",
+   "lines/AJK_0139_p01_L83.png",
+   "lines/AJK_0150_p01_L03.png",
+   "lines/AJK_0383_p02_L14.png",
+   "lines/AJK_0416_p01_L14.png",
+   "lines/AJK_0478_p01_L28.png",
+   "lines/AJK_0484_p01_L28.png"
+  ]
+ }
+}

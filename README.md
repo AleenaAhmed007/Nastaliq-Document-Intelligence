@@ -4,7 +4,7 @@ Turn scanned Urdu notices (Nastaliq script) into structured records. For every p
 **date, department, subject and reference number**, and links each value to its exact region in the original
 image so a human can verify it.
 
-> Course Project, Group 2. Current stage: **Line OCR evaluated on 1,067 human-verified val lines** (UTRNet-Large 15.2% CER, 10.4% on Urdu-only lines; UTRNet + Tesseract hybrid 14.8%). See [Results on human-verified val](#results-on-human-verified-val).
+> Course Project, Group 2. Current stage: **Line OCR frozen on 1,067 human-verified val lines and run once on test** (val: UTRNet-Large 15.2% CER, 10.4% on Urdu-only lines; frozen UTRNet + Tesseract hybrid 14.5%. Test / test_unseen: hybrid 23.1% / 16.4% against the still-unverified reference). See [Results on human-verified val](#results-on-human-verified-val).
 
 ---
 
@@ -17,7 +17,7 @@ flowchart TD
     C --> D["3. High-Precision Annotation<br/>• 239 Gold Pages (Human-verified & Transcribed)<br/>• 550 Pages (Gemini 3.5 Flash Vision API Layout & Text Detection)"]
     D --> E["4. Visual QA Previews (gemini_batch_annotate.py)<br/>Color-coded bounding boxes & Urdu text overlay for all 789 pages"]
     E --> F["5. Clean Dataset Export (export_to_json.py)<br/>789 structured JSON records, outcomes.json, all_pages.jsonl"]
-    F --> G["6. Line OCR (val baselines done) & Layout Model Training (Planned)<br/>UTRNet + Tesseract hybrid, gold verification, YOLO layout detection"]
+    F --> G["6. Line OCR (frozen on val, run on test) & Layout Model Training (Planned)<br/>UTRNet + Tesseract hybrid, gold verification, YOLO layout detection"]
     G --> H["7. Field Extraction & Evaluation (Planned)<br/>Layout mAP@0.5, Field F1, OCR CER/WER"]
 ```
 
@@ -164,7 +164,7 @@ All 789 preview images in `data/previews/` follow standardized color coding:
 │   ├── postprocess_ocr.py            # 5. Fix reversed digit groups in UTRNet date / number lines
 │   ├── combine_ocr.py                # 5. Hybrid: Tesseract for lines where UTRNet reads no Urdu
 │   ├── eval_ocr.py                   # 6. CER / WER / NED with breakdowns, suspect-reference filter
-│   ├── test_eval_ocr.py              # 6. 14 checks of the metrics and rules
+│   ├── test_eval_ocr.py              # 6. 15 checks of the metrics and rules
 │   ├── make_review_sheet.py          # 7. Excel sheets for human verification of line text
 │   └── merge_review.py               # 7. Merge reviews -> verified_lines.tsv + reviewer agreement
 ├── results/ocr/                      # Predictions (*.tsv), run summaries (*.json), reports (*.report.md)
@@ -286,12 +286,19 @@ python scripts/ocr_tesseract.py --split val --lang eng --tessdata third_party/te
 ```
 
 The two engines complement each other. UTRNet wins on Urdu, Tesseract `eng` on digits and English.
-`combine_ocr.py` sends a line to Tesseract only when UTRNet's own prediction has no Urdu letter (decided from
-the predictions, never the gold) and records the choice in a `source` column:
+`combine_ocr.py` sends a line to Tesseract `eng` when (A) UTRNet's prediction has no Urdu letter, or (B)
+Tesseract's mean word confidence is at least 70 and it read a Latin letter or digit. The rule uses only the
+predictions, never the reference text, and records the choice in the `source` and `why` columns. `ocr_tesseract.py`
+writes the confidence in a `conf` column. Rule B was added and frozen after tuning on verified val only. Rule A alone
+missed English list markers like `(iii)`, which UTRNet reads as Urdu letters (`(تتن)`). The frozen configuration
+is in [`results/ocr/frozen_config.json`](results/ocr/frozen_config.json).
 
 ```powershell
-python scripts/combine_ocr.py results/ocr/utrnet_large_w400_val_det.tsv results/ocr/tesseract_eng_val.tsv --out results/ocr/hybrid_utrnet_w400_tesseract_eng_val.tsv
+cd scripts
+python combine_ocr.py ../results/ocr/utrnet_large_w800_val_det.tsv ../results/ocr/tesseract_eng_val.tsv --out ../results/ocr/hybrid_final_val.tsv
 ```
+
+The older `hybrid_utrnet_w{400,800}_tesseract_eng_val.tsv` files are rule-A-only outputs, kept for comparison.
 
 Ordering caveat: on lines without Urdu, Tesseract writes left-to-right visual order (`-5`), while the review
 rules ask for right-to-left reading order (`5-`). Until verified text exists, compare engines on dates and
@@ -416,7 +423,7 @@ Of the 38 lines reviewed by two people, 60.5% match exactly and the inter-review
 [`results/ocr/final_val_verified.report.md`](results/ocr/final_val_verified.report.md).
 
 ```powershell
-python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val_det.tsv results/ocr/utrnet_large_w800_val_det.tsv results/ocr/tesseract_urd-eng_val.tsv results/ocr/tesseract_eng_val.tsv results/ocr/hybrid_utrnet_w400_tesseract_eng_val.tsv results/ocr/hybrid_utrnet_w800_tesseract_eng_val.tsv --verified data/annotations/verified_lines.tsv --out results/ocr/final_val_verified.report.md
+python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val_det.tsv results/ocr/utrnet_large_w800_val_det.tsv results/ocr/tesseract_urd-eng_val.tsv results/ocr/tesseract_eng_val.tsv results/ocr/hybrid_utrnet_w400_tesseract_eng_val.tsv results/ocr/hybrid_utrnet_w800_tesseract_eng_val.tsv results/ocr/hybrid_final_val.tsv --verified data/annotations/verified_lines.tsv --out results/ocr/final_val_verified.report.md
 ```
 
 | System | CER | WER | Exact lines |
@@ -425,18 +432,19 @@ python scripts/eval_ocr.py results/ocr/utrnet_large_w400_val_det.tsv results/ocr
 | UTRNet-Large, width 800 | 15.2% | 54.5% | 13.6% |
 | Tesseract `urd+eng` | 70.6% | 95.6% | 7.8% |
 | Tesseract `eng` | 89.9% | 100.0% | 8.0% |
-| **Hybrid: UTRNet w800 + Tesseract `eng`** | **14.8%** | **54.1%** | **17.4%** |
+| Hybrid w800, rule A only | 14.8% | 54.1% | 17.4% |
+| **Final hybrid (frozen): UTRNet w800 + Tesseract `eng`, rules A + B** | **14.5%** | **53.8%** | **18.1%** |
 | *Original gold (annotation error rate)* | *16.2%* | *52.4%* | *19.6%* |
 
 CER by line content:
 
-| Content | Lines | UTRNet w800 | Hybrid w800 | Tesseract `eng` | Original gold |
-|---|---|---|---|---|---|
-| Urdu only | 430 | **10.4%** | 10.4% | 93.7% | 15.6% |
-| Urdu + digits | 267 | 14.7% | 14.5% | 90.1% | 17.2% |
-| Urdu + English | 100 | 19.7% | 19.7% | 88.9% | 15.2% |
-| Digits only | 218 | 59.9% | 40.0% | **37.5%** | 30.6% |
-| English only | 51 | 80.6% | 70.1% | **22.9%** | 2.5% |
+| Content | Lines | UTRNet w800 | Hybrid rule A | **Final hybrid** | Tesseract `eng` | Original gold |
+|---|---|---|---|---|---|---|
+| Urdu only | 430 | **10.4%** | 10.4% | 10.4% | 93.7% | 15.6% |
+| Urdu + digits | 267 | 14.7% | 14.5% | 14.5% | 90.1% | 17.2% |
+| Urdu + English | 100 | 19.7% | 19.7% | 19.7% | 88.9% | 15.2% |
+| Digits only | 218 | 59.9% | 40.0% | 40.0% | **37.5%** | 30.6% |
+| English only | 51 | 80.6% | 70.1% | 42.3% | **22.9%** | 2.5% |
 
 UTRNet-Large CER by line width/height (all verified lines):
 
@@ -454,8 +462,10 @@ Findings:
 - **Width 800 is the better setting.** It removes the squeezing of long lines (16.3% → 10.9% on lines wider than
   25:1) and leaves lines that fit in 400 px unchanged.
 - **Digits and English need Tesseract.** UTRNet scores 60–81% CER on digit-only and English-only lines, Tesseract
-  `eng` 23–38%. The hybrid is therefore the best system (14.8%). Its routing still sends most English-only lines
-  to UTRNet (70.1% vs 22.9% for Tesseract alone), so routing is the next improvement.
+  `eng` 23–38%. Routing on UTRNet's output alone (rule A) still sent most English-only lines to UTRNet (70.1%).
+  Adding Tesseract's confidence (rule B) brings English-only lines to 42.3% and leaves every Urdu group unchanged,
+  so the final hybrid is the best system (14.5%). The remaining gap to Tesseract alone on English (22.9%) comes
+  from short lines where Tesseract's confidence is below 70.
 - **Photos vs scans:** almost no difference (UTRNet w800 14.8% on 711 photo lines, 16.1% on 356 scan lines).
 
 Limitations:
@@ -463,7 +473,60 @@ Limitations:
 - Inter-reviewer agreement rests on only 38 double-reviewed lines.
 - Reviewers saw UTRNet's (width 400) output while reviewing, so UTRNet's scores may be slightly optimistic;
   Tesseract had no such advantage.
-- These are val results. `test` and `test_unseen` have not been run, and their line text is not yet verified.
+- These are val results. For the frozen test run, see the next section.
+
+### Results on test / test_unseen (frozen configuration, single run, UNVERIFIED reference)
+
+The configuration in [`results/ocr/frozen_config.json`](results/ocr/frozen_config.json) was frozen on verified val
+and then run once on `test` (2,546 lines, AJK BISE) and `test_unseen` (823 lines, FBR, an issuer never seen in
+val). Nothing was changed after these runs. **The line text of these splits has not been human-verified yet**,
+so the scores below are measured against the original annotation. On val, that annotation was 80% wrong at the
+line level: the same reference made UTRNet w800 look about 21% CER where the verified text gave 15.2%. Read
+these numbers as upper bounds and for comparing systems, not as final accuracy.
+
+```powershell
+.venv-utrnet\Scripts\python scripts/ocr_utrnet.py --split test --imgW 800 --per-line-seed --resume
+.venv-utrnet\Scripts\python scripts/ocr_utrnet.py --split test_unseen --imgW 800 --per-line-seed --resume
+python scripts/ocr_tesseract.py --split test --lang eng --tessdata third_party/tessdata     # and test_unseen, urd+eng
+cd scripts; python combine_ocr.py ../results/ocr/utrnet_large_w800_test_det.tsv ../results/ocr/tesseract_eng_test.tsv --out ../results/ocr/hybrid_final_test.tsv; cd ..
+python scripts/eval_ocr.py results/ocr/utrnet_large_w800_test_det.tsv results/ocr/tesseract_urd-eng_test.tsv results/ocr/tesseract_eng_test.tsv results/ocr/hybrid_final_test.tsv --out results/ocr/final_test_unverified.report.md
+```
+
+Reports: [`final_test_unverified.report.md`](results/ocr/final_test_unverified.report.md),
+[`final_test_unseen_unverified.report.md`](results/ocr/final_test_unseen_unverified.report.md).
+
+| System (CER vs unverified reference) | test (2,541 lines*) | test_unseen (823) |
+|---|---|---|
+| UTRNet-Large, width 800 | 25.6% | 17.7% |
+| Tesseract `urd+eng` | 70.0% | 67.1% |
+| Tesseract `eng` | 87.8% | 88.3% |
+| **Final hybrid (frozen)** | **23.1%** | **16.4%** |
+
+\* 5 test lines have a suspect reference (CJK characters or punctuation only) and are listed, not scored.
+
+| Content (final hybrid) | test lines | test CER | test_unseen lines | test_unseen CER |
+|---|---|---|---|---|
+| Urdu only | 897 | 17.9% | 467 | 7.4% |
+| Urdu + digits | 685 | 23.9% | 61 | 16.2% |
+| Urdu + English | 287 | 29.2% | 172 | 28.1% |
+| Digits only | 517 | 24.0% (Tesseract alone 20.8%) | 105 | 24.9% (Tesseract alone 14.1%) |
+| English only | 149 | 26.0% (Tesseract alone 17.4%) | 17 | 19.8% (Tesseract alone 17.2%) |
+
+Findings (provisional until the test text is verified):
+- **The frozen hybrid is the best system on both held-out splits**, as on val. The routing changed no Urdu group's
+  score; on digit and English lines it cuts UTRNet's 62–89% CER to 20–26%.
+- **It generalises to the unseen FBR issuer.** test_unseen is born-digital, and Urdu-only lines reach 7.4% CER.
+- **Routing still misses some digit / English lines.** Tesseract alone beats the hybrid there by 3–11 points:
+  UTRNet writes a few Urdu letters on such lines, and Tesseract's confidence stays below 70. This is a known gap,
+  not something to tune on test.
+- `test` (AJK, 56% scans) is harder than val, also against its unverified reference. Whether that is the documents or
+  the reference can only be settled by verifying the text.
+
+Verification sheets for `test` are prepared (`python scripts/make_review_sheet.py --pred
+results/ocr/utrnet_large_w800_test_det.tsv --split test --batches 7 --overlap 140`; 7 files of about 385 lines,
+140 lines double-reviewed; manifest in `data/review/test_review_manifest.json`). The `.xlsx` files are not in git
+(about 8 MB each); the same command rebuilds them identically. Once they are filled, rerun `merge_review.py` and
+`eval_ocr.py --verified` on the same prediction files. Do not re-tune anything.
 
 ---
 
@@ -478,14 +541,15 @@ Limitations:
 - [x] Export to clean structured dataset (`data/processed/pages/`, `data/processed/all_pages.jsonl`, `outcomes.json`) with 0 unannotated pages
 - [x] Line crops generation (`scripts/export_to_json.py --crops`, 5,407 crops)
 - [x] UTRNet-Large baseline on all val lines at width 400 and 800, deterministic (`--per-line-seed`)
-- [x] OCR evaluation with breakdowns, suspect-reference filter and 14 metric checks (`eval_ocr.py`, `test_eval_ocr.py`)
+- [x] OCR evaluation with breakdowns, suspect-reference filter and 15 metric checks (`eval_ocr.py`, `test_eval_ocr.py`)
 - [x] Tesseract 5 baseline and UTRNet + Tesseract hybrid (`ocr_tesseract.py`, `combine_ocr.py`)
 - [x] Review sheets for human verification of val line text (`data/review/`, 80 lines double-reviewed)
 - [x] Human review of val line text: 1,067 verified lines (b1–b3), agreement on 38 double-reviewed lines; b4 excluded
 - [x] Evaluation against verified text (`results/ocr/final_val_verified.report.md`): width 800 and the hybrid confirmed
-- [ ] Resolve the 15 review conflicts (adjudication sheet) and re-review batch b4 (343 lines)
-- [ ] Fix hybrid routing so English-only lines go to Tesseract (tuned on val), then freeze the configuration
-- [ ] Single run of the frozen configuration on `test` / `test_unseen`, after verifying their line text
+- [x] Hybrid routing fixed (Tesseract confidence rule) on verified val and configuration frozen (`results/ocr/frozen_config.json`)
+- [x] Single run of the frozen configuration on `test` / `test_unseen` (scored against the unverified reference)
+- [ ] Fill the prepared sheets: adjudication of 15 conflicts (`val_adjudication_b1.xlsx`) and re-review of b4 (`val_rereview_b4_b1.xlsx`, 343 lines)
+- [ ] Verify the `test` line text (sheets prepared, see above) and `test_unseen`, then rescore with `--verified`
 - [ ] Layout model training (YOLO / multimodal models)
 - [ ] Field extraction and normalization rules
 - [ ] Final evaluation (verified CER/WER, Layout mAP@0.5, Field F1)
