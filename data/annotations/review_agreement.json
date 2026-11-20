@@ -1,0 +1,19 @@
+{
+ "merged_at": "2026-11-20T15:31:24",
+ "lines_sha256": "e19ecd419a1f4f4ef9288ef0ac727835655f95c522d9dc39711f201a59af15e2",
+ "overlap_lines_planned": 80,
+ "overlap_awaiting_second_review": 42,
+ "overlap_not_reviewed": 0,
+ "double_reviewed_lines": 38,
+ "agreement_rate": 0.605,
+ "keep_vs_drop_kappa": null,
+ "keep_vs_drop_kappa_note": "undefined: no double-reviewed lines, or both reviewers made the same keep/drop choice on every line",
+ "inter_reviewer_cer_pct": 2.27,
+ "conflicts_open": 15,
+ "definitions": {
+  "double_reviewed_lines": "lines with a decision from two non-adjudication reviewers; lines with one or no decision are counted separately, never as agreement",
+  "agreement_rate": "both keep the line with identical normalised text, or both drop it",
+  "keep_vs_drop_kappa": "Cohen's kappa on the two reviewers' keep (gold_ok/utrnet_ok/corrected) vs drop (exclude/illegible) decisions",
+  "inter_reviewer_cer_pct": "total edit distance / total max(len) between the two reviewers' normalised texts, on lines both kept"
+ }
+}
